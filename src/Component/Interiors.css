@@ -131,9 +131,10 @@ body {
   color: #fff;
 }
 
-.dropdown-toggle::after {
+.nav-item.dropdown>.nav-link::after {
   content: " ▾";
-  font-size: 12px;
+  font-size: 10px;
+  margin-left: 4px;
 }
 
 .navbar-toggler {
@@ -154,6 +155,85 @@ body {
 ========================= */
 .ui-hero {
   padding-top: 110px;
+}
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.image-modal-inner {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.image-slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+
+  font-size: 24px;          /* reduce size for better centering */
+  line-height: 1;           /* 🔥 important fix */
+
+  display: flex;            /* 🔥 perfect centering */
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.image-slide-btn--left {
+  left: 20px;
+
+}
+
+.image-slide-btn--right {
+  right: 20px;
+  
+}
+
+.image-slide-btn:hover,
+.image-modal-close:hover {
+  opacity: 0.85;
 }
 
 /* =========================

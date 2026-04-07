@@ -22,6 +22,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /* =========================
    NAVBAR
 ========================= */
@@ -45,7 +46,7 @@ body {
 .custom-navbar {
   background: rgba(0, 0, 0, 0.92);
   padding: 12px 20px;
- 
+
   top: 0;
   left: 0;
   width: 100%;
@@ -145,9 +146,10 @@ body {
   color: #fff;
 }
 
-.dropdown-toggle::after {
+.nav-item.dropdown>.nav-link::after {
   content: " ▾";
-  font-size: 12px;
+  font-size: 10px;
+  margin-left: 4px;
 }
 
 .navbar-toggler {
@@ -385,10 +387,11 @@ body {
 }
 
 .contact-hero-content h1 {
-  color: #fff;
+  color: #0d3b66;
   font-size: clamp(2.2rem, 5vw, 4rem);
   letter-spacing: 4px;
   text-align: center;
+  font-family: cursive;
 }
 
 /* =========================

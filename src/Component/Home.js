@@ -1,26 +1,23 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import usePageReveal from "./usePageReveal";
+import useScrollVisibility from "./useScrollVisibility";
 import "./Home.css";
 
 const cities = [
   { name: "LUDHIANA", x: 477, y: 420, cls: "right" },
   { name: "DEHRADUN", x: 597, y: 452, cls: "right" },
-  { name: "SIRSA", x: 430, y: 497, cls: "left" },
+  { name: "SIRSA", x: 430, y: 497, cls: "left", isRed: true },
   { name: "BIJNOR", x: 567, y: 497, cls: "right" },
-  { name: "JHAJJAR", x: 522, y: 543, cls: "left" },
-  { name: "DELHI NCR", x: 544, y: 566, cls: "right big-label" },
-  { name: "DARJEELING", x: 1148, y: 636, cls: "right" },
+  { name: "JHAJJAR", x: 522, y: 543, cls: "left", isRed: true },
+  { name: "DELHI NCR", x: 544, y: 566, cls: "right big-label", isRed: true },
+  { name: "DARJEELING", x: 1148, y: 636, cls: "right", isRed: true },
   { name: "JAIPUR", x: 476, y: 651, cls: "right" },
-  { name: "LUCKNOW", x: 749, y: 667, cls: "right" },
+  { name: "LUCKNOW", x: 749, y: 667, cls: "right", isRed: true },
   { name: "AJMER", x: 415, y: 682, cls: "right" },
   { name: "GWALIOR", x: 597, y: 697, cls: "right" },
   { name: "PATNA", x: 978, y: 727, cls: "right" },
-  { name: "VARANASI", x: 856, y: 743, cls: "left" },
+  { name: "VARANASI", x: 856, y: 743, cls: "left", isRed: true },
   { name: "DHANBAD", x: 1054, y: 836, cls: "left" },
   { name: "RANCHI", x: 993, y: 866, cls: "left" },
   { name: "BHOPAL", x: 568, y: 866, cls: "right" },
@@ -39,67 +36,161 @@ const cities = [
   { name: "COLOMBO", x: 693, y: 1791, cls: "left" },
 ];
 
+const clients = [
+  { name: "Reliance", src: "/logo/Reliance.webp" },
+  { name: "Airtel", src: "/logo/Airtel.webp" },
+  { name: "Medanta", src: "/logo/Medanta.webp" },
+  { name: "United", src: "/logo/United.webp" },
+  { name: "UrbanClap", src: "/logo/UrbanClap.webp" },
+  { name: "Google", src: "/logo/Google.webp" },
+  { name: "Samsung", src: "/logo/Samsung.webp" },
+  { name: "Lenskart", src: "/logo/lenskart.webp" },
+  { name: "DLF", src: "/logo/DLF.webp" },
+  { name: "Honda", src: "/logo/Honda.webp" },
+  { name: "GAAR", src: "/logo/GAAR.webp" },
+  { name: "Cine", src: "/logo/Cine.webp" },
+  { name: "FICCI", src: "/logo/FICCI.webp" },
+  { name: "PB", src: "/logo/pblogo.webp" },
+  { name: "Startek", src: "/logo/Startek.webp" },
+  { name: "Foundever", src: "/logo/Foundever.webp" },
+  { name: "Axis Bank", src: "/logo/Axis.webp" },
+  { name: "NIC", src: "/logo/NIC.webp" },
+  { name: "Cars24", src: "/logo/CARS24.webp" },
+  { name: "Personiv", src: "/logo/Personiv.webp" },
+  { name: "Popular", src: "/logo/Popular.webp" },
+  { name: "Royal", src: "/logo/Royal.webp" },
+  { name: "Sitel", src: "/logo/Sitel.webp" },
+  { name: "Kyndryl", src: "/logo/Kyndryl.webp" },
+  { name: "Ashoka", src: "/logo/Ashoka.webp" },
+  { name: "IBM", src: "/logo/IBM.webp" },
+  { name: "NTT", src: "/logo/NTT.webp" },
+  { name: "Myntra", src: "/logo/Myntra.webp" },
+  { name: "Cog", src: "/logo/cog.webp" },
+  { name: "Konika", src: "/logo/KONIKA.webp" },
+  { name: "Allied", src: "/logo/Allied.webp" },
+  { name: "Convergys", src: "/logo/convergys.webp" },
+  { name: "HSBC", src: "/logo/HSBC.webp" },
+  { name: "Bhatra", src: "/logo/bhatra.webp" },
+  { name: "YKK", src: "/logo/YKK.webp" },
+];
+
+const services = [
+  {
+    title: "Corporate Office Architecture India",
+    alt: "Corporate Office Architecture India",
+    icon: "/box-ikon.webp",
+  },
+  {
+    title: "Commercial Interior Design India",
+    alt: "Commercial Interior Design India",
+    icon: "/box-ikon.webp",
+  },
+  {
+    title: "Cinema Architecture & Multiplex Design India",
+    alt: "Cinema Architecture and Multiplex Design India",
+    icon: "/box-ikon.webp",
+  },
+  {
+    title: "Hospital Architecture & Medical Planning India",
+    alt: "Hospital Architecture and Medical Planning India",
+    icon: "/box-ikon.webp",
+  },
+  {
+    title: "Hospitality Architecture (Clubs, Restaurants, Banquets)",
+    alt: "Hospitality Architecture",
+    icon: "/box-ikon.webp",
+  },
+  {
+    title: "High-End Residential Architecture & Luxury Interiors India",
+    alt: "Luxury Residential Architecture",
+    icon: "/box-ikon.webp",
+  },
+];
+function Counter({ end, duration = 2000, suffix = " +" }) {
+  const [count, setCount] = useState(0);
+  const [startAnimation, setStartAnimation] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartAnimation(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!startAnimation) return;
+
+    let start = 0;
+    const incrementTime = 20;
+    const steps = duration / incrementTime;
+    const increment = end / steps;
+
+    const timer = setInterval(() => {
+      start += increment;
+
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, incrementTime);
+
+    return () => clearInterval(timer);
+  }, [startAnimation, end, duration]);
+
+  return <h3 ref={ref}>{count}{suffix}</h3>;
+}
+
+
+
 function Home() {
+  usePageReveal([
+    ".home-page .brand",
+    ".home-page .intro-left > *",
+    ".home-page .intro-right > *",
+    ".home-page .service-card",
+    ".home-page .clients-section",
+    ".home-page .client-title > *",
+    ".home-page .clients-wrap",
+    ".home-page .clients-row",
+    ".home-page .client-box",
+    ".home-page .client-box img",
+    ".home-page .projects-title",
+    ".home-page .quoteSection > *",
+    ".home-page .footer__col",
+    ".home-page .footer__line",
+    ".home-page .footer__copy",
+  ]);
+
+  useScrollVisibility([
+    ".home-page .bar__logoWrap",
+    ".home-page .brand",
+    ".home-page .intro-left",
+    ".home-page .intro-right",
+    ".home-page .services-section",
+    ".home-page .service-card",
+    ".home-page .clients-section",
+    ".home-page .client-title",
+    ".home-page .clients-row",
+    ".home-page .client-box",
+    ".home-page .projects-section .big",
+    ".home-page .projects-section .small",
+  ]);
+
   return (
     <div className="home-page">
-      <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            URBAN INFILL
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
-              </li>
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle">Project</span>
-                <ul className="dropdown-menu-custom">
-                  <li>
-                    <Link to="/architecture" className="dropdown-item-custom">
-                      Architecture
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/interior" className="dropdown-item-custom">
-                      Interior
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/projectmanagement" className="dropdown-item-custom">
-                      Project Management
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/blogs">Blogs</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section className="hero">
+<section className="hero">
         <div className="hero__crane"></div>
         <div className="hero__overlay"></div>
 
@@ -108,7 +199,7 @@ function Home() {
             <img
               className="bar__logo"
               src="/logo.webp"
-              alt="Urban Infill Logo"
+              alt="URBAN iNFiLL Logo"
               loading="lazy"
               decoding="async"
             />
@@ -142,17 +233,17 @@ function Home() {
             <h2 className="section-heading">Filling in the Urban Gaps</h2>
 
             <p className="description">
-              <strong>Urban Infill</strong> is a leading Pan-India architecture and commercial
+              <strong>URBAN iNFiLL</strong> is a leading Pan-India architecture and commercial
               interior design firm headquartered in Gurgaon. We partner with corporate clients,
-              developers, and institutions to design functional, future-ready spaces — from corporate
+              developers, and institutions to design functional, future-ready spaces - from corporate
               office interiors and workplace architecture to multiplex cinema design, hospital planning,
               and large-scale hospitality projects.
             </p>
 
             <p className="description">
-              With a proven track record spanning 20+ cities — including Delhi NCR,
-              Mumbai, Bengaluru, Hyderabad, Kolkata, Pune, Chennai, and Kochi —
-              Urban Infill combines strategic space planning, operational efficiency,
+              With a proven track record spanning 20+ cities - including Delhi NCR,
+              Mumbai, Bengaluru, Hyderabad, Kolkata, Pune, Chennai, and Kochi -
+              URBAN iNFiLL combines strategic space planning, operational efficiency,
               and contemporary design to deliver commercial environments built for performance.
             </p>
 
@@ -163,76 +254,76 @@ function Home() {
             </p>
 
             <div className="stats">
-              <div><h3>150+</h3><p>COMMERCIAL (OFFICES)</p></div>
-              <div><h3>10+</h3><p>ENTERTAINMENT (CINEMAS)</p></div>
-              <div><h3>15+</h3><p>HOSPITALITY<br />(F&amp;B + CLUB HOUSE)</p></div>
-              <div><h3>10+</h3><p>MEDICAL<br />(HOSPITAL + CLINICS)</p></div>
-              <div><h3>20+</h3><p>CITIES</p></div>
+              <div>
+                <Counter end={150} />
+                <p>COMMERCIAL (OFFICES)</p>
+              </div>
+
+              <div>
+                <Counter end={10} />
+                <p>ENTERTAINMENT (CINEMAS)</p>
+              </div>
+
+              <div>
+                <Counter end={15} />
+                <p>HOSPITALITY<br />(F&amp;B + CLUB HOUSE)</p>
+              </div>
+
+              <div>
+                <Counter end={10} />
+                <p>MEDICAL<br />(HOSPITAL + CLINICS)</p>
+              </div>
+
+              <div>
+                <Counter end={20} />
+                <p>CITIES</p>
+              </div>
             </div>
           </div>
 
-          <div className="intro-right">
-            <div className="map-stage">
-              <img src="/Map.webp" alt="Cities covered map" loading="lazy" decoding="async" />
+            <div className="intro-right">
+              <div className="map-stage">
+                <img src="/Map.webp" alt="Cities covered map" loading="lazy" decoding="async" />
 
-              {cities.map((city) => (
-                <div
-                  key={city.name}
-                  className="city-marker"
-                  style={{
-                    left: `${(city.x / 1290) * 63}%`,
-                    top: `${(city.y / 1971) * 100}%`,
-                  }}
-                >
-                  <span className="city-dot"></span>
-                  <span className={`city-label ${city.cls}`}>{city.name}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="legend">
-              <span className="red-dot"></span>
-              <p>CITIES COVERED</p>
+                {cities.map((city) => (
+                  <div
+                    key={city.name}
+                    className="city-marker"
+                    style={{
+                      left: `${(city.x / 1290) * 63}%`,
+                      top: `${(city.y / 1971) * 100}%`,
+                    }}
+                  >
+                    <span className={`city-dot ${city.isRed ? "red" : ""}`}></span>
+                    <span className={`city-label ${city.cls}`}>{city.name}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="legend">
+                <span className="red-dot"></span>
+                <p>ON-GOING PROJECTS</p>
+              </div>
+              <div className="legend">
+                <span className="blue-dot"></span>
+                <p>CITIES COVERED</p>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <section className="services-section">
         <div className="services-container">
-          <div className="service-card">
-            <img
-              src="/box-ikon.webp"
-              alt="Corporate Office Architecture India"
-              loading="lazy"
-              decoding="async" />
-            <h3>Corporate Office Architecture India</h3>
-          </div>
-
-          <div className="service-card">
-            <img src="/box-ikon.webp" alt="Commercial Interior Design India" loading="lazy" decoding="async" />
-            <h3>Commercial Interior Design India</h3>
-          </div>
-
-          <div className="service-card">
-            <img src="/box-ikon.webp" alt="Cinema Architecture and Multiplex Design India" loading="lazy" decoding="async" />
-            <h3>Cinema Architecture & Multiplex Design India</h3>
-          </div>
-
-          <div className="service-card">
-            <img src="/box-ikon.webp" alt="Hospital Architecture and Medical Planning India" loading="lazy" decoding="async" />
-            <h3>Hospital Architecture & Medical Planning India</h3>
-          </div>
-
-          <div className="service-card">
-            <img src="/box-ikon.webp" alt="Hospitality Architecture" loading="lazy" decoding="async" />
-            <h3>Hospitality Architecture (Clubs, Restaurants, Banquets)</h3>
-          </div>
-
-          <div className="service-card">
-            <img src="/box-ikon.webp" alt="Luxury Residential Architecture" loading="lazy" decoding="async" />
-            <h3>High-End Residential Architecture & Luxury Interiors India</h3>
-          </div>
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <img
+                src={service.icon}
+                alt={service.alt}
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>{service.title}</h3>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -244,73 +335,22 @@ function Home() {
 
         <div className="clients-wrap">
           <div className="clients-row">
-            <div className="client-box"><img src="/logo/Reliance.webp" alt="Reliance" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Airtel.webp" alt="Airtel" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Medanta.webp" alt="Medanta" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/United.webp" alt="United" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/UrbanClap.webp" alt="UrbanClap" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/Google.webp" alt="Google" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Samsung.webp" alt="Samsung" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/lenskart.webp" alt="Lenskart" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/DLF.webp" alt="DLF" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Honda.webp" alt="Honda" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/GAAR.webp" alt="GAAR" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Cine.webp" alt="Cine" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/FICCI.webp" alt="FICCI" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/pblogo.webp" alt="PB" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Startek.webp" alt="Startek" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/Foundever.webp" alt="Foundever" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Axis.webp" alt="Axis Bank" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/NIC.webp" alt="NIC" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/CARS24.webp" alt="Cars24" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Personiv.webp" alt="Personiv" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/Popular.webp" alt="Popular" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Royal.webp" alt="Royal" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Sitel.webp" alt="Sitel" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Kyndryl.webp" alt="Kyndryl" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Ashoka.webp" alt="Ashoka" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/IBM.webp" alt="IBM" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/NTT.webp" alt="NTT" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/Myntra.webp" alt="Myntra" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/cog.webp" alt="Cog" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/KONIKA.webp" alt="Konika" loading="lazy" decoding="async" /></div>
-          </div>
-
-          <div className="clients-row">
-            <div className="client-box"><img src="/logo/Allied.webp" alt="Allied" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/convergys.webp" alt="Convergys" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/HSBC.webp" alt="HSBC" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/bhatra.webp" alt="Bhatra" loading="lazy" decoding="async" /></div>
-            <div className="client-box"><img src="/logo/YKK.webp" alt="YKK" loading="lazy" decoding="async" /></div>
+            {clients.map((client) => (
+              <div key={client.name} className="client-box">
+                <img src={client.src} alt={client.name} loading="lazy" decoding="async" />
+              </div>
+            ))}
           </div>
         </div>
-
         <img src="/scale-2.webp" alt="" className="scale" loading="lazy" decoding="async" />
       </section>
-
       <section className="projects-section">
         <h2 className="projects-title">Featured Projects</h2>
-
         <div className="collage">
           <div className="collageRow collageRow--A">
             <div className="big">
-              <Link to="/Projectitems/3" className="small">
-                <img src="/projects/01_sirsa mall.webp" alt="Sirsa Mall project" loading="lazy" decoding="async" />
+              <Link to="/Projects/3" className="big">
+                <img src="/projects/01_sirsa mall.webp" alt="Sirsa Mall" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
                   <div className="hoverFrame" />
                   <div className="hoverText">
@@ -320,11 +360,10 @@ function Home() {
                 </div>
               </Link>
             </div>
-
             <div className="stack">
               <div className="small">
-                <Link to="/interioritems/5" className="small">
-                  <img src="/projects/02_samsung.webp" alt="Samsung project" loading="lazy" decoding="async" />
+                <Link to="/Interiors/5" className="small">
+                  <img src="/projects/02_samsung.webp" alt="Samsung Office" loading="lazy" decoding="async" />
                   <div className="hoverOverlay">
                     <div className="hoverFrame" />
                     <div className="hoverText">
@@ -334,8 +373,8 @@ function Home() {
                   </div>
                 </Link>
               </div>
-              <Link to="/interioritems/6" className="small">
-                <img src="/projects/03_uc.webp" alt="Urban workspace project" loading="lazy" decoding="async" />
+              <Link to="/Interiors/6" className="small">
+                <img src="/projects/03_uc.webp" alt="Urban Workspace" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
                   <div className="hoverFrame" />
                   <div className="hoverText">
@@ -346,7 +385,6 @@ function Home() {
               </Link>
             </div>
           </div>
-
           <div className="collageRow collageRow--B">
             <div className="stack">
               <div className="small">
@@ -359,7 +397,6 @@ function Home() {
                   </div>
                 </div>
               </div>
-
               <div className="small">
                 <img src="/projects/06_HOME THEATER.webp" alt="Home theatre project" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
@@ -371,10 +408,9 @@ function Home() {
                 </div>
               </div>
             </div>
-
             <div className="big">
-              <Link to="/interioritems/4" className="small">
-                <img src="/projects/05_cineport.webp" alt="Cineport cinema project" loading="lazy" decoding="async" />
+              <Link to="/Interiors/4" className="small">
+                <img src="/projects/05_cineport.webp" alt="Cineport Cinema" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
                   <div className="hoverFrame" />
                   <div className="hoverText">
@@ -385,11 +421,10 @@ function Home() {
               </Link>
             </div>
           </div>
-
           <div className="collageRow collageRow--A">
             <div className="big">
-              <Link to="/interioritems/3" className="small">
-                <img src="/projects/07_BBI.webp" alt="BBI commercial project" loading="lazy" decoding="async" />
+              <Link to="/Interiors/3" className="small">
+                <img src="/projects/07_BBI.webp" alt="BBI Commercial" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
                   <div className="hoverFrame" />
                   <div className="hoverText">
@@ -399,11 +434,10 @@ function Home() {
                 </div>
               </Link>
             </div>
-
             <div className="stack">
               <div className="small">
-                <Link to="/interioritems/2" className="small">
-                  <img src="/projects/08_urban canteen.webp" alt="Urban canteen project" loading="lazy" decoding="async" />
+                <Link to="/Interiors/2" className="small">
+                  <img src="/projects/08_urban canteen.webp" alt="Urban Canteen" loading="lazy" decoding="async" />
                   <div className="hoverOverlay">
                     <div className="hoverFrame" />
                     <div className="hoverText">
@@ -413,7 +447,6 @@ function Home() {
                   </div>
                 </Link>
               </div>
-
               <div className="small">
                 <img src="/projects/09_interior.webp" alt="Luxury interior project" loading="lazy" decoding="async" />
                 <div className="hoverOverlay">
@@ -430,8 +463,8 @@ function Home() {
       </section>
 
       <section className="quoteSection">
-        <Link to="/architecture" className="quoteBtnLink">
-          View All Projects
+        <Link to="/archives" className="quoteBtnLink">
+          ARCHIVES PROJECTS
         </Link>
 
         <h2 className="quoteText">
@@ -440,85 +473,9 @@ function Home() {
           IT TAKES SWEAT, DETERMINATION AND HARDWORK.
         </h2>
       </section>
-
-      <footer className="footer">
-        <div className="footer__inner">
-          <div className="footer__col">
-            <h2 className="footer__logo">URBAN iNFiLL</h2>
-
-            <div className="footer__social">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                className="footer__icon"
-                aria-label="Facebook"
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-
-              <a
-                href="https://www.instagram.com/urban_infill_studio?igsh=MWdiNmhxY3c1MXF5OA%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noreferrer"
-                className="footer__icon"
-                aria-label="Instagram"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-
-              <a
-                href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw"
-                target="_blank"
-                rel="noreferrer"
-                className="footer__icon"
-                aria-label="Location"
-              >
-                📍
-              </a>
-
-              <a
-                href="https://www.linkedin.com/company/urbaninfill/"
-                target="_blank"
-                rel="noreferrer"
-                className="footer__icon"
-                aria-label="LinkedIn"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </div>
-          </div>
-
-          <div className="footer__col">
-            <h3 className="footer__title">Services</h3>
-            <ul className="footer__list">
-              <li><Link to="/architecture">Architecture</Link></li>
-              <li><Link to="/interior">Interior</Link></li>
-              <li><Link to="/projectmanagement">Project Management</Link></li>
-            </ul>
-          </div>
-
-          <div className="footer__col">
-            <h3 className="footer__title">Contact</h3>
-            <ul className="footer__list">
-              <li><a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a></li>
-              <li>+91 124 4241186</li>
-              <li>
-                302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55,
-                Gurugram, Ghata, Haryana 122011
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="footer__line"></div>
-
-        <div className="footer__copy">
-          © 2026 URBAN iNFiLL. All rights reserved
-        </div>
-      </footer>
-    </div>
+</div>
   );
 }
 
 export default Home;
+

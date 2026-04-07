@@ -1,13 +1,32 @@
 /* =========================
    GLOBAL
 ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
+body {
+  background: #fff;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-page {
   width: 100%;
+  overflow-x: hidden;
+  background: #fff;
 }
 
 /* =========================
@@ -16,7 +35,6 @@ body {
 .custom-navbar {
   background: rgba(0, 0, 0, 0.92);
   padding: 12px 20px;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,6 +45,11 @@ body {
 .navbar .container-fluid,
 .navbar-collapse {
   overflow: visible !important;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -58,13 +81,18 @@ body {
   cursor: pointer;
 }
 
-.nav-link:hover {
-  color: #d7b98d !important;
+@media (hover: hover) {
+  .nav-link:hover {
+    color: #d7b98d !important;
+  }
 }
 
-/* =========================
-   DROPDOWN
-========================= */
+@media (hover: none) {
+  .nav-link:active {
+    color: #d7b98d !important;
+  }
+}
+
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -88,14 +116,12 @@ body {
   margin: 0;
 }
 
-.dropdown-menu-custom li {
-  list-style: none;
-}
-
-.dropdown:hover .dropdown-menu-custom {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu-custom {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 .dropdown-item-custom {
@@ -112,16 +138,15 @@ body {
   color: #fff;
 }
 
-.dropdown-toggle::after {
-  content: " ▾";
-  font-size: 12px;
+.nav-item.dropdown > .nav-link::after {
+  content: " \25BE";
+  font-size: 10px;
+  margin-left: 4px;
 }
 
-/* =========================
-   TOGGLER
-========================= */
 .navbar-toggler {
   border: none;
+  padding: 4px 8px;
 }
 
 .navbar-toggler:focus {
@@ -133,10 +158,120 @@ body {
 }
 
 /* =========================
-   PAGE SPACING (IMPORTANT)
+   HERO
 ========================= */
-body {
-  padding-top: 90px;
+.pm-hero {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  overflow: hidden;
+  background: #efefef;
+  display: flex;
+  align-items: flex-end;
+  padding: 72px 0 0;
+}
+
+.pm-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.18));
+  transform: scale(1.02);
+}
+
+.pm-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.55) 46%, rgba(255, 255, 255, 0.12) 100%);
+}
+
+.pm-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(760px, calc(100% - 120px));
+  margin: 0 0 90px 90px;
+  padding: 34px 36px 38px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(62, 62, 62, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.pm-tag {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  background: #3e3e3e;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.pm-hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.02;
+  font-weight: 900;
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pm-hero > .pm-hero-content > p {
+  margin: 16px 0 0;
+  font-size: clamp(1.2rem, 3.3vw, 3.2rem);
+  color: #2a57e5;
+  font-style: italic;
+  line-height: 1.1;
+  font-family: "Bradley Hand ITC", "Segoe Script", cursive;
+}
+
+.pm-status-card {
+  margin-top: 28px;
+  max-width: 520px;
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #d7b98d;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.pm-status-card p {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #555;
+}
+
+.pm-contact-btn {
+  display: inline-block;
+  border: 1.5px solid #444;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  color: #222;
+  letter-spacing: 0.5px;
+  transition: 0.25s ease;
+  text-decoration: none;
+  background: transparent;
+}
+
+@media (hover: hover) {
+  .pm-contact-btn:hover {
+    background: #444;
+    border-color: #444;
+    color: #fff;
+  }
+}
+
+@media (hover: none) {
+  .pm-contact-btn:active {
+    background: #444;
+    border-color: #444;
+    color: #fff;
+  }
 }
 
 /* =========================
@@ -145,7 +280,6 @@ body {
 .footer {
   background-color: #141414;
   padding: 70px 5% 25px;
-  margin-top: 80px;
 }
 
 .footer__inner {
@@ -179,21 +313,38 @@ body {
 .footer__list {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .footer__list li {
   margin-bottom: 18px;
   font-size: 0.98rem;
+  line-height: 1.6;
   color: #dddddd;
 }
 
 .footer__list a {
   color: #dddddd;
+  transition: color 0.3s ease;
   text-decoration: none;
 }
 
-.footer__list a:hover {
-  color: #d7b98d;
+@media (hover: hover) {
+  .footer__list a:hover {
+    color: #d7b98d;
+  }
+
+  .footer__icon:hover {
+    background: #b0895a;
+    border-color: #b0895a;
+    transform: translateY(-3px);
+  }
+}
+
+@media (hover: none) {
+  .footer__icon:active {
+    transform: scale(0.92);
+  }
 }
 
 .footer__social {
@@ -211,12 +362,8 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  transition: 0.3s;
-}
-
-.footer__icon:hover {
-  background: #b0895a;
-  border-color: #b0895a;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
 }
 
 .footer__line {
@@ -232,17 +379,26 @@ body {
   font-size: 0.95rem;
 }
 
-.we{
-  font-family:initial;
-  text-align: center;
-  letter-spacing: 0.5rem;
-padding-top: 50px;
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1200px) {
+  .navbar-brand {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin-right: 14px;
+  }
+
+  .pm-hero-content {
+    width: min(700px, calc(100% - 60px));
+    margin: 0 0 70px 30px;
+  }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 992px) {
   .navbar-brand {
     margin-left: 0;
@@ -254,8 +410,13 @@ padding-top: 50px;
     align-items: flex-start;
   }
 
+  .nav-item {
+    width: 100%;
+  }
+
   .nav-link {
     margin-right: 0;
+    font-size: 15px;
     padding: 10px 0 !important;
   }
 
@@ -266,10 +427,14 @@ padding-top: 50px;
     transform: none;
     background: #111;
     box-shadow: none;
+    border-radius: 6px;
+    padding: 6px 0;
+    margin-top: 6px;
     display: none;
   }
 
-  .dropdown:hover .dropdown-menu-custom {
+  .dropdown:hover .dropdown-menu-custom,
+  .dropdown:focus-within .dropdown-menu-custom {
     display: block;
   }
 
@@ -279,6 +444,23 @@ padding-top: 50px;
 
   .dropdown-item-custom:hover {
     background: #222;
+    color: #d7b98d;
+  }
+
+  .pm-hero {
+    min-height: 760px;
+    align-items: center;
+  }
+
+  .pm-hero::after {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.2) 100%);
+  }
+
+  .pm-hero-content {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 28px 24px 30px;
   }
 
   .footer__inner {
@@ -287,11 +469,43 @@ padding-top: 50px;
 }
 
 @media (max-width: 768px) {
+  .custom-navbar {
+    padding: 10px 14px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
   .navbar-collapse {
     background: rgba(0, 0, 0, 0.95);
-    padding: 12px;
-    border-radius: 8px;
+    padding: 12px 15px;
     margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .pm-hero {
+    min-height: 620px;
+    padding-top: 56px;
+  }
+
+  .pm-hero-content {
+    width: calc(100% - 32px);
+    padding: 22px 18px 24px;
+  }
+
+  .pm-tag {
+    margin-bottom: 14px;
+    font-size: 0.68rem;
+  }
+
+  .pm-status-card {
+    padding: 18px;
+  }
+
+  .pm-status-card p {
+    font-size: 0.95rem;
   }
 
   .footer__inner {
@@ -301,5 +515,45 @@ padding-top: 50px;
 
   .footer__social {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pm-hero {
+    min-height: 540px;
+  }
+
+  .pm-hero h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .pm-hero > .pm-hero-content > p {
+    font-size: 1.45rem;
+  }
+
+  .pm-contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 50px 5% 25px;
+  }
+
+  .footer__logo {
+    font-size: 1.6rem;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+
+  .footer__list li {
+    font-size: 0.9rem;
+  }
+
+  .footer__copy {
+    font-size: 0.82rem;
   }
 }

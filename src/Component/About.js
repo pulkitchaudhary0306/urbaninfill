@@ -1,9 +1,20 @@
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
 import "./About.css";
+import useScrollVisibility from "./useScrollVisibility";
 
 function About() {
+    useScrollVisibility([
+        ".ui-page .ui-hero-grid",
+        ".ui-page .ui-two-col",
+        ".ui-page .ui-grid-3 .ui-card",
+        ".ui-page .ui-dark-panel",
+        ".ui-page .ui-founder-grid",
+        ".ui-page .ui-quote-wrap",
+        ".ui-page .ui-grid-4 .ui-card",
+        ".ui-page .ui-grid-2 > *",
+        ".ui-page .ui-faq-item",
+        ".ui-page .footer__col",
+    ]);
+
     const expertise = [
         "Corporate Office Architecture & Workplace Interiors",
         "Commercial Interior Design for Developers & Business Centres",
@@ -31,103 +42,40 @@ function About() {
 
     const faqs = [
         {
-            q: "What is Urban Infill known for?",
-            a: "Urban Infill is known for Pan-India architecture and commercial interior design, with expertise in corporate offices, hospitals, cinema architecture, hospitality spaces, and high-end residential projects.",
+            q: "What is URBAN iNFiLL known for?",
+            a: "URBAN iNFiLL is known for Pan-India architecture and commercial interior design, with expertise in corporate offices, hospitals, cinema architecture, hospitality spaces, and high-end residential projects.",
         },
         {
-            q: "Where is Urban Infill headquartered?",
-            a: "Urban Infill is headquartered in Gurgaon and executes projects across multiple Indian cities.",
+            q: "Where is URBAN iNFiLL headquartered?",
+            a: "URBAN iNFiLL is headquartered in Gurgaon and executes projects across multiple Indian cities.",
         },
         {
-            q: "Does Urban Infill work across India?",
-            a: "Yes. Urban Infill has delivered projects across 20+ cities including Delhi NCR, Mumbai, Bangalore, Kolkata, Hyderabad, Lucknow, and Varanasi.",
+            q: "Does URBAN iNFiLL work across India?",
+            a: "Yes. URBAN iNFiLL has delivered projects across 20+ cities including Delhi NCR, Mumbai, Bangalore, Kolkata, Hyderabad, Lucknow, and Varanasi.",
         },
         {
-            q: "Who leads Urban Infill?",
-            a: "Urban Infill is led by Ar. Subhankar Sengupta, Registered Architect with the Council of Architecture, India, and a graduate of Savitribai Phule Pune University.",
+            q: "Who leads URBAN iNFiLL?",
+            a: "URBAN iNFiLL is led by Ar. Subhankar Sengupta, Registered Architect with the Council of Architecture, India, and a graduate of Savitribai Phule Pune University.",
         },
         {
-            q: "Does Urban Infill provide healthcare planning consultancy?",
+            q: "Does URBAN iNFiLL provide healthcare planning consultancy?",
             a: "Yes. The firm specializes in hospital architecture and medical planning consultancy including OT zoning, ICU layouts, NABH coordination, clinical workflow planning, and MEP integration.",
         },
         {
-            q: "Can Urban Infill handle multi-city rollouts?",
-            a: "Yes. Urban Infill has strong multi-city execution capability with structured documentation, consultant coordination, and scalable delivery systems.",
+            q: "Can URBAN iNFiLL handle multi-city rollouts?",
+            a: "Yes. URBAN iNFiLL has strong multi-city execution capability with structured documentation, consultant coordination, and scalable delivery systems.",
         },
     ];
 
     return (
         <div className="ui-page">
-            <nav className="navbar navbar-expand-lg custom-navbar">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">
-                        URBAN INFILL
-                    </Link>
-
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link className="nav-link active" to="/about">About</Link>
-                            </li>
-
-                            <li className="nav-item dropdown">
-                                <span className="nav-link dropdown-toggle">Project</span>
-
-                                <ul className="dropdown-menu-custom">
-                                    <li>
-                                        <Link to="/architecture" className="dropdown-item-custom">
-                                            Architecture
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/interior" className="dropdown-item-custom">
-                                            Interior
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/projectmanagement" className="dropdown-item-custom">
-                                            Project Management
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/blogs">Blogs</Link>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <section className="ui-hero">
+<section className="ui-hero">
                 <div className="ui-container ui-hero-grid">
                     <div>
-                        <div className="ui-tag">ABOUT URBAN INFILL</div>
+                        <div className="ui-tag">ABOUT URBAN iNFiLL</div>
                         <h1>Pan-India Architecture & Commercial Design Practice</h1>
                         <p>
-                            <b>Urban Infill</b> is a Pan-India architecture and commercial interior
+                            <b>URBAN iNFiLL</b> is a Pan-India architecture and commercial interior
                             design practice headquartered in Gurgaon, delivering corporate
                             office architecture, hospital architecture, medical planning
                             consultancy, cinema architecture, hospitality design, and
@@ -169,7 +117,7 @@ function About() {
                         <p>
                             With projects delivered across 20+ cities including Delhi NCR,
                             Mumbai, Bangalore, Kolkata, Hyderabad, Lucknow, and Varanasi,
-                            Urban Infill has developed strong expertise in multi-city project
+                            URBAN iNFiLL has developed strong expertise in multi-city project
                             execution, regulatory coordination, and scalable commercial design
                             delivery.
                         </p>
@@ -179,8 +127,8 @@ function About() {
 
             <section className="ui-section ui-light">
                 <div className="ui-container">
-                    <p className="ui-eyebrow"><center>Our Expertise in Commercial & Healthcare Architecture</center></p>
-                    <h2 className="ui-center-heading">Urban Infill focuses on high-performance commercial
+                    <p className="ui-eyebrow" style={{ textAlign: "center" }}>Our Expertise in Commercial & Healthcare Architecture</p>
+                    <h2 className="ui-center-heading">URBAN iNFiLL focuses on high-performance commercial
                         environments and specialized healthcare infrastructure. Our core expertise includes</h2>
 
                     <div className="ui-grid-3">
@@ -223,7 +171,7 @@ function About() {
                             loading="lazy"
                             decoding="async"
                         />
-                        <p className="ui-eyebrow">Founder</p>
+                       
                         <h3>Ar. Subhankar Sengupta</h3>
                         <p>Registered Architect, Council of Architecture, India</p>
                     </div>
@@ -232,14 +180,14 @@ function About() {
                         <h2 className="ui-eyebrow">Founder & Principal Architect</h2>
 
                         <p>
-                            <b>Urban Infill</b> is led by Ar. Subhankar Sengupta, Registered
+                            <b>URBAN iNFiLL</b> is led by Ar. Subhankar Sengupta, Registered
                             Architect with the Council of Architecture, India, and a graduate
                             of Savitribai Phule Pune University.
                         </p>
                         <p>
                             With extensive experience in commercial architecture, healthcare
                             planning, and large-scale interior environments, he established
-                            Urban Infill with a vision to deliver structured, scalable, and
+                            URBAN iNFiLL with a vision to deliver structured, scalable, and
                             technically precise design solutions for India’s evolving built
                             environment.
                         </p>
@@ -258,7 +206,7 @@ function About() {
                 <div className="ui-container ui-quote-wrap">
                     <p className="ui-eyebrow">Founder’s Design Philosophy</p>
                     <blockquote>
-                        “At Urban Infill, design is not just about form — it is about
+                        “At URBAN iNFiLL, design is not just about form — it is about
                         performance, purpose, and precision. Every space we create must
                         function seamlessly, respond intelligently to its environment, and
                         support the long-term goals of its users.”
@@ -269,8 +217,8 @@ function About() {
 
             <section className="ui-section">
                 <div className="ui-container">
-                    <p className="ui-eyebrow"><center>Our Structured Design & Delivery Approach</center></p>
-                    <h2 className="ui-center-heading">Urban Infill follows a systematic and process-driven methodology</h2>
+                    <p className="ui-eyebrow" style={{ textAlign: "center" }}>Our Structured Design & Delivery Approach</p>
+                    <h2 className="ui-center-heading">URBAN iNFiLL follows a systematic and process-driven methodology</h2>
 
 
                     <div className="ui-grid-4">
@@ -295,7 +243,7 @@ function About() {
 
                     <div className="ui-text">
                         <p>
-                            <b>Urban Infill </b>has successfully delivered architectural and
+                            <b>URBAN iNFiLL </b>has successfully delivered architectural and
                             commercial interior projects across major metropolitan and
                             emerging cities in India. Our multi-city execution capability
                             ensures consistency in design standards, technical documentation,
@@ -329,7 +277,7 @@ function About() {
 
             <section className="ui-section ui-light">
                 <div className="ui-container">
-                    <p className="ui-eyebrow">Why Choose Urban Infill</p>
+                    <p className="ui-eyebrow">Why Choose URBAN iNFiLL</p>
                     <h2 className="ui-center-heading">Why clients choose us</h2>
 
                     <div className="ui-grid-3">
@@ -357,59 +305,10 @@ function About() {
                     </div>
                 </div>
             </section>
-
-            <footer className="footer">
-                <div className="footer__inner">
-                    <div className="footer__col">
-                        <h2 className="footer__logo">URBAN iNFiLL</h2>
-
-                        <div className="footer__social">
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer__icon" aria-label="Facebook">
-                                <FontAwesomeIcon icon={faFacebook} />
-                            </a>
-                            <a href="https://www.instagram.com/urban_infill_studio?igsh=MWdiNmhxY3c1MXF5OA%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="footer__icon" aria-label="Instagram">
-                                <FontAwesomeIcon icon={faInstagram} />
-
-                            </a>
-                            <a href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw" target="_blank" rel="noreferrer" className="footer__icon" aria-label="Twitter">
-                                📍
-                            </a>
-                            <a href="https://www.linkedin.com/company/urbaninfill/" target="_blank" rel="noreferrer" className="footer__icon" aria-label="LinkedIn">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="footer__col">
-                        <h3 className="footer__title">Services</h3>
-                        <ul className="footer__list">
-                            <li><Link to="/architecture">Architecture</Link></li>
-                            <li><Link to="/interior">Interior</Link></li>
-                            <li><Link to="/projectmanagement">Project Management</Link></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer__col">
-                        <h3 className="footer__title">Contact</h3>
-                        <ul className="footer__list">
-                            <li><a href="mailto:info@urbaninfill.in">info@urbaninfill.in </a></li>
-                            <li>+91 124 4241186</li>
-                            <li>
-                                302, Third Floor. Huda Sector, Sushant Lok 2, Sector 55, Gurugram, Ghata, Haryana 122011
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="footer__line"></div>
-
-                <div className="footer__copy">
-                    © 2026 uRBAN iNFiLL. All rights reserved
-                </div>
-            </footer>
-
-        </div>
+</div>
     )
 
 }
 export default About;
+
+

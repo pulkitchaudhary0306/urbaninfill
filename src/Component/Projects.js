@@ -1,20 +1,44 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
+import "./Projects.css";
+import usePageReveal from "./usePageReveal";
+import useScrollVisibility from "./useScrollVisibility";
 
-import "./ProjectItems.css";
+function Projects() {
+  usePageReveal([
+    ".project-page .project-hero .container > *",
+    ".project-page .project-gallery > *",
+    ".project-page .project-gallery-bottom > *",
+    ".project-page .project-info-card",
+    ".project-page .project-content > *",
+    ".project-page .highlight-card",
+    ".project-page .back-link-btn",
+    ".project-page .footer__col",
+    ".project-page .footer__line",
+    ".project-page .footer__copy",
+  ]);
 
-function ProjectItems() {
+  useScrollVisibility([
+    ".project-page .project-hero .container",
+    ".project-page .gallery-main",
+    ".project-page .gallery-side > *",
+    ".project-page .project-gallery-bottom > *",
+    ".project-page .project-info-card",
+    ".project-page .project-content > *",
+    ".project-page .highlight-card",
+    ".project-page .back-link-btn",
+  ]);
+
   const { id } = useParams();
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const projects = [
     {
       id: 1,
+      slug: "aravali-resort-hospitality-design-india",
       tag: "Completed Project",
       title: "The Aravali Resort – Rishikesh",
-      subtitle: "Architectural & Interior Design by Urban Infill",
+      subtitle: "Architectural & Interior Design by URBAN iNFiLL",
       mainImage: "/Architecture/Aravali/Image 1.webp",
       sideImages: [
         "/Architecture/Aravali/Image 2.webp",
@@ -31,15 +55,15 @@ function ProjectItems() {
         project: "The Aravali Resort",
         location: "Rishikesh, Uttarakhand",
         scope: "Architecture & Interior Design",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
       overview: [
-        "Located in the tranquil town of Rishikesh, The Aravali Resort is an exquisite blend of luxury, nature, and wellness. Designed by Urban Infill, this resort offers a rejuvenating retreat for travelers seeking both peace and adventure.",
+        "Located in the tranquil town of Rishikesh, The Aravali Resort is an exquisite blend of luxury, nature, and wellness. Designed by URBAN iNFiLL, this resort offers a rejuvenating retreat for travelers seeking both peace and adventure.",
         "Set against the breathtaking backdrop of the surrounding hills, the resort merges contemporary design with traditional Indian aesthetics, creating a harmonious environment that celebrates the beauty of Rishikesh.",
       ],
       locationText: "Rishikesh, Uttarakhand.",
       designConcept: [
-        "Urban Infill’s design philosophy for The Aravali Resort focuses on sustainable architecture and mindful interior design, seamlessly blending modern luxury with the region’s natural beauty.",
+        "URBAN iNFiLL’s design philosophy for The Aravali Resort focuses on sustainable architecture and mindful interior design, seamlessly blending modern luxury with the region’s natural beauty.",
         "The architecture is characterized by minimalist resort design, expansive open spaces, natural light, and unobstructed views of the surrounding hills and landscape.",
         "A careful selection of local materials such as stone, wood, and clay tiles ensures that the resort integrates harmoniously with the site while promoting environmental responsibility.",
       ],
@@ -60,14 +84,14 @@ function ProjectItems() {
       designIntent:
         "The Aravali Resort is designed to offer more than just a luxurious stay—it provides an immersive, transformative experience that blends the tranquility of nature with modern comforts. The architecture and interior design are rooted in sustainability and mindfulness, creating an escape from daily stress while maintaining a deep respect for the environment. Every element, from the use of natural materials to the spatial organization of the resort, is carefully curated to enhance relaxation, rejuvenation, and connection.",
       conclusion:
-        "The Aravali Resort is not just a getaway—it is an immersive experience that embraces nature, sustainability, and wellness. With Urban Infill’s design vision, the resort offers a unique balance of luxury, tradition, and ecology. It becomes a destination for those seeking to reconnect with nature, enjoy spiritual calm, or simply experience the breathtaking beauty of Rishikesh in a thoughtfully designed environment.",
+        "The Aravali Resort is not just a getaway—it is an immersive experience that embraces nature, sustainability, and wellness. With URBAN iNFiLL’s design vision, the resort offers a unique balance of luxury, tradition, and ecology. It becomes a destination for those seeking to reconnect with nature, enjoy spiritual calm, or simply experience the breathtaking beauty of Rishikesh in a thoughtfully designed environment.",
     },
-
     {
       id: 2,
+      slug: "ssargam-cinema-multiplex-design-india",
       tag: "Completed Project",
       title: "Sargam Theatre, Chandpur ",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Architecture/Sargam/Image 1.webp",
       sideImages: [
         "/Architecture/Sargam/Image 2.webp",
@@ -75,7 +99,6 @@ function ProjectItems() {
         "/Architecture/Sargam/Image 4.webp",
       ],
       galleryImages: [
-
         "/Architecture/Sargam/Image 5.webp",
         "/Architecture/Sargam/Image 6.webp",
         "/Architecture/Sargam/Image 7.webp",
@@ -84,7 +107,7 @@ function ProjectItems() {
         project: "Sargam Theatre",
         location: "Chandpur, Bijnor, Uttar Pradesh",
         scope: "Architecture & Interior Design",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
       overview: [
         "Sargam Theatre in Chandpur, Bijnor, Uttar Pradesh, has undergone a remarkable transformation, evolving from a historic single-screen cinema into a modern two-screen multiplex.",
@@ -98,7 +121,7 @@ function ProjectItems() {
       ],
       highlights: [
         {
-          title: "Urban Infill Redevelopment",
+          title: "URBAN iNFiLL Redevelopment",
           text: "The project revitalizes an existing cinema property within the town, proving how adaptive reuse and infill design can strengthen cultural and urban continuity.",
         },
         {
@@ -113,13 +136,14 @@ function ProjectItems() {
       designIntent:
         "The design intent behind Sargam Theatre was to create more than a multiplex; it was to establish a renewed cultural hub for Chandpur. The project combines modern entertainment infrastructure with a respect for the theatre’s historic presence, ensuring that the space remains socially relevant, visually engaging, and functionally efficient. Every intervention, from public foyer design to auditorium detailing, was aimed at creating comfort, excitement, and a memorable cinematic atmosphere.",
       conclusion:
-        "The transformation of Sargam Theatre demonstrates how urban infill design and thoughtful interior planning can revive a local landmark for a new generation. By turning a historic single-screen cinema into a contemporary two-screen multiplex, Urban Infill has helped create a dynamic cultural destination that respects the past while embracing the future of entertainment in Chandpur.",
+        "The transformation of Sargam Theatre demonstrates how urban infill design and thoughtful interior planning can revive a local landmark for a new generation. By turning a historic single-screen cinema into a contemporary two-screen multiplex, URBAN iNFiLL has helped create a dynamic cultural destination that respects the past while embracing the future of entertainment in Chandpur.",
     },
     {
       id: 3,
+      slug: "moonson-mall-hospitality-retail-design-sirsa",
       tag: "Ongoing Project",
       title: "Monsoon Mall – Sirsa",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Architecture/Sirsa/Image 1.webp",
       sideImages: [
         "/Architecture/Sirsa/Image 2.webp",
@@ -139,22 +163,18 @@ function ProjectItems() {
         area: "1,00,000+ sq ft",
         client: "Monsoon Buildwell Private Limited",
         status: "Ongoing",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
-
       overview: [
         "Located at the highway entry into Sirsa, the Monsoon Mall project is envisioned as a contemporary commercial landmark that defines the city’s arrival experience. The project aims to create a strong architectural identity that is visible from a distance and stands out prominently along the highway corridor.",
-        "Urban Infill was commissioned to develop the architectural façade and interior planning, transforming an already constructed framework into a modern retail and entertainment destination. The design responds to evolving mall typologies in emerging urban centers while establishing a bold and recognizable presence.",
+        "URBAN iNFiLL was commissioned to develop the architectural façade and interior planning, transforming an already constructed framework into a modern retail and entertainment destination. The design responds to evolving mall typologies in emerging urban centers while establishing a bold and recognizable presence.",
       ],
-
       locationText: "Sirsa, Haryana.",
-
       designConcept: [
         "The design approach for Monsoon Mall focuses on creating a fluid, continuous architectural expression that responds to its 360-degree visibility. Instead of treating each elevation independently, the façade is conceived as a unified form that wraps the structure and enhances its visual identity from all directions.",
         "Modern materials and integrated façade lighting play a key role in shaping the building’s contemporary character. The design ensures that the mall remains visually dynamic throughout the day and transforms into a vibrant landmark at night.",
-        "Urban Infill collaborated with Jaquar Lighting to develop a cohesive lighting strategy that highlights architectural elements while maintaining energy efficiency. The interplay of light and form enhances the building’s presence along the highway and strengthens its role as an urban marker.",
+        "URBAN iNFiLL collaborated with Jaquar Lighting to develop a cohesive lighting strategy that highlights architectural elements while maintaining energy efficiency. The interplay of light and form enhances the building’s presence along the highway and strengthens its role as an urban marker.",
       ],
-
       highlights: [
         {
           title: "Adaptive Structural Intervention",
@@ -173,18 +193,17 @@ function ProjectItems() {
           text: "A rooftop hospitality zone with a proposed brewery and canopy structure creates an open-air social destination, adding a unique experiential layer to the mall.",
         },
       ],
-
       designIntent:
         "The design intent of Monsoon Mall is to transform an existing structure into a visually striking and functionally efficient commercial destination. By reimagining the façade and optimizing internal planning, the project creates a modern retail environment that integrates shopping, entertainment, and social experiences. The design emphasizes visibility, adaptability, and user experience, ensuring the development becomes a key urban landmark while maintaining structural feasibility and long-term sustainability.",
-
       conclusion:
-        "Monsoon Mall represents a significant opportunity to redefine the commercial landscape of Sirsa. With its strong architectural identity, integrated entertainment zones, and contemporary design approach, the project is positioned to become a major retail and social hub. Urban Infill’s design transforms the development into a dynamic destination that enhances the city’s gateway experience while contributing to its evolving urban character.",
+        "Monsoon Mall represents a significant opportunity to redefine the commercial landscape of Sirsa. With its strong architectural identity, integrated entertainment zones, and contemporary design approach, the project is positioned to become a major retail and social hub. URBAN iNFiLL’s design transforms the development into a dynamic destination that enhances the city’s gateway experience while contributing to its evolving urban character.",
     },
     {
       id: 4,
+      slug: "annanta-hospital-healthcare-design-india",
       tag: "Completed Project",
       title: "Ananta Hospital – Gurugram",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Architecture/Ananta/Image 1.webp",
       sideImages: [
         "/Architecture/Ananta/Image 2.webp",
@@ -197,7 +216,6 @@ function ProjectItems() {
         "/Architecture/Ananta/Image 7.webp",
         "/Architecture/Ananta/Image 8.webp",
       ],
-
       info: {
         project: "Ananta Hospital",
         location: "Sector 70A, Gurugram, Haryana",
@@ -205,23 +223,19 @@ function ProjectItems() {
         area: "50,000+ sq. ft.",
         client: "Mr. Ravinder Mohan",
         status: "Completed (Phase 1: 2019 | Phase 2: 2022)",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
-
       overview: [
         "Ananta Hospital was envisioned as a compact, multi-speciality healthcare facility combining clinical efficiency with patient-centric experience.",
         "The program was closely aligned with the client’s medical expertise, including ophthalmology and dentistry, while also accommodating a wider ecosystem of internal medicine, orthopedics, gynecology, physiotherapy, and emergency care.",
       ],
-
       locationText: "Sector 70A, Gurugram, Haryana.",
-
       designConcept: [
         "The project was taken over after the structural completion, with limited consideration for service integration, resulting in restricted floor-to-floor heights. The design approach focused on working within these constraints through careful coordination of MEP systems while maintaining healthcare standards.",
         "The hospital was planned in two distinct phases, ensuring immediate functionality in Phase 1 while anticipating seamless expansion in Phase 2 without requiring major rework.",
         "Drawing from experience in high-end healthcare environments, the design translates large-hospital standards into a compact footprint, ensuring efficiency, hygiene, and operational clarity.",
         "A distinct visual identity was created through controlled use of colour and material, moving beyond generic hospital aesthetics.",
       ],
-
       highlights: [
         {
           title: "Phased Planning Strategy",
@@ -248,17 +262,65 @@ function ProjectItems() {
           text: "The project integrates solar panels, staff accommodation, and informal breakout spaces to enhance operational sustainability and staff well-being.",
         },
       ],
-
       designIntent:
         "The design intent for Ananta Hospital was to create a compact yet highly efficient healthcare environment that balances clinical functionality with patient comfort. By addressing structural constraints, implementing a phased development strategy, and maintaining clarity in zoning and service planning, the project ensures seamless operation. The design emphasizes adaptability, efficiency, and a strong visual identity, demonstrating how smaller healthcare facilities can achieve high-performance standards without relying on scale.",
-
       conclusion:
         "Ananta Hospital stands as a strong example of how thoughtful planning and design can overcome structural and spatial constraints to deliver a highly functional healthcare facility. Through strategic zoning, disciplined service coordination, and a patient-centric approach, the project creates an efficient and comfortable environment for both users and staff. It reinforces the idea that in compact healthcare settings, every design decision plays a critical role in shaping both operational success and patient experience.",
     },
-
-
   ];
-  const project = projects.find((item) => item.id === Number(id));
+
+  const project = projects.find(
+    (item) => item.slug === id || item.id === Number(id)
+  );
+
+  const allImages = useMemo(() => {
+    if (!project) return [];
+    return [project.mainImage, ...project.sideImages, ...project.galleryImages];
+  }, [project]);
+
+  const openImageModal = (image) => {
+    const index = allImages.findIndex((img) => img === image);
+    setSelectedImageIndex(index);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImageIndex(null);
+  };
+
+  const showPrevImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prev) =>
+      prev === 0 ? allImages.length - 1 : prev - 1
+    );
+  };
+
+  const showNextImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prev) =>
+      prev === allImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedImageIndex === null || allImages.length === 0) return;
+
+      if (e.key === "Escape") {
+        closeImageModal();
+      } else if (e.key === "ArrowLeft") {
+        setSelectedImageIndex((prev) =>
+          prev === 0 ? allImages.length - 1 : prev - 1
+        );
+      } else if (e.key === "ArrowRight") {
+        setSelectedImageIndex((prev) =>
+          prev === allImages.length - 1 ? 0 : prev + 1
+        );
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex, allImages.length]);
 
   if (!project) {
     return (
@@ -274,78 +336,7 @@ function ProjectItems() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            URBAN INFILL
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle">
-                  Project
-                </span>
-
-                <ul className="dropdown-menu-custom">
-                  <li>
-                    <Link to="/architecture" className="dropdown-item-custom">
-                      Architecture
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/interior" className="dropdown-item-custom">
-                      Interior
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/projectmanagement" className="dropdown-item-custom">
-                      Project Management
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/blogs">
-                  Blogs
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div className="project-page">
+<div className="project-page">
         <section className="project-hero">
           <div className="container">
             <p className="project-tag">{project.tag}</p>
@@ -361,9 +352,11 @@ function ProjectItems() {
                 <img
                   src={project.mainImage}
                   alt={project.title}
-                  onClick={() => setSelectedImage(project.mainImage)}
+                  onClick={() => openImageModal(project.mainImage)}
                   className="clickable-image"
-                 loading="lazy" decoding="async"/>
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div className="gallery-side">
@@ -372,9 +365,11 @@ function ProjectItems() {
                     key={index}
                     src={img}
                     alt={`${project.title} ${index + 2}`}
-                    onClick={() => setSelectedImage(img)}
+                    onClick={() => openImageModal(img)}
                     className="clickable-image"
-                   loading="lazy" decoding="async"/>
+                    loading="lazy"
+                    decoding="async"
+                  />
                 ))}
               </div>
             </div>
@@ -385,10 +380,11 @@ function ProjectItems() {
                   key={index}
                   src={img}
                   alt={`${project.title} gallery ${index + 5}`}
-                  onClick={() => setSelectedImage(img)}
+                  onClick={() => openImageModal(img)}
                   className="clickable-image"
-                 loading="lazy" decoding="async"
-                 />
+                  loading="lazy"
+                  decoding="async"
+                />
               ))}
             </div>
           </div>
@@ -442,104 +438,54 @@ function ProjectItems() {
             </div>
           </div>
         </section>
+</div>
 
-        <footer className="footer">
-          <div className="footer__inner">
-            <div className="footer__col">
-              <h2 className="footer__logo">URBAN iNFiLL</h2>
-
-              <div className="footer__social">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Facebook"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/urban_infill_studio?igsh=MWdiNmhxY3c1MXF5OA%3D%3D&utm_source=qr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Instagram"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-
-                <a
-                  href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Location"
-                >
-                  📍
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/company/urbaninfill/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="LinkedIn"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </div>
-            </div>
-
-            <div className="footer__col">
-              <h3 className="footer__title">Services</h3>
-              <ul className="footer__list">
-                <li><Link to="/architecture">Architecture</Link></li>
-                <li><Link to="/interior">Interior</Link></li>
-                <li><Link to="/projectmanagement">Project Management</Link></li>
-              </ul>
-            </div>
-
-            <div className="footer__col">
-              <h3 className="footer__title">Contact</h3>
-              <ul className="footer__list">
-                <li><a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a></li>
-                <li>+91 124 4241186</li>
-                <li>
-                  302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55,
-                  Gurugram, Ghata, Haryana 122011
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer__line"></div>
-
-          <div className="footer__copy">
-            © 2026 URBAN iNFiLL. All rights reserved
-          </div>
-        </footer>
-      </div>
-
-      {selectedImage && (
-        <div className="image-modal" onClick={() => setSelectedImage(null)}>
+      {selectedImageIndex !== null && allImages.length > 0 && (
+        <div className="image-modal" onClick={closeImageModal}>
           <button
+            type="button"
             className="image-modal-close"
-            onClick={() => setSelectedImage(null)}
+            onClick={closeImageModal}
+            aria-label="Close preview"
           >
             ×
           </button>
-          <img
-            src={selectedImage}
-            alt="Large preview"
-            className="image-modal-content"
+
+          <button
+            type="button"
+            className="image-slide-btn image-slide-btn--left"
+            onClick={showPrevImage}
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+
+          <div
+            className="image-modal-inner"
             onClick={(e) => e.stopPropagation()}
-             loading="lazy" decoding="async"
-          />
+          >
+            <img
+              src={allImages[selectedImageIndex]}
+              alt={`${project.title} preview`}
+              className="image-modal-content"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <button
+            type="button"
+            className="image-slide-btn image-slide-btn--right"
+            onClick={showNextImage}
+            aria-label="Next image"
+          >
+            ›
+          </button>
         </div>
       )}
     </>
   );
 }
 
-export default ProjectItems;
+export default Projects;
+

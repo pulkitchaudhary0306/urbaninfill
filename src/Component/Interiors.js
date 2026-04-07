@@ -1,24 +1,45 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
-import "./Interioritems.css";
+import "./Interiors.css";
+import usePageReveal from "./usePageReveal";
+import useScrollVisibility from "./useScrollVisibility";
 
-function InteriorItems() {
+function Interiors() {
+  usePageReveal([
+    ".project-page .project-hero .container > *",
+    ".project-page .project-gallery > *",
+    ".project-page .project-gallery-bottom > *",
+    ".project-page .project-info-card",
+    ".project-page .project-content > *",
+    ".project-page .highlight-card",
+    ".project-page .back-link-btn",
+    ".project-page .footer__col",
+    ".project-page .footer__line",
+    ".project-page .footer__copy",
+  ]);
+
+  useScrollVisibility([
+    ".project-page .project-hero .container",
+    ".project-page .gallery-main",
+    ".project-page .gallery-side > *",
+    ".project-page .project-gallery-bottom > *",
+    ".project-page .project-info-card",
+    ".project-page .project-content > *",
+    ".project-page .highlight-card",
+    ".project-page .back-link-btn",
+  ]);
+
   const { id } = useParams();
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const projects = [
     {
       id: 1,
+      slug: "united-airlines-office-interior-t3-delhi",
       tag: "United Airlines Office",
       title: "United Airlines Premium Office",
-      subtitle: "Commercial Interior Design by Urban Infill",
+      subtitle: "Commercial Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/United/Image 1.webp",
       sideImages: [
         "/Interiors/United/Image 2.webp",
@@ -35,11 +56,11 @@ function InteriorItems() {
         project: "United Airlines Premium Office",
         location: "Terminal 3, IGI Airport, New Delhi",
         scope: "Commercial Interior Design",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
       overview: [
         "The United Airlines premium office at Terminal 3 of Indira Gandhi International Airport, New Delhi, is a sophisticated and highly functional commercial office designed to support the airline’s operational activities.",
-        "Designed by Urban Infill, the project combines modern office design with operational efficiency, creating a workplace that reflects the airline’s global brand presence and professionalism.",
+        "Designed by URBAN iNFiLL, the project combines modern office design with operational efficiency, creating a workplace that reflects the airline’s global brand presence and professionalism.",
       ],
       locationText:
         "Terminal 3, Indira Gandhi International Airport, New Delhi.",
@@ -65,14 +86,15 @@ function InteriorItems() {
       designIntent:
         "The design intent was to create a premium commercial office that supports operational efficiency while strengthening United Airlines’ global brand identity.",
       conclusion:
-        "The project demonstrates Urban Infill’s ability to deliver high-performance commercial interiors that balance functionality, branding, and professional workplace environments.",
+        "The project demonstrates URBAN iNFiLL’s ability to deliver high-performance commercial interiors that balance functionality, branding, and professional workplace environments.",
     },
 
     {
       id: 2,
+      slug: "urban-canteen-cafe-interior-bhubaneswar",
       tag: "Commercial Restaurant Design",
       title: "URBAN CANTEEN",
-      subtitle: "Interior Design by Urban Infill",
+      subtitle: "Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/Urban/Image 1.webp",
       sideImages: [
         "/Interiors/Urban/Image 2.webp",
@@ -89,7 +111,7 @@ function InteriorItems() {
         project: "Commercial Restaurant Design",
         location: "Bhubaneswar, Odisha",
         scope: "Restaurant Interior Design",
-        firm: "Interior Design by Urban Infill",
+        firm: "Interior Design by URBAN iNFiLL",
         completionDate: "07-07-2024",
       },
       overview: [
@@ -125,9 +147,10 @@ function InteriorItems() {
 
     {
       id: 3,
+      slug: "restaurant-club-design-bbi-bhubaneswar",
       tag: "Completed Project",
       title: "BBi Booze Buzz Inhouse – Bhubaneswar",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/BBI/Image 1.webp",
       sideImages: [
         "/Interiors/BBI/Image 2.webp",
@@ -147,11 +170,11 @@ function InteriorItems() {
         area: "8,000 sq ft",
         client: "Booze Buzz Inhouse",
         status: "Completed – November 2025",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
 
       overview: [
-        "Urban Infill designed #BBi Booze Buzz Inhouse, an 8,000 sq ft cocktail bar and restaurant in Bhubaneswar, reimagining the venue to enhance both its spatial experience and seating capacity. Already established as one of the city’s popular nightlife destinations, the project focused on upgrading the interiors to create a stronger and more engaging identity.",
+        "URBAN iNFiLL designed #BBi Booze Buzz Inhouse, an 8,000 sq ft cocktail bar and restaurant in Bhubaneswar, reimagining the venue to enhance both its spatial experience and seating capacity. Already established as one of the city’s popular nightlife destinations, the project focused on upgrading the interiors to create a stronger and more engaging identity.",
         "The design transforms the venue into a versatile hospitality environment that seamlessly transitions between a relaxed dining atmosphere during the day and a vibrant, high-energy nightlife destination after sunset. The intervention balances functionality, movement, and visual appeal to create an immersive customer experience.",
       ],
 
@@ -194,13 +217,14 @@ function InteriorItems() {
         "The design intent for #BBi Booze Buzz Inhouse was to reimagine an already successful venue by enhancing its spatial efficiency, visual identity, and experiential quality. By reorganizing key elements such as the bar placement and circulation flow, the design creates a more open and engaging layout. The integration of lighting, sound, and architectural features ensures a seamless transition between different modes of use, allowing the space to function effectively throughout the day and night. The project aims to deliver a memorable hospitality experience that blends functionality with strong visual appeal.",
 
       conclusion:
-        "#BBi Booze Buzz Inhouse stands as a refined example of contemporary hospitality design that successfully balances dining, social interaction, and nightlife. Through strategic spatial planning, bold feature elements, and a cohesive design language, Urban Infill has transformed the venue into a vibrant and versatile destination. The project enhances both the operational efficiency and the experiential quality of the space, making it a prominent nightlife landmark in Bhubaneswar.",
+        "#BBi Booze Buzz Inhouse stands as a refined example of contemporary hospitality design that successfully balances dining, social interaction, and nightlife. Through strategic spatial planning, bold feature elements, and a cohesive design language, URBAN iNFiLL has transformed the venue into a vibrant and versatile destination. The project enhances both the operational efficiency and the experiential quality of the space, making it a prominent nightlife landmark in Bhubaneswar.",
     },
     {
       id: 4,
+      slug: "cineport-svh-cinema-interior-design– Gurgaon",
       tag: "Completed Project",
       title: "Cineport 5-Screen Multiplex – Gurgaon",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/Cineport/Image 1.webp",
       sideImages: [
         "/Interiors/Cineport/Image 2.webp",
@@ -220,11 +244,11 @@ function InteriorItems() {
         area: "50,000+ sq ft",
         client: "Cineport | SVH",
         status: "Completed – 2025",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
 
       overview: [
-        "Urban Infill designed this 5-screen multiplex in Gurgaon for Cineport, creating a contemporary entertainment destination that extends beyond the conventional cinema experience. Spread across more than 50,000 sq ft, the project was envisioned as both a public attraction within the mall and a flagship development that establishes the design language for the Cineport brand.",
+        "URBAN iNFiLL designed this 5-screen multiplex in Gurgaon for Cineport, creating a contemporary entertainment destination that extends beyond the conventional cinema experience. Spread across more than 50,000 sq ft, the project was envisioned as both a public attraction within the mall and a flagship development that establishes the design language for the Cineport brand.",
         "The architectural layout follows an L-shaped configuration, with two auditoriums located on one wing and three on the other. A central entrance foyer connects the two blocks and houses the primary concession area, forming the social core of the multiplex. The design transforms circulation spaces into active zones, creating an immersive pre-movie experience for visitors.",
       ],
 
@@ -271,13 +295,14 @@ function InteriorItems() {
         "The design intent for the Cineport multiplex was to redefine the traditional cinema experience by transforming it into a comprehensive entertainment environment. By activating circulation spaces, integrating digital media, and creating strong visual focal points, the project enhances user engagement at every stage of the journey. The planning balances operational efficiency with experiential quality, ensuring smooth movement while delivering a premium environment. As a flagship project, it establishes a scalable design identity for future Cineport developments.",
 
       conclusion:
-        "The Cineport 5-screen multiplex stands as a contemporary entertainment destination that blends architecture, technology, and user experience. Through strategic planning, immersive spaces, and strong visual identity, Urban Infill has created a dynamic cinema environment that goes beyond traditional movie viewing. The project not only enhances the mall experience but also sets a benchmark for future Cineport multiplexes across India.",
+        "The Cineport 5-screen multiplex stands as a contemporary entertainment destination that blends architecture, technology, and user experience. Through strategic planning, immersive spaces, and strong visual identity, URBAN iNFiLL has created a dynamic cinema environment that goes beyond traditional movie viewing. The project not only enhances the mall experience but also sets a benchmark for future Cineport multiplexes across India.",
     },
     {
       id: 5,
+      slug: "samsung-office-interior-design-dehradun",
       tag: "Completed Project",
       title: "Samsung Corporate Office – Dehradun",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/Samsung/Image 1.webp",
       sideImages: [
         "/Interiors/Samsung/Image 2.webp",
@@ -297,11 +322,11 @@ function InteriorItems() {
         area: "3,100 sq ft",
         client: "Samsung",
         status: "Completed – December 2024",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
 
       overview: [
-        "Urban Infill designed this corporate office in Dehradun for Samsung as a contemporary workplace aligned with the evolving demands of the hybrid work era. The 3,100 sq ft workspace reflects the brand’s global identity while creating an environment that supports collaboration, flexibility, and employee well-being.",
+        "URBAN iNFiLL designed this corporate office in Dehradun for Samsung as a contemporary workplace aligned with the evolving demands of the hybrid work era. The 3,100 sq ft workspace reflects the brand’s global identity while creating an environment that supports collaboration, flexibility, and employee well-being.",
         "The office layout moves away from traditional cubicle-based planning and instead adopts a zoned approach, organizing the workspace into clearly defined functional areas. Open workstations, meeting rooms, and informal collaboration zones are strategically integrated to create a dynamic, efficient, and future-ready workplace environment.",
       ],
 
@@ -344,13 +369,14 @@ function InteriorItems() {
         "The design intent for the Samsung Corporate Office was to create a future-ready workplace that supports the evolving hybrid work culture. By combining flexible spatial planning, biophilic elements, and smart technology integration, the project delivers a balanced environment that enhances both productivity and employee well-being. The design reinforces Samsung’s global brand identity while creating a comfortable, efficient, and adaptable workspace.",
 
       conclusion:
-        "The Samsung Corporate Office in Dehradun represents a contemporary approach to workplace design that prioritizes flexibility, technology, and human experience. Through thoughtful planning and a cohesive design language, Urban Infill has created a workspace that supports collaboration, innovation, and well-being. The project stands as a model for modern corporate interiors that respond to the changing needs of today’s workforce.",
+        "The Samsung Corporate Office in Dehradun represents a contemporary approach to workplace design that prioritizes flexibility, technology, and human experience. Through thoughtful planning and a cohesive design language, URBAN iNFiLL has created a workspace that supports collaboration, innovation, and well-being. The project stands as a model for modern corporate interiors that respond to the changing needs of today’s workforce.",
     },
     {
       id: 6,
+      slug: "urban-company-it-head-office-interior-bangalore",
       tag: "Completed Project",
       title: "Urban Company Corporate Office – Bengaluru",
-      subtitle: "Architecture & Interior Design by Urban Infill",
+      subtitle: "Architecture & Interior Design by URBAN iNFiLL",
       mainImage: "/Interiors/Ucompany/Image 1.webp",
       sideImages: [
         "/Interiors/Ucompany/Image 2.webp",
@@ -370,11 +396,11 @@ function InteriorItems() {
         area: "4,000 sq ft",
         client: "Urban Company",
         status: "Completed – April 2022",
-        firm: "Urban Infill",
+        firm: "URBAN iNFiLL",
       },
 
       overview: [
-        "Urban Infill designed this corporate office in Bengaluru for Urban Company, creating a contemporary workspace tailored for the company’s IT and design teams. Spread across 4,000 sq ft, the office was planned to support an open and collaborative work culture while providing flexible zones for focused work and informal interaction.",
+        "URBAN iNFiLL designed this corporate office in Bengaluru for Urban Company, creating a contemporary workspace tailored for the company’s IT and design teams. Spread across 4,000 sq ft, the office was planned to support an open and collaborative work culture while providing flexible zones for focused work and informal interaction.",
         "The project moves beyond conventional office layouts by introducing open workstations, breakout spaces, and informal discussion zones. These elements encourage collaboration, creativity, and a more relaxed working atmosphere, aligning with the dynamic nature of technology and design teams.",
       ],
 
@@ -417,11 +443,66 @@ function InteriorItems() {
         "The design intent for the Urban Company office was to create a modern, flexible workplace that reflects the fast-paced and collaborative nature of technology and design teams. By integrating open workspaces, breakout zones, and natural light, the project enhances employee comfort and productivity. The design emphasizes adaptability, ensuring the office can evolve with changing work patterns while maintaining a strong visual identity and efficient functionality.",
 
       conclusion:
-        "The Urban Company Corporate Office in Bengaluru represents a contemporary approach to workplace design that prioritizes flexibility, collaboration, and user experience. Through thoughtful planning and a minimalist design language, Urban Infill has created a workspace that supports creativity and efficiency. The project demonstrates how modern office environments can balance functionality with a comfortable and engaging atmosphere for employees.",
-    }
+        "The Urban Company Corporate Office in Bengaluru represents a contemporary approach to workplace design that prioritizes flexibility, collaboration, and user experience. Through thoughtful planning and a minimalist design language, URBAN iNFiLL has created a workspace that supports creativity and efficiency. The project demonstrates how modern office environments can balance functionality with a comfortable and engaging atmosphere for employees.",
+    },
   ];
 
-  const project = projects.find((item) => item.id === Number(id));
+  const project = projects.find(
+    (item) => item.slug === id || item.id === Number(id)
+  );
+
+  const allImages = useMemo(() => {
+    if (!project) return [];
+    return [
+      project.mainImage,
+      ...(project.sideImages || []),
+      ...(project.galleryImages || []),
+    ];
+  }, [project]);
+
+  const openImageModal = (image) => {
+    const index = allImages.findIndex((img) => img === image);
+    setSelectedImageIndex(index >= 0 ? index : 0);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImageIndex(null);
+  };
+
+  const showPrevImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prev) =>
+      prev === 0 ? allImages.length - 1 : prev - 1
+    );
+  };
+
+  const showNextImage = (e) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prev) =>
+      prev === allImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedImageIndex === null || allImages.length === 0) return;
+
+      if (e.key === "Escape") {
+        closeImageModal();
+      } else if (e.key === "ArrowLeft") {
+        setSelectedImageIndex((prev) =>
+          prev === 0 ? allImages.length - 1 : prev - 1
+        );
+      } else if (e.key === "ArrowRight") {
+        setSelectedImageIndex((prev) =>
+          prev === allImages.length - 1 ? 0 : prev + 1
+        );
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex, allImages.length]);
 
   if (!project) {
     return (
@@ -437,79 +518,7 @@ function InteriorItems() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            URBAN INFILL
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle">
-                  Project
-                </span>
-
-                <ul className="dropdown-menu-custom">
-                  <li>
-                    <Link to="/architecture" className="dropdown-item-custom">
-                      Architecture
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/interior" className="dropdown-item-custom">
-                      Interior
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/projectmanagement" className="dropdown-item-custom">
-                      Project Management
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/blogs">
-                  Blogs
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div className="project-page">
+<div className="project-page">
         <section className="project-hero">
           <div className="container">
             <p className="project-tag">{project.tag}</p>
@@ -522,39 +531,41 @@ function InteriorItems() {
           <div className="container">
             <div className="project-gallery">
               <div className="gallery-main">
-              <img
-  src={project.mainImage}
-  alt={project.title}
-  onClick={() => setSelectedImage(project.mainImage)}
-  className="clickable-image"
-  loading="lazy"
-  decoding="async"
-/>
+                <img
+                  src={project.mainImage}
+                  alt={project.title}
+                  onClick={() => openImageModal(project.mainImage)}
+                  className="clickable-image"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div className="gallery-side">
-                {project.sideImages.map((img, index) => (
+                {project.sideImages?.map((img, index) => (
                   <img
                     key={index}
                     src={img}
                     alt={`${project.title} ${index + 2}`}
-                    onClick={() => setSelectedImage(img)}
+                    onClick={() => openImageModal(img)}
                     className="clickable-image"
-                    loading="lazy" decoding="async"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ))}
               </div>
             </div>
 
             <div className="project-gallery-bottom">
-              {project.galleryImages.map((img, index) => (
+              {project.galleryImages?.map((img, index) => (
                 <img
                   key={index}
                   src={img}
                   alt={`${project.title} gallery ${index + 5}`}
-                  onClick={() => setSelectedImage(img)}
+                  onClick={() => openImageModal(img)}
                   className="clickable-image"
-                   loading="lazy" decoding="async"
+                  loading="lazy"
+                  decoding="async"
                 />
               ))}
             </div>
@@ -567,17 +578,41 @@ function InteriorItems() {
               <h3>Project Info</h3>
               <ul>
                 <li>
-                  <strong>Project:</strong> {project.info.project}
+                  <strong>Project:</strong> {project.info?.project}
                 </li>
                 <li>
-                  <strong>Location:</strong> {project.info.location}
+                  <strong>Location:</strong> {project.info?.location}
                 </li>
                 <li>
-                  <strong>Scope:</strong> {project.info.scope}
+                  <strong>Scope:</strong> {project.info?.scope}
                 </li>
 
+                {project.info?.area && (
+                  <li>
+                    <strong>Area:</strong> {project.info.area}
+                  </li>
+                )}
+
+                {project.info?.client && (
+                  <li>
+                    <strong>Client:</strong> {project.info.client}
+                  </li>
+                )}
+
+                {project.info?.status && (
+                  <li>
+                    <strong>Status:</strong> {project.info.status}
+                  </li>
+                )}
+
+                {project.info?.completionDate && (
+                  <li>
+                    <strong>Completion Date:</strong> {project.info.completionDate}
+                  </li>
+                )}
+
                 <li>
-                  <strong>Firm:</strong> {project.info.firm}
+                  <strong>Firm:</strong> {project.info?.firm}
                 </li>
               </ul>
 
@@ -588,7 +623,7 @@ function InteriorItems() {
 
             <div className="project-content">
               <h2>Project Overview</h2>
-              {project.overview.map((text, index) => (
+              {project.overview?.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
 
@@ -596,13 +631,13 @@ function InteriorItems() {
               <p>{project.locationText}</p>
 
               <h2>Design Concept</h2>
-              {project.designConcept.map((text, index) => (
+              {project.designConcept?.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
 
               <h2>Interior Highlights</h2>
               <div className="highlights-grid">
-                {project.highlights.map((item, index) => (
+                {project.highlights?.map((item, index) => (
                   <div className="highlight-card" key={index}>
                     <h4>{item.title}</h4>
                     <p>{item.text}</p>
@@ -618,112 +653,61 @@ function InteriorItems() {
             </div>
           </div>
         </section>
+</div>
 
-        <footer className="footer">
-          <div className="footer__inner">
-            <div className="footer__col">
-              <h2 className="footer__logo">URBAN iNFiLL</h2>
-
-              <div className="footer__social">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Facebook"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/urban_infill_studio?igsh=MWdiNmhxY3c1MXF5OA%3D%3D&utm_source=qr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Instagram"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-
-                <a
-                  href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="Location"
-                >
-                  📍
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/company/urbaninfill/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__icon"
-                  aria-label="LinkedIn"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </div>
-            </div>
-
-            <div className="footer__col">
-              <h3 className="footer__title">Services</h3>
-              <ul className="footer__list">
-                <li>
-                  <Link to="/architecture">Architecture</Link>
-                </li>
-                <li>
-                  <Link to="/interior">Interior</Link>
-                </li>
-                <li>
-                  <Link to="/projectmanagement">Project Management</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer__col">
-              <h3 className="footer__title">Contact</h3>
-              <ul className="footer__list">
-                <li>
-                  <a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a>
-                </li>
-                <li>+91 124 4241186</li>
-                <li>
-                  302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55,
-                  Gurugram, Ghata, Haryana 122011
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer__line"></div>
-
-          <div className="footer__copy">
-            © 2026 URBAN iNFiLL. All rights reserved
-          </div>
-        </footer>
-      </div>
-
-      {selectedImage && (
-        <div className="image-modal" onClick={() => setSelectedImage(null)}>
+      {selectedImageIndex !== null && allImages.length > 0 && (
+        <div className="image-modal" onClick={closeImageModal}>
           <button
+            type="button"
             className="image-modal-close"
-            onClick={() => setSelectedImage(null)}
+            onClick={(e) => {
+              e.stopPropagation();
+              closeImageModal();
+            }}
+            aria-label="Close preview"
           >
             ×
           </button>
-          <img
-            src={selectedImage}
-            alt="Large preview"
-            className="image-modal-content"
+
+          {allImages.length > 1 && (
+            <button
+              type="button"
+              className="image-slide-btn image-slide-btn--left"
+              onClick={showPrevImage}
+              aria-label="Previous image"
+            >
+              ‹
+            </button>
+          )}
+
+          <div
+            className="image-modal-inner"
             onClick={(e) => e.stopPropagation()}
-             loading="lazy" decoding="async"
-          />
+          >
+            <img
+              src={allImages[selectedImageIndex]}
+              alt={`${project.title} preview ${selectedImageIndex + 1}`}
+              className="image-modal-content"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          {allImages.length > 1 && (
+            <button
+              type="button"
+              className="image-slide-btn image-slide-btn--right"
+              onClick={showNextImage}
+              aria-label="Next image"
+            >
+              ›
+            </button>
+          )}
         </div>
       )}
     </>
   );
 }
 
-export default InteriorItems;
+export default Interiors;
+

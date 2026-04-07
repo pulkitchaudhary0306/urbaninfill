@@ -5,9 +5,103 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.site-reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.site-reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal,
+.scroll-reveal-home {
+  opacity: 0;
+  transform: translateY(44px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible,
+.scroll-reveal-home.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-reveal,
+  .site-reveal-visible,
+  .scroll-reveal,
+  .scroll-reveal.is-visible,
+  .scroll-reveal-home,
+  .scroll-reveal-home.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body,
+#root,
+.App,
+[class$="-page"] {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+
+.custom-navbar,
+.dropdown-menu-custom,
+.footer,
+.footer__inner,
+.feature-right .card,
+.card,
+.contact-card,
+.contact-form-card,
+.blog-card,
+.project-card,
+.archive-card,
+.uihomes-text,
+.res-text {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+
+.navbar-brand,
+.nav-link,
+.nav-item.dropdown > .nav-link,
+.dropdown-item-custom,
+.footer__logo,
+.footer__title,
+.footer__list li,
+.footer__list a,
+.footer__copy,
+.footer__icon,
+.small-text,
+.logo,
+.logo span {
+  color: #111 !important;
+}
+
+.footer__line {
+  background: rgba(0, 0, 0, 0.12) !important;
+}
+
+.footer__icon {
+  border-color: rgba(0, 0, 0, 0.18) !important;
 }

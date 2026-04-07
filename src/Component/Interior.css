@@ -132,9 +132,10 @@ body {
   color: #fff;
 }
 
-.dropdown-toggle::after {
+.nav-item.dropdown>.nav-link::after {
   content: " ▾";
-  font-size: 12px;
+  font-size: 10px;
+  margin-left: 4px;
 }
 
 .navbar-toggler {
@@ -371,7 +372,7 @@ body {
 }
 
 .interior-hero-content h1 {
-  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  font-size: 30px;
   line-height: 1.05;
   margin-bottom: 20px;
   font-weight: 700;

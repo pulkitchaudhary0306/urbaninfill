@@ -1,0 +1,149 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+.custom-navbar {
+  display: none !important;
+}
+
+.site-navbar {
+  background: rgba(0, 0, 0, 0.92);
+  padding: 12px 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.site-navbar,
+.site-navbar .container-fluid,
+.site-navbar .navbar-collapse {
+  overflow: visible !important;
+}
+
+.site-navbar .container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.site-brand {
+  color: white !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-left: 80px;
+}
+
+.site-nav-list {
+  margin-left: auto;
+  align-items: center;
+}
+
+.site-nav-list .nav-item {
+  font-size: 18px;
+  position: relative;
+}
+
+.site-nav-link {
+  color: white !important;
+  font-size: 18px;
+  margin-right: 25px;
+  transition: 0.3s;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .site-nav-link:hover {
+    color: #d7b98d !important;
+  }
+}
+
+@media (hover: none) {
+  .site-nav-link:active {
+    color: #d7b98d !important;
+  }
+}
+
+.site-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.site-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  padding: 10px 0;
+  list-style: none;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+@media (hover: hover) {
+  .site-dropdown:hover .site-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.site-dropdown-link {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.site-dropdown-link:hover {
+  background: #000;
+  color: #fff;
+}
+
+.site-dropdown > .site-nav-link::after {
+  content: " ▾";
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.site-navbar .navbar-toggler {
+  border: none;
+  padding: 4px 8px;
+}
+
+.site-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.site-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991.98px) {
+  .site-brand {
+    margin-left: 0;
+  }
+
+  .site-nav-list {
+    align-items: flex-start;
+  }
+
+  .site-dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 8px;
+  }
+}
