@@ -8,9 +8,9 @@ function Blogs() {
   usePageReveal([
     ".blogs-page .recent-posts > h2",
     ".blogs-page .post-card",
-    ".footer__col",
-    ".footer__line",
-    ".footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

@@ -9,9 +9,9 @@ function Interior() {
     ".interior-projects > p",
     ".interior-projects > h2",
     ".interior-card",
-    ".footer__col",
-    ".footer__line",
-    ".footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

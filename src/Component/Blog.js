@@ -11,9 +11,9 @@ function Blog() {
     ".blog-page .blog-sign > *",
     ".blog-page .blog-image img",
     ".blog-page .blog-card",
-    ".footer__col",
-    ".footer__line",
-    ".footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

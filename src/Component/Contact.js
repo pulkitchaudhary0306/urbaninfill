@@ -9,9 +9,9 @@ function Contact() {
     ".contact-page .contact-card",
     ".contact-page .address-box",
     ".contact-page iframe",
-    ".footer__col",
-    ".footer__line",
-    ".footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

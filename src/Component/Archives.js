@@ -158,9 +158,9 @@ function Archives() {
   usePageReveal([
     ".archives-page .archiveCard",
     ".archives-page .archiveText > *",
-    ".archives-page .footer__col",
-    ".archives-page .footer__line",
-    ".archives-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

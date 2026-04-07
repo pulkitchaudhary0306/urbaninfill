@@ -12,7 +12,7 @@ function About() {
         ".ui-page .ui-grid-4 .ui-card",
         ".ui-page .ui-grid-2 > *",
         ".ui-page .ui-faq-item",
-        ".ui-page .footer__col",
+        ".site-footer .site-footer__col",
     ]);
 
     const expertise = [

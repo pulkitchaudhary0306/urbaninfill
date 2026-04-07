@@ -4,12 +4,20 @@ import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 
 function UIHomes() {
+  useEffect(() => {
+    document.body.classList.add("uihomes-theme-white");
+
+    return () => {
+      document.body.classList.remove("uihomes-theme-white");
+    };
+  }, []);
+
   usePageReveal([
     ".residential-page .res-text > *",
     ".residential-page .feature-right",
-    ".residential-page .footer__col",
-    ".residential-page .footer__line",
-    ".residential-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   const images = [
@@ -129,16 +137,7 @@ function UIHomes() {
                 onClick={() => openImage(3)}
               />
 
-              <div className="feature-overlay">
-                <div className="overlay-content">
-                  <p className="tag">PROJECT</p>
-                  <p className="meta">MIXED USE</p>
-                  <p className="desc">Luxury development</p>
-                  <button className="btn" type="button">
-                    VIEW PROJECT
-                  </button>
-                </div>
-              </div>
+            
             </div>
 
             <div className="feature-right">
@@ -247,13 +246,6 @@ function UIHomes() {
               />
               
 
-              <div className="gallery-overlay">
-                <div className="gallery-content">
-                  <h4>IMAGINE STUDIO AT THETREES</h4>
-                  <p>MIXED USE | BRAND EXPERIENCES</p>
-                  <button type="button">VIEW PROJECT</button>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -354,5 +346,4 @@ function UIHomes() {
 }
 
 export default UIHomes;
-
 

@@ -14,9 +14,9 @@ function Interiors() {
     ".project-page .project-content > *",
     ".project-page .highlight-card",
     ".project-page .back-link-btn",
-    ".project-page .footer__col",
-    ".project-page .footer__line",
-    ".project-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

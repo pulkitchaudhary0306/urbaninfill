@@ -1,5 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  FaBriefcase,
+  FaBuilding,
+  FaFilm,
+  FaHospital,
+  FaHotel,
+  FaHome,
+} from "react-icons/fa";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 import "./Home.css";
@@ -78,32 +86,38 @@ const services = [
   {
     title: "Corporate Office Architecture India",
     alt: "Corporate Office Architecture India",
-    icon: "/box-ikon.webp",
+    icon: FaBriefcase,
+    color: "#1e3a8a",
   },
   {
     title: "Commercial Interior Design India",
     alt: "Commercial Interior Design India",
-    icon: "/box-ikon.webp",
+    icon: FaBuilding,
+    color: "#1e3a8a",
   },
   {
     title: "Cinema Architecture & Multiplex Design India",
     alt: "Cinema Architecture and Multiplex Design India",
-    icon: "/box-ikon.webp",
+    icon: FaFilm,
+    color: "#1e3a8a",
   },
   {
     title: "Hospital Architecture & Medical Planning India",
     alt: "Hospital Architecture and Medical Planning India",
-    icon: "/box-ikon.webp",
+    icon: FaHospital,
+    color: "#1e3a8a",
   },
   {
     title: "Hospitality Architecture (Clubs, Restaurants, Banquets)",
     alt: "Hospitality Architecture",
-    icon: "/box-ikon.webp",
+    icon: FaHotel,
+    color: "#1e3a8a",
   },
   {
     title: "High-End Residential Architecture & Luxury Interiors India",
     alt: "Luxury Residential Architecture",
-    icon: "/box-ikon.webp",
+    icon: FaHome,
+    color: "#1e3a8a",
   },
 ];
 function Counter({ end, duration = 2000, suffix = " +" }) {
@@ -155,6 +169,14 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
 
 
 function Home() {
+  useEffect(() => {
+    document.body.classList.add("home-theme-white");
+
+    return () => {
+      document.body.classList.remove("home-theme-white");
+    };
+  }, []);
+
   usePageReveal([
     ".home-page .brand",
     ".home-page .intro-left > *",
@@ -165,12 +187,11 @@ function Home() {
     ".home-page .clients-wrap",
     ".home-page .clients-row",
     ".home-page .client-box",
-    ".home-page .client-box img",
     ".home-page .projects-title",
     ".home-page .quoteSection > *",
-    ".home-page .footer__col",
-    ".home-page .footer__line",
-    ".home-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([
@@ -315,11 +336,11 @@ function Home() {
         <div className="services-container">
           {services.map((service, index) => (
             <div key={index} className="service-card">
-              <img
-                src={service.icon}
-                alt={service.alt}
-                loading="lazy"
-                decoding="async"
+              <service.icon
+                className="service-card__icon"
+                aria-hidden="true"
+                title={service.alt}
+                style={{ color: service.color }}
               />
               <h3>{service.title}</h3>
             </div>

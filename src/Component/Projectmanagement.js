@@ -10,9 +10,9 @@ function Projectmanagement() {
   usePageReveal([
     ".project-page .pm-hero-content > *",
     ".project-page .pm-status-card > *",
-    ".project-page .footer__col",
-    ".project-page .footer__line",
-    ".project-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([

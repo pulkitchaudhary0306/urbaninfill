@@ -92,7 +92,7 @@ function Footer() {
       <div className="site-footer__line"></div>
 
       <div className="site-footer__copy">
-        © 2026 URBAN iNFiLL. All rights reserved
+        {"\u00A9"} 2026 URBAN iNFiLL. All rights reserved
       </div>
     </footer>
   );

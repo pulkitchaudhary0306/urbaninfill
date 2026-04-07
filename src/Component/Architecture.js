@@ -9,9 +9,9 @@ function Architecture() {
     ".project-page .arch-most-viewed > p",
     ".project-page .arch-most-viewed > h2",
     ".project-page .arch-card",
-    ".project-page .footer__col",
-    ".project-page .footer__line",
-    ".project-page .footer__copy",
+    ".site-footer .site-footer__col",
+    ".site-footer .site-footer__line",
+    ".site-footer .site-footer__copy",
   ]);
 
   useScrollVisibility([
