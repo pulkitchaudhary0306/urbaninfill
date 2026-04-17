@@ -5,7 +5,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {
@@ -35,15 +35,6 @@ function Footer() {
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw"
-              target="_blank"
-              rel="noreferrer"
-              className="site-footer__icon"
-              aria-label="Location"
-            >
-              <FaMapMarkerAlt />
-            </a>
-            <a
               href="https://www.linkedin.com/company/urbaninfill/"
               target="_blank"
               rel="noreferrer"
@@ -51,6 +42,22 @@ function Footer() {
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="mailto:info@urbaninfill.in"
+              className="site-footer__icon"
+              aria-label="Email"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/eCuHCqMigUibJuRf6?g_st=iw"
+              target="_blank"
+              rel="noreferrer"
+              className="site-footer__icon"
+              aria-label="Location"
+            >
+              <FaMapMarkerAlt />
             </a>
           </div>
         </div>
@@ -62,6 +69,7 @@ function Footer() {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blogs">Blogs</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/career">Career</Link></li>
           </ul>
         </div>
 
@@ -71,19 +79,23 @@ function Footer() {
             <li><Link to="/architecture">Architecture</Link></li>
             <li><Link to="/interior">Interior</Link></li>
             <li><Link to="/projectmanagement">Project Management</Link></li>
-            <li><Link to="/uihomes">UI Homes</Link></li>
-            <li><Link to="/archives">Archives</Link></li>
           </ul>
         </div>
 
         <div className="site-footer__col">
           <h3 className="site-footer__title">CONTACT</h3>
           <ul className="site-footer__list">
-            <li><a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a></li>
-            <li>+91 124 4241186</li>
-            <li>
-              302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55,
-              Gurugram, Haryana 122011
+            <li className="site-footer__contact-item">
+              <FaEnvelope className="site-footer__contact-icon" />
+              <a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a>
+            </li>
+            <li className="site-footer__contact-item">
+              <FaPhone className="site-footer__contact-icon" />
+              <span>+91 124 4241186</span>
+            </li>
+            <li className="site-footer__contact-item">
+              <FaMapMarkerAlt className="site-footer__contact-icon" />
+              <span>302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55, Gurugram, Haryana 122011</span>
             </li>
           </ul>
         </div>

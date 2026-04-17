@@ -1,13 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import "../HeaderFooter/Header.css";
 import "./Architecture.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 
 function Architecture() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
   usePageReveal([
     ".project-page .arch-hero-content > *",
     ".project-page .arch-most-viewed > p",
     ".project-page .arch-most-viewed > h2",
+    ".filter-tabs",
     ".project-page .arch-card",
     ".project-page .footer__col",
     ".project-page .footer__line",
@@ -20,8 +25,18 @@ function Architecture() {
     ".project-page .arch-most-viewed > p",
     ".project-page .arch-most-viewed > h2",
     ".project-page .arch-most-viewed > .section-text",
+    ".filter-tabs",
     ".project-page .arch-card",
   ]);
+
+  const filterCategories = [
+    "All",
+    "Commercial",
+    "Hospital",
+    "Hospitality",
+    "Cinema",
+    "Residential Luxury Interiors",
+  ];
 
   const projects = [
     {
@@ -30,6 +45,7 @@ function Architecture() {
       image: "/Architecture/Aravali 1.webp",
       title: "The Aravali Resort",
       location: "Rishikesh",
+      category: "Hospitality",
     },
     {
       id: 2,
@@ -37,6 +53,7 @@ function Architecture() {
       image: "/Architecture/Sargam 1.webp",
       title: "Sargam Theatre",
       location: "Chandpur, Bijnor, Uttar Pradesh",
+      category: "Cinema",
     },
     {
       id: 3,
@@ -44,6 +61,7 @@ function Architecture() {
       image: "/Architecture/Sirsa 1.webp",
       title: "Monsoon Mall",
       location: "Sirsa, Haryana",
+      category: "Commercial",
     },
     {
       id: 4,
@@ -51,8 +69,13 @@ function Architecture() {
       image: "/Architecture/Ananta/Image 3.webp",
       title: "Ananta Hospital",
       location: "Gurgaon, Haryana",
+      category: "Healthcare",
     },
   ];
+
+  const filteredProjects = activeFilter === "All" 
+    ? projects 
+    : projects.filter(p => p.category === activeFilter);
 
   return (
     <div className="project-page">
@@ -84,8 +107,20 @@ function Architecture() {
           and modern spaces designed for contemporary living.
         </p>
 
+        <div className="filter-tabs">
+          {filterCategories.map((category) => (
+            <button
+              key={category}
+              className={`filter-tab ${activeFilter === category ? "active" : ""}`}
+              onClick={() => setActiveFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
         <div className="arch-card-grid">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <Link
               to={`/projects/${project.slug}`}
               className="arch-card-link"
@@ -102,6 +137,7 @@ function Architecture() {
                 <div className="arch-card-body">
                   <h3>{project.title}</h3>
                   <p className="arch-location">{project.location}</p>
+                  <span className="project-category">{project.category}</span>
                 </div>
               </div>
             </Link>

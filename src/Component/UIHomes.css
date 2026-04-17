@@ -42,127 +42,6 @@ img {
   overflow-x: hidden;
 }
 
-.custom-navbar {
-  background: rgba(0, 0, 0, 0.92);
-  padding: 12px 20px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99999;
-}
-
-.navbar,
-.navbar .container-fluid,
-.navbar-collapse {
-  overflow: visible !important;
-}
-
-.navbar .container-fluid {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand {
-  color: white !important;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin-left: 80px;
-}
-
-.navbar-nav {
-  margin-left: auto;
-  align-items: center;
-}
-
-.nav-item {
-  font-size: 18px;
-  position: relative;
-}
-
-.nav-link {
-  color: white !important;
-  font-size: 18px;
-  margin-right: 25px;
-  transition: 0.3s;
-  text-decoration: none !important;
-  cursor: pointer;
-}
-
-@media (hover: hover) {
-  .nav-link:hover {
-    color: #d7b98d !important;
-  }
-}
-
-@media (hover: none) {
-  .nav-link:active {
-    color: #d7b98d !important;
-  }
-}
-
-.dropdown {
-  position: relative;
-  cursor: pointer;
-}
-
-.dropdown-menu-custom {
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  background: #fff;
-  min-width: 220px;
-  padding: 10px 0;
-  list-style: none;
-  border-radius: 6px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: 0.3s ease;
-  z-index: 9999;
-}
-
-@media (hover: hover) {
-  .dropdown:hover .dropdown-menu-custom {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
-.dropdown-item-custom {
-  display: block;
-  padding: 12px 20px;
-  font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.dropdown-item-custom:hover {
-  background: #000;
-  color: #fff;
-}
-
-.nav-item.dropdown > .nav-link::after {
-  content: ">";
-  font-size: 10px;
-  margin-left: 4px;
-}
-
-.navbar-toggler {
-  border: none;
-  padding: 4px 8px;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler-icon {
-  filter: invert(1);
-}
 
 /* =========================
    SCROLL REVEAL
@@ -905,6 +784,172 @@ height: 500px;
   }
 }
 
+/* Tablet Portrait: 1024 x 1366 */
+@media (max-width: 1024px) {
+  /* Header 3-column span layout */
+  .residential-page .custom-navbar .container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "brand nav collapse";
+    align-items: center;
+    gap: 12px;
+  }
+
+  .residential-page .navbar-brand {
+    grid-area: brand;
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .residential-page .navbar-nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .residential-page .navbar-collapse {
+    grid-area: collapse;
+    justify-content: flex-end;
+  }
+
+  .residential-page .nav-link {
+    font-size: 14px;
+    padding: 8px 12px !important;
+  }
+
+  .res-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 240px 240px;
+    gap: 14px;
+  }
+
+  .res-big {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .res-tall {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+
+  .res-text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 24px;
+  }
+
+  .res-small {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 16px;
+  }
+
+  .feature-left,
+  .feature-right {
+    min-height: 400px;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  .luxury-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 280px 350px;
+    gap: 14px;
+  }
+
+  .lux-card {
+    height: 280px;
+  }
+
+  .lux-card.tall {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    height: 644px;
+    min-height: 644px;
+  }
+
+  .lux-card.wide {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 280px;
+  }
+
+  .gallery-section .gallery-grid {
+    width: min(94%, 1000px);
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 280px 280px;
+    gap: 14px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 220px;
+    height: auto;
+  }
+
+  .portfolio-main,
+  .portfolio-tall,
+  .portfolio-small-left {
+    min-height: 280px;
+  }
+
+  .portfolio-tall {
+    min-height: 520px;
+  }
+
+  /* UI Homes 3-column span layout */
+  .uihomes-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 280px;
+    grid-template-areas:
+      "living bedroom text"
+      "room bedroom dining";
+    gap: 16px;
+  }
+
+  .uihomes-living {
+    grid-area: living;
+    min-height: 300px;
+  }
+
+  .uihomes-bedroom {
+    grid-area: bedroom;
+    min-height: 596px;
+  }
+
+  .uihomes-text {
+    grid-area: text;
+    padding: 24px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .uihomes-room {
+    grid-area: room;
+    min-height: 280px;
+  }
+
+  .uihomes-dining {
+    grid-area: dining;
+    min-height: 280px;
+  }
+
+  .modal-img {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}
+
 @media (max-width: 1100px) {
   .uihomes-grid {
     grid-template-columns: 1.35fr 0.9fr;
@@ -1550,7 +1595,7 @@ height: 500px;
   align-items: start;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 1025px) {
   .residential-page .navbar-brand {
     margin-left: 24px;
   }

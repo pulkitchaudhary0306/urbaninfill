@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../HeaderFooter/Header.css";
 import "./UIHomes.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";

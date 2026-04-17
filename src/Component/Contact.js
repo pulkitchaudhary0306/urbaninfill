@@ -1,4 +1,5 @@
 import { FaHome, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import "../HeaderFooter/Header.css";
 import "./Contact.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";

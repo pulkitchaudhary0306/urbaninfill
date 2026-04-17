@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import blogs from "./blogData";
+import "../HeaderFooter/Header.css";
 import "./Blog.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";

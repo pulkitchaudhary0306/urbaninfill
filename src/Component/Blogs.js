@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import blogs from "./blogData";
+import "../HeaderFooter/Header.css";
 import "./Blogs.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";

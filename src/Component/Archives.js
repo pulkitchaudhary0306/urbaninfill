@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../HeaderFooter/Header.css";
 import "./Archives.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
@@ -112,64 +113,23 @@ const archiveItems = [
     year: "2023",
     location: "Gurugram",
   },
- 
-  
 ];
-
-function chunkArray(array, size) {
-  const result = [];
-  for (let i = 0; i < array.length; i += size) {
-    result.push(array.slice(i, i + size));
-  }
-  return result;
-}
-
-function ArchiveCard({ item, size = "small", onImageClick }) {
-  if (!item) return null;
-
-  return (
-    <div
-      className={`archiveCard archiveCard--${size}`}
-      onClick={() => onImageClick(item)}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          onImageClick(item);
-        }
-      }}
-      aria-label={`Open ${item.title}`}
-    >
-      <img src={item.image} alt={item.title} loading="lazy" />
-      <div className="archiveOverlay">
-        <div className="archiveFrame" />
-        <div className="archiveText">
-          <span className="archiveYear">{item.year}</span>
-          <h3>{item.title}</h3>
-          <p>{item.category}</p>
-          <p className="archiveLocation">{item.location}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function Archives() {
   usePageReveal([
-    ".archives-page .archiveCard",
-    ".archives-page .archiveText > *",
+    ".archives-page .archiveGrid-item",
+    ".archives-page .archiveGrid-content > *",
     ".archives-page .footer__col",
     ".archives-page .footer__line",
     ".archives-page .footer__copy",
   ]);
 
   useScrollVisibility([
-    ".archives-page .archiveCard",
-    ".archives-page .archiveText",
-    ".archives-page .archiveText > *",
+    ".archives-page .archiveGrid-item",
+    ".archives-page .archiveGrid-content",
+    ".archives-page .archiveGrid-content > *",
   ]);
 
-  const rows = chunkArray(archiveItems, 3);
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const openModal = (item) => {
@@ -231,38 +191,34 @@ function Archives() {
       </header>
 
       <section className="archives-container">
-        <div className="archives-collage">
-          {rows.map((group, index) => {
-            const isEven = index % 2 === 0;
-            const first = group[0];
-            const second = group[1];
-            const third = group[2];
-
-            return (
-              <div
-                key={index}
-                className={`archiveRow ${isEven ? "archiveRow--A" : "archiveRow--B"}`}
-              >
-                {isEven ? (
-                  <>
-                    <ArchiveCard item={first} size="big" onImageClick={openModal} />
-                    <div className="archiveStack">
-                      <ArchiveCard item={second} size="small" onImageClick={openModal} />
-                      <ArchiveCard item={third} size="small" onImageClick={openModal} />
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="archiveStack">
-                      <ArchiveCard item={second} size="small" onImageClick={openModal} />
-                      <ArchiveCard item={third} size="small" onImageClick={openModal} />
-                    </div>
-                    <ArchiveCard item={first} size="big" onImageClick={openModal} />
-                  </>
-                )}
+        <div className="archiveGrid">
+          {archiveItems.map((item, index) => (
+            <div
+              key={item.id}
+              className="archiveGrid-item"
+              onClick={() => openModal(item)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  openModal(item);
+                }
+              }}
+              aria-label={`Open ${item.title}`}
+            >
+              <img src={item.image} alt={item.title} loading="lazy" />
+              <div className="archiveGrid-overlay">
+                <div className="archiveGrid-content">
+                  <h3 className="archiveGrid-title">{item.title}</h3>
+                  <div className="archiveGrid-meta">
+                    <span className="archiveGrid-year">{item.year}</span>
+                    <span className="archiveGrid-category">{item.category}</span>
+                    <span className="archiveGrid-location">{item.location}</span>
+                  </div>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </section>
 

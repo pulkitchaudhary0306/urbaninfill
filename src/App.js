@@ -16,6 +16,7 @@ const UIHomes = lazy(() => import("./Component/UIHomes"));
 const Projects = lazy(() => import("./Component/Projects"));
 const Interiors = lazy(() => import("./Component/Interiors"));
 const Archives = lazy(() => import("./Component/Archives"));
+const Career = lazy(() => import("./Component/Career"));
 
 function PageLoader() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="/Projects/:id" element={<Projects />} />
           <Route path="/Interiors/:id" element={<Interiors />} />
           <Route path="/archives" element={<Archives />} />
+          <Route path="/career" element={<Career />} />
         </Route>
       </Routes>
     </Suspense>

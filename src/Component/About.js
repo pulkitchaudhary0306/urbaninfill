@@ -1,5 +1,7 @@
+import "../HeaderFooter/Header.css";
 import "./About.css";
 import useScrollVisibility from "./useScrollVisibility";
+import { FaLinkedin } from "react-icons/fa";
 
 function About() {
     useScrollVisibility([
@@ -172,7 +174,18 @@ function About() {
                             decoding="async"
                         />
                        
-                        <h3>Ar. Subhankar Sengupta</h3>
+                        <div className="founder-name-with-linkedin">
+                            <h3>Ar. Subhankar Sengupta</h3>
+                            <a 
+                                href="https://www.linkedin.com/in/subhankar-sengupta-a2936155/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="linkedin-link"
+                                aria-label="LinkedIn Profile"
+                            >
+                                <FaLinkedin />
+                            </a>
+                        </div>
                         <p>Registered Architect, Council of Architecture, India</p>
                     </div>
 

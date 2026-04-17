@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../HeaderFooter/Header.css";
 import "./Projectmanagement.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";

@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBuilding, FaCouch, FaFilm, FaHospital, FaUtensils, FaHome } from "react-icons/fa";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
+import "../HeaderFooter/Header.css";
 import "./Home.css";
 
 const cities = [
@@ -78,45 +80,52 @@ const services = [
   {
     title: "Corporate Office Architecture India",
     alt: "Corporate Office Architecture India",
-    icon: "/box-ikon.webp",
+    icon: FaBuilding,
   },
   {
     title: "Commercial Interior Design India",
     alt: "Commercial Interior Design India",
-    icon: "/box-ikon.webp",
+    icon: FaCouch,
   },
   {
     title: "Cinema Architecture & Multiplex Design India",
     alt: "Cinema Architecture and Multiplex Design India",
-    icon: "/box-ikon.webp",
+    icon: FaFilm,
   },
   {
     title: "Hospital Architecture & Medical Planning India",
     alt: "Hospital Architecture and Medical Planning India",
-    icon: "/box-ikon.webp",
+    icon: FaHospital,
   },
   {
     title: "Hospitality Architecture (Clubs, Restaurants, Banquets)",
     alt: "Hospitality Architecture",
-    icon: "/box-ikon.webp",
+    icon: FaUtensils,
   },
   {
     title: "High-End Residential Architecture & Luxury Interiors India",
     alt: "Luxury Residential Architecture",
-    icon: "/box-ikon.webp",
+    icon: FaHome,
   },
 ];
 function Counter({ end, duration = 2000, suffix = " +" }) {
   const [count, setCount] = useState(0);
-  const [startAnimation, setStartAnimation] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setStartAnimation(true);
-          observer.disconnect();
+          setIsVisible(true);
+          setHasAnimated(true);
+        } else {
+          setIsVisible(false);
+          // Reset counter when out of view
+          if (hasAnimated) {
+            setCount(0);
+          }
         }
       },
       { threshold: 0.3 }
@@ -125,10 +134,10 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
     if (ref.current) observer.observe(ref.current);
 
     return () => observer.disconnect();
-  }, []);
+  }, [hasAnimated]);
 
   useEffect(() => {
-    if (!startAnimation) return;
+    if (!isVisible) return;
 
     let start = 0;
     const incrementTime = 20;
@@ -147,7 +156,7 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
     }, incrementTime);
 
     return () => clearInterval(timer);
-  }, [startAnimation, end, duration]);
+  }, [isVisible, end, duration]);
 
   return <h3 ref={ref}>{count}{suffix}</h3>;
 }
@@ -155,8 +164,29 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
 
 
 function Home() {
+  const [brandVisible, setBrandVisible] = useState(false);
+  const brandRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setBrandVisible(true);
+        } else {
+          setBrandVisible(false);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (brandRef.current) {
+      observer.observe(brandRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   usePageReveal([
-    ".home-page .brand",
     ".home-page .intro-left > *",
     ".home-page .intro-right > *",
     ".home-page .service-card",
@@ -188,6 +218,29 @@ function Home() {
     ".home-page .projects-section .small",
   ]);
 
+  // Custom scroll reveal for featured projects - triggers every time on scroll
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add visible class when scrolling into view
+            entry.target.classList.add("project-reveal-visible");
+          } else {
+            // Remove visible class when scrolling out of view (reset for next time)
+            entry.target.classList.remove("project-reveal-visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    const projectCards = document.querySelectorAll(".collageRow .big, .collageRow .small");
+    projectCards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="home-page">
 <section className="hero">
@@ -216,14 +269,14 @@ function Home() {
           </div>
         </div>
 
-        <div className="brand">
-          <h1 className="brand__title">
-            URBAN iNFiLL <span className="bar__since">SINCE 2018</span>
+        <div ref={brandRef} className="brand">
+          <h1 className={`brand__title ${brandVisible ? 'animate-title' : ''}`}>
+            URBAN iNFiLL <span className={`bar__since ${brandVisible ? 'animate-since' : ''}`}>SINCE 2018</span>
           </h1>
-          <p className="brand__line">
+          <p className={`brand__line ${brandVisible ? 'animate-line' : ''}`}>
             Architecture & Interior Design Firm Across India
           </p>
-          <p className="brand__tag">thinking made visual</p>
+          <p className={`brand__tag ${brandVisible ? 'animate-tag' : ''}`}>thinking made visual</p>
         </div>
       </section>
 
@@ -312,18 +365,29 @@ function Home() {
       </section>
 
       <section className="services-section">
+        <h2 className="services-title">Our Services</h2>
         <div className="services-container">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <img
-                src={service.icon}
-                alt={service.alt}
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>{service.title}</h3>
-            </div>
-          ))}
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div key={index} className="service-card">
+                <div className="service-card-inner">
+                  <div className="service-card-front">
+                    <div className="service-icon">
+                      <IconComponent />
+                    </div>
+                    <h3>{service.title}</h3>
+                  </div>
+                  <div className="service-card-back">
+                    <div className="service-icon">
+                      <IconComponent />
+                    </div>
+                    <h3>{service.title}</h3>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -337,7 +401,14 @@ function Home() {
           <div className="clients-row">
             {clients.map((client) => (
               <div key={client.name} className="client-box">
-                <img src={client.src} alt={client.name} loading="lazy" decoding="async" />
+                <div className="client-box-inner">
+                  <div className="client-box-front">
+                    <img src={client.src} alt={client.name} loading="lazy" decoding="async" />
+                  </div>
+                  <div className="client-box-back">
+                    <img src={client.src} alt={client.name} loading="lazy" decoding="async" />
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -354,8 +425,8 @@ function Home() {
                 <div className="hoverOverlay">
                   <div className="hoverFrame" />
                   <div className="hoverText">
-                    <h3>Monsoon Mall</h3>
-                    <p>Sirsa, Haryana</p>
+                    <h3>Sirsa Mall</h3>
+                    <p>Commercial Architecture</p>
                   </div>
                 </div>
               </Link>
