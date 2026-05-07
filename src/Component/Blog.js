@@ -27,6 +27,7 @@ function Blog() {
 
   const { id } = useParams();
   const blog = blogs.find((item) => item.slug === id || item.id === Number(id));
+  const isMistakeHeading = (paragraph) => /^Mistake\s+\d+:/i.test(paragraph);
 
   if (!blog) {
     return <h2 style={{ padding: "120px 20px" }}>Blog not found</h2>;
@@ -42,7 +43,10 @@ function Blog() {
 
             <div className="blog-text">
               {blog.paragraphs.map((paragraph, index) => (
-                <p key={index}>
+                <p
+                  key={index}
+                  className={isMistakeHeading(paragraph) ? "blog-mistake-heading" : undefined}
+                >
                   {index === 0 ? (
                     <>
                       <b>URBAN iNFiLL</b>
