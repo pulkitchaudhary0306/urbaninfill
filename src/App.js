@@ -3,22 +3,22 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import ScrollToTop from "./Component/ScrollToTop";
 import Header from "./HeaderFooter/Header";
 import Footer from "./HeaderFooter/Footer";
-import WhatsAppButton from "./Component/WhatsAppButton";
-import CookieConsent from "./Component/CookieConsent";
 
-const Home = lazy(() => import("./Component/Home"));
-const About = lazy(() => import("./Component/About"));
-const Blogs = lazy(() => import("./Component/Blogs"));
-const Blog = lazy(() => import("./Component/Blog"));
-const Contact = lazy(() => import("./Component/Contact"));
-const Architecture = lazy(() => import("./Component/Architecture"));
-const Interior = lazy(() => import("./Component/Interior"));
-const ProjectManagement = lazy(() => import("./Component/Projectmanagement"));
-const UIHomes = lazy(() => import("./Component/UIHomes"));
-const ArchitectureProjects = lazy(() => import("./Component/ArchitectureProjects"));
-const InteriorsProjects = lazy(() => import("./Component/InteriorsProjects"));
-const Archives = lazy(() => import("./Component/Archives"));
-const Career = lazy(() => import("./Component/Career"));
+const Home = lazy(() => import(/* webpackChunkName: "page-home" */ "./Component/Home"));
+const About = lazy(() => import(/* webpackChunkName: "page-about" */ "./Component/About"));
+const Blogs = lazy(() => import(/* webpackChunkName: "page-blogs" */ "./Component/Blogs"));
+const Blog = lazy(() => import(/* webpackChunkName: "page-blog" */ "./Component/Blog"));
+const Contact = lazy(() => import(/* webpackChunkName: "page-contact" */ "./Component/Contact"));
+const Architecture = lazy(() => import(/* webpackChunkName: "page-architecture" */ "./Component/Architecture"));
+const Interior = lazy(() => import(/* webpackChunkName: "page-interior" */ "./Component/Interior"));
+const ProjectManagement = lazy(() => import(/* webpackChunkName: "page-project-management" */ "./Component/Projectmanagement"));
+const UIHomes = lazy(() => import(/* webpackChunkName: "page-ui-homes" */ "./Component/UIHomes"));
+const ArchitectureProjects = lazy(() => import(/* webpackChunkName: "page-architecture-projects" */ "./Component/ArchitectureProjects"));
+const InteriorsProjects = lazy(() => import(/* webpackChunkName: "page-interiors-projects" */ "./Component/InteriorsProjects"));
+const Archives = lazy(() => import(/* webpackChunkName: "page-archives" */ "./Component/Archives"));
+const Career = lazy(() => import(/* webpackChunkName: "page-career" */ "./Component/Career"));
+const WhatsAppButton = lazy(() => import(/* webpackChunkName: "widget-whatsapp" */ "./Component/WhatsAppButton"));
+const CookieConsent = lazy(() => import(/* webpackChunkName: "widget-cookie-consent" */ "./Component/CookieConsent"));
 
 function PageLoader() {
   return (
@@ -43,8 +43,10 @@ function SiteLayout() {
       <Header />
       <Outlet />
       <Footer />
-      <WhatsAppButton />
-      <CookieConsent />
+      <Suspense fallback={null}>
+        <WhatsAppButton />
+        <CookieConsent />
+      </Suspense>
     </>
   );
 }
