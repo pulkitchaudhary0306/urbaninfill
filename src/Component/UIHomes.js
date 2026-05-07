@@ -14,27 +14,27 @@ function UIHomes() {
   ]);
 
   const images = [
-    "/UIHomes/Image 1.webp",
-    "/UIHomes/Image 2.webp",
-    "/UIHomes/Image 3.webp",
-    "/UIHomes/Image 4.webp",
-    "/UIHomes/Image 5.webp",
-    "/UIHomes/Image 6.webp",
-    "/UIHomes/Image 7.webp",
-    "/UIHomes/Image 8.webp",
-    "/UIHomes/Image 9.webp",
-    "/UIHomes/Image 10.webp",
-    "/UIHomes/Image 11.webp",
-    "/UIHomes/Image 12.webp",
-    "/UIHomes/Image 13.webp",
-    "/UIHomes/Image 14.webp",
-    "/UIHomes/Image 15.webp",
-    "/UIHomes/Image 16.webp",
-    "/UIHomes/Image 17.webp",
-    "/UIHomes/Image 18.webp",
-    "/UIHomes/Image 19.webp",
-    "/UIHomes/Image 20.webp",
-    "/UIHomes/Image 21.webp",
+    "/UIHomes/luxury-living-room-interior-design.webp",
+    "/UIHomes/modern-bedroom-suite-design.webp",
+    "/UIHomes/elegant-dining-area-interior.webp",
+    "/UIHomes/contemporary-kitchen-design.webp",
+    "/UIHomes/premium-bathroom-vanity-design.webp",
+    "/UIHomes/home-office-study-room.webp",
+    "/UIHomes/residential-entrance-foyer.webp",
+    "/UIHomes/luxury-villa-staircase-design.webp",
+    "/UIHomes/modern-pooja-mandir-interior.webp",
+    "/UIHomes/penthouse-terrace-garden.webp",
+    "/UIHomes/walk-in-wardrobe-closet.webp",
+    "/UIHomes/home-theatre-room-design.webp",
+    "/UIHomes/indoor-swimming-pool-area.webp",
+    "/UIHomes/residential-gym-fitness-room.webp",
+    "/UIHomes/servants-quarters-design.webp",
+    "/UIHomes/guest-bedroom-suite.webp",
+    "/UIHomes/kids-room-play-area.webp",
+    "/UIHomes/balcony-sitout-design.webp",
+    "/UIHomes/utility-laundry-room.webp",
+    "/UIHomes/pantry-wet-kitchen-area.webp",
+    "/UIHomes/residential-lobby-common-area.webp",
   ];
   const imageCount = images.length;
 
@@ -92,7 +92,11 @@ function UIHomes() {
           <div className="res-grid">
             <div className="res-text">
               <h3>URBAN iNFiLL</h3>
-              <p>Luxury Residential Development</p>
+              <p> Is a luxury architectural and development concept 
+                that focuses on "The Art of the Impossible." It targets the 
+                transformation of small, narrow, or neglected urban pockets 
+                into sophisticated, vertical luxury homes. The brand positions itself 
+                at the intersection of metropolitan grit and refined sanctuary.</p>
             </div>
 
             <div className="res-small">
@@ -129,24 +133,13 @@ function UIHomes() {
                 alt="Residential project 4"
                 onClick={() => openImage(3)}
               />
-
-              <div className="feature-overlay">
-                <div className="overlay-content">
-                  <p className="tag">PROJECT</p>
-                  <p className="meta">MIXED USE</p>
-                  <p className="desc">Luxury development</p>
-                  <button className="btn" type="button">
-                    VIEW PROJECT
-                  </button>
-                </div>
-              </div>
             </div>
 
             <div className="feature-right">
               <div className="card">
-                <p className="small-text">Best Architecture Firm</p>
+                <h2 className="small-text">Best Architecture Firm</h2>
                 <h1 className="logo">
-                  URBAN<span>INFILL</span>
+                  URBAN<span> iNFiLL</span>
                 </h1>
               </div>
             </div>
@@ -172,10 +165,13 @@ function UIHomes() {
             </div>
 
             <div className="res-text">
-              <h3>URBAN iNFiLL</h3>
-              <p>Luxury Residential Development</p>
-            </div>
-
+              <h3>• Atmosphere</h3>
+              <p>Secluded Luxury, Metropolitan Retreat, Curated Light.</p><br/>
+              <h3>• Architecture</h3>
+              <p>Cantilevered Forms, Internal Courtyards, Volumetric Design.</p><br/>
+            <h3>• Experience</h3>
+              <p>Seamless Flow, Sensory Balance, Intuitive Movement, Layered Privacy, Human-Centered Design, Emotional Comfort.</p><br/>
+             </div>
             <div className="res-small">
               <img
                 src={images[6]}
@@ -246,15 +242,6 @@ function UIHomes() {
                 alt="Residential project 14"
                 onClick={() => openImage(13)}
               />
-              
-
-              <div className="gallery-overlay">
-                <div className="gallery-content">
-                  <h4>IMAGINE STUDIO AT THETREES</h4>
-                  <p>MIXED USE | BRAND EXPERIENCES</p>
-                  <button type="button">VIEW PROJECT</button>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -284,7 +271,7 @@ function UIHomes() {
   <div className="uihomes-grid">
     <div className="uihomes-card uihomes-living">
       <img src={images[18]} alt="" onClick={() => openImage(18)} />
-      <div className="uihomes-label">LIVING ROOM</div>
+    
     </div>
 
     <div className="uihomes-card uihomes-bedroom">
@@ -292,8 +279,11 @@ function UIHomes() {
     </div>
 
     <div className="uihomes-text">
-      <h3>URBAN iNFiLL</h3>
-      <p>welcome to UI Homes</p>
+     
+      <p><b>URBAN iNFiLL</b> content shouldn't just show a house;
+         it should tell the story of reclaiming the city.
+         It sells the idea that you don't have to leave the heart of the 
+         city to find a quiet, expansive, and high-design lifestyle.</p>
     </div>
 
     <div className="uihomes-card uihomes-room">

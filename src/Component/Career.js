@@ -132,7 +132,7 @@ function Career() {
           <h2>Think you are a good fit?</h2>
           <p>We would be glad to review your background and see where you can add value to the team.</p>
           <div className="cta-buttons">
-            <a href="mailto:careers@urbaninfill.in" className="cta-btn-primary">
+            <a href="mailto:info@urbaninfill.in" className="cta-btn-primary">
               <FaEnvelope /> Apply Now
             </a>
             <a href="tel:+911244241186" className="cta-btn-secondary">

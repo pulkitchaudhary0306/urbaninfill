@@ -68,8 +68,9 @@ function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blogs">Blogs</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/career">Career</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          
           </ul>
         </div>
 
@@ -79,6 +80,7 @@ function Footer() {
             <li><Link to="/architecture">Architecture</Link></li>
             <li><Link to="/interior">Interior</Link></li>
             <li><Link to="/projectmanagement">Project Management</Link></li>
+            <li><Link to="/archives">Archives</Link></li>
           </ul>
         </div>
 
@@ -95,7 +97,9 @@ function Footer() {
             </li>
             <li className="site-footer__contact-item">
               <FaMapMarkerAlt className="site-footer__contact-icon" />
-              <span>302, Third Floor, Huda Sector, Sushant Lok 2, Sector 55, Gurugram, Haryana 122011</span>
+              <span>URBAN iNFiLL<br/>
+              Navkirti Arcade, 302, Golf Course Ext Rd, Huda Sector, 
+               Sushant Lok 2, Sector 55, Gurugram, Haryana 122011, India</span>
             </li>
           </ul>
         </div>
@@ -111,3 +115,4 @@ function Footer() {
 }
 
 export default Footer;
+

@@ -1,6 +1,37 @@
 const blogs = [
   {
-    id: 1,
+  id: 1,
+  slug: "urban-infill-architecture-8th-anniversary-founders-journey",
+  category: "8 YEARS OF URBAN iNFiLL",
+  title: "Still Building, Still Raising the Bar",
+  image: "/Blogs/8th-anniversary-cover.webp",
+  author: "Subhankar Sengupta",
+  excerpt: "Reflecting on eight years of evolution—from a solo after-hours pursuit to a national practice built on clarity, intent, and performance.",
+  meta: ["By Subhankar Sengupta", "14 Apr 2026"], // Updated to Poila Boishakh / Anniversary timing
+  paragraphs: [
+    "     Eight years. It is a milestone that feels both like a lifetime and just the beginning. As URBAN iNFiLL marks its eighth anniversary, we find ourselves looking back at a journey that has been anything but linear. From a small studio to managing a diverse portfolio of complex projects across India, our path has been defined by a constant evolution.",
+    "We have learned that design isn't built in comfort; it is forged through challenges, high-stakes decisions, and the relentless pursuit of refinement. URBAN iNFiLL did not begin as a large architecture practice. It began in 2018 with a simple belief: that disciplined work and honest design thinking would eventually find their place in the market.",
+    "Coming from a family of doctors, I had no industry connections to lean on. Architecture was a path that had to be built from scratch—starting with schooling at De Nobili (Dhanbad), a degree from Pune, and formative years in Delhi. Before URBAN iNFiLL was a reality, it was built in the 'after-hours.' From 2015 to 2018, the foundation was laid during long days in professional practice and even longer nights developing a personal network and portfolio.",
+    "Our first assignment was a modest 500 sq ft office. At that stage, the size didn’t matter. What mattered was the opportunity to build trust and demonstrate that we could deliver thoughtful design. In the early days, the focus was often on doing 'more.' But as the practice matured—moving from that original small studio to handling developments spanning several lakh square feet—our philosophy shifted toward doing what truly matters.",
+    "Today, whether we are designing a corporate workplace, a cinema, a high-tech data center, or a specialized healthcare facility like Ananta Hospital, our work is driven by three core pillars: Clarity, Intent, and Performance. We cut through the noise to find the heart of a spatial problem, ensuring every line drawn serves a human-centric purpose.",
+    "We did not get here alone. Our most challenging phase—the COVID-19 period—became our greatest opportunity to reorganize and strengthen. It taught us that architecture must go beyond visual expression; it must solve real spatial, technical, and operational challenges. This milestone belongs equally to our collaborators, who have pushed us to think better, and to our clients, whose long-term partnerships are a testament to the trust we’ve built.",
+    "This year, our anniversary feels even more poignant as it coincides with Poila Boishakh. The dawn of a new year is a powerful reminder that every cycle is an opportunity to begin again—sharper, stronger, and with even more intentionality. From a 500 sq ft start to a national presence, the journey continues.",
+    "8 years in. Still building. Still raising the bar."
+  ],
+  aboutStory:
+    "An integrated account of URBAN iNFiLL's 8-year evolution, merging the grit of the founder's journey with the firm's current high-performance philosophy.",
+  focus: [
+    "Corporate Workplaces",
+    "Cinema Architecture",
+    "Healthcare Facilities",
+    "Data Centers",
+    "Hospitality Spaces",
+    "Residential Developments"
+  ],
+  tags: ["Anniversary", "Founder Story", "Architectural Philosophy", "Urban Infill"]
+},
+  {
+    id: 2,
     slug: "urban-infill-architecture-founders-journey",
     category: "Founder Story",
     title: "Building URBAN iNFiLL ",
@@ -44,11 +75,11 @@ const blogs = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     slug: "aravali-resort-hospitality-architecture",
     category: "Architecture",
     title: "Building your Dream Resort",
-    image: "/Architecture/Aravali/Image 1.webp",
+    image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
     author: "URBAN iNFiLL",
     role: "Architectural & Interior Design Studio",
     excerpt: "The Aravali Resort.",
@@ -76,11 +107,11 @@ const blogs = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     slug: "urban-canteen-cafe-interior-design-bhubaneswar",
     category: "Commercial Interior Design",
     title: "Modern Aesthetics Canteen",
-    image: "/Interiors/Urban/Image 1.webp",
+    image: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
     author: "URBAN iNFiLL",
     role: "Architecture & Interior Design Studio",
     excerpt: "Commercial Restaurant Design.",
@@ -105,7 +136,8 @@ const blogs = [
       "Brand Experience",
       "Hospitality Interiors"
     ]
-  }
+  },
+  
 ];
 
 export default blogs;

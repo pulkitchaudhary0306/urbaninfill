@@ -3,6 +3,8 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import ScrollToTop from "./Component/ScrollToTop";
 import Header from "./HeaderFooter/Header";
 import Footer from "./HeaderFooter/Footer";
+import WhatsAppButton from "./Component/WhatsAppButton";
+import CookieConsent from "./Component/CookieConsent";
 
 const Home = lazy(() => import("./Component/Home"));
 const About = lazy(() => import("./Component/About"));
@@ -13,8 +15,8 @@ const Architecture = lazy(() => import("./Component/Architecture"));
 const Interior = lazy(() => import("./Component/Interior"));
 const ProjectManagement = lazy(() => import("./Component/Projectmanagement"));
 const UIHomes = lazy(() => import("./Component/UIHomes"));
-const Projects = lazy(() => import("./Component/Projects"));
-const Interiors = lazy(() => import("./Component/Interiors"));
+const ArchitectureProjects = lazy(() => import("./Component/ArchitectureProjects"));
+const InteriorsProjects = lazy(() => import("./Component/InteriorsProjects"));
 const Archives = lazy(() => import("./Component/Archives"));
 const Career = lazy(() => import("./Component/Career"));
 
@@ -41,11 +43,14 @@ function SiteLayout() {
       <Header />
       <Outlet />
       <Footer />
+      <WhatsAppButton />
+      <CookieConsent />
     </>
   );
 }
 
 function App() {
+  
   return (
     <Suspense fallback={<PageLoader />}>
       <ScrollToTop />
@@ -60,8 +65,8 @@ function App() {
           <Route path="/interior" element={<Interior />} />
           <Route path="/projectmanagement" element={<ProjectManagement />} />
           <Route path="/uihomes" element={<UIHomes />} />
-          <Route path="/Projects/:id" element={<Projects />} />
-          <Route path="/Interiors/:id" element={<Interiors />} />
+          <Route path="/ArchitectureProjects/:id" element={<ArchitectureProjects />} />
+          <Route path="/InteriorsProjects/:id" element={<InteriorsProjects />} />
           <Route path="/archives" element={<Archives />} />
           <Route path="/career" element={<Career />} />
         </Route>

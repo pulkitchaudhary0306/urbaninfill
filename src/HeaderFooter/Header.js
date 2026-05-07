@@ -6,6 +6,7 @@ const projectLinks = [
   { to: "/architecture", label: "Architecture" },
   { to: "/interior", label: "Interior" },
   { to: "/projectmanagement", label: "Project Management" },
+ 
 ];
 
 function Header() {
@@ -102,13 +103,17 @@ function Header() {
               </li>
 
               <li className={`nav-item site-dropdown${isDropdownOpen ? " show" : ""}`}>
-                <span 
-                  className="nav-link site-nav-link" 
+                <NavLink
+                  to="#"
+                  className={({ isActive }) =>
+                    `nav-link site-nav-link${isActive ? " is-active" : ""}`
+                  }
                   onClick={toggleDropdown}
-                  style={{ cursor: isMobile ? "pointer" : "default" }}
+                  aria-expanded={isDropdownOpen}
+                  aria-haspopup="true"
                 >
-                  Project {isMobile && (isDropdownOpen ? "▾" : "▸")}
-                </span>
+                  Projects
+                </NavLink>
 
                 <ul className={`site-dropdown-menu${isDropdownOpen ? " show" : ""}`}>
                   {projectLinks.map((link) => (

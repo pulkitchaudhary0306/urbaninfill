@@ -60,13 +60,13 @@ function Contact() {
               <div className="address-row">
                 <div className="address-box">
                   <h4>Gurugram Office</h4>
-                  <p>302, Third Floor, Sushant Lok 2, Sector 55, Gurugram, Haryana, India</p>
+                  <p>URBAN iNFiLL, 302, Third Floor, Sushant Lok 2, Sector 55, Gurugram, Haryana, India</p>
                 </div>
 
                 <div className="address-box">
                   <h4>Head Office</h4>
                   <p>
-                    204, Shri Ram Plaza, Bank More (Head Office), Dhanbad 826001,
+                    URBAN iNFiLL, 204, Shri Ram Plaza, Bank More (Head Office), Dhanbad 826001,
                     Jharkhand, India
                   </p>
                 </div>
@@ -90,12 +90,13 @@ function Contact() {
         <section className="map-section">
           <iframe
             title="URBAN iNFiLL Location"
-            src="https://www.google.com/maps?q=Sector%2055%20Gurugram%20Haryana&output=embed"
+            src="https://maps.google.com/maps?hl=en&q=URBAN%20iNFiLL%2C%20Navkirti%20Arcade%2C%20302%2C%20Golf%20Course%20Ext%20Rd%2C%20Huda%20Sector%2C%20Sushant%20Lok%202%2C%20Sector%2055%2C%20Gurugram%2C%20Haryana%20122003&t=&z=15&ie=UTF8&iwloc=B&output=embed"
             width="100%"
             height="450"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
       </div>

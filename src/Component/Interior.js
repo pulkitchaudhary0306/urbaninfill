@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../HeaderFooter/Header.css";
 import "./Interior.css";
@@ -43,7 +43,7 @@ function Interior() {
     {
       id: 1,
       slug: "united-airlines-office-interior-t3-delhi",
-      image: "/Interiors/United/Image 1.webp",
+      image: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
       title: "United Airlines Office",
       location: "Terminal 3, IGI Airport, New Delhi",
       category: "Corporate Office",
@@ -51,7 +51,7 @@ function Interior() {
     {
       id: 2,
       slug: "urban-canteen-cafe-interior-bhubaneswar",
-      image: "/Interiors/Urban/Image 1.webp",
+      image: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
       title: "The Urban Canteen",
       location: "Bhubaneswar, Odisha",
       category: "Hospitality",
@@ -59,23 +59,24 @@ function Interior() {
     {
       id: 3,
       slug: "restaurant-club-design-bbi-bhubaneswar",
-      image: "/Interiors/BBI/Image 6.webp",
+      image: "/Interiors/BBI/bbi-interior-lighting-design-bhubaneswar.webp",
       title: "BBi Booze Buzz Inhouse",
       location: "Chandrasekharpur, Bhubaneswar, Odisha",
       category: "Hospitality",
     },
     {
       id: 4,
-      slug: "cineport-svh-cinema-interior-design– Gurgaon",
-      image: "/Interiors/Cineport/Image 4.webp",
-      title: "Cineport 5-Screen Multiplex ",
-      location: "Gurgaon",
+      slug: "cineport-svh-5-screen-multiplex-gurgaon", 
+      image: "/Interiors/Cineport/cineport-cinema-seating-arrangement-gurgaon.webp",
+      title: "Cineport 5-Screen Multiplex",
+      location: "Gurgaon, Haryana",
       category: "Cinema",
+      scope: "Architecture & Interior Design", // Added for extra detail on cards
     },
     {
       id: 5,
       slug: "samsung-office-interior-design-dehradun",
-      image: "/Interiors/Samsung/Image 1.webp",
+      image: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.webp",
       title: "Samsung Corporate Office",
       location: "Dehradun Uttrakhand",
       category: "Corporate Office",
@@ -83,11 +84,61 @@ function Interior() {
     {
       id: 6,
       slug: "urban-company-it-head-office-interior-bangalore",
-      image: "/Interiors/Ucompany/Image 1.webp",
+      image: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.webp",
       title: "Urban Company Corporate Office",
       location: "Bengaluru",
       category: "Corporate Office",
-    },  ];
+    },
+  {
+      id: 7,
+      slug: "movie-lounge-crossroad-mall-dehradun-expansion",
+      image: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+      title: "Movie Lounge Cinema Expansion ",
+      location: "Dehradun, Uttarakhand",
+      category: "Cinema",
+    },   
+  {
+      id: 8,
+      slug: "batra-hospital-medical-research-centre-cathlab-renovation",
+      image: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
+      title: "Batra Hospital & Medical Research Centre – Cathlab",
+      location: "New Delhi",
+      category: "Hospitals",
+    },
+  {
+  id: 9,
+  slug: "lenskart-Office-interior-design",
+  image: "/Interiors/Lenskart/lenskart-store-main.webp",
+  title: "Lenskart Store – Retail Interior Design",
+  location: "Gurugram, Haryana",
+  category: "Corporate Office",
+},
+{
+  id: 10,
+  slug: "mayom-hospital-interior-design",
+  image: "/Interiors/MayomHospital/gita-gyan-main.webp",
+  title: "Mayom Hospital – Interior Design",
+  location: "Gurugram, Haryana",
+  category: "Hospitals",
+},
+{
+  id: 11,
+  slug: "club-house-sirsa-recreational-space",
+  image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+  title: "Club House – Sirsa",
+  location: "Sirsa, Haryana",
+  category: "Hospitality",
+},
+{
+  id: 12,
+  slug: "met-reliance-interior-design",
+  image: "/Interiors/METReliance/main-hall.webp",
+  title: "MET Reliance -Jhajjar",
+  location: "Jhajjar, Haryana",
+  category: "Hospitality",
+  scope: "Interior Design & Execution",
+},
+];
 
   const filteredProjects = activeFilter === "All" 
     ? projects 
@@ -97,7 +148,7 @@ function Interior() {
     <div>
 <section className="interior-hero">
         <img
-          src="/Interiors/Cover.webp"
+          src="/Interiors/cover.webp"
           alt="Interior Design"
           className="interior-hero-image"
           decoding="async" />
@@ -137,7 +188,7 @@ function Interior() {
         {activeFilter === "Residential Luxury Interiors" ? (
           <div className="residential-luxury-section">
             <div className="residential-luxury-image">
-              <img src="/UIHomes/Image 1.webp" alt="Residential Luxury Interiors" loading="lazy" decoding="async" />
+              <img src="/UIHomes/luxury-living-room-interior-design.webp" alt="Residential Luxury Interiors" loading="lazy" decoding="async" />
             </div>
             <div className="residential-luxury-content">
               <h2>RESIDENTIAL<br/>LUXURY<br/>INTERIORS</h2>
@@ -148,7 +199,7 @@ function Interior() {
         ) : activeFilter === "Archives" ? (
           <div className="archives-section">
             <div className="archives-image">
-              <img src="/Archives/FOOD COURT VIEW 1.webp" alt="Archives" loading="lazy" decoding="async" />
+              <img src="/Archives/food-court-view-1.webp" alt="Archives" loading="lazy" decoding="async" />
             </div>
             <div className="archives-content">
               <h2>ARCHIVES</h2>
@@ -160,7 +211,7 @@ function Interior() {
           <div className="interior-grid">
             {filteredProjects.map((project) => (
               <Link
-                to={`/Interiors/${project.slug}`}
+                to={`/InteriorsProjects/${project.slug}`}
                 className="interior-card-link"
                 key={project.id}
               >

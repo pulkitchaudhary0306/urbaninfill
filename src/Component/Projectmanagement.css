@@ -201,23 +201,5 @@ a {
     text-align: center;
   }
 
-  .footer {
-    padding: 50px 5% 25px;
-  }
 
-  .footer__logo {
-    font-size: 1.6rem;
-  }
-
-  .footer__title {
-    font-size: 1rem;
-  }
-
-  .footer__list li {
-    font-size: 0.9rem;
-  }
-
-  .footer__copy {
-    font-size: 0.82rem;
-  }
 }

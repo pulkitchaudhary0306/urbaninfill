@@ -33,11 +33,11 @@
 .site-brand {
   color: white !important;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 24px;
   margin-left: 60px;
   text-decoration: none !important;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .site-brand:hover {
@@ -62,20 +62,11 @@
   transition: all 0.3s ease;
   text-decoration: none !important;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   position: relative;
 }
 
-.site-nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #d7b98d;
-  transition: width 0.3s ease;
-}
+
 
 .site-nav-link:hover::after,
 .site-nav-link.is-active::after {
@@ -130,7 +121,8 @@
   font-size: 14px;
   color: #000;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
 }
 
 .site-dropdown-link:hover {
@@ -139,9 +131,7 @@
 }
 
 .site-dropdown > .site-nav-link::after {
-  content: " ▾";
-  font-size: 10px;
-  margin-left: 4px;
+  display: none;
 }
 
 .site-navbar .navbar-toggler {
@@ -193,6 +183,38 @@
 
   .site-dropdown.show .site-dropdown-menu {
     display: block;
+  }
+
+  /* Always show dropdown on desktop */
+  @media (min-width: 1025px) {
+    .site-dropdown-menu {
+      display: block;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .site-dropdown:hover .site-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Add hover area for dropdown */
+    .site-dropdown::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+      z-index: 1;
+    }
   }
 
   .site-dropdown-link {
@@ -257,16 +279,19 @@
   }
 
   .site-dropdown-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    margin-top: 6px;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    margin-top: 0;
     background: #1a1a1a;
-    box-shadow: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    display: none;
-    padding-left: 12px;
+    min-width: 200px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   }
 
   .site-dropdown.show .site-dropdown-menu {

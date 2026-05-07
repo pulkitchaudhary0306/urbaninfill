@@ -32,17 +32,17 @@ function Architecture() {
   const filterCategories = [
     "All",
     "Commercial",
-    "Hospital",
+    "Healthcare",
     "Hospitality",
     "Cinema",
-    "Residential Luxury Interiors",
+    "Residential",
   ];
 
-  const projects = [
+  const ArchitectureProjects = [
     {
       id: 1,
       slug: "aravali-resort-hospitality-design-india",
-      image: "/Architecture/Aravali 1.webp",
+      image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
       title: "The Aravali Resort",
       location: "Rishikesh",
       category: "Hospitality",
@@ -50,7 +50,7 @@ function Architecture() {
     {
       id: 2,
       slug: "ssargam-cinema-multiplex-design-india",
-      image: "/Architecture/Sargam 1.webp",
+      image: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
       title: "Sargam Theatre",
       location: "Chandpur, Bijnor, Uttar Pradesh",
       category: "Cinema",
@@ -58,7 +58,7 @@ function Architecture() {
     {
       id: 3,
       slug: "moonson-mall-hospitality-retail-design-sirsa",
-      image: "/Architecture/Sirsa 1.webp",
+      image: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
       title: "Monsoon Mall",
       location: "Sirsa, Haryana",
       category: "Commercial",
@@ -66,22 +66,54 @@ function Architecture() {
     {
       id: 4,
       slug: "annanta-hospital-healthcare-design-india",
-      image: "/Architecture/Ananta/Image 3.webp",
+      image: "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.webp",
       title: "Ananta Hospital",
       location: "Gurgaon, Haryana",
       category: "Healthcare",
     },
+    {
+      id: 5,
+      slug: "movie-lounge-crossroad-mall-dehradun-expansion",
+      image: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+      title: "Movie Lounge Cinema Expansion ",
+      location: "Dehradun, Uttarakhand",
+      category: "Cinema",
+    },
+    {
+      id: 6,
+      slug: "batra-hospital-medical-research-centre-cathlab-renovation",
+      image: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
+      title: "Batra Hospital & Medical Research Centre – Cathlab",
+      location: "New Delhi",
+      category: "Healthcare",
+    },
+    {
+  id: 7,
+  slug: "darbaripur-modern-facade-design",
+  image: "/Architecture/DarbaripurHouse/front-angle.webp",
+  title: "Modern Facade Design – Darbaripur Residence",
+  location: "Gurugram, Haryana",
+  category: "Residential",
+},
+{
+  id: 8,
+  slug: "club-house-sirsa-recreational-space",
+  image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+  title: "Club House Sirsa",
+  location: "Sirsa",
+  category: "Hospitality",
+},
   ];
 
   const filteredProjects = activeFilter === "All" 
-    ? projects 
-    : projects.filter(p => p.category === activeFilter);
+    ? ArchitectureProjects 
+    : ArchitectureProjects.filter(p => p.category === activeFilter);
 
   return (
     <div className="project-page">
 <section className="arch-hero">
         <img
-          src="/Architecture/Cover.webp"
+          src="/Architecture/cover.webp"
           alt="Modern architecture house"
           className="arch-hero-image"
           loading="lazy"
@@ -122,7 +154,7 @@ function Architecture() {
         <div className="arch-card-grid">
           {filteredProjects.map((project) => (
             <Link
-              to={`/projects/${project.slug}`}
+              to={`/ArchitectureProjects/${project.slug}`}
               className="arch-card-link"
               key={project.id}
             >

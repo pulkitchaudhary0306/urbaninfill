@@ -223,6 +223,14 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  align-items: stretch;
+}
+
+.arch-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
 }
 
 .arch-card {
@@ -232,6 +240,9 @@ a {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
   transition: 0.3s ease;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .arch-card:hover {
@@ -247,6 +258,9 @@ a {
 
 .arch-card-body {
   padding: 18px 18px 24px;
+  
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .arch-location {

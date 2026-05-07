@@ -49,10 +49,10 @@ img {
 .archives-header {
   padding: 140px 20px 80px;
   text-align: center;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2d2d2d 100%);
+background-color: black;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
 }
 
 .archives-header::after {
@@ -260,10 +260,11 @@ img {
   padding: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .archiveGrid-item:hover .archiveGrid-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .archiveGrid-content {
@@ -271,11 +272,12 @@ img {
   transform: translateY(20px);
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
+  pointer-events: none;
 }
 
 .archiveGrid-item:hover .archiveGrid-content {
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(20px);
+  opacity: 0;
 }
 
 .archiveGrid-title {
@@ -377,26 +379,26 @@ img {
 .archiveCard:hover img,
 .archiveCard:focus-visible img,
 .archiveCard:focus-within img {
-  filter: brightness(1) saturate(1.2);
+  filter: brightness(0.9) saturate(1.1);
 }
 
 .archiveCard:hover img,
 .archiveCard:focus-visible img,
 .archiveCard:focus-within img {
-  transform: scale(1.08);
+  transform: scale(1);
 }
 
 .archiveCard:hover .archiveOverlay,
 .archiveCard:focus-visible .archiveOverlay,
 .archiveCard:focus-within .archiveOverlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .archiveCard:hover .archiveText,
 .archiveCard:focus-visible .archiveText,
 .archiveCard:focus-within .archiveText {
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(24px);
+  opacity: 0;
 }
 
 @media (hover: hover) {
@@ -447,9 +449,9 @@ img {
 .archiveCard:hover .archiveFrame,
 .archiveCard:focus-visible .archiveFrame,
 .archiveCard:focus-within .archiveFrame {
-  opacity: 1;
-  transform: scale(1);
-  border-color: rgba(215, 185, 141, 0.6);
+  opacity: 0;
+  transform: scale(0.95);
+  border-color: rgba(215, 185, 141, 0.4);
 }
 
 .archiveCard:hover .archiveFrame,

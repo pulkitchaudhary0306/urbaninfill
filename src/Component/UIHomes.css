@@ -11,7 +11,7 @@ body {
 
 body {
   background: #fff;
-  color: #222;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -122,23 +122,29 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 18px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 24px;
+  border-left: 4px solid #ea6f1c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin: 8px;
 }
 
 .res-text h3 {
   margin: 0 0 8px;
   font-size: 24px;
   font-weight: 700;
-  color: #111;
+  color: #333;
 }
 
 .res-text p {
   margin: 0;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   color: #111;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .res-big img,
@@ -232,7 +238,7 @@ img {
 }
 
 .card {
-  background: #ea6f1c;
+  background: #ee9733;
   border-radius: 12px;
   padding: 20px;
   height: 400px;
@@ -243,17 +249,18 @@ img {
 }
 
 .small-text {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 40px;
-  color: #111;
+  color: #333;
   text-align: center;
+  font-weight: 500;
 }
 
 .logo {
   font-size: clamp(42px, 6vw, 60px);
   font-weight: 700;
   text-align: center;
-  color: #111;
+  color: #333;
   line-height: 1;
 }
 
@@ -276,8 +283,10 @@ img {
 .desc {
   max-width: 420px;
   margin: 0 auto 20px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .btn {
@@ -375,8 +384,10 @@ height: 500px;
 }
 
 .lux-content p {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0.85;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .lux-card:hover img {
@@ -590,9 +601,11 @@ height: 500px;
 }
 
 .gallery-content p {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0 12px;
   line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .gallery-content button {
@@ -623,7 +636,7 @@ height: 500px;
 ========================= */
 .portfolio-section {
   padding: 16px;
-  background: #f3f3f3;
+  background: #fff;
 }
 
 .portfolio-grid {
@@ -675,7 +688,7 @@ height: 500px;
 .uihomes-section {
   width: 100%;
   padding: 18px;
-  background: #efefef;
+  background: #fff;
 }
 
 .uihomes-grid {
@@ -691,7 +704,7 @@ height: 500px;
 .uihomes-card {
   position: relative;
   overflow: hidden;
-  background: #ddd;
+  background: #fff;
 }
 
 .uihomes-card img {
@@ -714,11 +727,17 @@ height: 500px;
 .uihomes-text {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  background: #efefef;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 32px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 24px;
+  border-left: 4px solid #ea6f1c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin: 8px;
 }
 
 .uihomes-room {
@@ -734,16 +753,20 @@ height: 500px;
 .uihomes-text h3 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #1f1f1f;
+  color: #333;
   margin: 0 0 10px;
   text-transform: lowercase;
 }
 
 .uihomes-text p {
-  font-size: 1.1rem;
-  color: #1f1f1f;
   margin: 0;
-  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
+  padding-left: 8px;
 }
 
 .uihomes-label {
@@ -1055,8 +1078,9 @@ height: 500px;
   }
 
   .gallery-content p {
-    font-size: 13px;
-  }
+    font-size: 15px;
+    letter-spacing: 0.2em;
+ }
 
   .portfolio-grid {
     grid-template-columns: 1fr 1fr;
@@ -1092,10 +1116,14 @@ height: 500px;
   .res-text h3 {
     font-size: 20px;
     margin-bottom: 6px;
+    color: #333;
   }
 
   .res-text p {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
   }
 
   .feature-grid {
@@ -1208,10 +1236,13 @@ height: 500px;
 
   .uihomes-text h3 {
     font-size: 1.05rem;
+    color: #333;
   }
 
   .uihomes-text p {
-    font-size: 1rem;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
   }
 
   .uihomes-label {
@@ -1233,6 +1264,7 @@ height: 500px;
 
   .res-text p {
     font-size: 14px;
+    font-weight: 400;
   }
 
   .feature-left,
@@ -1269,8 +1301,9 @@ height: 500px;
   }
 
   .gallery-content p {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
+    letter-spacing: 0.2em;
   }
 
   .gallery-content button {
@@ -1423,7 +1456,7 @@ height: 500px;
 .uihomes-card {
   position: relative;
   overflow: hidden;
-  background: #f4f4f4 !important;
+  background: #fff !important;
 }
 
 .portfolio-main,
