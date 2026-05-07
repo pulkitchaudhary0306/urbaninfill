@@ -151,6 +151,7 @@ function Interior() {
           src="/Interiors/cover.webp"
           alt="Interior Design"
           className="interior-hero-image"
+          loading="lazy"
           decoding="async" />
 
         <div className="interior-hero-overlay"></div>

@@ -104,6 +104,8 @@ function UIHomes() {
                 src={images[1]}
                 alt="Residential project 2"
                 onClick={() => openImage(1)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -112,6 +114,8 @@ function UIHomes() {
                 src={images[0]}
                 alt="Residential project 1"
                 onClick={() => openImage(0)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -120,6 +124,8 @@ function UIHomes() {
                 src={images[2]}
                 alt="Residential project 3"
                 onClick={() => openImage(2)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -132,6 +138,8 @@ function UIHomes() {
                 src={images[3]}
                 alt="Residential project 4"
                 onClick={() => openImage(3)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -153,6 +161,8 @@ function UIHomes() {
                 src={images[4]}
                 alt="Residential project 5"
                 onClick={() => openImage(4)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -161,6 +171,8 @@ function UIHomes() {
                 src={images[5]}
                 alt="Residential project 6"
                 onClick={() => openImage(5)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -177,6 +189,8 @@ function UIHomes() {
                 src={images[6]}
                 alt="Residential project 7"
                 onClick={() => openImage(6)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -189,6 +203,8 @@ function UIHomes() {
                 src={images[7]}
                 alt="Residential project 8"
                 onClick={() => openImage(7)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -197,6 +213,8 @@ function UIHomes() {
                 src={images[8]}
                 alt="Residential project 9"
                 onClick={() => openImage(8)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -205,6 +223,8 @@ function UIHomes() {
                 src={images[9]}
                 alt="Residential project 10"
                 onClick={() => openImage(9)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -213,6 +233,8 @@ function UIHomes() {
                 src={images[10]}
                 alt="Residential project 11"
                 onClick={() => openImage(10)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -225,6 +247,8 @@ function UIHomes() {
                 src={images[11]}
                 alt="Residential project 12"
                 onClick={() => openImage(11)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -233,6 +257,8 @@ function UIHomes() {
                 src={images[12]}
                 alt="Residential project 13"
                 onClick={() => openImage(12)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -241,6 +267,8 @@ function UIHomes() {
                 src={images[13]}
                 alt="Residential project 14"
                 onClick={() => openImage(13)}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -250,17 +278,17 @@ function UIHomes() {
 
     {/* LEFT BIG IMAGE */}
     <div className="portfolio-main">
-      <img src={images[14]} alt="" onClick={() => openImage(14)} />
+      <img src={images[14]} alt="" onClick={() => openImage(14)} loading="lazy" decoding="async" />
     </div>
   
     {/* RIGHT TALL IMAGE */}
     <div className="portfolio-tall">
-      <img src={images[15]} alt="" onClick={() => openImage(15)} />
+      <img src={images[15]} alt="" onClick={() => openImage(15)} loading="lazy" decoding="async" />
     </div>
 
     {/* BOTTOM LEFT SMALL */}
     <div className="portfolio-small-left">
-      <img src={images[16]} alt="" onClick={() => openImage(16)} />
+      <img src={images[16]} alt="" onClick={() => openImage(16)} loading="lazy" decoding="async" />
     </div>
 
   
@@ -270,12 +298,12 @@ function UIHomes() {
 <section className="uihomes-section">
   <div className="uihomes-grid">
     <div className="uihomes-card uihomes-living">
-      <img src={images[18]} alt="" onClick={() => openImage(18)} />
+      <img src={images[18]} alt="" onClick={() => openImage(18)} loading="lazy" decoding="async" />
     
     </div>
 
     <div className="uihomes-card uihomes-bedroom">
-      <img src={images[19]} alt="Bedroom" onClick={() => openImage(19)} />
+      <img src={images[19]} alt="Bedroom" onClick={() => openImage(19)} loading="lazy" decoding="async" />
     </div>
 
     <div className="uihomes-text">
@@ -287,11 +315,11 @@ function UIHomes() {
     </div>
 
     <div className="uihomes-card uihomes-room">
-      <img src={images[20]} alt="Bedroom interior" onClick={() => openImage(20)} />
+      <img src={images[20]} alt="Bedroom interior" onClick={() => openImage(20)} loading="lazy" decoding="async" />
     </div>
 
     <div className="uihomes-card uihomes-dining">
-      <img src={images[2]} alt="Dining room" onClick={() => openImage(2)} />
+      <img src={images[2]} alt="Dining room" onClick={() => openImage(2)} loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
@@ -325,6 +353,8 @@ function UIHomes() {
             alt={`Residential project ${activeIndex + 1}`}
             className="modal-img"
             onClick={(e) => e.stopPropagation()}
+            loading="lazy"
+            decoding="async"
           />
 
           <button

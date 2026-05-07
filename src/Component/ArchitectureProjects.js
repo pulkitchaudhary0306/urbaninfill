@@ -104,6 +104,8 @@ function ArchitectureProjects() {
                 alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
                 onClick={() => openImageModal(project.mainImage)}
                 className="clickable-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="gallery-side">
@@ -114,6 +116,8 @@ function ArchitectureProjects() {
                   alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
                   onClick={() => openImageModal(img)}
                   className="clickable-image"
+                  loading="lazy"
+                  decoding="async"
                 />
               ))}
             </div>
@@ -126,6 +130,8 @@ function ArchitectureProjects() {
                 alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
                 onClick={() => openImageModal(img)}
                 className="clickable-image"
+                loading="lazy"
+                decoding="async"
               />
             ))}
           </div>
@@ -196,6 +202,8 @@ function ArchitectureProjects() {
               src={allImages[selectedImageIndex]}
               alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
               className="image-modal-content"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <button className="image-slide-btn image-slide-btn--right" onClick={showNextImage}>›</button>

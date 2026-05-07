@@ -206,7 +206,7 @@ function Archives() {
               }}
               aria-label={`Open ${item.title}`}
             >
-              <img src={item.image} alt={item.title} loading="lazy" />
+              <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
               <div className="archiveGrid-overlay">
                 <div className="archiveGrid-content">
                   <h3 className="archiveGrid-title">{item.title}</h3>
@@ -250,6 +250,8 @@ function Archives() {
               src={selectedItem.image}
               alt={selectedItem.title}
               className="imageModal__img"
+              loading="lazy"
+              decoding="async"
             />
             <div className="imageModal__info">
               <span className="imageModal__year">{selectedItem.year}</span>

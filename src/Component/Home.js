@@ -1048,7 +1048,7 @@ function Home() {
             <Link to="/ArchitectureProjects/moonson-mall-hospitality-retail-design-sirsa" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp" alt="Monsoon Mall" />
+                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp" alt="Monsoon Mall" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">01</div>
@@ -1079,7 +1079,7 @@ function Home() {
             <Link to="/InteriorsProjects/cineport-svh-5-screen-multiplex-gurgaon" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/05-cineport.webp" alt="Cineport Cinema" />
+                  <img src="/projects/05-cineport.webp" alt="Cineport Cinema" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">02</div>
@@ -1110,7 +1110,7 @@ function Home() {
             <Link to="/InteriorsProjects/samsung-office-interior-design-dehradun" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/02-samsung.webp" alt="Samsung Office" />
+                  <img src="/projects/02-samsung.webp" alt="Samsung Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">03</div>
@@ -1141,7 +1141,7 @@ function Home() {
             <Link to="/InteriorsProjects/urban-company-it-head-office-interior-bangalore" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/03-uc.webp" alt="Urban Company" />
+                  <img src="/projects/03-uc.webp" alt="Urban Company" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">04</div>
@@ -1172,7 +1172,7 @@ function Home() {
             <Link to="/InteriorsProjects/restaurant-club-design-bbi-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/07-bbi.webp" alt="BBI Restaurant" />
+                  <img src="/projects/07-bbi.webp" alt="BBI Restaurant" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">05</div>
@@ -1203,7 +1203,7 @@ function Home() {
             <Link to="/InteriorsProjects/urban-canteen-cafe-interior-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/08-urban-canteen.webp" alt="Urban Canteen" />
+                  <img src="/projects/08-urban-canteen.webp" alt="Urban Canteen" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">06</div>
@@ -1234,7 +1234,7 @@ function Home() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/04-flipkart.webp" alt="Flipkart Office" />
+                  <img src="/projects/04-flipkart.webp" alt="Flipkart Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">07</div>
@@ -1265,7 +1265,7 @@ function Home() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/06-home-theater.webp" alt="Home Theater" />
+                  <img src="/projects/06-home-theater.webp" alt="Home Theater" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">08</div>
@@ -1296,7 +1296,7 @@ function Home() {
             <Link to="/uihomes" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/09-interior.webp" alt="Luxury Interior" />
+                  <img src="/projects/09-interior.webp" alt="Luxury Interior" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">09</div>
