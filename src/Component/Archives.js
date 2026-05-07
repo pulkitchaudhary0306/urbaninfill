@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../HeaderFooter/Header.css";
 import "./Archives.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
+import useImageModal from "./useImageModal";
 
 const archiveItems = [
   {
@@ -130,52 +131,16 @@ function Archives() {
     ".archives-page .archiveGrid-content > *",
   ]);
 
-  const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const openModal = (item) => {
-    const index = archiveItems.findIndex((archive) => archive.id === item.id);
-    setSelectedIndex(index);
-  };
-
-  const closeModal = () => setSelectedIndex(null);
-
-  const showPrevImage = (e) => {
-    e.stopPropagation();
-    setSelectedIndex((prev) =>
-      prev === 0 ? archiveItems.length - 1 : prev - 1
-    );
-  };
-
-  const showNextImage = (e) => {
-    e.stopPropagation();
-    setSelectedIndex((prev) =>
-      prev === archiveItems.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (selectedIndex === null) return;
-
-      if (e.key === "Escape") {
-        closeModal();
-      } else if (e.key === "ArrowLeft") {
-        setSelectedIndex((prev) =>
-          prev === 0 ? archiveItems.length - 1 : prev - 1
-        );
-      } else if (e.key === "ArrowRight") {
-        setSelectedIndex((prev) =>
-          prev === archiveItems.length - 1 ? 0 : prev + 1
-        );
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedIndex]);
+  const {
+    selectedImageIndex,
+    openImageModal,
+    closeImageModal,
+    showPrevImage,
+    showNextImage,
+  } = useImageModal(archiveItems);
 
   const selectedItem =
-    selectedIndex !== null ? archiveItems[selectedIndex] : null;
+    selectedImageIndex !== null ? archiveItems[selectedImageIndex] : null;
 
   return (
     <div className="archives-page">
@@ -196,12 +161,12 @@ function Archives() {
             <div
               key={item.id}
               className="archiveGrid-item"
-              onClick={() => openModal(item)}
+              onClick={() => openImageModal(index)}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
-                  openModal(item);
+                  openImageModal(index);
                 }
               }}
               aria-label={`Open ${item.title}`}
@@ -223,11 +188,11 @@ function Archives() {
       </section>
 
       {selectedItem && (
-        <div className="imageModal" onClick={closeModal}>
+        <div className="imageModal" onClick={closeImageModal}>
           <button
             type="button"
             className="closeBtn"
-            onClick={closeModal}
+            onClick={closeImageModal}
             aria-label="Close image preview"
           >
             ×

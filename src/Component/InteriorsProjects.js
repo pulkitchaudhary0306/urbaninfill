@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState, useCallback } from "react";
+import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import "../HeaderFooter/Header.css";
 import "./InteriorsProjects.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
+import useImageModal from "./useImageModal";
 import interiorProjects from "./InteriorsProjectsData";
 
 function InteriorsProjects() {
@@ -33,7 +34,6 @@ function InteriorsProjects() {
   ]);
 
   const { id } = useParams();
-  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const interiorsProjects = useMemo(() => interiorProjects, []);
 
@@ -50,49 +50,14 @@ function InteriorsProjects() {
     ];
   }, [project]);
 
-  const openImageModal = useCallback((image) => {
-    const index = allImages.findIndex((img) => img === image);
-    setSelectedImageIndex(index >= 0 ? index : 0);
-  }, [allImages]);
-
-  const closeImageModal = useCallback(() => {
-    setSelectedImageIndex(null);
-  }, []);
-
-  const showPrevImage = useCallback((e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) =>
-      prev === 0 ? allImages.length - 1 : prev - 1
-    );
-  }, [allImages]);
-
-  const showNextImage = useCallback((e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) =>
-      prev === allImages.length - 1 ? 0 : prev + 1
-    );
-  }, [allImages]);
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (selectedImageIndex === null || allImages.length === 0) return;
-
-      if (e.key === "Escape") {
-        closeImageModal();
-      } else if (e.key === "ArrowLeft") {
-        setSelectedImageIndex((prev) =>
-          prev === 0 ? allImages.length - 1 : prev - 1
-        );
-      } else if (e.key === "ArrowRight") {
-        setSelectedImageIndex((prev) =>
-          prev === allImages.length - 1 ? 0 : prev + 1
-        );
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedImageIndex, allImages.length, closeImageModal]);
+  const {
+    selectedImageIndex,
+    activeImage,
+    openImageModal,
+    closeImageModal,
+    showPrevImage,
+    showNextImage,
+  } = useImageModal(allImages);
 
   if (!project) {
     return (
@@ -286,7 +251,7 @@ function InteriorsProjects() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={allImages[selectedImageIndex]}
+              src={activeImage}
               alt={`${project.title} preview ${selectedImageIndex + 1}`}
               className="image-modal-content"
               loading="lazy"

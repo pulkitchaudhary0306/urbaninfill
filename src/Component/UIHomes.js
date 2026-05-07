@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
 import "../HeaderFooter/Header.css";
 import "./UIHomes.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
+import useImageModal from "./useImageModal";
 
 function UIHomes() {
   usePageReveal([
@@ -36,39 +36,14 @@ function UIHomes() {
     "/UIHomes/pantry-wet-kitchen-area.webp",
     "/UIHomes/residential-lobby-common-area.webp",
   ];
-  const imageCount = images.length;
-
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const openImage = (index) => setActiveIndex(index);
-  const closeImage = () => setActiveIndex(null);
-
-  const nextImage = () => {
-    setActiveIndex((prev) => (prev + 1) % imageCount);
-  };
-
-  const prevImage = () => {
-    setActiveIndex((prev) => (prev === 0 ? imageCount - 1 : prev - 1));
-  };
-
-  
-
-  useEffect(() => {
-    const handleKey = (event) => {
-      if (activeIndex === null) return;
-
-      if (event.key === "Escape") closeImage();
-      if (event.key === "ArrowRight") {
-        setActiveIndex((prev) => (prev + 1) % imageCount);
-      }
-      if (event.key === "ArrowLeft") {
-        setActiveIndex((prev) => (prev === 0 ? imageCount - 1 : prev - 1));
-      }
-    };
-
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [activeIndex, imageCount]);
+  const {
+    selectedImageIndex: activeIndex,
+    activeImage,
+    openImageModal: openImage,
+    closeImageModal: closeImage,
+    showPrevImage,
+    showNextImage,
+  } = useImageModal(images);
 
   useScrollVisibility([
     ".residential-page .res-big",
@@ -341,7 +316,7 @@ function UIHomes() {
             className="nav-btn left"
             onClick={(e) => {
               e.stopPropagation();
-              prevImage();
+              showPrevImage(e);
             }}
             aria-label="Previous image"
           >
@@ -349,7 +324,7 @@ function UIHomes() {
           </button>
 
           <img
-            src={images[activeIndex]}
+            src={activeImage}
             alt={`Residential project ${activeIndex + 1}`}
             className="modal-img"
             onClick={(e) => e.stopPropagation()}
@@ -362,7 +337,7 @@ function UIHomes() {
             className="nav-btn right"
             onClick={(e) => {
               e.stopPropagation();
-              nextImage();
+              showNextImage(e);
             }}
             aria-label="Next image"
           >

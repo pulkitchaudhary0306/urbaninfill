@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import "../HeaderFooter/Header.css";
 import "./ArchitectureProjects.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
+import useImageModal from "./useImageModal";
 import projectsData from "./ArchitectureProjectsData";
 
 function ArchitectureProjects() {
@@ -33,7 +34,6 @@ function ArchitectureProjects() {
   ]);
 
   const { id } = useParams();
-  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const architectureProjects = useMemo(() => projectsData, []);
  
@@ -47,33 +47,14 @@ function ArchitectureProjects() {
     return [project.mainImage, ...project.sideImages, ...project.galleryImages];
   }, [project]);
 
-  const openImageModal = (image) => {
-    const index = allImages.indexOf(image);
-    if (index !== -1) setSelectedImageIndex(index);
-  };
-
-  const closeImageModal = () => setSelectedImageIndex(null);
-
-  const showPrevImage = (e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) => (prev === 0 ? allImages.length - 1 : prev - 1));
-  };
-
-  const showNextImage = (e) => {
-    e.stopPropagation();
-    setSelectedImageIndex((prev) => (prev === allImages.length - 1 ? 0 : prev + 1));
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (selectedImageIndex === null) return;
-      if (e.key === "Escape") closeImageModal();
-      if (e.key === "ArrowLeft") setSelectedImageIndex((prev) => (prev === 0 ? allImages.length - 1 : prev - 1));
-      if (e.key === "ArrowRight") setSelectedImageIndex((prev) => (prev === allImages.length - 1 ? 0 : prev + 1));
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedImageIndex, allImages.length]);
+  const {
+    selectedImageIndex,
+    activeImage,
+    openImageModal,
+    closeImageModal,
+    showPrevImage,
+    showNextImage,
+  } = useImageModal(allImages);
 
   if (!project) {
     return (
@@ -199,7 +180,7 @@ function ArchitectureProjects() {
           <button className="image-slide-btn image-slide-btn--left" onClick={showPrevImage}>‹</button>
           <div className="image-modal-inner" onClick={(e) => e.stopPropagation()}>
             <img
-              src={allImages[selectedImageIndex]}
+              src={activeImage}
               alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
               className="image-modal-content"
               loading="lazy"
