@@ -144,7 +144,7 @@ function Archives() {
 
   return (
     <div className="archives-page">
-<header className="archives-header">
+      <header className="archives-header">
         <div className="archives-header-content">
           <p className="mini-title">Design History</p>
           <h1>Archives</h1>
@@ -236,7 +236,7 @@ function Archives() {
           </button>
         </div>
       )}
-</div>
+    </div>
   );
 }
 

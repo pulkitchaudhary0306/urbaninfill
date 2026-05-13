@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "../HeaderFooter/Header.css";
 import "./Architecture.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 
 function Architecture() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [searchParams] = useSearchParams();
 
   usePageReveal([
     ".project-page .arch-hero-content > *",
@@ -32,11 +31,21 @@ function Architecture() {
   const filterCategories = [
     "All",
     "Commercial",
-    "Healthcare",
+    "Hospitals",
     "Hospitality",
     "Cinema",
     "Residential",
   ];
+
+  const requestedCategory = searchParams.get("category");
+  const activeFilter = filterCategories.includes(requestedCategory)
+    ? requestedCategory
+    : "All";
+
+  const getCategoryLink = (category) =>
+    category === "All"
+      ? "/architecture"
+      : `/architecture?category=${encodeURIComponent(category)}`;
 
   const ArchitectureProjects = [
     {
@@ -69,7 +78,7 @@ function Architecture() {
       image: "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.webp",
       title: "Ananta Hospital",
       location: "Gurgaon, Haryana",
-      category: "Healthcare",
+      category: "Hospitals",
     },
     {
       id: 5,
@@ -79,39 +88,58 @@ function Architecture() {
       location: "Dehradun, Uttarakhand",
       category: "Cinema",
     },
+
     {
-      id: 6,
-      slug: "batra-hospital-medical-research-centre-cathlab-renovation",
-      image: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
-      title: "Batra Hospital & Medical Research Centre – Cathlab",
-      location: "New Delhi",
-      category: "Healthcare",
+      id: 7,
+      slug: "darbaripur-modern-facade-design",
+      image: "/Architecture/DarbaripurHouse/front-angle.webp",
+      title: "Modern Facade Design – Darbaripur Residence",
+      location: "Gurugram, Haryana",
+      category: "Residential",
     },
     {
-  id: 7,
-  slug: "darbaripur-modern-facade-design",
-  image: "/Architecture/DarbaripurHouse/front-angle.webp",
-  title: "Modern Facade Design – Darbaripur Residence",
-  location: "Gurugram, Haryana",
-  category: "Residential",
-},
-{
-  id: 8,
-  slug: "club-house-sirsa-recreational-space",
-  image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
-  title: "Club House Sirsa",
-  location: "Sirsa",
+      id: 8,
+      slug: "club-house-sirsa-recreational-space",
+      image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+      title: "Club House Sirsa",
+      location: "Sirsa",
+      category: "Hospitality",
+    },
+    {
+  id: 9,
+  slug: "hill-view-resort-hospitality-design",
+  image: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
+  title: "AKSHORA PADAMPURI - Uttarakhand",
+  location: "Himalayan Region",
   category: "Hospitality",
 },
+{
+  id: 10,
+  slug: "jindal-stone-showroom-exterior-design",
+  image: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
+  title: "Jindal Stone",
+  location: "India",
+  category: "Commercial",
+},
+{
+  id: 11,
+  slug: "mrs-jyoti-yadav-hotel-hospitality-design",
+  image: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
+  title: "Mrs. Jyoti Yadav Hotel",
+  location: "India",
+  category: "Hospitality",
+},
+
   ];
 
-  const filteredProjects = activeFilter === "All" 
-    ? ArchitectureProjects 
+  const filteredProjects = activeFilter === "All"
+    ? ArchitectureProjects
     : ArchitectureProjects.filter(p => p.category === activeFilter);
 
   return (
     <div className="project-page">
-<section className="arch-hero">
+      {/* Hero Section */}
+      <section className="arch-hero">
         <img
           src="/Architecture/cover.webp"
           alt="Modern architecture house"
@@ -131,6 +159,7 @@ function Architecture() {
         </div>
       </section>
 
+      {/* Projects Section */}
       <section className="arch-most-viewed">
         <p className="mini-title">Featured Architecture</p>
         <h2>Our Projects</h2>
@@ -141,13 +170,13 @@ function Architecture() {
 
         <div className="filter-tabs">
           {filterCategories.map((category) => (
-            <button
+            <Link
               key={category}
+              to={getCategoryLink(category)}
               className={`filter-tab ${activeFilter === category ? "active" : ""}`}
-              onClick={() => setActiveFilter(category)}
             >
               {category}
-            </button>
+            </Link>
           ))}
         </div>
 
@@ -176,7 +205,7 @@ function Architecture() {
           ))}
         </div>
       </section>
-</div>
+    </div>
   );
 }
 

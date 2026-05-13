@@ -854,16 +854,16 @@ background-color: black;
   }
 
   .slideBtn {
-    width: 44px;
-    height: 44px;
-    font-size: 30px;
+    width: 36px;
+    height: 36px;
+    font-size: 23px;
   }
 
   .slideBtn--left {
-    left: 10px;
+    left: 8px;
   }
 
   .slideBtn--right {
-    right: 10px;
+    right: 8px;
   }
 }

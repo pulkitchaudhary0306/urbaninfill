@@ -25,7 +25,8 @@ function Contact() {
   return (
     <div>
 <div className="contact-page">
-        <section className="contact-hero">
+                    {/* Hero Section */}
+            <section className="contact-hero">
           <div className="contact-hero-overlay">
             <div className="contact-hero-content">
               <h1>CONTACT US</h1>
@@ -33,7 +34,8 @@ function Contact() {
           </div>
         </section>
 
-        <section className="contact-info-section">
+                    {/* Contact Info Section */}
+            <section className="contact-info-section">
           <div className="contact-info-container">
             <div className="contact-card">
               <div className="contact-icon">
@@ -87,7 +89,8 @@ function Contact() {
           </div>
         </section>
 
-        <section className="map-section">
+                    {/* Map Section */}
+            <section className="map-section">
           <iframe
             title="URBAN iNFiLL Location"
             src="https://maps.google.com/maps?hl=en&q=URBAN%20iNFiLL%2C%20Navkirti%20Arcade%2C%20302%2C%20Golf%20Course%20Ext%20Rd%2C%20Huda%20Sector%2C%20Sushant%20Lok%202%2C%20Sector%2055%2C%20Gurugram%2C%20Haryana%20122003&t=&z=15&ie=UTF8&iwloc=B&output=embed"

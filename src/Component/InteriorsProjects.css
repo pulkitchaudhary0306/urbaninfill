@@ -441,6 +441,26 @@ body {
 }
 
 @media (max-width: 768px) {
+  .image-slide-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .image-slide-btn--left {
+    left: 8px;
+  }
+
+  .image-slide-btn--right {
+    right: 8px;
+  }
+
+  .image-modal-close {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+
   .project-hero {
     padding: 130px 0 50px;
   }

@@ -79,6 +79,7 @@ function Footer() {
           <ul className="site-footer__list">
             <li><Link to="/architecture">Architecture</Link></li>
             <li><Link to="/interior">Interior</Link></li>
+            <li><Link to="/uihomes">UI Homes</Link></li>
             <li><Link to="/projectmanagement">Project Management</Link></li>
             <li><Link to="/archives">Archives</Link></li>
           </ul>

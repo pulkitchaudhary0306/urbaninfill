@@ -1,17 +1,154 @@
 const blogs = [
   {
+    id: 4,
+
+    slug: "why-many-hospitals-in-india-are-built-well-but-planned-poorly",
+
+    category: "HEALTHCARE ARCHITECTURE",
+
+    title:
+      "Why Many Hospitals in India Are Built Well but Planned Poorly",
+
+    image:
+      "/Blogs/batra-hospital-cathlab-main-delhi.webp",
+
+    author: "Subhankar Sengupta",
+
+    excerpt:
+      "Hospitals are among the most complex buildings to design, yet many healthcare facilities in India continue to struggle because operational planning is often overlooked long before construction begins.",
+
+    meta: [
+      "By Subhankar Sengupta",
+      "07 May 2026"
+    ],
+
+    paragraphs: [
+      "Hospitals are among the most complex buildings to design. They operate 24 hours a day, support life-critical functions, and must coordinate doctors, nurses, patients, medical equipment, and logistics within a tightly controlled environment.",
+
+      "Yet in India, hospital projects are often approached like conventional real estate developments. Floor areas are optimized, departments are stacked across floors, and medical equipment is accommodated later.",
+
+      "The building may look impressive. But once operations begin, inefficiencies start to surface.",
+
+      "A hospital is not simply a building with medical rooms. It is an operational ecosystem. And architecture plays a decisive role in how that ecosystem performs.",
+
+      "In hospital design, the most critical decisions are made long before construction begins. A poorly placed department, an inefficient corridor system, or an overlooked service zone can affect hospital operations for decades.",
+
+      "Unlike office buildings or retail environments, hospitals must handle multiple overlapping flows simultaneously.",
+
+      "These include patients and attendants, doctors and nursing staff, emergency movement, diagnostic transfers, sterile supply logistics, biomedical waste management, and equipment transport.",
+
+      "If these flows intersect without clear planning, the building itself becomes a bottleneck.",
+
+      "In healthcare architecture, efficiency is not a luxury. It is a necessity.",
+
+      "Many assume hospital design is about distributing departments and rooms. In reality, it is about designing clinical workflows within physical space.",
+
+      "A well-planned hospital must coordinate emergency response movement, proximity between diagnostics and critical care, sterile and non-sterile circulation, infection control zones, medical infrastructure systems, and intuitive patient navigation.",
+
+      "In this context, every meter of distance matters.",
+
+      "Inside a hospital, distance becomes time. And in medicine, time can become risk.",
+
+      "Across numerous healthcare projects in India, several recurring planning issues appear frequently. These problems often arise not from lack of investment, but from insufficient focus on operational design during the early stages of planning.",
+
+      "One of the most common failures is poor departmental zoning. Certain hospital departments must function almost as a single integrated system.",
+
+      "For example, Emergency to CT Scan to ICU, ICU to Operation Theatre, and Diagnostics to Critical Care require highly efficient adjacency planning.",
+
+      "When these departments are located far apart or on different floors without careful planning, patient transfer becomes inefficient and sometimes risky.",
+
+      "A stretcher moving long distances through corridors or waiting for elevators during emergencies is not just inconvenient — it reflects a fundamental planning oversight.",
+
+      "In hospital planning, adjacency is not a preference. It is a clinical requirement.",
+
+      "Another major issue is mixed circulation paths. Hospitals must accommodate several types of movement simultaneously.",
+
+      "Ideally, circulation systems should distinguish between patient movement, clinical staff circulation, attendants and visitors, service logistics, biomedical waste handling, and sterile supply movement.",
+
+      "However, many hospitals operate with shared corridors for all these flows.",
+
+      "The consequences are visible every day: congestion, infection risks, operational delays, and staff fatigue.",
+
+      "A well-planned hospital separates flows before it separates walls.",
+
+      "Hospital infrastructure is also far more demanding than that of conventional commercial buildings.",
+
+      "Design planning must integrate systems such as medical gas pipelines, advanced HVAC zoning for sterile environments, heavy diagnostic equipment loads, uninterrupted power systems, specialized plumbing and drainage, and infection-controlled air pressure zones.",
+
+      "If architecture and engineering are not integrated from the earliest planning stage, these systems become difficult to accommodate later.",
+
+      "The result is often compromised layouts, inefficient service zones, or costly redesigns.",
+
+      "In healthcare design, architecture and engineering cannot work sequentially. They must evolve together.",
+
+      "Another recurring issue is the failure to plan for future expansion. Healthcare technology and treatment models evolve rapidly.",
+
+      "A hospital built today may need to accommodate tomorrow’s expanded ICUs, advanced imaging departments, robotic surgery facilities, or larger emergency care units.",
+
+      "However, many hospitals are designed with little consideration for long-term expansion.",
+
+      "When growth becomes necessary, departments must be relocated, circulation patterns disrupted, and infrastructure retrofitted.",
+
+      "This increases costs and interrupts hospital operations.",
+
+      "A hospital designed only for today becomes obsolete tomorrow.",
+
+      "In many hospital projects, the true success of the facility is determined during the planning phase — long before the first brick is laid.",
+
+      "Thoughtful architectural planning can significantly improve clinical efficiency, patient flow, staff productivity, infection control, and adaptability for future medical technologies.",
+
+      "In this sense, the architectural plan becomes the framework within which healthcare is delivered.",
+
+      "When planning is done well, the building quietly supports medical professionals in their work.",
+
+      "When planning is poor, the building constantly works against them.",
+
+      "India is witnessing rapid expansion in healthcare infrastructure, from multi-specialty hospitals to advanced diagnostic centers.",
+
+      "As this growth continues, hospital design must move beyond simply constructing buildings.",
+
+      "It must focus on creating environments where clinical workflows, technology, and infrastructure function seamlessly together.",
+
+      "Because ultimately, good hospital architecture does not just shape buildings. It shapes how healthcare is delivered."
+    ],
+
+    aboutStory:
+      "A detailed exploration of hospital planning challenges in India, examining how circulation systems, infrastructure coordination, departmental zoning, and long-term flexibility directly influence clinical efficiency and healthcare delivery.",
+
+    focus: [
+      "Healthcare Architecture",
+      "Hospital Planning",
+      "Clinical Workflow Design",
+      "Healthcare Infrastructure",
+      "Medical Planning",
+      "Hospital Operations",
+      "Healthcare Systems"
+    ],
+
+    tags: [
+      "Hospital Design",
+      "Healthcare Architecture",
+      "Clinical Efficiency",
+      "Hospital Planning",
+      "Medical Infrastructure",
+      "Healthcare Design",
+      "Architecture India",
+      "Urban Infill"
+    ]
+  },
+  {
     id: 7,
     slug: "critical-mistakes-office-planning-india",
     category: "WORKPLACE PLANNING",
     title: "5 Critical Mistakes in Office Planning in India",
-    image: "/Blogs/workplace-architecture-india-cover.webp",
+    image: "/Blogs/critical-mistakes-office-planning-cover.webp",
     author: "Subhankar Sengupta",
     role: "Principal Architect, Urban Infill",
     excerpt:
       "Why many workplace projects in India go wrong before design even begins, and how planning discipline can prevent layout, budget, service, and operational issues.",
-    meta: ["By Subhankar Sengupta", "07 May 2026"],
+    meta: ["By Subhankar Sengupta", "24 April 2026"],
     paragraphs: [
-      "India's corporate landscape is expanding rapidly. Organizations across sectors are investing heavily in new workplaces as they scale operations, attract talent, and strengthen brand identity.",
+      "    India's corporate landscape is expanding rapidly. Organizations across sectors are investing heavily in new workplaces as they scale operations, attract talent, and strengthen brand identity.",
       "Yet despite these investments, many office projects struggle with layout inefficiencies, budget overruns, service conflicts, and operational issues soon after completion.",
       "While these problems are often blamed on design changes or contractor delays, the real cause usually lies much earlier in the process.",
       "Most office projects in India do not fail during construction. They fail during planning.",
@@ -95,9 +232,9 @@ const blogs = [
     role: "Principal Architect, Urban Infill",
     excerpt:
       "A technical look at why multiplex cinema design demands early coordination between architecture, acoustics, engineering, life safety, and operations.",
-    meta: ["By Subhankar Sengupta", "07 May 2026"],
+    meta: ["By Subhankar Sengupta", "20 April 2026"],
     paragraphs: [
-      "Across India's rapidly evolving retail and entertainment landscape, multiplex cinemas have become critical anchors within shopping malls and mixed-use developments. For most visitors, the cinema experience appears straightforward - a comfortable seat, a large screen, immersive sound, and a lobby offering refreshments before the film begins.",
+      "     Across India's rapidly evolving retail and entertainment landscape, multiplex cinemas have become critical anchors within shopping malls and mixed-use developments. For most visitors, the cinema experience appears straightforward - a comfortable seat, a large screen, immersive sound, and a lobby offering refreshments before the film begins.",
       "Behind this seemingly simple environment, however, lies one of the most technically demanding typologies in commercial architecture.",
       "Designing a multiplex requires far more than arranging seating around a screen. It involves a precise integration of auditorium geometry, acoustic engineering, HVAC performance, structural planning, life-safety systems, and complex crowd circulation patterns. Each of these components directly influences the quality of the cinematic experience.",
       "When these parameters are not addressed early in the planning process, multiplex projects often encounter operational inefficiencies, compromised viewing conditions, or costly redesign during construction.",
@@ -167,117 +304,118 @@ const blogs = [
       "Urban Infill"
     ]
   },
+
   {
-  id: 1,
-  slug: "designing-100-offices-workplace-architecture-india",
-  category: "WORKPLACE ARCHITECTURE",
-  title: "Designing 100+ Offices: Why Workplace Architecture in India Needs More Discipline, Not Decoration",
-  image: "/Blogs/workplace-architecture-india-cover.webp",
-  author: "Ar. Subhankar Sengupta",
-  excerpt:
-    "After delivering more than 100 office environments across India",
-
-  meta: ["By Ar. Subhankar Sengupta", "07 May 2026"],
-
-  paragraphs: [
-    "India’s office design industry is at a turning point. Over the last decade, workplace interiors have become increasingly image-driven. Reception areas are designed for impact. Global trends are replicated at speed. Material palettes are finalized early. Visual storytelling dominates presentations.",
-
-    "Yet beneath the surface, a critical question is often overlooked: Is the workplace planned to perform — or merely to impress?",
-
-    "After delivering more than 100 office environments across scales — from compact entrepreneurial setups to large corporate headquarters — one observation remains consistent: workplace projects rarely fail because of insufficient budgets. They fail because of insufficient planning discipline.",
-
-    "In many commercial projects, conversations begin with finishes rather than function. Mood boards are discussed before movement flows are mapped. Open-office aesthetics are approved before acoustic logic is tested. Ceilings are visualized before services are coordinated.",
-
-    "The outcome is predictable. Services get compressed into residual spaces. Circulation becomes reactive. Storage is minimized. Expansion becomes complicated. This aesthetic-first approach may create immediate visual appeal, but it compromises long-term operational efficiency.",
-
-    "Workplaces are not showpieces. They are business infrastructure. And infrastructure demands logic.",
-
-    "Interestingly, some of the strongest planning discipline emerges in smaller offices. In a 500–1,500 sq ft environment, inefficiency is immediately visible. A misplaced partition disrupts workflow. Poor zoning affects productivity. Every square foot must justify its cost.",
-
-    "These constraints cultivate clarity. As office scales increase to 25,000 or 100,000 sq ft, complexity expands — but principles remain unchanged: clear circulation hierarchy, structured zoning between collaborative and focused areas, early MEP integration, scalable planning frameworks, and defined service corridors.",
-
-    "Large offices do not require more decoration. They require stronger systems thinking.",
-
-    "The pandemic period brought a renewed focus on infrastructure-led environments, particularly in technically demanding spaces such as data centers. In such projects, there is no tolerance for improvisation. Electrical redundancy, HVAC precision, structured cabling, and fire safety integration must be resolved with accuracy.",
-
-    "Coordination errors are not cosmetic issues — they are operational risks. This level of technical rigor offers an important lesson for workplace design: if services are treated as secondary layers, the architecture is already compromised.",
-
-    "In commercial offices, early-stage MEP coordination determines ceiling heights, workstation layouts, acoustic performance, and long-term adaptability. Material selection, while important, is rarely the defining factor in performance. Infrastructure planning is.",
-
-    "There is a common assumption that high-performing workplaces require generous budgets. In practice, many efficient offices emerge from financial discipline rather than excess.",
-
-    "When budgets are tightly defined, planning becomes sharper. Redundancies are eliminated. Material choices become strategic. Spatial hierarchy becomes clearer. Cost awareness forces clarity of priorities.",
-
-    "Over time, this discipline shifts client conversations from aesthetics toward performance metrics — maintenance cycles, scalability, employee density, and operational flexibility.",
-
-    "This shift marks the difference between interior decoration and workplace architecture.",
-
-    "India’s commercial landscape is evolving rapidly, with organizations expanding across cities and adapting to hybrid working models. The next generation of workplace architecture must move beyond trend replication.",
-
-    "It must prioritize planning intelligence, integrated services design, acoustic and environmental performance, long-term adaptability, and lifecycle cost awareness.",
-
-    "Brand identity will always remain important. But when brand becomes the starting point rather than the outcome of strong planning, architecture weakens.",
-
-    "The most resilient workplaces are not those that photograph well on day one. They are the ones that function efficiently in year five.",
-
-    "Decoration captures attention. Discipline builds longevity. And in business environments, longevity is the true measure of design success."
-  ],
-
-  aboutStory:
-    "An in-depth reflection on the evolution of workplace architecture in India, examining why disciplined planning, technical coordination, and systems thinking matter far more than surface-level aesthetics in modern office environments.",
-
-  focus: [
-    "Workplace Architecture",
-    "Corporate Office Planning",
-    "Commercial Interiors",
-    "MEP Coordination",
-    "Data Centers",
-    "Infrastructure-Led Design",
-    "Scalable Workspaces"
-  ],
-
-  tags: [
-    "Office Design",
-    "Workplace Architecture",
-    "Corporate Interiors",
-    "Commercial Design",
-    "Architecture India",
-    "MEP Planning",
-    "Interior Strategy",
-    "Urban Infill"
-  ]
-},
+    id: 2,
+    slug: "urban-infill-architecture-8th-anniversary-founders-journey",
+    category: "8 YEARS OF URBAN iNFiLL",
+    title: "Still Building, Still Raising the Bar",
+    image: "/Blogs/8th-anniversary-cover.webp",
+    author: "Subhankar Sengupta",
+    excerpt: "Reflecting on eight years of evolution—from a solo after-hours pursuit to a national practice built on clarity, intent, and performance.",
+    meta: ["By Subhankar Sengupta", "14 Apr 2026"], // Updated to Poila Boishakh / Anniversary timing
+    paragraphs: [
+      "     Eight years. It is a milestone that feels both like a lifetime and just the beginning. As URBAN iNFiLL marks its eighth anniversary, we find ourselves looking back at a journey that has been anything but linear. From a small studio to managing a diverse portfolio of complex projects across India, our path has been defined by a constant evolution.",
+      "We have learned that design isn't built in comfort; it is forged through challenges, high-stakes decisions, and the relentless pursuit of refinement. URBAN iNFiLL did not begin as a large architecture practice. It began in 2018 with a simple belief: that disciplined work and honest design thinking would eventually find their place in the market.",
+      "Coming from a family of doctors, I had no industry connections to lean on. Architecture was a path that had to be built from scratch—starting with schooling at De Nobili (Dhanbad), a degree from Pune, and formative years in Delhi. Before URBAN iNFiLL was a reality, it was built in the 'after-hours.' From 2015 to 2018, the foundation was laid during long days in professional practice and even longer nights developing a personal network and portfolio.",
+      "Our first assignment was a modest 500 sq ft office. At that stage, the size didn’t matter. What mattered was the opportunity to build trust and demonstrate that we could deliver thoughtful design. In the early days, the focus was often on doing 'more.' But as the practice matured—moving from that original small studio to handling developments spanning several lakh square feet—our philosophy shifted toward doing what truly matters.",
+      "Today, whether we are designing a corporate workplace, a cinema, a high-tech data center, or a specialized healthcare facility like Ananta Hospital, our work is driven by three core pillars: Clarity, Intent, and Performance. We cut through the noise to find the heart of a spatial problem, ensuring every line drawn serves a human-centric purpose.",
+      "We did not get here alone. Our most challenging phase—the COVID-19 period—became our greatest opportunity to reorganize and strengthen. It taught us that architecture must go beyond visual expression; it must solve real spatial, technical, and operational challenges. This milestone belongs equally to our collaborators, who have pushed us to think better, and to our clients, whose long-term partnerships are a testament to the trust we’ve built.",
+      "This year, our anniversary feels even more poignant as it coincides with Poila Boishakh. The dawn of a new year is a powerful reminder that every cycle is an opportunity to begin again—sharper, stronger, and with even more intentionality. From a 500 sq ft start to a national presence, the journey continues.",
+      "8 years in. Still building. Still raising the bar."
+    ],
+    aboutStory:
+      "An integrated account of URBAN iNFiLL's 8-year evolution, merging the grit of the founder's journey with the firm's current high-performance philosophy.",
+    focus: [
+      "Corporate Workplaces",
+      "Cinema Architecture",
+      "Healthcare Facilities",
+      "Data Centers",
+      "Hospitality Spaces",
+      "Residential Developments"
+    ],
+    tags: ["Anniversary", "Founder Story", "Architectural Philosophy", "Urban Infill"]
+  },
   {
-  id: 2,
-  slug: "urban-infill-architecture-8th-anniversary-founders-journey",
-  category: "8 YEARS OF URBAN iNFiLL",
-  title: "Still Building, Still Raising the Bar",
-  image: "/Blogs/8th-anniversary-cover.webp",
-  author: "Subhankar Sengupta",
-  excerpt: "Reflecting on eight years of evolution—from a solo after-hours pursuit to a national practice built on clarity, intent, and performance.",
-  meta: ["By Subhankar Sengupta", "14 Apr 2026"], // Updated to Poila Boishakh / Anniversary timing
-  paragraphs: [
-    "     Eight years. It is a milestone that feels both like a lifetime and just the beginning. As URBAN iNFiLL marks its eighth anniversary, we find ourselves looking back at a journey that has been anything but linear. From a small studio to managing a diverse portfolio of complex projects across India, our path has been defined by a constant evolution.",
-    "We have learned that design isn't built in comfort; it is forged through challenges, high-stakes decisions, and the relentless pursuit of refinement. URBAN iNFiLL did not begin as a large architecture practice. It began in 2018 with a simple belief: that disciplined work and honest design thinking would eventually find their place in the market.",
-    "Coming from a family of doctors, I had no industry connections to lean on. Architecture was a path that had to be built from scratch—starting with schooling at De Nobili (Dhanbad), a degree from Pune, and formative years in Delhi. Before URBAN iNFiLL was a reality, it was built in the 'after-hours.' From 2015 to 2018, the foundation was laid during long days in professional practice and even longer nights developing a personal network and portfolio.",
-    "Our first assignment was a modest 500 sq ft office. At that stage, the size didn’t matter. What mattered was the opportunity to build trust and demonstrate that we could deliver thoughtful design. In the early days, the focus was often on doing 'more.' But as the practice matured—moving from that original small studio to handling developments spanning several lakh square feet—our philosophy shifted toward doing what truly matters.",
-    "Today, whether we are designing a corporate workplace, a cinema, a high-tech data center, or a specialized healthcare facility like Ananta Hospital, our work is driven by three core pillars: Clarity, Intent, and Performance. We cut through the noise to find the heart of a spatial problem, ensuring every line drawn serves a human-centric purpose.",
-    "We did not get here alone. Our most challenging phase—the COVID-19 period—became our greatest opportunity to reorganize and strengthen. It taught us that architecture must go beyond visual expression; it must solve real spatial, technical, and operational challenges. This milestone belongs equally to our collaborators, who have pushed us to think better, and to our clients, whose long-term partnerships are a testament to the trust we’ve built.",
-    "This year, our anniversary feels even more poignant as it coincides with Poila Boishakh. The dawn of a new year is a powerful reminder that every cycle is an opportunity to begin again—sharper, stronger, and with even more intentionality. From a 500 sq ft start to a national presence, the journey continues.",
-    "8 years in. Still building. Still raising the bar."
-  ],
-  aboutStory:
-    "An integrated account of URBAN iNFiLL's 8-year evolution, merging the grit of the founder's journey with the firm's current high-performance philosophy.",
-  focus: [
-    "Corporate Workplaces",
-    "Cinema Architecture",
-    "Healthcare Facilities",
-    "Data Centers",
-    "Hospitality Spaces",
-    "Residential Developments"
-  ],
-  tags: ["Anniversary", "Founder Story", "Architectural Philosophy", "Urban Infill"]
-},
+    id: 1,
+    slug: "designing-100-offices-workplace-architecture-india",
+    category: "WORKPLACE ARCHITECTURE",
+    title: "Designing 100+ Offices: Why Workplace Architecture in India Needs More Discipline, Not Decoration",
+    image: "/Blogs/workplace-architecture-india-cover.webp",
+    author: "Ar. Subhankar Sengupta",
+    excerpt:
+      "After delivering more than 100 office environments across India",
+
+    meta: ["By Ar. Subhankar Sengupta", "10 March 2026"],
+
+    paragraphs: [
+      "    India’s office design industry is at a turning point. Over the last decade, workplace interiors have become increasingly image-driven. Reception areas are designed for impact. Global trends are replicated at speed. Material palettes are finalized early. Visual storytelling dominates presentations.",
+
+      "Yet beneath the surface, a critical question is often overlooked: Is the workplace planned to perform — or merely to impress?",
+
+      "After delivering more than 100 office environments across scales — from compact entrepreneurial setups to large corporate headquarters — one observation remains consistent: workplace projects rarely fail because of insufficient budgets. They fail because of insufficient planning discipline.",
+
+      "In many commercial projects, conversations begin with finishes rather than function. Mood boards are discussed before movement flows are mapped. Open-office aesthetics are approved before acoustic logic is tested. Ceilings are visualized before services are coordinated.",
+
+      "The outcome is predictable. Services get compressed into residual spaces. Circulation becomes reactive. Storage is minimized. Expansion becomes complicated. This aesthetic-first approach may create immediate visual appeal, but it compromises long-term operational efficiency.",
+
+      "Workplaces are not showpieces. They are business infrastructure. And infrastructure demands logic.",
+
+      "Interestingly, some of the strongest planning discipline emerges in smaller offices. In a 500–1,500 sq ft environment, inefficiency is immediately visible. A misplaced partition disrupts workflow. Poor zoning affects productivity. Every square foot must justify its cost.",
+
+      "These constraints cultivate clarity. As office scales increase to 25,000 or 100,000 sq ft, complexity expands — but principles remain unchanged: clear circulation hierarchy, structured zoning between collaborative and focused areas, early MEP integration, scalable planning frameworks, and defined service corridors.",
+
+      "Large offices do not require more decoration. They require stronger systems thinking.",
+
+      "The pandemic period brought a renewed focus on infrastructure-led environments, particularly in technically demanding spaces such as data centers. In such projects, there is no tolerance for improvisation. Electrical redundancy, HVAC precision, structured cabling, and fire safety integration must be resolved with accuracy.",
+
+      "Coordination errors are not cosmetic issues — they are operational risks. This level of technical rigor offers an important lesson for workplace design: if services are treated as secondary layers, the architecture is already compromised.",
+
+      "In commercial offices, early-stage MEP coordination determines ceiling heights, workstation layouts, acoustic performance, and long-term adaptability. Material selection, while important, is rarely the defining factor in performance. Infrastructure planning is.",
+
+      "There is a common assumption that high-performing workplaces require generous budgets. In practice, many efficient offices emerge from financial discipline rather than excess.",
+
+      "When budgets are tightly defined, planning becomes sharper. Redundancies are eliminated. Material choices become strategic. Spatial hierarchy becomes clearer. Cost awareness forces clarity of priorities.",
+
+      "Over time, this discipline shifts client conversations from aesthetics toward performance metrics — maintenance cycles, scalability, employee density, and operational flexibility.",
+
+      "This shift marks the difference between interior decoration and workplace architecture.",
+
+      "India’s commercial landscape is evolving rapidly, with organizations expanding across cities and adapting to hybrid working models. The next generation of workplace architecture must move beyond trend replication.",
+
+      "It must prioritize planning intelligence, integrated services design, acoustic and environmental performance, long-term adaptability, and lifecycle cost awareness.",
+
+      "Brand identity will always remain important. But when brand becomes the starting point rather than the outcome of strong planning, architecture weakens.",
+
+      "The most resilient workplaces are not those that photograph well on day one. They are the ones that function efficiently in year five.",
+
+      "Decoration captures attention. Discipline builds longevity. And in business environments, longevity is the true measure of design success."
+    ],
+
+    aboutStory:
+      "An in-depth reflection on the evolution of workplace architecture in India, examining why disciplined planning, technical coordination, and systems thinking matter far more than surface-level aesthetics in modern office environments.",
+
+    focus: [
+      "Workplace Architecture",
+      "Corporate Office Planning",
+      "Commercial Interiors",
+      "MEP Coordination",
+      "Data Centers",
+      "Infrastructure-Led Design",
+      "Scalable Workspaces"
+    ],
+
+    tags: [
+      "Office Design",
+      "Workplace Architecture",
+      "Corporate Interiors",
+      "Commercial Design",
+      "Architecture India",
+      "MEP Planning",
+      "Interior Strategy",
+      "Urban Infill"
+    ]
+  },
   {
     id: 3,
     slug: "urban-infill-architecture-founders-journey",
@@ -322,6 +460,7 @@ const blogs = [
       "Residential Developments"
     ]
   },
+
   {
     id: 4,
     slug: "aravali-resort-hospitality-architecture",
@@ -385,7 +524,7 @@ const blogs = [
       "Hospitality Interiors"
     ]
   },
-  
+
 ];
 
 export default blogs;

@@ -153,14 +153,12 @@
   background:#fff;
   border-radius:12px;
   overflow:hidden;
-  transition:0.3s;
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
 .post-card:hover{
-  transform:translateY(-8px);
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 

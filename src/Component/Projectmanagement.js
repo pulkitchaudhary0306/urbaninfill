@@ -3,10 +3,10 @@ import "../HeaderFooter/Header.css";
 import "./Projectmanagement.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
-   
 
 
- 
+
+
 
 function Projectmanagement() {
   usePageReveal([
@@ -24,7 +24,7 @@ function Projectmanagement() {
 
   return (
     <div className="project-page">
-<div className="pm-hero">
+      <div className="pm-hero">
         <div className="pm-hero-content">
           <div className="pm-tag">COMING SOON</div>
           <h1>  Project Management</h1>
@@ -37,7 +37,7 @@ function Projectmanagement() {
           </div>
         </div>
       </div>
-</div>
+    </div>
   );
 }
 

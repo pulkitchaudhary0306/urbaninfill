@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, memo } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -11,6 +11,7 @@ import useScrollVisibility from "./useScrollVisibility";
 import "../HeaderFooter/Header.css";
 
 import "./Home.css";
+import LazyImage from "./LazyImage";
 
 
 
@@ -242,7 +243,152 @@ const services = [
 
 ];
 
-function Counter({ end, duration = 2000, suffix = " +" }) {
+const featuredProjectItems = [
+  {
+    title: "The Aravali Resort",
+    src: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
+    alt: "The Aravali Resort architecture",
+    link: "/ArchitectureProjects/aravali-resort-hospitality-design-india",
+  },
+  {
+    title: "Sargam Theatre",
+    src: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
+    alt: "Sargam Theatre exterior",
+    link: "/ArchitectureProjects/ssargam-cinema-multiplex-design-india",
+  },
+  {
+    title: "Monsoon Mall",
+    src: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
+    alt: "Monsoon Mall commercial architecture",
+    link: "/ArchitectureProjects/moonson-mall-hospitality-retail-design-sirsa",
+  },
+  {
+    title: "Ananta Hospital",
+    src: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.webp",
+    alt: "Ananta Hospital healthcare architecture",
+    link: "/ArchitectureProjects/annanta-hospital-healthcare-design-india",
+  },
+  {
+    title: "Movie Lounge Expansion",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    alt: "Movie Lounge cinema expansion",
+    link: "/ArchitectureProjects/movie-lounge-crossroad-mall-dehradun-expansion",
+  },
+  {
+    title: "Darbaripur Residence",
+    src: "/Architecture/DarbaripurHouse/main-view.webp",
+    alt: "Darbaripur luxury bungalow architecture",
+    link: "/ArchitectureProjects/darbaripur-modern-facade-design",
+  },
+  {
+    title: "Club House Sirsa",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    alt: "Club House Sirsa recreational architecture",
+    link: "/ArchitectureProjects/club-house-sirsa-recreational-space",
+  },
+  {
+    title: "AKSHORA PADAMPURI",
+    src: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
+    alt: "AKSHORA PADAMPURI resort architecture",
+    link: "/ArchitectureProjects/hill-view-resort-hospitality-design",
+  },
+  {
+    title: "Jindal Stone",
+    src: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
+    alt: "Jindal Stone showroom facade",
+    link: "/ArchitectureProjects/jindal-stone-showroom-exterior-design",
+  },
+  {
+    title: "Mrs. Jyoti Yadav Hotel",
+    src: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
+    alt: "Mrs. Jyoti Yadav Hotel facade",
+    link: "/ArchitectureProjects/mrs-jyoti-yadav-hotel-hospitality-design",
+  },
+  {
+    title: "United Airlines Office",
+    src: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
+    alt: "United Airlines premium office interior",
+    link: "/InteriorsProjects/united-airlines-office-interior-t3-delhi",
+  },
+  {
+    title: "Urban Canteen",
+    src: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
+    alt: "Urban Canteen restaurant interior",
+    link: "/InteriorsProjects/urban-canteen-cafe-interior-bhubaneswar",
+  },
+  {
+    title: "BBI Booze Buzz",
+    src: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.webp",
+    alt: "BBI restaurant and bar interior",
+    link: "/InteriorsProjects/restaurant-club-design-bbi-bhubaneswar",
+  },
+  {
+    title: "Cineport Multiplex",
+    src: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.webp",
+    alt: "Cineport multiplex interior",
+    link: "/InteriorsProjects/cineport-svh-5-screen-multiplex-gurgaon",
+  },
+  {
+    title: "Samsung Corporate Office",
+    src: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.webp",
+    alt: "Samsung corporate office interior",
+    link: "/InteriorsProjects/samsung-office-interior-design-dehradun",
+  },
+  {
+    title: "Urban Company Office",
+    src: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.webp",
+    alt: "Urban Company corporate office interior",
+    link: "/InteriorsProjects/urban-company-it-head-office-interior-bangalore",
+  },
+  {
+    title: "Movie Lounge Interior",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    alt: "Movie Lounge cinema interior",
+    link: "/InteriorsProjects/movie-lounge-crossroad-mall-dehradun-expansion",
+  },
+  {
+    title: "Batra Hospital Cathlab",
+    src: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
+    alt: "Batra Hospital cathlab interior",
+    link: "/InteriorsProjects/batra-hospital-medical-research-centre-cathlab-renovation",
+  },
+  {
+    title: "Lenskart Store",
+    src: "/Interiors/Lenskart/lenskart-store-main.webp",
+    alt: "Lenskart store interior",
+    link: "/InteriorsProjects/lenskart-Office-interior-design",
+  },
+  {
+    title: "Mayom Hospital",
+    src: "/Interiors/MayomHospital/gita-gyan-main.webp",
+    alt: "Mayom Hospital interior",
+    link: "/InteriorsProjects/mayom-hospital-interior-design",
+  },
+  {
+    title: "Club House Sirsa Interior",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    alt: "Club House Sirsa interior project",
+    link: "/InteriorsProjects/club-house-sirsa-recreational-space",
+  },
+  {
+    title: "MET Reliance",
+    src: "/Interiors/METReliance/main-hall.webp",
+    alt: "MET Reliance interior design",
+    link: "/InteriorsProjects/met-reliance-interior-design",
+  },
+  {
+    title: "Anand Group",
+    src: "/Interiors/AnandGroup/anand-group-main-hall.webp",
+    alt: "Anand Group Hauz Khas interior",
+    link: "/InteriorsProjects/anand-group-hauz-khas-interior-design",
+  },
+];
+
+const featuredProjectSets = featuredProjectItems.map((_, index) =>
+  [0, 1, 2].map((offset) => featuredProjectItems[(index + offset) % featuredProjectItems.length])
+);
+
+const Counter = memo(function Counter({ end, duration = 2000, suffix = " +" }) {
 
   const [count, setCount] = useState(0);
 
@@ -344,7 +490,7 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
 
   return <h3 ref={ref}>{count}{suffix}</h3>;
 
-}
+});
 
 
 
@@ -352,7 +498,7 @@ function Counter({ end, duration = 2000, suffix = " +" }) {
 
 
 
-function Home() {
+function HomeComponent() {
 
   const [brandVisible, setBrandVisible] = useState(false);
 
@@ -361,6 +507,14 @@ function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const totalSlides = 4; // Number of testimonials
+
+  const [featuredSetIndex, setFeaturedSetIndex] = useState(0);
+
+  const [isFeaturedPaused, setIsFeaturedPaused] = useState(false);
+
+  const featuredProjects = featuredProjectSets[featuredSetIndex];
+
+  const nextFeaturedProjects = featuredProjectSets[(featuredSetIndex + 1) % featuredProjectSets.length];
 
 
 
@@ -424,7 +578,15 @@ function Home() {
 
   }, [totalSlides, isPaused]);
 
+  useEffect(() => {
+    if (isFeaturedPaused) return undefined;
 
+    const interval = setInterval(() => {
+      setFeaturedSetIndex((prev) => (prev + 1) % featuredProjectSets.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [isFeaturedPaused]);
 
   usePageReveal([
 
@@ -568,11 +730,41 @@ function Home() {
     }
   };
 
+  const renderFeaturedTile = (project, nextProject, className = "") => (
+    <div
+      key={`${project.title}-${featuredSetIndex}`}
+      className={`featured-collage-item ${className}`.trim()}
+    >
+      <Link to={project.link} className="featured-collage-link featured-collage-link--current">
+        <img
+          className="featured-collage-image"
+          src={project.src}
+          alt={project.alt}
+          loading="lazy"
+          decoding="async"
+        />
+        <span className="featured-collage-title">{project.title}</span>
+      </Link>
+      <Link to={nextProject.link} className="featured-collage-link featured-collage-next">
+        <img
+          className="featured-collage-image"
+          src={nextProject.src}
+          alt={nextProject.alt}
+          loading="lazy"
+          decoding="async"
+        />
+        <span className="featured-collage-title">{nextProject.title}</span>
+      </Link>
+      <span className="featured-collage-divider" aria-hidden="true"></span>
+    </div>
+  );
+
   return (
 
     <div className="home-page">
 
-<section className="hero">
+      {/* Hero Section */}
+      <section className="hero">
 
         <div className="hero__crane"></div>
 
@@ -584,15 +776,13 @@ function Home() {
 
           <div className="bar__logoWrap">
 
-            <img
+            <LazyImage
 
               className="bar__logo"
 
               src="/logo.webp"
 
               alt="URBAN iNFiLL Logo"
-
-              loading="lazy"
 
               decoding="async"
 
@@ -646,6 +836,7 @@ function Home() {
 
 
 
+            {/* Intro Section */}
       <section className="intro-section">
 
         <div className="intro-wrap">
@@ -758,7 +949,7 @@ function Home() {
 
               <div className="map-stage">
 
-                <img src="/map.webp" alt="Cities covered map" loading="lazy" decoding="async" />
+                <LazyImage src="/map.webp" alt="Cities covered map" decoding="async" />
 
 
 
@@ -815,6 +1006,7 @@ function Home() {
      
 
 
+            {/* Clients Section */}
       <section className="clients-section">
 
         <div className="clients-container">
@@ -943,7 +1135,7 @@ function Home() {
 
             <div className="stat-box">
 
-              <span className="stat-value">35+</span>
+              <span className="stat-value">50+</span>
 
               <span className="stat-desc">Valued Clients</span>
 
@@ -951,7 +1143,7 @@ function Home() {
 
             <div className="stat-box">
 
-              <span className="stat-value">800+</span>
+              <span className="stat-value">500+</span>
 
               <span className="stat-desc">Projects Delivered</span>
 
@@ -978,6 +1170,7 @@ function Home() {
         </div>
 
       </section>
+              {/* Services Section */}
        <section className="services-section">
 
         <h2 className="services-title">Our Services</h2>
@@ -1025,6 +1218,7 @@ function Home() {
 
 
 
+            {/* Featured Work Section */}
       <section className="featured-work">
         <div className="work-header">
           <div className="work-header-content">
@@ -1038,6 +1232,22 @@ function Home() {
             <p className="work-description">
               Explore our curated collection of award-winning architectural masterpieces and innovative interior designs
             </p>
+          </div>
+        </div>
+
+        <div
+          className={`featured-collage ${featuredSetIndex % 2 === 1 ? "featured-collage--reverse" : ""}`}
+          aria-label="Featured project highlights"
+          onMouseEnter={() => setIsFeaturedPaused(true)}
+          onMouseLeave={() => setIsFeaturedPaused(false)}
+          onFocus={() => setIsFeaturedPaused(true)}
+          onBlur={() => setIsFeaturedPaused(false)}
+        >
+          {renderFeaturedTile(featuredProjects[0], nextFeaturedProjects[0], "featured-collage-item--large")}
+          <div className="featured-collage-stack">
+            {featuredProjects.slice(1).map((project, index) =>
+              renderFeaturedTile(project, nextFeaturedProjects[index + 1])
+            )}
           </div>
         </div>
 
@@ -1346,6 +1556,7 @@ function Home() {
 
        
 
+{/* Testimonials Section */}
 <section className="testimonials-section">
 
         <div className="testimonials-title">
@@ -1592,6 +1803,7 @@ function Home() {
 
       </section>
 
+                  {/* Quote Section */}
          <section className="quoteSection">
 
         <h2 className="quoteText">
@@ -1614,7 +1826,7 @@ function Home() {
 
 
 
-export default Home;
+export default memo(HomeComponent);
 
 
 

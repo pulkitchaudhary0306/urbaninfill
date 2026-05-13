@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link, useSearchParams } from "react-router-dom";
 import "../HeaderFooter/Header.css";
 import "./Interior.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 
 function Interior() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [searchParams] = useSearchParams();
 
   usePageReveal([
     ".interior-hero-content > *",
@@ -32,12 +32,23 @@ function Interior() {
   const filterCategories = [
     "All",
     "Corporate Office",
+    "Commercial Interior",
     "Hospitals",
     "Hospitality",
     "Cinema",
     "Residential Luxury Interiors",
     "Archives",
   ];
+
+  const requestedCategory = searchParams.get("category");
+  const activeFilter = filterCategories.includes(requestedCategory)
+    ? requestedCategory
+    : "All";
+
+  const getCategoryLink = (category) =>
+    category === "All"
+      ? "/interior"
+      : `/interior?category=${encodeURIComponent(category)}`;
 
   const projects = [
     {
@@ -138,6 +149,62 @@ function Interior() {
   category: "Hospitality",
   scope: "Interior Design & Execution",
 },
+{
+  id: 13,
+  slug: "anand-group-hauz-khas-interior-design",
+  image: "/Interiors/AnandGroup/anand-group-main-hall.webp",
+  title: "Anand Group",
+  location: "Hauz Khas, New Delhi",
+  category: "Commercial Interior",
+},
+{
+  id: 14,
+  slug: "medanta-foundation-interior-design",
+  image: "/Interiors/MedantaFoundation/reception-main.webp",
+  title: "Gita Gyan Sansthanam - Medanta Foundation",
+  location: " KDB Road Kurukshetra, Haryana",
+  category: "Hospitals",
+},
+{
+  id: 15,
+  slug: "sargam-theatre-interior-design",
+  image: "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.webp",
+  title: "Sargam Theatre",
+  location: "Chandpur, Bijnor, Uttar Pradesh",
+  category: "Cinema",
+},
+{
+  id: 16,
+  slug: "medanta-diagnostics-ranchi-interior-design",
+  image: "/Interiors/MedantaDiagnosticsRanchi/reception-area.webp",
+  title: "Medanta - Diagnostics",
+  location: "Ranchi, Jharkhand",
+  category: "Hospitals",
+},
+{
+  id: 17,
+  slug: "medanta-medicity-auditorium-interior-design",
+  image: "/Interiors/MedantaAuditorium/main-auditorium.webp",
+  title: "Medanta Medicity - Auditorium",
+  location: "Gurugram, Haryana",
+  category: "Hospitals",
+},
+{
+  id: 18,
+  slug: "medanta-medicity-radiology-interior-design",
+  image: "/Interiors/MedantaRadiology/main-workstation.webp",
+  title: "Medanta Medicity - Radiology",
+  location: "Gurugram, Haryana",
+  category: "Hospitals",
+},
+{
+  id: 19,
+  slug: "cinepolish-conference-room-interior-design",
+  image: "/Interiors/cinepolish/image-1.webp",
+  title: "Cinepolish - Conference Room",
+  location: "India",
+  category: "Corporate Office",
+},
 ];
 
   const filteredProjects = activeFilter === "All" 
@@ -146,7 +213,8 @@ function Interior() {
 
   return (
     <div>
-<section className="interior-hero">
+            {/* Hero Section */}
+            <section className="interior-hero">
         <img
           src="/Interiors/cover.webp"
           alt="Interior Design"
@@ -166,7 +234,8 @@ function Interior() {
         </div>
       </section>
 
-      <section className="interior-projects">
+                  {/* Projects Section */}
+            <section className="interior-projects">
         <p className="mini-title">Featured Interiors Projects</p>
         <h2>Our Projects</h2>
         <p className="section-text">
@@ -176,13 +245,13 @@ function Interior() {
 
         <div className="filter-tabs">
           {filterCategories.map((category) => (
-            <button
+            <Link
               key={category}
+              to={getCategoryLink(category)}
               className={`filter-tab ${activeFilter === category ? "active" : ""}`}
-              onClick={() => setActiveFilter(category)}
             >
               {category}
-            </button>
+            </Link>
           ))}
         </div>
 

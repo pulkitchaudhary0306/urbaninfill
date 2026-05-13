@@ -1,87 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic SEO -->
     <meta charset="utf-8" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    
+    <title>
+      URBAN iNFiLL | Architecture, Interior & Hospitality Design Studio
+    </title>
+
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="URBAN iNFiLL is a leading architecture and interior design studio based in Gurugram, India, specializing in luxury residential, hospitality, commercial, and recreational spaces."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    
+
+    <meta
+      name="keywords"
+      content="Architecture Studio India, Interior Design Gurugram, Hospitality Design, Commercial Architecture, Luxury Interiors, Resort Design, Urban Infill"
+    />
+
+    <meta name="author" content="URBAN iNFiLL" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://urbaninfill.in/" />
+
+    <!-- Favicon & Logo -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.webp" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.webp" />
+
+    <!-- Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Open Graph SEO -->
+    <meta
+      property="og:title"
+      content="URBAN iNFiLL | Architecture & Interior Design Studio"
+    />
+
+    <meta
+      property="og:description"
+      content="Contemporary architecture, hospitality, luxury interiors, and commercial design solutions crafted by URBAN iNFiLL."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://urbaninfill.in/" />
+
+    <meta
+      property="og:image"
+      content="https://urbaninfill.in/logo.webp"
+    />
+
+    <meta property="og:site_name" content="URBAN iNFiLL" />
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="URBAN iNFiLL | Architecture & Interior Design Studio"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Luxury architecture, hospitality, and interior design studio based in Gurugram, India."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://urbaninfill.in/logo.webp"
+    />
+
+    <!-- Structured Data SEO -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ArchitecturalBusiness",
         "name": "URBAN iNFiLL",
+        "image": "https://urbaninfill.in/logo.webp",
+        "logo": "https://urbaninfill.in/logo.webp",
+        "url": "https://urbaninfill.in",
+        "telephone": "+91 124 4241186",
+
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "DLF Road, Sector 55",
+          "streetAddress": "Navkirti Arcade, 302, Golf Course Ext Rd, Huda Sector, Sushant Lok 2, Sector 55, ",
           "addressLocality": "Gurugram",
           "addressRegion": "Haryana",
           "postalCode": "122011",
           "addressCountry": "IN"
         },
+
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 28.4277,
           "longitude": 77.1025
         },
-        "url": "https://urbaninfill.in",
-        "telephone": "+91 124 4241186",
+
+        "description":
+          "URBAN iNFiLL is an architecture and interior design studio specializing in residential, hospitality, commercial, and luxury recreational projects.",
+
         "areaServed": {
           "@type": "Country",
           "name": "India"
         },
+
         "sameAs": [
-          "https://www.instagram.com/urban_infill_studio?igsh=MWdiNmhxY3c1MXF5OA%3D%3D&utm_source=qr",
+          "https://www.instagram.com/urban_infill_studio",
           "https://www.linkedin.com/company/urbaninfill/"
         ],
+
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
             "opens": "09:30",
             "closes": "18:30"
           }
         ]
       }
     </script>
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title> URBAN iNFiLL</title>
   </head>
+
   <body>
-   
+    <noscript>
+      You need to enable JavaScript to run this application.
+    </noscript>
+
     <div id="root"></div>
-    
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-      
   </body>
 </html>

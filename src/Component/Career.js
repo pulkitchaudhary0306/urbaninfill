@@ -45,6 +45,7 @@ function Career() {
 
   return (
     <div className="career-page">
+            {/* Hero Section */}
       <section className="career-hero">
         <div className="career-hero-overlay">
           <div className="career-hero-content">
@@ -53,6 +54,7 @@ function Career() {
         </div>
       </section>
 
+            {/* Top Info Section */}
       <section className="career-top-section">
         <div className="career-top-container">
           <div className="career-top-card career-card-white">
@@ -81,6 +83,7 @@ function Career() {
         </div>
       </section>
 
+            {/* Benefits Section */}
       <section className="benefits-section">
         <span className="section-label">WHAT WE OFFER</span>
         <h2 className="section-heading">A professional place to grow</h2>
@@ -110,6 +113,7 @@ function Career() {
         </div>
       </section>
 
+            {/* Job Openings Section */}
       <section className="jobs-section">
         <div className="jobs-container">
             <span className="section-label">OPEN ROLES</span>
@@ -127,6 +131,7 @@ function Career() {
         </div>
       </section>
 
+            {/* CTA Section */}
       <section className="career-cta-section">
         <div className="career-cta-content">
           <h2>Think you are a good fit?</h2>

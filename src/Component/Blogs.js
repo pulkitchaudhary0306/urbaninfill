@@ -2,27 +2,13 @@ import { Link } from "react-router-dom";
 import blogs from "./blogData";
 import "../HeaderFooter/Header.css";
 import "./Blogs.css";
-import usePageReveal from "./usePageReveal";
-import useScrollVisibility from "./useScrollVisibility";
 
 function Blogs() {
-  usePageReveal([
-    ".blogs-page .recent-posts > h2",
-    ".blogs-page .post-card",
-    ".footer__col",
-    ".footer__line",
-    ".footer__copy",
-  ]);
-
-  useScrollVisibility([
-    ".blogs-page .recent-posts > h2",
-    ".blogs-page .post-card",
-  ]);
-
   return (
     <div>
 <div className="blogs-page">
         <div className="blogs-container">
+                    {/* Recent Posts Section */}
           <section className="recent-posts">
             <h2>Recent Blog Posts</h2>
 

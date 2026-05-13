@@ -193,17 +193,17 @@ body {
   }
 
   .image-slide-btn {
-    width: 42px;
-    height: 42px;
-    font-size: 28px;
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
   }
 
   .image-slide-btn--left {
-    left: 8px;
+    left: 6px;
   }
 
   .image-slide-btn--right {
-    right: 8px;
+    right: 6px;
   }
 
   .image-modal-close {

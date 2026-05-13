@@ -2,6 +2,34 @@ import "../HeaderFooter/Header.css";
 import "./About.css";
 import useScrollVisibility from "./useScrollVisibility";
 import { FaLinkedin } from "react-icons/fa";
+import { useEffect } from "react";
+
+const faqs = [
+    {
+        q: "What architectural and interior design services does URBAN iNFiLL provide?",
+        a: "URBAN iNFiLL is a premier Pan-India architecture firm specializing in commercial interior design, hospitality architecture, and healthcare planning. We are recognized for delivering high-end corporate offices, state-of-the-art cinema designs, and luxury residential projects."
+    },
+    {
+        q: "Where is the best architecture firm in Gurgaon located?",
+        a: "Headquartered in Gurgaon (Delhi NCR), URBAN iNFiLL is a leading architectural consultancy that provides end-to-end design and execution services across major Indian metros and Tier-2 cities."
+    },
+    {
+        q: "Does URBAN iNFiLL handle architecture projects outside of Delhi NCR?",
+        a: "Yes, we have a proven track record in 20+ cities, including Mumbai, Bangalore, Kolkata, Hyderabad, and Lucknow. Our team is equipped to manage large-scale architectural rollouts nationwide."
+    },
+    {
+        q: "Who is the principal architect at URBAN iNFiLL?",
+        a: "The firm is led by Ar. Subhankar Sengupta, a highly experienced Registered Architect (Council of Architecture, India). Under his leadership, the firm blends innovative design with technical precision."
+    },
+    {
+        q: "What hospital architecture and medical planning services do you offer?",
+        a: "We specialize in hospital architecture and NABH-compliant medical planning. Our expertise includes OT zoning, ICU layouts, clinical workflow optimization, and seamless MEP integration for modern healthcare facilities."
+    },
+    {
+        q: "Can URBAN iNFiLL manage multi-city commercial interior rollouts?",
+        a: "Absolutely. We specialize in multi-city project execution, utilizing structured documentation and scalable delivery systems to ensure brand consistency for corporate offices and retail chains across India."
+    }
+];
 
 function About() {
     useScrollVisibility([
@@ -42,36 +70,37 @@ function About() {
         "Scalable Project Delivery Across India",
     ];
 
-    const faqs = [
-        {
-            q: "What is URBAN iNFiLL known for?",
-            a: "URBAN iNFiLL is known for Pan-India architecture and commercial interior design, with expertise in corporate offices, hospitals, cinema architecture, hospitality spaces, and high-end residential projects.",
-        },
-        {
-            q: "Where is URBAN iNFiLL headquartered?",
-            a: "URBAN iNFiLL is headquartered in Gurgaon and executes projects across multiple Indian cities.",
-        },
-        {
-            q: "Does URBAN iNFiLL work across India?",
-            a: "Yes. URBAN iNFiLL has delivered projects across 20+ cities including Delhi NCR, Mumbai, Bangalore, Kolkata, Hyderabad, Lucknow, and Varanasi.",
-        },
-        {
-            q: "Who leads URBAN iNFiLL?",
-            a: "URBAN iNFiLL is led by Ar. Subhankar Sengupta, Registered Architect with the Council of Architecture, India, and a graduate of Savitribai Phule Pune University.",
-        },
-        {
-            q: "Does URBAN iNFiLL provide healthcare planning consultancy?",
-            a: "Yes. The firm specializes in hospital architecture and medical planning consultancy including OT zoning, ICU layouts, NABH coordination, clinical workflow planning, and MEP integration.",
-        },
-        {
-            q: "Can URBAN iNFiLL handle multi-city rollouts?",
-            a: "Yes. URBAN iNFiLL has strong multi-city execution capability with structured documentation, consultant coordination, and scalable delivery systems.",
-        },
-    ];
+    useEffect(() => {
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: item.a
+                }
+            }))
+        };
+
+        const scriptId = "urban-infill-faq-schema";
+        document.getElementById(scriptId)?.remove();
+
+        const script = document.createElement("script");
+        script.id = scriptId;
+        script.type = "application/ld+json";
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+
+        return () => {
+            document.getElementById(scriptId)?.remove();
+        };
+    }, []);
 
     return (
         <div className="ui-page">
-<section className="ui-hero">
+            <section className="ui-hero">
                 <div className="ui-container ui-hero-grid">
                     <div>
                         <div className="ui-tag">ABOUT URBAN iNFiLL</div>
@@ -173,12 +202,12 @@ function About() {
                             loading="lazy"
                             decoding="async"
                         />
-                       
+
                         <div className="founder-name-with-linkedin">
                             <h3>Ar. Subhankar Sengupta</h3>
-                            <a 
-                                href="https://www.linkedin.com/in/subhankar-sengupta-a2936155/" 
-                                target="_blank" 
+                            <a
+                                href="https://www.linkedin.com/in/subhankar-sengupta-a2936155/"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="linkedin-link"
                                 aria-label="LinkedIn Profile"
@@ -318,7 +347,7 @@ function About() {
                     </div>
                 </div>
             </section>
-</div>
+        </div>
     )
 
 }

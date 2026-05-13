@@ -1850,15 +1850,15 @@ height: 500px;
   }
 
   .residential-page .nav-btn {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .residential-page .nav-btn.left {
-    left: 12px;
+    left: 8px;
   }
 
   .residential-page .nav-btn.right {
-    right: 12px;
+    right: 8px;
   }
 
   .residential-page .close-btn {

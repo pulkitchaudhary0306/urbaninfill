@@ -1,0 +1,36 @@
+[
+  {
+    "id": 4,
+    "slug": "why-many-hospitals-in-india-are-built-well-but-planned-poorly",
+    "category": "HEALTHCARE ARCHITECTURE",
+    "title": "Why Many Hospitals in India Are Built Well but Planned Poorly",
+    "image": "/Blogs/batra-hospital-cathlab-main-delhi.webp",
+    "author": "Subhankar Sengupta",
+    "excerpt": "Hospitals are among the most complex buildings to design, yet many healthcare facilities in India continue to struggle because operational planning is often overlooked long before construction begins.",
+    "meta": ["By Subhankar Sengupta", "07 May 2026"],
+    "paragraphs": [
+      "Hospitals are among the most complex buildings to design. They operate 24 hours a day, support life-critical functions...",
+      "Yet in India, hospital projects are often approached like conventional real estate developments..."
+    ],
+    "aboutStory": "A detailed exploration of hospital planning challenges in India...",
+    "focus": ["Healthcare Architecture", "Hospital Planning"],
+    "tags": ["Hospital Design", "Healthcare Architecture"]
+  },
+  {
+    "id": 7,
+    "slug": "critical-mistakes-office-planning-india",
+    "category": "WORKPLACE PLANNING",
+    "title": "5 Critical Mistakes in Office Planning in India",
+    "image": "/Blogs/critical-mistakes-office-planning-cover.webp",
+    "author": "Subhankar Sengupta",
+    "excerpt": "Why many workplace projects in India go wrong before design even begins...",
+    "meta": ["By Subhankar Sengupta", "24 April 2026"],
+    "paragraphs": [
+      "India's corporate landscape is expanding rapidly...",
+      "Mistake 1: Starting Design Without Operational Clarity..."
+    ],
+    "aboutStory": "A practical article on recurring office planning mistakes in India...",
+    "focus": ["Office Planning", "Workplace Architecture"],
+    "tags": ["Office Planning India", "Workplace Design"]
+  }
+]

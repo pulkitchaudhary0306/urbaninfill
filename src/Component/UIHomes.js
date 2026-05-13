@@ -63,6 +63,7 @@ function UIHomes() {
   return (
     <div className="residential-page">
 <main className="residential-content">
+                {/* Hero Section */}
         <section className="res-section">
           <div className="res-grid">
             <div className="res-text">
@@ -106,6 +107,7 @@ function UIHomes() {
           </div>
         </section>
 
+                {/* Feature Section */}
         <section className="feature-section">
           <div className="feature-grid">
             <div className="feature-left">
@@ -129,6 +131,7 @@ function UIHomes() {
           </div>
         </section>
 
+                {/* Mid Section */}
         <section className="res-section">
           <div className="res-grid">
             <div className="res-big">
@@ -171,6 +174,7 @@ function UIHomes() {
           </div>
         </section>
 
+                {/* Luxury Grid Section */}
         <section className="luxury-grid">
           <div className="luxury-container">
             <div className="lux-card">
@@ -215,6 +219,7 @@ function UIHomes() {
           </div>
         </section>
 
+                {/* Gallery Section */}
         <section className="gallery-section">
           <div className="gallery-grid">
             <div className="gallery-small gallery-small-top">
@@ -248,6 +253,7 @@ function UIHomes() {
             </div>
           </div>
         </section>
+                {/* Portfolio Section */}
         <section className="portfolio-section">
   <div className="portfolio-grid">
 
@@ -270,7 +276,8 @@ function UIHomes() {
 
   </div>
 </section>
-<section className="uihomes-section">
+        {/* Grid Section */}
+        <section className="uihomes-section">
   <div className="uihomes-grid">
     <div className="uihomes-card uihomes-living">
       <img src={images[18]} alt="" onClick={() => openImage(18)} loading="lazy" decoding="async" />

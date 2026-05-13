@@ -38,6 +38,7 @@ function Blog() {
 <div className="blog-page">
         <div className="blog-wrapper">
           <div className="blog-content">
+                        {/* Blog Header & Body */}
             <span className="blog-category">{blog.category}</span>
             <h1 className="blog-title">{blog.title}</h1>
 
@@ -67,6 +68,7 @@ function Blog() {
           </div>
 
           <div className="blog-image">
+                        {/* Sidebar Image & Info */}
             <img
               src={blog.image}
               alt={blog.title}

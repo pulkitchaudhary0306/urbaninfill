@@ -13,6 +13,18 @@ a {
   text-decoration: none;
 }
 
+.project-page {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(rgba(13, 59, 102, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 59, 102, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(13, 59, 102, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 59, 102, 0.055) 1px, transparent 1px),
+    #f4f4f4;
+  background-size: 192px 192px, 192px 192px, 48px 48px, 48px 48px, auto;
+}
+
 /* =========================
    HERO
 ========================= */
@@ -33,10 +45,13 @@ a {
 .arch-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right,
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to right,
       rgba(10, 37, 64, 0.58),
       rgba(10, 37, 64, 0.18));
-  background: contain;
+  background-size: 56px 56px, 56px 56px, auto;
 }
 
 .arch-hero-content {
@@ -194,6 +209,7 @@ a {
 .arch-most-viewed {
   padding: 90px 5% 60px;
   text-align: center;
+  background: transparent;
 }
 
 .mini-title {

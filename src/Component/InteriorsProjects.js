@@ -74,6 +74,7 @@ function InteriorsProjects() {
   return (
     <>
       <div className="project-page">
+                {/* Hero Section */}
         <section className="project-hero">
           <div className="container">
             <p className="project-tag">{project.tag}</p>
@@ -82,6 +83,7 @@ function InteriorsProjects() {
           </div>
         </section>
 
+                {/* Gallery Section */}
         <section className="project-gallery-section">
           <div className="container">
             <div className="project-gallery">
@@ -127,6 +129,7 @@ function InteriorsProjects() {
           </div>
         </section>
 
+                {/* Content Section */}
         <section className="project-content-section">
           <div className="container project-content-grid">
             <div className="project-info-card">

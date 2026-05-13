@@ -315,84 +315,7 @@ const projectsData = [
     conclusion:
       "The Movie Lounge expansion stands as a benchmark for cinema upgrades, proving that intimate, well-designed smaller auditoriums can deliver a premium user experience while maximizing the footprint of existing mall infrastructure.",
   },
-  {
-    id: 6,
-    slug: "batra-hospital-medical-research-centre-cathlab-renovation",
-    tag: "Healthcare Renovation",
-    title: "Batra Hospital & Medical Research Centre – Cathlab",
-    subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
-    sideImages: [
-      "/Architecture/BatraHospital/batra-hospital-clinical-workflow-delhi.webp",
-      "/Architecture/BatraHospital/batra-hospital-glass-partition-design-delhi.webp",
-      "/Architecture/BatraHospital/batra-hospital-medical-equipment-integration-delhi.webp",
-    ],
-    galleryImages: [],
-    info: {
-      project: "Cathlab Ecosystem Renovation",
-      location: "New Delhi",
-      scope: "Architecture + Interior Design",
-      category: "Healthcare / Institutional",
-      area: "Specialized Medical Wing",
-      client: "Ch. Aishi Ram Batra Public Charitable Trust",
-      contractor: "Internal Construction Team",
-      designStyle: "Clinical Transparency / Contemporary Healthcare",
-      status: "Completed",
-      firm: "URBAN iNFiLL",
-    },
-    materials: [
-      {
-        category: "Partitioning",
-        details: "High-grade Glass and Dry Partition systems replacing traditional brick for visual connectivity.",
-      },
-      {
-        category: "Medical Integration",
-        details: "Specialized spatial framework designed for seamless Philips Cathlab equipment installation.",
-      },
-      {
-        category: "Flooring",
-        details: "Anti-static, medical-grade vinyl flooring suitable for high-sterility environments.",
-      },
-      {
-        category: "Acoustics & Ceiling",
-        details: "Modular clean-room ceiling tiles with integrated surgical lighting and HEPA filtration zones.",
-      },
-      {
-        category: "Seminar Hall",
-        details: "Acoustically treated 40-seater space with integrated AV systems for academic functions.",
-      },
-    ],
-    overview: [
-      "Batra Hospital & Medical Research Centre, established in 1987, is one of Delhi's earliest multi-speciality private hospitals. This project marked the institution's first major spatial renovation within an operational environment, focused on upgrading the Cathlab ecosystem to align with contemporary clinical requirements.",
-      "The brief, developed in coordination with the Head of Cardiology and hospital administration, involved a complete overhaul of the spatial layout to include pre- and post-procedure patient holding areas and a compact 40-seater seminar space.",
-    ],
-    designConcept: [
-      "The primary challenge was executing a major intervention within a live hospital setting. By replacing existing brick partitions with lightweight glass and dry-wall systems, we enabled faster execution with minimal noise and dust disruption.",
-      "The design strategy focused on 'Clinical Transparency'—improving visual connectivity between staff stations and patient holding areas to enhance workflow efficiency and patient safety during the critical procedure cycle.",
-    ],
-    highlights: [
-      {
-        title: "Live Environment Execution",
-        text: "Carefully phased intervention allowed the hospital to remain fully operational throughout the renovation process.",
-      },
-      {
-        title: "Specialized Equipment Synergy",
-        text: "Close technical coordination with the Philips engineering team for the precise integration of Cathlab hardware.",
-      },
-      {
-        title: "Hybrid Functionality",
-        text: "Integrated a 40-pax seminar space within the clinical wing to support the hospital's academic and research functions.",
-      },
-      {
-        title: "Modernized Workflow",
-        text: "Redesigned pre- and post-procedure zones to optimize the transit and recovery of cardiac patients.",
-      },
-    ],
-    designIntent:
-      "The design intent was to redefine a legacy clinical environment into a transparent, efficient, and technologically advanced hub. By moving away from heavy masonry toward modular and transparent systems, we achieved a space that respects operational sensitivity while meeting 21st-century healthcare delivery standards.",
-    conclusion:
-      "The Batra Cathlab renovation serves as a model for surgical interventions in aging healthcare infrastructure, proving that legacy institutions can be modernized without halting their vital public services.",
-  },
+
   {
     id: 7,
     slug: "darbaripur-modern-facade-design",
@@ -472,59 +395,305 @@ const projectsData = [
       "The Darbaripur bungalow represents the future of urban luxury homes in Gurugram—where architecture is not just shelter, but an expressive lifestyle statement blending aesthetics, comfort, and environmental sensitivity.",
   },
   {
-  id: 8,
-  slug: "club-house-sirsa-recreational-space",
+    id: 8,
+    slug: "club-house-sirsa-recreational-space",
+    tag: "Completed Project",
+    title: "Club House – Sirsa",
+    subtitle: "Recreational & Community Space Design",
+    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    sideImages: [
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.webp",
+    ],
+    galleryImages: [
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.webp",
+    ],
+    info: {
+      project: "Club House Sirsa",
+      location: "Sirsa, Haryana",
+      scope: "Architecture & Interior Design",
+      area: "2684.2 sq. m",
+      firm: "URBAN iNFiLL ",
+    },
+    overview: [
+      "The Club House at Sirsa is designed as a vibrant recreational and social hub catering to the needs of the community. It integrates leisure, fitness, and cultural spaces within a cohesive architectural framework.",
+      "The project balances functionality and aesthetics, offering diverse amenities such as sports facilities, wellness zones, and social gathering spaces.",
+    ],
+    locationText: "Sirsa, Haryana.",
+    designConcept: [
+      "The design emphasizes a holistic recreational experience, combining indoor and outdoor activities within a thoughtfully planned environment.",
+      "Spaces are planned considering Vastu principles to ensure harmony, positive energy flow, and user well-being.",
+      "The architecture incorporates clean lines, open layouts, and natural materials to create a welcoming and dynamic community space.",
+    ],
+    highlights: [
+      {
+        title: "Multi-Functional Spaces",
+        text: "The clubhouse includes a badminton court, banquet hall, indoor games room, and restaurant to cater to diverse recreational and social needs.",
+      },
+      {
+        title: "Wellness & Fitness",
+        text: "Dedicated gymnasium and swimming pool facilities promote health, relaxation, and an active lifestyle for users.",
+      },
+      {
+        title: "Community & Cultural Integration",
+        text: "A thoughtfully designed community temple and gathering areas foster cultural engagement and social interaction.",
+      },
+    ],
+    designIntent:
+      "The Club House Sirsa is envisioned as a central hub for recreation, wellness, and community engagement. The design integrates Vastu principles with modern planning to create balanced, functional, and uplifting spaces. Each zone is carefully curated to enhance user experience, encouraging social interaction, relaxation, and physical activity within a cohesive environment.",
+    conclusion:
+      "The Club House Sirsa stands as a comprehensive recreational destination that brings together sports, wellness, and community life. Through thoughtful planning and design, it creates a dynamic and harmonious space that serves people of all age groups while promoting a balanced and active lifestyle.",
+  },
+  {
+  id: 9,
+  slug: "hill-view-resort-hospitality-design",
   tag: "Completed Project",
-  title: "Club House – Sirsa",
-  subtitle: "Recreational & Community Space Design",
-  mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+  title: "AKSHORA PADAMPURI Uttarakhand",
+  subtitle: "Luxury Hospitality & Recreational Space Design",
+  mainImage: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
+
   sideImages: [
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.webp",
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.webp",
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-swimming-pool.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-firepit.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-restaurant.webp",
   ],
+
   galleryImages: [
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.webp",
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.webp",
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.webp",
-    "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-cottages.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-indoor-games-room.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-landscape.webp",
+    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-duplex-cottages.webp",
   ],
+
   info: {
-    project: "Club House Sirsa",
-    location: "Sirsa, Haryana",
-    scope: "Architecture & Interior Design",
-    area: "2684.2 sq. m",
+    project: "AKSHORA PADAMPURI RESORT",
+    location: "Uttarakhand, India",
+    scope: "Architecture, Landscape & Interior Design",
+    typology: "Luxury Hospitality Resort",
     firm: "URBAN iNFiLL ",
   },
+
   overview: [
-    "The Club House at Sirsa is designed as a vibrant recreational and social hub catering to the needs of the community. It integrates leisure, fitness, and cultural spaces within a cohesive architectural framework.",
-    "The project balances functionality and aesthetics, offering diverse amenities such as sports facilities, wellness zones, and social gathering spaces.",
+    "Nestled within the serene hills, Hill View Resort is envisioned as a luxury hospitality destination that seamlessly integrates architecture, nature, and recreation. The project is designed to offer guests a peaceful retreat while embracing panoramic views of the surrounding terrain.",
+    
+    "The resort combines premium accommodations, recreational amenities, and carefully curated outdoor spaces to create an immersive hospitality experience. Every cottage and shared facility is strategically positioned to maximize views, privacy, and connectivity with nature.",
   ],
-  locationText: "Sirsa, Haryana.",
+
+  locationText:
+    "Located amidst the scenic hill terrain of Uttarakhand, India.",
+
   designConcept: [
-    "The design emphasizes a holistic recreational experience, combining indoor and outdoor activities within a thoughtfully planned environment.",
-    "Spaces are planned considering Vastu principles to ensure harmony, positive energy flow, and user well-being.",
-    "The architecture incorporates clean lines, open layouts, and natural materials to create a welcoming and dynamic community space.",
+    "The design philosophy focuses on blending built forms with the natural contours of the site. The cottages are staggered along the hillside to preserve unobstructed valley views while minimizing disruption to the terrain.",
+
+    "A hierarchy of vehicular and pedestrian circulation ensures smooth movement throughout the resort. Dedicated pathways, stepped walkways, and landscaped trails enhance accessibility while maintaining a strong connection with nature.",
+
+    "The architecture adopts a warm and earthy material palette with sloping roofs, natural stone, wood textures, and expansive glazing to complement the surrounding hill landscape.",
+
+    "Landscape design plays a central role in the project, incorporating native plantation, terraced gardens, water features, and outdoor recreational spaces that organically merge with the contours of the site.",
   ],
+
   highlights: [
     {
-      title: "Multi-Functional Spaces",
-      text: "The clubhouse includes a badminton court, banquet hall, indoor games room, and restaurant to cater to diverse recreational and social needs.",
+      title: "Luxury Cottage Accommodation",
+      text:
+        "The resort features a mix of duplex cottages and single-unit accommodations designed according to varying guest requirements, ensuring comfort, privacy, and panoramic hill views.",
     },
+
     {
-      title: "Wellness & Fitness",
-      text: "Dedicated gymnasium and swimming pool facilities promote health, relaxation, and an active lifestyle for users.",
+      title: "Recreational Amenities",
+      text:
+        "Guests can experience a range of recreational spaces including a swimming pool, outdoor fire pit lounge, indoor games room, and viewing decks that encourage relaxation and social interaction.",
     },
+
     {
-      title: "Community & Cultural Integration",
-      text: "A thoughtfully designed community temple and gathering areas foster cultural engagement and social interaction.",
+      title: "Restaurant with Scenic Views",
+      text:
+        "The hilltop restaurant is positioned to capture uninterrupted landscape views, creating a memorable dining experience that connects guests with the surrounding natural beauty.",
+    },
+
+    {
+      title: "Integrated Circulation Planning",
+      text:
+        "The master planning carefully separates vehicular and pedestrian movement, ensuring efficient circulation, safety, and a comfortable user experience across the resort.",
+    },
+
+    {
+      title: "Terrain-Sensitive Landscaping",
+      text:
+        "The landscape strategy complements the natural hill terrain through terraced plantations, retaining walls, native greenery, and pathways that blend seamlessly into the environment.",
     },
   ],
+
   designIntent:
-    "The Club House Sirsa is envisioned as a central hub for recreation, wellness, and community engagement. The design integrates Vastu principles with modern planning to create balanced, functional, and uplifting spaces. Each zone is carefully curated to enhance user experience, encouraging social interaction, relaxation, and physical activity within a cohesive environment.",
+    "Hill View Resort is designed as a destination that celebrates the harmony between architecture and nature. The project aims to provide a luxurious yet tranquil experience where guests can reconnect with the landscape through thoughtfully designed spaces, recreational amenities, and immersive outdoor environments. By responding sensitively to the contours of the hillside, the resort creates a balance between built form, movement, and the surrounding ecology.",
+
   conclusion:
-    "The Club House Sirsa stands as a comprehensive recreational destination that brings together sports, wellness, and community life. Through thoughtful planning and design, it creates a dynamic and harmonious space that serves people of all age groups while promoting a balanced and active lifestyle.",
+    "Hill View Resort represents a contemporary approach to hospitality design where comfort, recreation, and environmental sensitivity coexist seamlessly. Through carefully planned cottages, engaging recreational spaces, efficient circulation systems, and landscape-driven planning, the resort offers an elevated experience that enhances the natural beauty of the hills while delivering a memorable stay for its visitors.",
+},{
+  id: 10,
+  slug: "jindal-stone-showroom-exterior-design",
+  tag: "Completed Project",
+  title: "Jindal Stone",
+  subtitle: "Architectural Facade & Exterior Design",
+
+  mainImage: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
+
+  sideImages: [
+    "/Architecture/JindalStone/jindal-stone-cladding-detail.webp",
+    "/Architecture/JindalStone/jindal-stone-entry-portal.webp",
+    "/Architecture/JindalStone/jindal-stone-louvers.webp",
+  ],
+
+  galleryImages: [
+    "/Architecture/JindalStone/jindal-stone-night-view.webp",
+    "/Architecture/JindalStone/indal-stone-showroom-facade.webp",
+  
+  ],
+
+  info: {
+    project: "Jindal Stone",
+    location: "India",
+    scope: "Architecture & Exterior Facade Design",
+    typology: "Commercial Showroom",
+  },
+
+  overview: [
+    "Jindal Stone is designed as a premium commercial showroom that reflects sophistication, material richness, and contemporary architectural expression through its striking facade composition.",
+
+    "The project emphasizes strong visual identity using stone cladding, vertical louvers, feature lighting, and focused entry elements that create a memorable arrival experience.",
+  ],
+
+  locationText:
+    "The showroom facade is envisioned as a modern architectural statement that highlights the elegance and versatility of imported marble and granite materials.",
+
+  designConcept: [
+    "The architectural language is centered around clean geometries, textured stone surfaces, and a balanced composition of solid and transparent elements.",
+
+    "Premium stone cladding is used across the facade to establish a luxurious and timeless visual character while showcasing the material palette associated with the brand identity.",
+
+    "Vertical louvers are incorporated to add depth, rhythm, and visual layering to the exterior while enhancing the modern aesthetic of the structure.",
+
+    "Focused entry portals with bold arch-inspired forms create a strong visual anchor and define the entrance experience with elegance and clarity.",
+
+    "Integrated facade lighting highlights architectural details during nighttime, enhancing visibility and creating a refined exterior ambience.",
+  ],
+
+  highlights: [
+    {
+      title: "Stone Cladding Facade",
+      text: "The exterior facade features premium stone cladding that enhances durability, texture, and visual sophistication.",
+    },
+
+    {
+      title: "Architectural Louvers",
+      text: "Vertical louvers introduce depth and rhythm to the facade while contributing to the contemporary architectural identity.",
+    },
+
+    {
+      title: "Focused Entry Design",
+      text: "The entrance is designed as a prominent architectural feature with bold framing elements that create a grand arrival experience.",
+    },
+
+    {
+      title: "Feature Lighting Integration",
+      text: "Strategically placed facade lighting accentuates textures, materials, and architectural forms during evening hours.",
+    },
+
+    {
+      title: "Contemporary Commercial Identity",
+      text: "The overall facade composition establishes a premium showroom presence that reflects elegance, modernity, and brand value.",
+    },
+  ],
+
+  designIntent:
+    "The intent behind Jindal Stone is to create a landmark commercial facade that represents luxury, craftsmanship, and architectural refinement. Through the use of stone cladding, vertical louvers, and focused entry elements, the design establishes a bold yet elegant identity that enhances customer experience and strengthens brand presence. Every facade detail is carefully curated to create a visually impactful and timeless architectural statement.",
+
+  conclusion:
+    "Jindal Stone successfully combines material richness with contemporary facade design to create a premium commercial showroom experience. The integration of stone cladding, modern louvers, dramatic entry portals, and architectural lighting results in a sophisticated exterior environment that reflects quality, elegance, and modern architectural character.",
 },
+{
+  id: 11,
+  slug: "mrs-jyoti-yadav-hotel-hospitality-design",
+  tag: "Completed Project",
+  title: "Mrs. Jyoti Yadav Hotel",
+  subtitle: "Hospitality Architecture & Facade Design",
+
+  mainImage: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
+
+  sideImages: [
+    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-jali-facade.webp",
+    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-entr.webp",
+    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-exterior-detail.webp",
+  ],
+
+  galleryImages: [
+   
+  ],
+
+  info: {
+    project: "Mrs. Jyoti Yadav Hotel",
+    location: "India",
+    scope: "Architecture & Hospitality Design",
+    typology: "Hotel",
+  },
+
+  overview: [
+    "Mrs. Jyoti Yadav Hotel is envisioned as a contemporary hospitality space that combines comfort, recreation, and architectural identity within a refined urban setting.",
+
+    "The project focuses on creating welcoming guest experiences through thoughtfully designed hospitality spaces and a visually striking facade characterized by intricate jali work.",
+  ],
+
+  locationText:
+    "Designed as a modern hospitality destination, the hotel integrates functional planning with expressive architectural detailing to create a memorable urban presence.",
+
+  designConcept: [
+    "The architectural design emphasizes a balance between comfort, aesthetics, and spatial efficiency, ensuring a pleasant experience for guests throughout the property.",
+
+    "A defining feature of the project is the intricate jali facade that creates a unique visual identity while contributing to light filtration, privacy, and facade depth.",
+
+    "The perforated exterior skin introduces dynamic patterns of light and shadow across the building, enhancing the overall architectural character.",
+
+    "The planning incorporates comfortable guest accommodations along with recreational and social spaces that encourage relaxation and interaction.",
+  ],
+
+  highlights: [
+    {
+      title: "Intricate Jali Facade",
+      text: "The exterior facade is designed using detailed jali work that creates a contemporary architectural expression while enhancing visual texture and shading.",
+    },
+
+    {
+      title: "Hospitality-Focused Planning",
+      text: "The hotel layout is carefully planned to provide comfortable guest experiences with efficient circulation and functional hospitality spaces.",
+    },
+
+    {
+      title: "Recreational Spaces",
+      text: "Dedicated recreational and lounge areas create inviting environments for relaxation, interaction, and leisure activities.",
+    },
+
+    {
+      title: "Modern Urban Identity",
+      text: "The bold facade composition and clean architectural geometry establish a strong visual identity within the urban context.",
+    },
+
+    {
+      title: "Light & Shadow Interaction",
+      text: "The perforated facade system allows natural light to filter through the structure, generating dynamic shadow patterns and enhancing spatial ambience.",
+    },
+  ],
+
+  designIntent:
+    "The intent behind Mrs. Jyoti Yadav Hotel is to create a contemporary hospitality environment that feels comfortable, engaging, and architecturally distinctive. Through the use of intricate jali work, modern planning strategies, and thoughtfully designed recreational spaces, the project establishes a balance between visual identity, guest comfort, and urban functionality. The facade acts not only as an aesthetic element but also as a climatic and experiential feature that defines the character of the hotel.",
+
+  conclusion:
+    "Mrs. Jyoti Yadav Hotel successfully combines hospitality planning with expressive architectural design to create a modern and memorable hotel experience. The integration of intricate jali facade elements, comfortable accommodations, and recreational spaces results in a refined hospitality environment that balances aesthetics, functionality, and guest experience.",
+}
+
 ];
 
 export default projectsData;
