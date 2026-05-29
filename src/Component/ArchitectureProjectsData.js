@@ -8,17 +8,17 @@ const projectsData = [
     tag: "Completed Project",
     title: "The Aravali Resort – Rishikesh",
     subtitle: "Architectural & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
+    mainImage: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.avif",
     sideImages: [
-      "/Architecture/Aravali/aravali-resort-landscape-design-rishikesh.webp",
-      "/Architecture/Aravali/aravali-resort-hospitality-interior-rishikesh.webp",
-      "/Architecture/Aravali/aravali-resort-architecture-detail-rishikesh.webp",
+      "/Architecture/Aravali/aravali-resort-landscape-design-rishikesh.avif",
+      "/Architecture/Aravali/aravali-resort-hospitality-interior-rishikesh.avif",
+      "/Architecture/Aravali/aravali-resort-architecture-detail-rishikesh.avif",
     ],
     galleryImages: [
-      "/Architecture/Aravali/aravali-resort-room-interior-rishikesh.webp",
-      "/Architecture/Aravali/aravali-resort-outdoor-spaces-rishikesh.webp",
-      "/Architecture/Aravali/aravali-resort-sustainable-design-rishikesh.webp",
-      "/Architecture/Aravali/aravali-resort-mountain-view-rishikesh.webp",
+      "/Architecture/Aravali/aravali-resort-room-interior-rishikesh.avif",
+      "/Architecture/Aravali/aravali-resort-outdoor-spaces-rishikesh.avif",
+      "/Architecture/Aravali/aravali-resort-sustainable-design-rishikesh.avif",
+      "/Architecture/Aravali/aravali-resort-mountain-view-rishikesh.avif",
     ],
     info: {
       project: "The Aravali Resort",
@@ -61,16 +61,16 @@ const projectsData = [
     tag: "Completed Project",
     title: "Sargam Theatre, Chandpur",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
+    mainImage: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
     sideImages: [
-      "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.webp",
-      "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.webp",
-      "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.avif",
     ],
     galleryImages: [
-      "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.webp",
-      "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.webp",
-      "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.avif",
     ],
     info: {
       project: "Sargam Theatre",
@@ -113,17 +113,17 @@ const projectsData = [
     tag: "Ongoing Project",
     title: "Monsoon Mall – Sirsa",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
+    mainImage: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif",
     sideImages: [
-      "/Architecture/Sirsa/monsoon-mall-retail-interior-sirsa.webp",
-      "/Architecture/Sirsa/monsoon-mall-entrance-design-sirsa.webp",
-      "/Architecture/Sirsa/monsoon-mall-atrium-space-sirsa.webp",
+      "/Architecture/Sirsa/monsoon-mall-retail-interior-sirsa.avif",
+      "/Architecture/Sirsa/monsoon-mall-entrance-design-sirsa.avif",
+      "/Architecture/Sirsa/monsoon-mall-atrium-space-sirsa.avif",
     ],
     galleryImages: [
-      "/Architecture/Sirsa/monsoon-mall-shopping-areas-sirsa.webp",
-      "/Architecture/Sirsa/monsoon-mall-multiplex-cinema-sirsa.webp",
-      "/Architecture/Sirsa/monsoon-mall-food-court-sirsa.webp",
-      "/Architecture/Sirsa/monsoon-mall-architectural-facade-sirsa.webp",
+      "/Architecture/Sirsa/monsoon-mall-shopping-areas-sirsa.avif",
+      "/Architecture/Sirsa/monsoon-mall-multiplex-cinema-sirsa.avif",
+      "/Architecture/Sirsa/monsoon-mall-food-court-sirsa.avif",
+      "/Architecture/Sirsa/monsoon-mall-architectural-facade-sirsa.avif",
     ],
     info: {
       project: "Monsoon Mall",
@@ -171,17 +171,17 @@ const projectsData = [
     tag: "Completed Project",
     title: "Ananta Hospital – Gurugram",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.webp",
+    mainImage: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.avif",
     sideImages: [
-      "/Architecture/Ananta/ananta-hospital-patient-rooms-gurugram.webp",
-      "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.webp",
-      "/Architecture/Ananta/ananta-hospital-circulation-design-gurugram.webp",
+      "/Architecture/Ananta/ananta-hospital-patient-rooms-gurugram.avif",
+      "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.avif",
+      "/Architecture/Ananta/ananta-hospital-circulation-design-gurugram.avif",
     ],
     galleryImages: [
-      "/Architecture/Ananta/ananta-hospital-reception-lobby-gurugram.webp",
-      "/Architecture/Ananta/ananta-hospital-operation-theatres-gurugram.webp",
-      "/Architecture/Ananta/ananta-hospital-emergency-services-gurugram.webp",
-      "/Architecture/Ananta/ananta-hospital-terrace-garden-gurugram.webp",
+      "/Architecture/Ananta/ananta-hospital-reception-lobby-gurugram.avif",
+      "/Architecture/Ananta/ananta-hospital-operation-theatres-gurugram.avif",
+      "/Architecture/Ananta/ananta-hospital-emergency-services-gurugram.avif",
+      "/Architecture/Ananta/ananta-hospital-terrace-garden-gurugram.avif",
     ],
     info: {
       project: "Ananta Hospital",
@@ -238,17 +238,17 @@ const projectsData = [
     tag: "Architecture + Interior Design",
     title: "Movie Lounge Cinema Expansion",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
     sideImages: [
-      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.avif",
     ],
     galleryImages: [
-      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.avif",
     ],
     info: {
       project: "Movie Lounge Cinema Expansion (2 Screens)",
@@ -322,11 +322,11 @@ const projectsData = [
     tag: "Residential Architecture",
     title: "Contemporary Luxury Bungalow – Darbaripur",
     subtitle: "Architecture & Exterior Design Concept",
-    mainImage: "/Architecture/DarbaripurHouse/main-view.webp",
+    mainImage: "/Architecture/DarbaripurHouse/main-view.avif",
     sideImages: [
-      "/Architecture/DarbaripurHouse/front-angle.webp",
-      "/Architecture/DarbaripurHouse/entry-porch.webp",
-      "/Architecture/DarbaripurHouse/night-lighting.webp",
+      "/Architecture/DarbaripurHouse/front-angle.avif",
+      "/Architecture/DarbaripurHouse/entry-porch.avif",
+      "/Architecture/DarbaripurHouse/night-lighting.avif",
     ],
     galleryImages: [],
     info: {
@@ -400,17 +400,17 @@ const projectsData = [
     tag: "Completed Project",
     title: "Club House – Sirsa",
     subtitle: "Recreational & Community Space Design",
-    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
     sideImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.avif",
     ],
     galleryImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.avif",
     ],
     info: {
       project: "Club House Sirsa",
@@ -449,251 +449,363 @@ const projectsData = [
       "The Club House Sirsa stands as a comprehensive recreational destination that brings together sports, wellness, and community life. Through thoughtful planning and design, it creates a dynamic and harmonious space that serves people of all age groups while promoting a balanced and active lifestyle.",
   },
   {
-  id: 9,
-  slug: "hill-view-resort-hospitality-design",
-  tag: "Completed Project",
-  title: "AKSHORA PADAMPURI Uttarakhand",
-  subtitle: "Luxury Hospitality & Recreational Space Design",
-  mainImage: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
+    id: 9,
+    slug: "hill-view-resort-hospitality-design",
+    tag: "Completed Project",
+    title: "AKSHORA PADAMPURI Uttarakhand",
+    subtitle: "Luxury Hospitality & Recreational Space Design",
+    mainImage: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.avif",
 
-  sideImages: [
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-swimming-pool.webp",
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-firepit.webp",
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-restaurant.webp",
-  ],
+    sideImages: [
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-swimming-pool.avif",
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-firepit.avif",
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-restaurant.avif",
+    ],
 
-  galleryImages: [
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-cottages.webp",
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-indoor-games-room.webp",
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-landscape.webp",
-    "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-duplex-cottages.webp",
-  ],
+    galleryImages: [
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-cottages.avif",
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-indoor-games-room.avif",
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-landscape.avif",
+      "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-duplex-cottages.avif",
+    ],
 
-  info: {
-    project: "AKSHORA PADAMPURI RESORT",
-    location: "Uttarakhand, India",
-    scope: "Architecture, Landscape & Interior Design",
-    typology: "Luxury Hospitality Resort",
-    firm: "URBAN iNFiLL ",
+    info: {
+      project: "AKSHORA PADAMPURI RESORT",
+      location: "Uttarakhand, India",
+      scope: "Architecture, Landscape & Interior Design",
+      typology: "Luxury Hospitality Resort",
+      firm: "URBAN iNFiLL ",
+    },
+
+    overview: [
+      "Nestled within the serene hills, Hill View Resort is envisioned as a luxury hospitality destination that seamlessly integrates architecture, nature, and recreation. The project is designed to offer guests a peaceful retreat while embracing panoramic views of the surrounding terrain.",
+
+      "The resort combines premium accommodations, recreational amenities, and carefully curated outdoor spaces to create an immersive hospitality experience. Every cottage and shared facility is strategically positioned to maximize views, privacy, and connectivity with nature.",
+    ],
+
+    locationText:
+      "Located amidst the scenic hill terrain of Uttarakhand, India.",
+
+    designConcept: [
+      "The design philosophy focuses on blending built forms with the natural contours of the site. The cottages are staggered along the hillside to preserve unobstructed valley views while minimizing disruption to the terrain.",
+
+      "A hierarchy of vehicular and pedestrian circulation ensures smooth movement throughout the resort. Dedicated pathways, stepped walkways, and landscaped trails enhance accessibility while maintaining a strong connection with nature.",
+
+      "The architecture adopts a warm and earthy material palette with sloping roofs, natural stone, wood textures, and expansive glazing to complement the surrounding hill landscape.",
+
+      "Landscape design plays a central role in the project, incorporating native plantation, terraced gardens, water features, and outdoor recreational spaces that organically merge with the contours of the site.",
+    ],
+
+    highlights: [
+      {
+        title: "Luxury Cottage Accommodation",
+        text:
+          "The resort features a mix of duplex cottages and single-unit accommodations designed according to varying guest requirements, ensuring comfort, privacy, and panoramic hill views.",
+      },
+
+      {
+        title: "Recreational Amenities",
+        text:
+          "Guests can experience a range of recreational spaces including a swimming pool, outdoor fire pit lounge, indoor games room, and viewing decks that encourage relaxation and social interaction.",
+      },
+
+      {
+        title: "Restaurant with Scenic Views",
+        text:
+          "The hilltop restaurant is positioned to capture uninterrupted landscape views, creating a memorable dining experience that connects guests with the surrounding natural beauty.",
+      },
+
+      {
+        title: "Integrated Circulation Planning",
+        text:
+          "The master planning carefully separates vehicular and pedestrian movement, ensuring efficient circulation, safety, and a comfortable user experience across the resort.",
+      },
+
+      {
+        title: "Terrain-Sensitive Landscaping",
+        text:
+          "The landscape strategy complements the natural hill terrain through terraced plantations, retaining walls, native greenery, and pathways that blend seamlessly into the environment.",
+      },
+    ],
+
+    designIntent:
+      "Hill View Resort is designed as a destination that celebrates the harmony between architecture and nature. The project aims to provide a luxurious yet tranquil experience where guests can reconnect with the landscape through thoughtfully designed spaces, recreational amenities, and immersive outdoor environments. By responding sensitively to the contours of the hillside, the resort creates a balance between built form, movement, and the surrounding ecology.",
+
+    conclusion:
+      "Hill View Resort represents a contemporary approach to hospitality design where comfort, recreation, and environmental sensitivity coexist seamlessly. Through carefully planned cottages, engaging recreational spaces, efficient circulation systems, and landscape-driven planning, the resort offers an elevated experience that enhances the natural beauty of the hills while delivering a memorable stay for its visitors.",
+  }, {
+    id: 10,
+    slug: "jindal-stone-showroom-exterior-design",
+    tag: "Completed Project",
+    title: "Jindal Stone",
+    subtitle: "Architectural Facade & Exterior Design",
+
+    mainImage: "/Architecture/JindalStone/jindal-stone-main-facade.avif",
+
+    sideImages: [
+      "/Architecture/JindalStone/jindal-stone-cladding-detail.avif",
+      "/Architecture/JindalStone/jindal-stone-entry-portal.avif",
+      "/Architecture/JindalStone/jindal-stone-louvers.avif",
+    ],
+
+    galleryImages: [
+      "/Architecture/JindalStone/jindal-stone-night-view.avif",
+      "/Architecture/JindalStone/indal-stone-showroom-facade.avif",
+
+    ],
+
+    info: {
+      project: "Jindal Stone",
+      location: "India",
+      scope: "Architecture & Exterior Facade Design",
+      typology: "Commercial Showroom",
+    },
+
+    overview: [
+      "Jindal Stone is designed as a premium commercial showroom that reflects sophistication, material richness, and contemporary architectural expression through its striking facade composition.",
+
+      "The project emphasizes strong visual identity using stone cladding, vertical louvers, feature lighting, and focused entry elements that create a memorable arrival experience.",
+    ],
+
+    locationText:
+      "The showroom facade is envisioned as a modern architectural statement that highlights the elegance and versatility of imported marble and granite materials.",
+
+    designConcept: [
+      "The architectural language is centered around clean geometries, textured stone surfaces, and a balanced composition of solid and transparent elements.",
+
+      "Premium stone cladding is used across the facade to establish a luxurious and timeless visual character while showcasing the material palette associated with the brand identity.",
+
+      "Vertical louvers are incorporated to add depth, rhythm, and visual layering to the exterior while enhancing the modern aesthetic of the structure.",
+
+      "Focused entry portals with bold arch-inspired forms create a strong visual anchor and define the entrance experience with elegance and clarity.",
+
+      "Integrated facade lighting highlights architectural details during nighttime, enhancing visibility and creating a refined exterior ambience.",
+    ],
+
+    highlights: [
+      {
+        title: "Stone Cladding Facade",
+        text: "The exterior facade features premium stone cladding that enhances durability, texture, and visual sophistication.",
+      },
+
+      {
+        title: "Architectural Louvers",
+        text: "Vertical louvers introduce depth and rhythm to the facade while contributing to the contemporary architectural identity.",
+      },
+
+      {
+        title: "Focused Entry Design",
+        text: "The entrance is designed as a prominent architectural feature with bold framing elements that create a grand arrival experience.",
+      },
+
+      {
+        title: "Feature Lighting Integration",
+        text: "Strategically placed facade lighting accentuates textures, materials, and architectural forms during evening hours.",
+      },
+
+      {
+        title: "Contemporary Commercial Identity",
+        text: "The overall facade composition establishes a premium showroom presence that reflects elegance, modernity, and brand value.",
+      },
+    ],
+
+    designIntent:
+      "The intent behind Jindal Stone is to create a landmark commercial facade that represents luxury, craftsmanship, and architectural refinement. Through the use of stone cladding, vertical louvers, and focused entry elements, the design establishes a bold yet elegant identity that enhances customer experience and strengthens brand presence. Every facade detail is carefully curated to create a visually impactful and timeless architectural statement.",
+
+    conclusion:
+      "Jindal Stone successfully combines material richness with contemporary facade design to create a premium commercial showroom experience. The integration of stone cladding, modern louvers, dramatic entry portals, and architectural lighting results in a sophisticated exterior environment that reflects quality, elegance, and modern architectural character.",
   },
+  {
+    id: 11,
+    slug: "mrs-jyoti-yadav-hotel-hospitality-design",
+    tag: "Completed Project",
+    title: "Mrs. Jyoti Yadav Hotel",
+    subtitle: "Hospitality Architecture & Facade Design",
 
-  overview: [
-    "Nestled within the serene hills, Hill View Resort is envisioned as a luxury hospitality destination that seamlessly integrates architecture, nature, and recreation. The project is designed to offer guests a peaceful retreat while embracing panoramic views of the surrounding terrain.",
-    
-    "The resort combines premium accommodations, recreational amenities, and carefully curated outdoor spaces to create an immersive hospitality experience. Every cottage and shared facility is strategically positioned to maximize views, privacy, and connectivity with nature.",
-  ],
+    mainImage: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.avif",
 
-  locationText:
-    "Located amidst the scenic hill terrain of Uttarakhand, India.",
+    sideImages: [
+      "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-jali-facade.avif",
+      "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-entr.avif",
+      "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-exterior-detail.avif",
+    ],
 
-  designConcept: [
-    "The design philosophy focuses on blending built forms with the natural contours of the site. The cottages are staggered along the hillside to preserve unobstructed valley views while minimizing disruption to the terrain.",
+    galleryImages: [
 
-    "A hierarchy of vehicular and pedestrian circulation ensures smooth movement throughout the resort. Dedicated pathways, stepped walkways, and landscaped trails enhance accessibility while maintaining a strong connection with nature.",
+    ],
 
-    "The architecture adopts a warm and earthy material palette with sloping roofs, natural stone, wood textures, and expansive glazing to complement the surrounding hill landscape.",
-
-    "Landscape design plays a central role in the project, incorporating native plantation, terraced gardens, water features, and outdoor recreational spaces that organically merge with the contours of the site.",
-  ],
-
-  highlights: [
-    {
-      title: "Luxury Cottage Accommodation",
-      text:
-        "The resort features a mix of duplex cottages and single-unit accommodations designed according to varying guest requirements, ensuring comfort, privacy, and panoramic hill views.",
+    info: {
+      project: "Mrs. Jyoti Yadav Hotel",
+      location: "India",
+      scope: "Architecture & Hospitality Design",
+      typology: "Hotel",
     },
 
-    {
-      title: "Recreational Amenities",
-      text:
-        "Guests can experience a range of recreational spaces including a swimming pool, outdoor fire pit lounge, indoor games room, and viewing decks that encourage relaxation and social interaction.",
-    },
+    overview: [
+      "Mrs. Jyoti Yadav Hotel is envisioned as a contemporary hospitality space that combines comfort, recreation, and architectural identity within a refined urban setting.",
 
-    {
-      title: "Restaurant with Scenic Views",
-      text:
-        "The hilltop restaurant is positioned to capture uninterrupted landscape views, creating a memorable dining experience that connects guests with the surrounding natural beauty.",
-    },
+      "The project focuses on creating welcoming guest experiences through thoughtfully designed hospitality spaces and a visually striking facade characterized by intricate jali work.",
+    ],
 
-    {
-      title: "Integrated Circulation Planning",
-      text:
-        "The master planning carefully separates vehicular and pedestrian movement, ensuring efficient circulation, safety, and a comfortable user experience across the resort.",
-    },
+    locationText:
+      "Designed as a modern hospitality destination, the hotel integrates functional planning with expressive architectural detailing to create a memorable urban presence.",
 
-    {
-      title: "Terrain-Sensitive Landscaping",
-      text:
-        "The landscape strategy complements the natural hill terrain through terraced plantations, retaining walls, native greenery, and pathways that blend seamlessly into the environment.",
-    },
-  ],
+    designConcept: [
+      "The architectural design emphasizes a balance between comfort, aesthetics, and spatial efficiency, ensuring a pleasant experience for guests throughout the property.",
 
-  designIntent:
-    "Hill View Resort is designed as a destination that celebrates the harmony between architecture and nature. The project aims to provide a luxurious yet tranquil experience where guests can reconnect with the landscape through thoughtfully designed spaces, recreational amenities, and immersive outdoor environments. By responding sensitively to the contours of the hillside, the resort creates a balance between built form, movement, and the surrounding ecology.",
+      "A defining feature of the project is the intricate jali facade that creates a unique visual identity while contributing to light filtration, privacy, and facade depth.",
 
-  conclusion:
-    "Hill View Resort represents a contemporary approach to hospitality design where comfort, recreation, and environmental sensitivity coexist seamlessly. Through carefully planned cottages, engaging recreational spaces, efficient circulation systems, and landscape-driven planning, the resort offers an elevated experience that enhances the natural beauty of the hills while delivering a memorable stay for its visitors.",
-},{
-  id: 10,
-  slug: "jindal-stone-showroom-exterior-design",
-  tag: "Completed Project",
-  title: "Jindal Stone",
-  subtitle: "Architectural Facade & Exterior Design",
+      "The perforated exterior skin introduces dynamic patterns of light and shadow across the building, enhancing the overall architectural character.",
 
-  mainImage: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
+      "The planning incorporates comfortable guest accommodations along with recreational and social spaces that encourage relaxation and interaction.",
+    ],
 
-  sideImages: [
-    "/Architecture/JindalStone/jindal-stone-cladding-detail.webp",
-    "/Architecture/JindalStone/jindal-stone-entry-portal.webp",
-    "/Architecture/JindalStone/jindal-stone-louvers.webp",
-  ],
+    highlights: [
+      {
+        title: "Intricate Jali Facade",
+        text: "The exterior facade is designed using detailed jali work that creates a contemporary architectural expression while enhancing visual texture and shading.",
+      },
 
-  galleryImages: [
-    "/Architecture/JindalStone/jindal-stone-night-view.webp",
-    "/Architecture/JindalStone/indal-stone-showroom-facade.webp",
-  
-  ],
+      {
+        title: "Hospitality-Focused Planning",
+        text: "The hotel layout is carefully planned to provide comfortable guest experiences with efficient circulation and functional hospitality spaces.",
+      },
 
-  info: {
-    project: "Jindal Stone",
-    location: "India",
-    scope: "Architecture & Exterior Facade Design",
-    typology: "Commercial Showroom",
+      {
+        title: "Recreational Spaces",
+        text: "Dedicated recreational and lounge areas create inviting environments for relaxation, interaction, and leisure activities.",
+      },
+
+      {
+        title: "Modern Urban Identity",
+        text: "The bold facade composition and clean architectural geometry establish a strong visual identity within the urban context.",
+      },
+
+      {
+        title: "Light & Shadow Interaction",
+        text: "The perforated facade system allows natural light to filter through the structure, generating dynamic shadow patterns and enhancing spatial ambience.",
+      },
+    ],
+
+    designIntent:
+      "The intent behind Mrs. Jyoti Yadav Hotel is to create a contemporary hospitality environment that feels comfortable, engaging, and architecturally distinctive. Through the use of intricate jali work, modern planning strategies, and thoughtfully designed recreational spaces, the project establishes a balance between visual identity, guest comfort, and urban functionality. The facade acts not only as an aesthetic element but also as a climatic and experiential feature that defines the character of the hotel.",
+
+    conclusion:
+      "Mrs. Jyoti Yadav Hotel successfully combines hospitality planning with expressive architectural design to create a modern and memorable hotel experience. The integration of intricate jali facade elements, comfortable accommodations, and recreational spaces results in a refined hospitality environment that balances aesthetics, functionality, and guest experience.",
   },
+  {
+    id: 12,
+    slug: "medanta-hospital-ranchi-healthcare-architecture",
 
-  overview: [
-    "Jindal Stone is designed as a premium commercial showroom that reflects sophistication, material richness, and contemporary architectural expression through its striking facade composition.",
+    tag: "Healthcare Architecture",
 
-    "The project emphasizes strong visual identity using stone cladding, vertical louvers, feature lighting, and focused entry elements that create a memorable arrival experience.",
-  ],
+    title: "Medanta Hospital Ranchi",
+    subtitle: "Multi-Speciality Hospital Architecture",
 
-  locationText:
-    "The showroom facade is envisioned as a modern architectural statement that highlights the elegance and versatility of imported marble and granite materials.",
+    mainImage: "/Architecture/MedantaRanchi/front-elevation.avif",
 
-  designConcept: [
-    "The architectural language is centered around clean geometries, textured stone surfaces, and a balanced composition of solid and transparent elements.",
+    sideImages: [
+      "/Architecture/MedantaRanchi/main-facade.avif",
+      "/Architecture/MedantaRanchi/entry-view.avif",
+      "/Architecture/MedantaRanchi/building-perspective.avif",
+    ],
 
-    "Premium stone cladding is used across the facade to establish a luxurious and timeless visual character while showcasing the material palette associated with the brand identity.",
+    galleryImages: [
 
-    "Vertical louvers are incorporated to add depth, rhythm, and visual layering to the exterior while enhancing the modern aesthetic of the structure.",
+    ],
 
-    "Focused entry portals with bold arch-inspired forms create a strong visual anchor and define the entrance experience with elegance and clarity.",
-
-    "Integrated facade lighting highlights architectural details during nighttime, enhancing visibility and creating a refined exterior ambience.",
-  ],
-
-  highlights: [
-    {
-      title: "Stone Cladding Facade",
-      text: "The exterior facade features premium stone cladding that enhances durability, texture, and visual sophistication.",
+    info: {
+      project: "Hospital Architecture & Facade Design",
+      location: "Ranchi, Jharkhand",
+      scope: "Architecture + Planning + Facade Design",
+      category: "Healthcare / Hospital",
+      area: "Approx. 120000+ sq. ft.",
+      client: "Medanta Hospital Ranchi",
+      designStyle: "Contemporary Healthcare Architecture",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
     },
 
-    {
-      title: "Architectural Louvers",
-      text: "Vertical louvers introduce depth and rhythm to the facade while contributing to the contemporary architectural identity.",
-    },
+    overview: [
+      "The Medanta Hospital Ranchi project was envisioned as a contemporary healthcare facility that combines advanced medical infrastructure with efficient architectural planning.",
 
-    {
-      title: "Focused Entry Design",
-      text: "The entrance is designed as a prominent architectural feature with bold framing elements that create a grand arrival experience.",
-    },
+      "The architectural design emphasizes functionality, accessibility, and a strong institutional identity through clean geometric forms and modern façade treatment.",
 
-    {
-      title: "Feature Lighting Integration",
-      text: "Strategically placed facade lighting accentuates textures, materials, and architectural forms during evening hours.",
-    },
+      "Carefully planned patient circulation, emergency access, service zoning, and welcoming public areas contribute to a highly efficient and user-friendly healthcare environment.",
+    ],
 
-    {
-      title: "Contemporary Commercial Identity",
-      text: "The overall facade composition establishes a premium showroom presence that reflects elegance, modernity, and brand value.",
-    },
-  ],
+    designConcept: [
+      "The concept focused on creating a modern healthcare institution that reflects trust, innovation, and operational excellence through architecture.",
 
-  designIntent:
-    "The intent behind Jindal Stone is to create a landmark commercial facade that represents luxury, craftsmanship, and architectural refinement. Through the use of stone cladding, vertical louvers, and focused entry elements, the design establishes a bold yet elegant identity that enhances customer experience and strengthens brand presence. Every facade detail is carefully curated to create a visually impactful and timeless architectural statement.",
+      "The façade design integrates contemporary materials, balanced proportions, and large glazed openings to create a visually refined and welcoming hospital environment.",
 
-  conclusion:
-    "Jindal Stone successfully combines material richness with contemporary facade design to create a premium commercial showroom experience. The integration of stone cladding, modern louvers, dramatic entry portals, and architectural lighting results in a sophisticated exterior environment that reflects quality, elegance, and modern architectural character.",
-},
-{
-  id: 11,
-  slug: "mrs-jyoti-yadav-hotel-hospitality-design",
-  tag: "Completed Project",
-  title: "Mrs. Jyoti Yadav Hotel",
-  subtitle: "Hospitality Architecture & Facade Design",
+      "Spatial planning was designed to optimize natural movement, daylight access, and healthcare functionality while maintaining a calm and organized atmosphere.",
+    ],
 
-  mainImage: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
+    materials: [
+      {
+        category: "Facade Materials",
+        details:
+          "Combination of ACP cladding, textured exterior finishes, and high-performance glazing to achieve a modern institutional appearance.",
+      },
 
-  sideImages: [
-    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-jali-facade.webp",
-    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-entr.webp",
-    "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-exterior-detail.webp",
-  ],
+      {
+        category: "Glass & Fenestration",
+        details:
+          "Large glazed openings and curtain glazing systems designed to enhance daylight penetration and visual openness.",
+      },
 
-  galleryImages: [
-   
-  ],
+      {
+        category: "Exterior Finishes",
+        details:
+          "Durable weather-resistant finishes selected for long-term performance, low maintenance, and healthcare aesthetics.",
+      },
 
-  info: {
-    project: "Mrs. Jyoti Yadav Hotel",
-    location: "India",
-    scope: "Architecture & Hospitality Design",
-    typology: "Hotel",
+      {
+        category: "Landscape & Site Elements",
+        details:
+          "Integrated drop-off zones, pedestrian pathways, and landscape elements designed to improve accessibility and patient experience.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Contemporary Hospital Façade",
+        text:
+          "Modern architectural elevation designed to establish a strong healthcare identity and institutional presence.",
+      },
+
+      {
+        title: "Efficient Healthcare Planning",
+        text:
+          "Strategically planned zoning and circulation systems support smooth hospital operations and patient movement.",
+      },
+
+      {
+        title: "Welcoming Entrance Experience",
+        text:
+          "Grand entry and drop-off areas create a comfortable and accessible arrival experience for visitors and patients.",
+      },
+
+      {
+        title: "Integrated Daylight Strategy",
+        text:
+          "Large glazed surfaces maximize natural light while enhancing interior openness and comfort.",
+      },
+
+      {
+        title: "Modern Institutional Identity",
+        text:
+          "Clean architectural lines and balanced material composition create a refined healthcare environment.",
+      },
+    ],
+
+    designIntent:
+      "To design a contemporary multi-speciality healthcare facility that integrates efficient hospital planning, patient comfort, and modern architectural identity within a functional medical environment.",
+
+    conclusion:
+      "The Medanta Hospital Ranchi architecture project reflects a thoughtful healthcare design approach where functionality, accessibility, and modern institutional aesthetics come together to create a world-class medical facility.",
   },
-
-  overview: [
-    "Mrs. Jyoti Yadav Hotel is envisioned as a contemporary hospitality space that combines comfort, recreation, and architectural identity within a refined urban setting.",
-
-    "The project focuses on creating welcoming guest experiences through thoughtfully designed hospitality spaces and a visually striking facade characterized by intricate jali work.",
-  ],
-
-  locationText:
-    "Designed as a modern hospitality destination, the hotel integrates functional planning with expressive architectural detailing to create a memorable urban presence.",
-
-  designConcept: [
-    "The architectural design emphasizes a balance between comfort, aesthetics, and spatial efficiency, ensuring a pleasant experience for guests throughout the property.",
-
-    "A defining feature of the project is the intricate jali facade that creates a unique visual identity while contributing to light filtration, privacy, and facade depth.",
-
-    "The perforated exterior skin introduces dynamic patterns of light and shadow across the building, enhancing the overall architectural character.",
-
-    "The planning incorporates comfortable guest accommodations along with recreational and social spaces that encourage relaxation and interaction.",
-  ],
-
-  highlights: [
-    {
-      title: "Intricate Jali Facade",
-      text: "The exterior facade is designed using detailed jali work that creates a contemporary architectural expression while enhancing visual texture and shading.",
-    },
-
-    {
-      title: "Hospitality-Focused Planning",
-      text: "The hotel layout is carefully planned to provide comfortable guest experiences with efficient circulation and functional hospitality spaces.",
-    },
-
-    {
-      title: "Recreational Spaces",
-      text: "Dedicated recreational and lounge areas create inviting environments for relaxation, interaction, and leisure activities.",
-    },
-
-    {
-      title: "Modern Urban Identity",
-      text: "The bold facade composition and clean architectural geometry establish a strong visual identity within the urban context.",
-    },
-
-    {
-      title: "Light & Shadow Interaction",
-      text: "The perforated facade system allows natural light to filter through the structure, generating dynamic shadow patterns and enhancing spatial ambience.",
-    },
-  ],
-
-  designIntent:
-    "The intent behind Mrs. Jyoti Yadav Hotel is to create a contemporary hospitality environment that feels comfortable, engaging, and architecturally distinctive. Through the use of intricate jali work, modern planning strategies, and thoughtfully designed recreational spaces, the project establishes a balance between visual identity, guest comfort, and urban functionality. The facade acts not only as an aesthetic element but also as a climatic and experiential feature that defines the character of the hotel.",
-
-  conclusion:
-    "Mrs. Jyoti Yadav Hotel successfully combines hospitality planning with expressive architectural design to create a modern and memorable hotel experience. The integration of intricate jali facade elements, comfortable accommodations, and recreational spaces results in a refined hospitality environment that balances aesthetics, functionality, and guest experience.",
-}
-
 ];
 
 export default projectsData;

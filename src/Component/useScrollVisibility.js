@@ -32,7 +32,7 @@ function useScrollVisibility(selectors = [], className = "scroll-reveal-home") {
     });
 
     return () => observer.disconnect();
-  }, [location.pathname, selectors, className]);
+  }, [location, selectors, className]);
 }
 
 export default useScrollVisibility;

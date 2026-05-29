@@ -8,17 +8,17 @@ const interiorProjects = [
     tag: "United Airlines Office",
     title: "United Airlines Premium Office",
     subtitle: "Commercial Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
+    mainImage: "/Interiors/United/united-airlines-premium-office-main-delhi.avif",
     sideImages: [
-      "/Interiors/United/united-airlines-reception-area-delhi.webp",
-      "/Interiors/United/united-airlines-conference-room-delhi.webp",
-      "/Interiors/United/united-airlines-workspace-delhi.webp",
+      "/Interiors/United/united-airlines-reception-area-delhi.avif",
+      "/Interiors/United/united-airlines-conference-room-delhi.avif",
+      "/Interiors/United/united-airlines-workspace-delhi.avif",
     ],
     galleryImages: [
-      "/Interiors/United/united-airlines-cabin-interior-delhi.webp",
-      "/Interiors/United/united-airlines-meeting-area-delhi.webp",
-      "/Interiors/United/united-airlines-office-lobby-delhi.webp",
-      "/Interiors/United/united-airlines-branding-elements-delhi.webp",
+      "/Interiors/United/united-airlines-cabin-interior-delhi.avif",
+      "/Interiors/United/united-airlines-meeting-area-delhi.avif",
+      "/Interiors/United/united-airlines-office-lobby-delhi.avif",
+      "/Interiors/United/united-airlines-branding-elements-delhi.avif",
     ],
     info: {
       project: "United Airlines Premium Office",
@@ -62,17 +62,17 @@ const interiorProjects = [
     tag: "Commercial Restaurant Design",
     title: "URBAN CANTEEN",
     subtitle: "Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
+    mainImage: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.avif",
     sideImages: [
-      "/Interiors/Urban/urban-canteen-dining-area-bhubaneswar.webp",
-      "/Interiors/Urban/urban-canteen-seating-design-bhubaneswar.webp",
-      "/Interiors/Urban/urban-canteen-interior-details-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-dining-area-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-seating-design-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-interior-details-bhubaneswar.avif",
     ],
     galleryImages: [
-      "/Interiors/Urban/urban-canteen-ambience-lighting-bhubaneswar.webp",
-      "/Interiors/Urban/urban-canteen-bar-area-bhubaneswar.webp",
-      "/Interiors/Urban/urban-canteen-open-kitchen-bhubaneswar.webp",
-      "/Interiors/Urban/urban-canteen-decorative-elements-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-ambience-lighting-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-bar-area-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-open-kitchen-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-decorative-elements-bhubaneswar.avif",
     ],
     info: {
       project: "Commercial Restaurant Design",
@@ -118,17 +118,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "BBi Booze Buzz Inhouse – Bhubaneswar",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.webp",
+    mainImage: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.avif",
     sideImages: [
-      "/Interiors/BBI/bbi-bar-counter-design-bhubaneswar.webp",
-      "/Interiors/BBI/bbi-lounge-seating-area-bhubaneswar.webp",
-      "/Interiors/BBI/bbi-nightlife-ambience-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-bar-counter-design-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-lounge-seating-area-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-nightlife-ambience-bhubaneswar.avif",
     ],
     galleryImages: [
-      "/Interiors/BBI/bbi-interior-lighting-design-bhubaneswar.webp",
-      "/Interiors/BBI/bbi-restaurant-dining-space-bhubaneswar.webp",
-      "/Interiors/BBI/bbi-cocktail-bar-interior-bhubaneswar.webp",
-      "/Interiors/BBI/bbi-club-atmosphere-design-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-interior-lighting-design-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-restaurant-dining-space-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-cocktail-bar-interior-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-club-atmosphere-design-bhubaneswar.avif",
     ],
     info: {
       project: "BBi Booze Buzz Inhouse",
@@ -187,17 +187,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Cineport 5-Screen Multiplex – Gurgaon",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.webp",
+    mainImage: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.avif",
     sideImages: [
-      "/Interiors/Cineport/cineport-foyer-concession-area-gurgaon.webp",
-      "/Interiors/Cineport/cineport-auditorium-interior-design-gurgaon.webp",
-      "/Interiors/Cineport/cineport-cinema-seating-arrangement-gurgaon.webp",
+      "/Interiors/Cineport/cineport-foyer-concession-area-gurgaon.avif",
+      "/Interiors/Cineport/cineport-auditorium-interior-design-gurgaon.avif",
+      "/Interiors/Cineport/cineport-cinema-seating-arrangement-gurgaon.avif",
     ],
     galleryImages: [
-      "/Interiors/Cineport/cineport-theater-lighting-design-gurgaon.webp",
-      "/Interiors/Cineport/cineport-luxury-cinema-hall-gurgaon.webp",
-      "/Interiors/Cineport/cineport-corridor-circulation-space-gurgaon.webp",
-      "/Interiors/Cineport/cineport-digital-media-integration-gurgaon.webp",
+      "/Interiors/Cineport/cineport-theater-lighting-design-gurgaon.avif",
+      "/Interiors/Cineport/cineport-luxury-cinema-hall-gurgaon.avif",
+      "/Interiors/Cineport/cineport-corridor-circulation-space-gurgaon.avif",
+      "/Interiors/Cineport/cineport-digital-media-integration-gurgaon.avif",
     ],
     info: {
       project: "Cineport 5-Screen Multiplex",
@@ -280,17 +280,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Samsung Corporate Office – Dehradun",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.webp",
+    mainImage: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.avif",
     sideImages: [
-      "/Interiors/Samsung/samsung-office-reception-dehradun.webp",
-      "/Interiors/Samsung/samsung-workspace-interior-dehradun.webp",
-      "/Interiors/Samsung/samsung-meeting-room-design-dehradun.webp",
+      "/Interiors/Samsung/samsung-office-reception-dehradun.avif",
+      "/Interiors/Samsung/samsung-workspace-interior-dehradun.avif",
+      "/Interiors/Samsung/samsung-meeting-room-design-dehradun.avif",
     ],
     galleryImages: [
-      "/Interiors/Samsung/samsung-conference-area-dehradun.webp",
-      "/Interiors/Samsung/samsung-biophilic-office-design-dehradun.webp",
-      "/Interiors/Samsung/samsung-collaboration-space-dehradun.webp",
-      "/Interiors/Samsung/samsung-technology-integration-dehradun.webp",
+      "/Interiors/Samsung/samsung-conference-area-dehradun.avif",
+      "/Interiors/Samsung/samsung-biophilic-office-design-dehradun.avif",
+      "/Interiors/Samsung/samsung-collaboration-space-dehradun.avif",
+      "/Interiors/Samsung/samsung-technology-integration-dehradun.avif",
     ],
     info: {
       project: "Samsung Corporate Office",
@@ -349,17 +349,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Urban Company Corporate Office – Bengaluru",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.webp",
+    mainImage: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.avif",
     sideImages: [
-      "/Interiors/Ucompany/urban-company-open-workspace-bengaluru.webp",
-      "/Interiors/Ucompany/urban-company-breakout-zone-bengaluru.webp",
-      "/Interiors/Ucompany/urban-company-minimalist-interior-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-open-workspace-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-breakout-zone-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-minimalist-interior-bengaluru.avif",
     ],
     galleryImages: [
-      "/Interiors/Ucompany/urban-company-collaboration-area-bengaluru.webp",
-      "/Interiors/Ucompany/urban-company-natural-light-design-bengaluru.webp",
-      "/Interiors/Ucompany/urban-company-tech-workspace-bengaluru.webp",
-      "/Interiors/Ucompany/urban-company-flexible-office-design-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-collaboration-area-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-natural-light-design-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-tech-workspace-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-flexible-office-design-bengaluru.avif",
     ],
     info: {
       project: "Urban Company Corporate Office",
@@ -418,17 +418,17 @@ const interiorProjects = [
     tag: "Architecture + Interior Design",
     title: "Movie Lounge Cinema Expansion",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
     sideImages: [
-      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.avif",
     ],
     galleryImages: [
-      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.webp",
-      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.avif",
     ],
     info: {
       project: "Movie Lounge Cinema Expansion (2 Screens)",
@@ -502,11 +502,11 @@ const interiorProjects = [
     tag: "Healthcare Renovation",
     title: "Batra Hospital & Medical Research Centre – Cathlab",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
+    mainImage: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.avif",
     sideImages: [
-      "/Architecture/BatraHospital/batra-hospital-glass-partition-design-delhi.webp",
-      "/Architecture/BatraHospital/batra-hospital-medical-equipment-integration-delhi.webp",
-      "/Architecture/BatraHospital/batra-hospital-clinical-workflow-delhi.webp",
+      "/Architecture/BatraHospital/batra-hospital-glass-partition-design-delhi.avif",
+      "/Architecture/BatraHospital/batra-hospital-medical-equipment-integration-delhi.avif",
+      "/Architecture/BatraHospital/batra-hospital-clinical-workflow-delhi.avif",
     ],
     galleryImages: [],
     info: {
@@ -581,17 +581,17 @@ const interiorProjects = [
     tag: "Corporate Office",
     title: "Lenskart Store – Interior Experience Design",
     subtitle: "Corporate Office & Interior Design",
-    mainImage: "/Interiors/Lenskart/lenskart-store-main.webp",
+    mainImage: "/Interiors/Lenskart/lenskart-store-main.avif",
     sideImages: [
-      "/Interiors/Lenskart/lenskart-display-wall.webp",
-      "/Interiors/Lenskart/lenskart-customer-zone.webp",
-      "/Interiors/Lenskart/lenskart-lighting-detail.webp",
+      "/Interiors/Lenskart/lenskart-display-wall.avif",
+      "/Interiors/Lenskart/lenskart-customer-zone.avif",
+      "/Interiors/Lenskart/lenskart-lighting-detail.avif",
     ],
     galleryImages: [
-      "/Interiors/Lenskart/lenskart-storefront.webp",
-      "/Interiors/Lenskart/lenskart-cash-counter.webp",
-      "/Interiors/Lenskart/lenskart-cash-area.webp",
-      "/Interiors/Lenskart/enskart-vision-test-area.webp",
+      "/Interiors/Lenskart/lenskart-storefront.avif",
+      "/Interiors/Lenskart/lenskart-cash-counter.avif",
+      "/Interiors/Lenskart/lenskart-cash-area.avif",
+      "/Interiors/Lenskart/enskart-vision-test-area.avif",
     ],
     info: {
       project: "Retail Store Interior Design",
@@ -665,11 +665,16 @@ const interiorProjects = [
     tag: "Healthcare Interior",
     title: "Mayom Hospital – Interior Design",
     subtitle: "Healthcare & Medical Space Design",
-    mainImage: "/Interiors/MayomHospital/gita-gyan-main.webp",
+    mainImage: "/Interiors/MayomHospital/gita-gyan-main.avif",
     sideImages: [
-      "/Interiors/MayomHospital/gita-hall.webp",
+      "/Interiors/MayomHospital/gita-hall.avif",
+
+
     ],
-    galleryImages: [],
+    galleryImages: [
+
+
+    ],
     info: {
       project: "Hospital Interior Design",
       location: "Gurugram, Haryana",
@@ -737,24 +742,24 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Club House – Sirsa",
     subtitle: "Recreational & Community Space Design",
-    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
     sideImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.avif",
     ],
     galleryImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.webp",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.avif",
     ],
     info: {
       project: "Club House Sirsa",
       location: "Sirsa, Haryana",
       scope: "Architecture & Interior Design",
       area: "2684.2 sq. m",
-       firm: "URBAN iNFiLL ",
+      firm: "URBAN iNFiLL ",
     },
     overview: [
       "The Club House at Sirsa is designed as a vibrant recreational and social hub catering to the needs of the community. It integrates leisure, fitness, and cultural spaces within a cohesive architectural framework.",
@@ -786,787 +791,1030 @@ const interiorProjects = [
       "The Club House Sirsa stands as a comprehensive recreational destination that brings together sports, wellness, and community life. Through thoughtful planning and design, it creates a dynamic and harmonious space that serves people of all age groups while promoting a balanced and active lifestyle.",
   },
   {
-  id: 12,
-  slug: "met-reliance-interior-design",
-  tag: "Commercial Interior",
-  title: "MET Reliance – Interior Design",
-  subtitle: "Corporate & Institutional Space Design",
-  mainImage: "/Interiors/METReliance/main-hall.webp",
-  sideImages: [
-    "/Interiors/METReliance/lobby.webp",
-    "/Interiors/METReliance/entrance.webp",
-    "/Interiors/METReliance/reception.webp"
-  ],
-  galleryImages: [
-    "/Interiors/METReliance/gym-1.webp",
-    "/Interiors/METReliance/gym-2.webp",
-    "/Interiors/METReliance/hall-view-2.webp",
-    "/Interiors/METReliance/hall-view-1.webp",
-],
+    id: 12,
+    slug: "met-reliance-interior-design",
+    tag: "Commercial Interior",
+    title: "MET Reliance – Interior Design",
+    subtitle: "Corporate & Institutional Space Design",
+    mainImage: "/Interiors/METReliance/main-hall.avif",
+    sideImages: [
+      "/Interiors/METReliance/lobby.avif",
+      "/Interiors/METReliance/entrance.avif",
+      "/Interiors/METReliance/reception.avif"
+    ],
+    galleryImages: [
+      "/Interiors/METReliance/gym-1.avif",
+      "/Interiors/METReliance/gym-2.avif",
+      "/Interiors/METReliance/hall-view-2.avif",
+      "/Interiors/METReliance/hall-view-1.avif",
+    ],
 
-  info: {
-    project: "Commercial Interior Design",
-    location: "Jhajjar, Haryana",
-    scope: "Interior Design + Execution",
-    category: "Corporate / Institutional",
-    area: "9177.5 sq. m",
-    client: "Reliance MET",
-    contractor: "BS Engineering",
-    designStyle: "Modern Contemporary",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
+    info: {
+      project: "Commercial Interior Design",
+      location: "Jhajjar, Haryana",
+      scope: "Interior Design + Execution",
+      category: "Corporate / Institutional",
+      area: "9177.5 sq. m",
+      client: "Reliance MET",
+      contractor: "BS Engineering",
+      designStyle: "Modern Contemporary",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    materials: [
+      {
+        category: "Flooring",
+        details: "Combination of nylon carpet tiles for halls and Somany vitrified tiles for lobby and circulation areas.",
+      },
+      {
+        category: "Wall Treatment",
+        details: "Premium textured finishes with Decolite louvers and Asian Paints coatings for durability and aesthetics.",
+      },
+      {
+        category: "Ceiling & Lighting",
+        details: "False ceiling with geometric and curved designs, integrated LED lighting, chandeliers, and recessed fixtures.",
+      },
+      {
+        category: "Furniture & Fixtures",
+        details: "Custom reception desk, waiting lounge seating, and functional furniture designed for high footfall usage.",
+      },
+    ],
+
+    overview: [
+      "The MET Reliance project in Jhajjar is a large-scale commercial interior designed to accommodate corporate and institutional activities.",
+      "The space combines functionality with modern aesthetics, featuring expansive halls, double-height lobbies, and refined material finishes.",
+    ],
+
+    designConcept: [
+      "The design focuses on creating a grand yet welcoming environment through double-height spaces, natural light, and premium finishes.",
+      "A balance of clean geometry and soft curves in ceilings enhances spatial experience while maintaining a professional identity.",
+    ],
+
+    highlights: [
+      {
+        title: "Grand Double-Height Lobby",
+        text: "A visually striking entrance with large glass facades, chandeliers, and marble flooring creating a premium first impression.",
+      },
+      {
+        title: "Multi-Purpose Hall",
+        text: "Spacious carpeted hall designed for events, conferences, and gatherings with acoustic and visual comfort.",
+      },
+      {
+        title: "Modern Reception Area",
+        text: "Minimal yet elegant reception desk with clean lines and integrated display features.",
+      },
+      {
+        title: "Material & Lighting Integration",
+        text: "Use of louvers, textured walls, and layered lighting to enhance depth and ambiance.",
+      },
+    ],
+
+    designIntent:
+      "To deliver a modern commercial interior that reflects scale, efficiency, and elegance while ensuring comfort and usability for diverse functions.",
+
+    conclusion:
+      "The MET Reliance interior project stands as a refined example of contemporary institutional design, blending large-scale functionality with sophisticated aesthetics and durable materials.",
+  },
+  {
+    id: 13,
+    slug: "anand-group-hauz-khas-interior-design",
+    tag: "Completed Project",
+    title: "Anand Group – Hauz Khas",
+    subtitle: "Luxury Interior Design",
+
+    mainImage: "/Interiors/AnandGroup/anand-group-main-hall.avif",
+
+    sideImages: [
+      "/Interiors/AnandGroup/group-arch-detail.avif",
+
+    ],
+
+    galleryImages: [
+
+    ],
+
+    info: {
+      project: "Anand Group",
+      location: "Hauz Khas, New Delhi",
+      scope: "Interior Design",
+      typology: "Commercial Interior",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The Anand Group project at Hauz Khas is envisioned as a refined interior environment that blends timeless architectural aesthetics with contemporary detailing and spatial elegance.",
+
+      "The interiors emphasize openness, warmth, and natural illumination through the use of wooden wall cladding, arch openings, and a minimal yet luxurious material palette.",
+    ],
+
+    locationText:
+      "Located in Hauz Khas, New Delhi, the project creates an elegant and welcoming interior atmosphere inspired by classical forms and modern spatial planning.",
+
+    designConcept: [
+      "The interior design language revolves around warm wooden finishes, textured wall cladding, and balanced proportions that create a sophisticated and immersive spatial experience.",
+
+      "Three-centered arches are integrated into the front and side interior facades, adding a timeless visual identity while softening the geometry of the space.",
+
+      "Large arched windows are strategically designed to maximize natural lighting, enhancing visual openness and creating a bright, airy ambiance throughout the interiors.",
+
+      "The layout focuses on uninterrupted visual flow and spaciousness, ensuring the interiors feel expansive, elegant, and welcoming.",
+    ],
+
+    highlights: [
+      {
+        title: "Wooden Interior Finishes",
+        text: "Premium wooden wall cladding and panel detailing create warmth, richness, and a luxurious interior character.",
+      },
+
+      {
+        title: "Signature Arch Elements",
+        text: "Three-centered arch openings establish a timeless interior identity inspired by classical architectural forms.",
+      },
+
+      {
+        title: "Natural Light Integration",
+        text: "Large arched windows bring in abundant daylight, enhancing openness and creating a visually light interior atmosphere.",
+      },
+
+      {
+        title: "Open Interior Planning",
+        text: "The design emphasizes clean circulation and visual continuity to create a spacious and seamless interior experience.",
+      },
+    ],
+
+    designIntent:
+      "The Anand Group interior project is designed to create a sophisticated and timeless environment where architectural detailing and materiality work together to enhance spatial quality. Through the use of warm wooden finishes, arch-inspired elements, and natural lighting strategies, the interiors are crafted to feel elegant, welcoming, and visually expansive.",
+
+    conclusion:
+      "The Anand Group interiors at Hauz Khas successfully combine classical inspiration with contemporary interior aesthetics. The thoughtful integration of wooden cladding, arched openings, and natural light results in a refined and luxurious interior environment that balances functionality, comfort, and timeless design.",
+  },
+  {
+    id: 14,
+    slug: "medanta-foundation-interior-design",
+
+    tag: "Healthcare Interior",
+
+    title: "Gita Gyan Sansthanam - Medanta Foundation  Interior Design",
+    subtitle: "Healthcare & Institutional Space Design",
+
+    mainImage: "/Interiors/MedantaFoundation/reception-main.avif",
+
+    sideImages: [
+      "/Interiors/MedantaFoundation/reception-side.avif",
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-1.avif",
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-2.avif"
+    ],
+
+    galleryImages: [
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-3.avif",
+      "/Interiors/MedantaFoundation/waiting-area.avif",
+      "/Interiors/MedantaFoundation/lobby-1.avif",
+      "/Interiors/MedantaFoundation/lobby-2.avif",
+
+    ],
+
+    info: {
+      project: "Healthcare Interior Design",
+      location: " KDB Road Kurukshetra, Haryana",
+      scope: "Interior Design + Execution",
+      category: "Healthcare / Institutional",
+      area: "Approx. 9000+ sq. ft.",
+      client: "Medanta Foundation",
+      contractor: "Ideator Engineering",
+      designStyle: "Minimal Contemporary",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The Medanta Foundation interior project was designed as a modern healthcare and institutional environment focused on clarity, comfort, and operational functionality.",
+
+      "Located in Jhajjar, Haryana, the project emphasizes clean architectural lines, efficient circulation, and a welcoming spatial experience for visitors and staff alike.",
+
+      "The design combines minimalist aesthetics with durable material selections to create a calm, professional, and user-friendly healthcare environment.",
+    ],
+
+    designConcept: [
+      "The design concept was driven by the idea of creating a clean and stress-free healthcare environment through balanced proportions, soft material palettes, and efficient planning.",
+
+      "Neutral tones, warm wooden textures, and integrated lighting were carefully combined to enhance comfort while maintaining a contemporary institutional identity.",
+
+      "The reception area acts as the focal point of the project, designed with symmetry, openness, and modern detailing to establish a strong first impression.",
+    ],
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Large-format vitrified tiles with a matte finish were used to ensure durability, seamless maintenance, and a clean visual appearance throughout the space.",
+      },
+
+      {
+        category: "Wall Treatment",
+        details:
+          "Soft neutral paint finishes combined with textured feature walls and wooden paneling create a balanced and welcoming atmosphere.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Grid false ceiling integrated with recessed LED panel lighting and spot fixtures to provide uniform illumination and visual comfort.",
+      },
+
+      {
+        category: "Furniture & Fixtures",
+        details:
+          "Custom-designed reception desk with fluted detailing, ergonomic seating, and functional institutional furniture designed for high-usage healthcare spaces.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Modern Reception Desk",
+        text:
+          "A clean and elegant reception counter featuring curved edges and fluted detailing that creates a strong visual identity.",
+      },
+
+      {
+        title: "Minimal Contemporary Aesthetic",
+        text:
+          "Use of neutral shades, subtle textures, and modern finishes establishes a calm and professional healthcare atmosphere.",
+      },
+
+      {
+        title: "Efficient Lighting Integration",
+        text:
+          "Uniform LED panel lighting integrated within the false ceiling enhances brightness, comfort, and energy efficiency.",
+      },
+
+      {
+        title: "Functional Spatial Planning",
+        text:
+          "Open circulation and clear zoning ensure smooth movement and accessibility for visitors, patients, and staff.",
+      },
+
+      {
+        title: "Warm Material Palette",
+        text:
+          "Combination of wooden finishes, textured surfaces, and soft colors adds warmth and comfort to the institutional setting.",
+      },
+    ],
+
+    designIntent:
+      "To design a modern healthcare interior that balances functionality, comfort, and aesthetics while creating a welcoming and efficient environment for users.",
+
+    conclusion:
+      "The Medanta Foundation interior project reflects a refined contemporary healthcare design approach where simplicity, functionality, and modern detailing come together to create a professional and user-centric institutional environment.",
+  },
+  {
+    id: 15,
+    slug: "sargam-theatre-interior-design",
+    tag: "Cinema",
+    title: "Sargam Theatre - Interior Design",
+    subtitle: "Cinema & Multiplex Interior Design by URBAN iNFiLL",
+    mainImage: "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.avif",
+    sideImages: [
+      "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.avif",
+    ],
+    galleryImages: [
+      "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.avif",
+    ],
+    info: {
+      project: "Sargam Theatre",
+      location: "Chandpur, Bijnor, Uttar Pradesh",
+      scope: "Cinema Interior Design",
+      firm: "URBAN iNFiLL",
+    },
+    overview: [
+      "Sargam Theatre in Chandpur was redesigned as a modern cinema environment that upgrades a local entertainment landmark with contemporary interior planning and visitor-focused spatial experience.",
+      "The interior work supports a complete multiplex experience through carefully planned auditorium seating, stage focus, circulation, lighting, finishes, and public movement.",
+    ],
+    locationText: "Chandpur, Bijnor, Uttar Pradesh.",
+    designConcept: [
+      "The design creates a contemporary cinematic atmosphere while retaining the theatre's role as a familiar cultural destination for the town.",
+      "Auditorium planning focuses on comfortable viewing angles, controlled lighting, acoustic performance, and clear circulation.",
+      "Public zones and transition spaces are designed to feel modern, organized, and easy to navigate before and after screenings.",
+    ],
+    highlights: [
+      {
+        title: "Modern Auditorium Interior",
+        text: "The theatre interiors use refined finishes, controlled lighting, and structured seating layouts to create a polished cinema experience.",
+      },
+      {
+        title: "Immersive Viewing Environment",
+        text: "Auditorium design considers sightlines, stage focus, acoustic comfort, and spatial proportion for a stronger movie-going experience.",
+      },
+      {
+        title: "Clear Visitor Circulation",
+        text: "Circulation spaces are planned to support smooth arrival, movement, seating access, and exit flow during high-traffic show timings.",
+      },
+    ],
+    designIntent:
+      "The design intent was to transform Sargam Theatre into a contemporary entertainment interior that feels comfortable, memorable, and operationally efficient while preserving its identity as a local cultural venue.",
+    conclusion:
+      "The Sargam Theatre interior project shows how thoughtful cinema design can renew an existing venue with modern comfort, strong visual identity, and a complete multiplex-style experience.",
+  },
+  {
+    id: 16,
+    slug: "medanta-diagnostics-ranchi-interior-design",
+
+    tag: "HOSPITALS",
+
+    title: "Medanta Diagnostics – Interior Design",
+    subtitle: "Diagnostic & Clinical Space Design",
+
+    mainImage: "/Interiors/MedantaDiagnosticsRanchi/reception-area.avif",
+
+    sideImages: [
+      "/Interiors/MedantaDiagnosticsRanchi/consultation-room-main.avif",
+      "/Interiors/MedantaDiagnosticsRanchi/waiting-lounge.avif",
+      "/Interiors/MedantaDiagnosticsRanchi/corridor-view.avif",
+    ],
+
+    galleryImages: [
+
+      "/Interiors/MedantaDiagnosticsRanchi/lobby-view.avif",
+
+    ],
+
+    info: {
+      project: "Healthcare Interior Design",
+      location: "Ranchi, Jharkhand",
+      scope: "Interior Design + Execution",
+      category: "Diagnostic / Clinical",
+      area: "Approx. 6500+ sq. ft.",
+      client: "Medanta Diagnostics",
+      contractor: "BS Engineering",
+      designStyle: "Minimal Modern",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The Medanta Diagnostics project in Ranchi was designed as a modern clinical and diagnostic facility focused on patient comfort, efficiency, and contemporary healthcare functionality.",
+
+      "The interiors emphasize calmness and clarity through the use of neutral tones, soft textures, ergonomic furniture, and clean spatial planning.",
+
+      "Special attention was given to consultation spaces, waiting areas, and circulation zones to create a seamless and stress-free healthcare experience for both patients and medical professionals.",
+    ],
+
+    designConcept: [
+      "The design concept was inspired by the idea of creating a warm and reassuring healthcare environment that balances professionalism with comfort.",
+
+      "Minimal aesthetics, soft lighting, wooden textures, and subtle wall patterns were integrated to reduce visual stress and create a calming atmosphere.",
+
+      "Each space was planned to ensure functionality, accessibility, and privacy while maintaining a refined and modern clinical identity.",
+    ],
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Durable matte-finish vitrified flooring was used throughout the facility to ensure hygiene, easy maintenance, and a seamless visual appearance.",
+      },
+
+      {
+        category: "Wall Treatment",
+        details:
+          "Combination of soft neutral paint finishes, textured wallpaper patterns, and wooden wall paneling to create a balanced and welcoming environment.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Minimal false ceiling integrated with recessed LED spotlights and ambient lighting for visual comfort and uniform illumination.",
+      },
+
+      {
+        category: "Furniture & Fixtures",
+        details:
+          "Custom-designed consultation tables, ergonomic chairs, patient seating, and clinical furniture designed for comfort, durability, and efficient healthcare operations.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Minimal Consultation Rooms",
+        text:
+          "Modern doctor consultation spaces designed with ergonomic planning, soft finishes, and calming interiors to enhance patient interaction.",
+      },
+
+      {
+        title: "Warm Clinical Environment",
+        text:
+          "Use of wooden textures, neutral shades, and soft lighting creates a welcoming and stress-free healthcare atmosphere.",
+      },
+
+      {
+        title: "Integrated Lighting Design",
+        text:
+          "Carefully positioned recessed lighting enhances comfort, brightness, and visual clarity within clinical spaces.",
+      },
+
+      {
+        title: "Functional Spatial Planning",
+        text:
+          "Optimized layouts ensure smooth movement, accessibility, and operational efficiency across all diagnostic and consultation areas.",
+      },
+
+      {
+        title: "Contemporary Healthcare Identity",
+        text:
+          "Clean lines, subtle textures, and modern detailing establish a refined and professional diagnostic center experience.",
+      },
+    ],
+
+    designIntent:
+      "To create a modern diagnostic healthcare environment that promotes comfort, efficiency, and trust through thoughtful interior planning and contemporary design aesthetics.",
+
+    conclusion:
+      "The Medanta Diagnostics Ranchi project reflects a refined healthcare interior approach where functionality, patient comfort, and minimal contemporary aesthetics come together to deliver a seamless clinical experience.",
+  },
+  {
+    id: 17,
+    slug: "medanta-medicity-auditorium-interior-design",
+
+    tag: "HOSPITALS",
+
+    title: "Medanta Medicity – Auditorium Design",
+    subtitle: "Healthcare Conference & Seminar Space",
+
+    mainImage: "/Interiors/MedantaAuditorium/main-auditorium.avif",
+
+    sideImages: [
+      "/Interiors/MedantaAuditorium/seating-view.avif",
+      "/Interiors/MedantaAuditorium/stage-view.avif",
+      "/Interiors/MedantaAuditorium/presentation-area.avif",
+    ],
+
+    galleryImages: [
+      "/Interiors/MedantaAuditorium/auditorium-view-1.avif",
+      "/Interiors/MedantaAuditorium/auditorium-view-2.avif",
+      "/Interiors/MedantaAuditorium/stage-area.avif",
+      "/Interiors/MedantaAuditorium/conference-space.avif",
+
+    ],
+
+    info: {
+      project: "Auditorium Interior Design",
+      location: "Gurugram, Haryana",
+      scope: "Interior Design + Execution",
+      category: "Healthcare / Auditorium",
+      area: "Approx. 12000+ sq. ft.",
+      client: "Medanta Medicity",
+      designStyle: "Modern Contemporary",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The Medanta Medicity Auditorium project was designed as a contemporary healthcare seminar and conference facility focused on functionality, comfort, and advanced presentation experiences.",
+
+      "The space was planned to accommodate medical conferences, seminars, training sessions, and institutional events within a refined and professional environment.",
+
+      "Modern finishes, acoustic considerations, integrated lighting, and ergonomic seating were combined to create an immersive and efficient auditorium experience.",
+    ],
+
+    designConcept: [
+      "The design concept focused on creating a sophisticated and technically efficient auditorium environment with clean architectural lines and balanced material tones.",
+
+      "Dark ceiling grids, textured wall panels, and subtle lighting were integrated to enhance acoustic performance and visual comfort while maintaining a modern institutional identity.",
+
+      "The spatial layout ensures clear visibility, comfortable circulation, and seamless audience engagement during presentations and events.",
+    ],
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Premium acoustic carpet flooring was used throughout the auditorium to enhance sound absorption, comfort, and durability.",
+      },
+
+      {
+        category: "Wall Treatment",
+        details:
+          "Combination of acoustic wall panels, textured finishes, and vertical grooves designed to improve sound quality and create visual depth.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Black open-grid ceiling integrated with recessed spot lighting and presentation-focused illumination for a sophisticated auditorium atmosphere.",
+      },
+
+      {
+        category: "Furniture & Fixtures",
+        details:
+          "Ergonomic auditorium seating with integrated writing pads, presentation podium, and custom stage setup designed for conferences and seminars.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Modern Auditorium Layout",
+        text:
+          "Carefully planned seating arrangement ensuring clear visibility, accessibility, and audience comfort during presentations and events.",
+      },
+
+      {
+        title: "Integrated Presentation System",
+        text:
+          "Large-format digital display and presentation setup designed for medical seminars, conferences, and institutional training sessions.",
+      },
+
+      {
+        title: "Acoustic Interior Design",
+        text:
+          "Use of acoustic flooring, textured wall panels, and ceiling treatments enhances sound clarity and minimizes echo.",
+      },
+
+      {
+        title: "Contemporary Material Palette",
+        text:
+          "Neutral wall tones, textured finishes, and dark ceiling contrasts create a refined and professional healthcare auditorium environment.",
+      },
+
+      {
+        title: "Focused Lighting Strategy",
+        text:
+          "Subtle recessed lighting integrated within the ceiling enhances visibility while maintaining a comfortable presentation atmosphere.",
+      },
+    ],
+
+    designIntent:
+      "To create a modern healthcare auditorium that supports conferences, learning, and institutional interaction through functional planning, acoustic comfort, and contemporary interior aesthetics.",
+
+    conclusion:
+      "The Medanta Medicity Auditorium project reflects a sophisticated healthcare conference environment where modern design, acoustic performance, and user comfort come together to deliver an efficient and visually refined institutional space.",
+  },
+  {
+    id: 18,
+    slug: "medanta-medicity-radiology-interior-design",
+
+    tag: "Healthcare ",
+
+    title: "Medanta Medicity – Radiology Department",
+    subtitle: "Healthcare Diagnostic & Reporting Workspace",
+
+    mainImage: "/Interiors/MedantaRadiology/main-workstation.avif",
+
+    sideImages: [
+      "/Interiors/MedantaRadiology/workstation-view.avif",
+      "/Interiors/MedantaRadiology/reporting-zone.avif",
+      "/Interiors/MedantaRadiology/interior-view.avif",
+    ],
+
+    galleryImages: ["/Interiors/MedantaRadiology/lighting-view.avif",
+      "/Interiors/MedantaRadiology/interior-detail.avif",
+      "/Interiors/MedantaRadiology/work-area.avif",
+      "/Interiors/MedantaRadiology/computer-zone.avif",
+
+    ],
+
+    info: {
+      project: "Radiology Department Interior Design",
+      location: "Gurugram, Haryana",
+      scope: "Interior Design + Execution",
+      category: "Hospital / Radiology",
+      area: "Approx. 8500+ sq. ft.",
+      client: "Medanta Medicity",
+      contractor: "BS Engineering",
+      designStyle: "Modern Functional",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The Medanta Medicity Radiology Department project was designed as a modern healthcare reporting and diagnostic workspace focused on efficiency, ergonomics, and user comfort.",
+
+      "The interior layout was carefully planned to support high-performance medical reporting environments while maintaining visual openness and organized workstation zoning.",
+
+      "Minimal contemporary aesthetics, integrated lighting, acoustic considerations, and ergonomic furniture were combined to create a productive and technologically advanced healthcare workspace.",
+    ],
+
+    designConcept: [
+      "The design concept focused on creating a clean, organized, and technology-driven radiology workspace that enhances concentration and workflow efficiency.",
+
+      "Perforated partition panels, neutral color palettes, and warm wooden textures were integrated to maintain visual balance and provide subtle spatial separation.",
+
+      "The workstation arrangement ensures privacy, comfort, and uninterrupted functionality while promoting a contemporary institutional identity.",
+    ],
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Durable matte-finish flooring designed for high footfall healthcare environments while ensuring easy maintenance and longevity.",
+      },
+
+      {
+        category: "Wall Treatment",
+        details:
+          "Combination of soft neutral finishes, laminated wooden textures, and perforated partition panels for visual depth and acoustic comfort.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Minimal false ceiling integrated with recessed LED panel lighting to provide glare-free and uniform illumination suitable for workstation environments.",
+      },
+
+      {
+        category: "Furniture & Fixtures",
+        details:
+          "Ergonomic modular workstations, customized desk systems, and comfortable task seating designed for long-duration reporting and operational efficiency.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Modular Reporting Workstations",
+        text:
+          "Efficiently planned workstation layout designed to enhance workflow, concentration, and collaborative healthcare operations.",
+      },
+
+      {
+        title: "Perforated Partition Design",
+        text:
+          "Custom perforated divider panels provide visual separation while maintaining openness and spatial connectivity.",
+      },
+
+      {
+        title: "Contemporary Clinical Aesthetic",
+        text:
+          "Neutral shades, wooden textures, and clean detailing create a calm and professional diagnostic environment.",
+      },
+
+      {
+        title: "Integrated Lighting Strategy",
+        text:
+          "Uniform recessed lighting ensures visual clarity, reduced glare, and comfortable workstation illumination.",
+      },
+
+      {
+        title: "Functional Healthcare Planning",
+        text:
+          "Thoughtfully designed circulation and workstation zoning support operational efficiency and user comfort.",
+      },
+    ],
+
+    designIntent:
+      "To create a technologically efficient and ergonomically designed radiology workspace that supports healthcare operations through functional planning and contemporary interior aesthetics.",
+
+    conclusion:
+      "The Medanta Medicity Radiology Department reflects a refined healthcare workspace design where functionality, comfort, and modern institutional aesthetics come together to create an efficient and visually balanced reporting environment.",
+  },
+  {
+    id: 19,
+    slug: "cinepolish-conference-room-interior-design",
+
+    tag: "Corporate Office",
+
+    title: "Cinepolish - Conference Room Interior Design",
+    subtitle: "Modern Conference & Meeting Room Design",
+
+    mainImage: "/Interiors/cinepolish/image-1.avif",
+
+    sideImages: [
+      "/Interiors/cinepolish/image-2.avif",
+      "/Interiors/cinepolish/image-3.avif",
+    ],
+
+    galleryImages: [],
+
+    info: {
+      project: "Conference Room Interior Design",
+      location: "India",
+      scope: "Interior Design",
+      category: "Corporate Office / Meeting Room",
+      client: "CINEPOLISH",
+      designStyle: "Modern Corporate",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    overview: [
+      "The CINEPOLISH conference room interior was designed as a modern corporate meeting environment that supports presentations, discussions, and collaborative decision-making.",
+
+      "The space uses a refined palette of warm wood, neutral wall finishes, blue seating accents, and integrated lighting to create a professional yet comfortable boardroom experience.",
+
+      "Large digital display walls, linear pendant lights, concealed ceiling illumination, and organized seating layouts come together to create a focused and technology-ready meeting space.",
+    ],
+
+    designConcept: [
+      "The design concept focuses on clarity, symmetry, and executive functionality for a high-performance conference room.",
+
+      "A U-shaped meeting table layout supports direct interaction between participants while maintaining clear visibility toward the presentation screens.",
+
+      "Soft wall panels, vertical grooves, ambient ceiling lighting, and warm wooden surfaces add visual depth without distracting from the room's business purpose.",
+    ],
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Textured carpet flooring was used to improve acoustic comfort, reduce footstep noise, and provide a polished corporate finish.",
+      },
+
+      {
+        category: "Wall Treatment",
+        details:
+          "Neutral wall panels with vertical grooves and clean black trims create a structured, modern backdrop for digital display systems.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Recessed cove lighting, spotlights, and suspended linear lights provide balanced illumination for meetings and presentations.",
+      },
+
+      {
+        category: "Furniture & Fixtures",
+        details:
+          "Custom wooden conference tables and ergonomic task chairs are arranged for comfort, visibility, and efficient group discussion.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Executive Conference Layout",
+        text:
+          "The U-shaped table arrangement supports collaborative discussion while keeping all participants connected to the presentation wall.",
+      },
+
+      {
+        title: "Integrated Digital Display",
+        text:
+          "Large-format screens are positioned for meetings, presentations, video calls, and visual communication.",
+      },
+
+      {
+        title: "Layered Lighting Design",
+        text:
+          "Linear pendant lighting, recessed spotlights, and warm cove lighting create a bright yet comfortable meeting atmosphere.",
+      },
+
+      {
+        title: "Modern Corporate Palette",
+        text:
+          "Wooden table finishes, neutral panels, grey flooring, and blue seating accents create a balanced corporate identity.",
+      },
+    ],
+
+    designIntent:
+      "To create a sophisticated and functional conference room that supports collaboration, presentations, and professional communication through thoughtful planning, lighting, and material selection.",
+
+    conclusion:
+      "The CINEPOLISH conference room interior delivers a contemporary corporate meeting environment where technology, comfort, and clean detailing come together to support focused workplace interaction.",
+  },
+  {
+    id: 20,
+
+    slug: "startek-bhopal-office-renovation",
+
+    tag: "Office Renovation",
+
+    title: "Startek Bhopal – Office Renovation",
+
+    subtitle: "Modern Corporate Workspace Renovation",
+
+    mainImage: "/Interiors/StartekBhopal/glass-partition-office.avif",
+
+    sideImages: [
+      "/Interiors/StartekBhopal/workstation-view.avif",
+      "/Interiors/StartekBhopal/open-workspace-main.avif",
+      "/Interiors/StartekBhopal/corporate-workspace.avif"
+    ],
+
+    galleryImages: [
+      "/Interiors/StartekBhopal/open-office.avif",
+      "/Interiors/StartekBhopal/workstation-row.avif",
+      "/Interiors/StartekBhopal/office-lighting.avif",
+      "/Interiors/StartekBhopal/glass-cabin.avif",
+
+    ],
+
+    info: {
+      project: "Startek-Bhopal Corporate Office Renovation",
+      location: "Bhopal, Madhya Pradesh",
+      scope: "Interior Renovation + Execution",
+      category: "Commercial Workspace",
+      area: "9177.5 sq. m",
+      client: "Startek",
+      contractor: "BS Engineering",
+      designStyle: "Modern Contemporary",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
+    },
+
+    materials: [
+      {
+        category: "Flooring",
+        details:
+          "Striped carpet tiles in workstation zones combined with polished vitrified flooring in circulation areas for durability and acoustic comfort.",
+      },
+
+      {
+        category: "Glass Partition System",
+        details:
+          "Full-height toughened glass partitions with frosted geometric films and black aluminum framing for openness and privacy balance.",
+      },
+
+      {
+        category: "Ceiling & Lighting",
+        details:
+          "Exposed black ceiling integrated with suspended linear LED fixtures, recessed downlights, and HVAC systems.",
+      },
+
+      {
+        category: "Furniture & Workstations",
+        details:
+          "Modular workstation systems with acoustic divider panels, ergonomic task seating, and integrated utility management.",
+      },
+
+      {
+        category: "Wall & Surface Finish",
+        details:
+          "Neutral wall finishes enhanced with marble-textured surfaces and subtle accent elements for a refined corporate appearance.",
+      },
+    ],
+
+    overview: [
+      "The Startek Bhopal office renovation transforms an existing workspace into a contemporary and highly efficient corporate environment.",
+
+      "The project emphasizes open planning, modern material integration, and functional workstation layouts to support collaborative operations.",
+
+      "Transparent glass partitions, organized circulation, and modern lighting systems create a clean and professional workplace identity.",
+    ],
+
+    designConcept: [
+      "The renovation design focuses on creating a visually open and collaborative office environment through modular planning and transparent partitions.",
+
+      "A combination of monochromatic tones, blue workstation accents, and industrial-style ceilings establishes a modern corporate character.",
+
+      "The lighting and ceiling strategy enhances spatial depth while maintaining a balanced and productive work atmosphere.",
+    ],
+
+    highlights: [
+      {
+        title: "Efficient Open Workspace",
+        text:
+          "Linear workstation planning maximizes seating efficiency while maintaining comfortable circulation and workspace organization.",
+      },
+
+      {
+        title: "Glass Partitioned Cabins",
+        text:
+          "Frameless glass cabins provide visual connectivity and privacy for management and meeting spaces.",
+      },
+
+      {
+        title: "Industrial Contemporary Ceiling",
+        text:
+          "Black exposed ceiling with suspended linear lighting creates a sleek and modern office ambiance.",
+      },
+
+      {
+        title: "Acoustic Workplace Design",
+        text:
+          "Carpet flooring and acoustic workstation panels improve sound absorption and workplace comfort.",
+      },
+
+      {
+        title: "Refined Corporate Aesthetic",
+        text:
+          "Minimal finishes, clean detailing, and subtle accent colors create a professional and timeless office interior.",
+      },
+    ],
+
+    designIntent:
+      "To renovate the Startek office into a modern corporate workspace that promotes productivity, collaboration, and employee comfort through efficient planning and contemporary interior design.",
+
+    conclusion:
+      "The Startek Bhopal office renovation successfully delivers a functional and visually refined corporate environment that balances openness, efficiency, and modern workplace aesthetics.",
   },
 
-  materials: [
-    {
-      category: "Flooring",
-      details: "Combination of nylon carpet tiles for halls and Somany vitrified tiles for lobby and circulation areas.",
+  {
+    id: 21,
+    slug: "medanta-blood-lab-diagnostic-center",
+
+    tag: "Hospitals",
+
+    title: "Medanta Blood Lab – Diagnostic Center",
+    subtitle: "Blood Collection & Diagnostic Healthcare Facility",
+
+    mainImage: "/Interiors/MedantaLabs/main-exterior.avif",
+
+    sideImages: [
+      "/Interiors/MedantaLabs/front-facade.avif",
+      "/Interiors/MedantaLabs/entry-view.avif",
+
+    ],
+
+    galleryImages: [
+
+    ],
+
+    info: {
+      project: "Diagnostic Center Exterior & Interior Design",
+      location: "Ranchi, Jharkhand",
+      scope: "Architecture + Interior Design ",
+      category: "Hospitals",
+      area: "Approx. 3000+ sq. ft.",
+      client: "Medanta Blood Lab",
+      contractor: "BS Engineering",
+      designStyle: "Modern Healthcare Branding",
+      status: "Completed",
+      firm: "URBAN iNFiLL",
     },
-    {
-      category: "Wall Treatment",
-      details: "Premium textured finishes with Decolite louvers and Asian Paints coatings for durability and aesthetics.",
-    },
-    {
-      category: "Ceiling & Lighting",
-      details: "False ceiling with geometric and curved designs, integrated LED lighting, chandeliers, and recessed fixtures.",
-    },
-    {
-      category: "Furniture & Fixtures",
-      details: "Custom reception desk, waiting lounge seating, and functional furniture designed for high footfall usage.",
-    },
-  ],
 
-  overview: [
-    "The MET Reliance project in Jhajjar is a large-scale commercial interior designed to accommodate corporate and institutional activities.",
-    "The space combines functionality with modern aesthetics, featuring expansive halls, double-height lobbies, and refined material finishes.",
-  ],
+    overview: [
+      "The Medanta Blood Lab Diagnostic Center project was designed to establish a modern, clean, and highly recognizable healthcare environment focused on trust, accessibility, and operational efficiency.",
 
-  designConcept: [
-    "The design focuses on creating a grand yet welcoming environment through double-height spaces, natural light, and premium finishes.",
-    "A balance of clean geometry and soft curves in ceilings enhances spatial experience while maintaining a professional identity.",
-  ],
+      "The design integrates bold healthcare branding with minimal architectural detailing to create a visually impactful yet welcoming diagnostic facility.",
 
-  highlights: [
-    {
-      title: "Grand Double-Height Lobby",
-      text: "A visually striking entrance with large glass facades, chandeliers, and marble flooring creating a premium first impression.",
-    },
-    {
-      title: "Multi-Purpose Hall",
-      text: "Spacious carpeted hall designed for events, conferences, and gatherings with acoustic and visual comfort.",
-    },
-    {
-      title: "Modern Reception Area",
-      text: "Minimal yet elegant reception desk with clean lines and integrated display features.",
-    },
-    {
-      title: "Material & Lighting Integration",
-      text: "Use of louvers, textured walls, and layered lighting to enhance depth and ambiance.",
-    },
-  ],
+      "Carefully planned circulation, transparent glass frontage, integrated signage systems, and efficient spatial organization contribute to a seamless patient experience.",
+    ],
 
-  designIntent:
-    "To deliver a modern commercial interior that reflects scale, efficiency, and elegance while ensuring comfort and usability for diverse functions.",
+    designConcept: [
+      "The concept focused on creating a healthcare facility that reflects professionalism, hygiene, and brand identity through a contemporary architectural language.",
 
-  conclusion:
-    "The MET Reliance interior project stands as a refined example of contemporary institutional design, blending large-scale functionality with sophisticated aesthetics and durable materials.",
-},
-{
-  id: 13,
-  slug: "anand-group-hauz-khas-interior-design",
-  tag: "Completed Project",
-  title: "Anand Group – Hauz Khas",
-  subtitle: "Luxury Interior Design",
+      "A bold red-and-white exterior palette inspired by Medanta’s visual identity was combined with clean glass surfaces and minimal detailing to enhance visibility and create a strong institutional presence.",
 
-  mainImage: "/Interiors/AnandGroup/anand-group-main-hall.webp",
+      "The entrance and façade were designed to maximize openness, patient accessibility, and natural visual connectivity while maintaining a refined clinical atmosphere.",
+    ],
 
-  sideImages: [
-    "/Interiors/AnandGroup/group-arch-detail.webp",
-    
-  ],
+    materials: [
+      {
+        category: "Exterior Cladding",
+        details:
+          "ACP cladding panels in Medanta signature red finish combined with clean white accents for a bold and recognizable healthcare façade.",
+      },
 
-  galleryImages: [
-    
-  ],
+      {
+        category: "Glass & Entrance",
+        details:
+          "Frameless toughened glass entrance system designed to create transparency, openness, and easy patient accessibility.",
+      },
 
-  info: {
-    project: "Anand Group",
-    location: "Hauz Khas, New Delhi",
-    scope: "Interior Design",
-    typology: "Commercial Interior",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
+      {
+        category: "Signage & Branding",
+        details:
+          "Custom illuminated signage and integrated branding elements designed to enhance visibility and establish strong institutional identity.",
+      },
+
+      {
+        category: "Interior Finishes",
+        details:
+          "Minimal healthcare-friendly finishes with neutral tones, easy-maintenance surfaces, and functional lighting suitable for diagnostic environments.",
+      },
+    ],
+
+    highlights: [
+      {
+        title: "Bold Healthcare Façade",
+        text:
+          "Contemporary red-and-white elevation designed to establish strong visual identity and brand recognition.",
+      },
+
+      {
+        title: "Integrated Branding Design",
+        text:
+          "Large-scale illuminated Medanta signage seamlessly integrated into the architectural frontage.",
+      },
+
+      {
+        title: "Transparent Entrance Experience",
+        text:
+          "Frameless glass entry system enhances openness, visibility, and patient accessibility.",
+      },
+
+      {
+        title: "Minimal Clinical Aesthetic",
+        text:
+          "Clean lines, organized surfaces, and modern detailing create a calm and professional healthcare environment.",
+      },
+
+      {
+        title: "Efficient Healthcare Planning",
+        text:
+          "Functional zoning and circulation planning ensure smooth movement for patients, staff, and operational workflows.",
+      },
+    ],
+
+    designIntent:
+      "To design a contemporary diagnostic center that combines healthcare functionality with strong architectural branding, creating a trusted and visually impactful patient environment.",
+
+    conclusion:
+      "The Medanta Blood Lab Diagnostic Center reflects a modern healthcare design approach where branding, functionality, and patient-centric planning come together to create a clean, efficient, and visually distinctive medical facility.",
   },
 
-  overview: [
-    "The Anand Group project at Hauz Khas is envisioned as a refined interior environment that blends timeless architectural aesthetics with contemporary detailing and spatial elegance.",
-
-    "The interiors emphasize openness, warmth, and natural illumination through the use of wooden wall cladding, arch openings, and a minimal yet luxurious material palette.",
-  ],
-
-  locationText:
-    "Located in Hauz Khas, New Delhi, the project creates an elegant and welcoming interior atmosphere inspired by classical forms and modern spatial planning.",
-
-  designConcept: [
-    "The interior design language revolves around warm wooden finishes, textured wall cladding, and balanced proportions that create a sophisticated and immersive spatial experience.",
-
-    "Three-centered arches are integrated into the front and side interior facades, adding a timeless visual identity while softening the geometry of the space.",
-
-    "Large arched windows are strategically designed to maximize natural lighting, enhancing visual openness and creating a bright, airy ambiance throughout the interiors.",
-
-    "The layout focuses on uninterrupted visual flow and spaciousness, ensuring the interiors feel expansive, elegant, and welcoming.",
-  ],
-
-  highlights: [
-    {
-      title: "Wooden Interior Finishes",
-      text: "Premium wooden wall cladding and panel detailing create warmth, richness, and a luxurious interior character.",
-    },
-
-    {
-      title: "Signature Arch Elements",
-      text: "Three-centered arch openings establish a timeless interior identity inspired by classical architectural forms.",
-    },
-
-    {
-      title: "Natural Light Integration",
-      text: "Large arched windows bring in abundant daylight, enhancing openness and creating a visually light interior atmosphere.",
-    },
-
-    {
-      title: "Open Interior Planning",
-      text: "The design emphasizes clean circulation and visual continuity to create a spacious and seamless interior experience.",
-    },
-  ],
-
-  designIntent:
-    "The Anand Group interior project is designed to create a sophisticated and timeless environment where architectural detailing and materiality work together to enhance spatial quality. Through the use of warm wooden finishes, arch-inspired elements, and natural lighting strategies, the interiors are crafted to feel elegant, welcoming, and visually expansive.",
-
-  conclusion:
-    "The Anand Group interiors at Hauz Khas successfully combine classical inspiration with contemporary interior aesthetics. The thoughtful integration of wooden cladding, arched openings, and natural light results in a refined and luxurious interior environment that balances functionality, comfort, and timeless design.",
-},
-{
-  id: 14,
-  slug: "medanta-foundation-interior-design",
-
-  tag: "Healthcare Interior",
-
-  title: "Gita Gyan Sansthanam - Medanta Foundation  Interior Design",
-  subtitle: "Healthcare & Institutional Space Design",
-
-  mainImage: "/Interiors/MedantaFoundation/reception-main.webp",
-
-  sideImages: [
-    "/Interiors/MedantaFoundation/reception-side.webp",
-    "/Interiors/MedantaFoundation/waiting-area.webp",
-    "/Interiors/MedantaFoundation/lobby-1.webp",
-  ],
-
-  galleryImages: [
-    
-   
-     "/Interiors/MedantaFoundation/lobby-2.webp",
-
-  ],
-
-  info: {
-    project: "Healthcare Interior Design",
-  location: " KDB Road Kurukshetra, Haryana",
-    scope: "Interior Design + Execution",
-    category: "Healthcare / Institutional",
-    area: "Approx. 9000+ sq. ft.",
-    client: "Medanta Foundation",
-    contractor: "Ideator Engineering",
-    designStyle: "Minimal Contemporary",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
-  },
-
-  overview: [
-    "The Medanta Foundation interior project was designed as a modern healthcare and institutional environment focused on clarity, comfort, and operational functionality.",
-
-    "Located in Jhajjar, Haryana, the project emphasizes clean architectural lines, efficient circulation, and a welcoming spatial experience for visitors and staff alike.",
-
-    "The design combines minimalist aesthetics with durable material selections to create a calm, professional, and user-friendly healthcare environment.",
-  ],
-
-  designConcept: [
-    "The design concept was driven by the idea of creating a clean and stress-free healthcare environment through balanced proportions, soft material palettes, and efficient planning.",
-
-    "Neutral tones, warm wooden textures, and integrated lighting were carefully combined to enhance comfort while maintaining a contemporary institutional identity.",
-
-    "The reception area acts as the focal point of the project, designed with symmetry, openness, and modern detailing to establish a strong first impression.",
-  ],
-
-  materials: [
-    {
-      category: "Flooring",
-      details:
-        "Large-format vitrified tiles with a matte finish were used to ensure durability, seamless maintenance, and a clean visual appearance throughout the space.",
-    },
-
-    {
-      category: "Wall Treatment",
-      details:
-        "Soft neutral paint finishes combined with textured feature walls and wooden paneling create a balanced and welcoming atmosphere.",
-    },
-
-    {
-      category: "Ceiling & Lighting",
-      details:
-        "Grid false ceiling integrated with recessed LED panel lighting and spot fixtures to provide uniform illumination and visual comfort.",
-    },
-
-    {
-      category: "Furniture & Fixtures",
-      details:
-        "Custom-designed reception desk with fluted detailing, ergonomic seating, and functional institutional furniture designed for high-usage healthcare spaces.",
-    },
-  ],
-
-  highlights: [
-    {
-      title: "Modern Reception Desk",
-      text:
-        "A clean and elegant reception counter featuring curved edges and fluted detailing that creates a strong visual identity.",
-    },
-
-    {
-      title: "Minimal Contemporary Aesthetic",
-      text:
-        "Use of neutral shades, subtle textures, and modern finishes establishes a calm and professional healthcare atmosphere.",
-    },
-
-    {
-      title: "Efficient Lighting Integration",
-      text:
-        "Uniform LED panel lighting integrated within the false ceiling enhances brightness, comfort, and energy efficiency.",
-    },
-
-    {
-      title: "Functional Spatial Planning",
-      text:
-        "Open circulation and clear zoning ensure smooth movement and accessibility for visitors, patients, and staff.",
-    },
-
-    {
-      title: "Warm Material Palette",
-      text:
-        "Combination of wooden finishes, textured surfaces, and soft colors adds warmth and comfort to the institutional setting.",
-    },
-  ],
-
-  designIntent:
-    "To design a modern healthcare interior that balances functionality, comfort, and aesthetics while creating a welcoming and efficient environment for users.",
-
-  conclusion:
-    "The Medanta Foundation interior project reflects a refined contemporary healthcare design approach where simplicity, functionality, and modern detailing come together to create a professional and user-centric institutional environment.",
-},
-{
-  id: 15,
-  slug: "sargam-theatre-interior-design",
-  tag: "Cinema",
-  title: "Sargam Theatre - Interior Design",
-  subtitle: "Cinema & Multiplex Interior Design by URBAN iNFiLL",
-  mainImage: "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.webp",
-  sideImages: [
-    "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.webp",
-    "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.webp",
-    "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.webp",
-  ],
-  galleryImages: [
-    "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
-    "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.webp",
-    "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.webp",
-  ],
-  info: {
-    project: "Sargam Theatre",
-    location: "Chandpur, Bijnor, Uttar Pradesh",
-    scope: "Cinema Interior Design",
-    firm: "URBAN iNFiLL",
-  },
-  overview: [
-    "Sargam Theatre in Chandpur was redesigned as a modern cinema environment that upgrades a local entertainment landmark with contemporary interior planning and visitor-focused spatial experience.",
-    "The interior work supports a complete multiplex experience through carefully planned auditorium seating, stage focus, circulation, lighting, finishes, and public movement.",
-  ],
-  locationText: "Chandpur, Bijnor, Uttar Pradesh.",
-  designConcept: [
-    "The design creates a contemporary cinematic atmosphere while retaining the theatre's role as a familiar cultural destination for the town.",
-    "Auditorium planning focuses on comfortable viewing angles, controlled lighting, acoustic performance, and clear circulation.",
-    "Public zones and transition spaces are designed to feel modern, organized, and easy to navigate before and after screenings.",
-  ],
-  highlights: [
-    {
-      title: "Modern Auditorium Interior",
-      text: "The theatre interiors use refined finishes, controlled lighting, and structured seating layouts to create a polished cinema experience.",
-    },
-    {
-      title: "Immersive Viewing Environment",
-      text: "Auditorium design considers sightlines, stage focus, acoustic comfort, and spatial proportion for a stronger movie-going experience.",
-    },
-    {
-      title: "Clear Visitor Circulation",
-      text: "Circulation spaces are planned to support smooth arrival, movement, seating access, and exit flow during high-traffic show timings.",
-    },
-  ],
-  designIntent:
-    "The design intent was to transform Sargam Theatre into a contemporary entertainment interior that feels comfortable, memorable, and operationally efficient while preserving its identity as a local cultural venue.",
-  conclusion:
-    "The Sargam Theatre interior project shows how thoughtful cinema design can renew an existing venue with modern comfort, strong visual identity, and a complete multiplex-style experience.",
-},
-{
-  id: 16,
-  slug: "medanta-diagnostics-ranchi-interior-design",
-
-  tag: "HOSPITALS",
-
-  title: "Medanta Diagnostics – Interior Design",
-  subtitle: "Diagnostic & Clinical Space Design",
-
-  mainImage: "/Interiors/MedantaDiagnosticsRanchi/reception-area.webp",
-
-  sideImages: [
-    "/Interiors/MedantaDiagnosticsRanchi/consultation-room-main.webp",
-    "/Interiors/MedantaDiagnosticsRanchi/waiting-lounge.webp",
-    "/Interiors/MedantaDiagnosticsRanchi/corridor-view.webp",
-  ],
-
-  galleryImages: [
-  
-    "/Interiors/MedantaDiagnosticsRanchi/lobby-view.webp",
-   
-  ],
-
-  info: {
-    project: "Healthcare Interior Design",
-    location: "Ranchi, Jharkhand",
-    scope: "Interior Design + Execution",
-    category: "Diagnostic / Clinical",
-    area: "Approx. 6500+ sq. ft.",
-    client: "Medanta Diagnostics",
-    contractor: "BS Engineering",
-    designStyle: "Minimal Modern",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
-  },
-
-  overview: [
-    "The Medanta Diagnostics project in Ranchi was designed as a modern clinical and diagnostic facility focused on patient comfort, efficiency, and contemporary healthcare functionality.",
-
-    "The interiors emphasize calmness and clarity through the use of neutral tones, soft textures, ergonomic furniture, and clean spatial planning.",
-
-    "Special attention was given to consultation spaces, waiting areas, and circulation zones to create a seamless and stress-free healthcare experience for both patients and medical professionals.",
-  ],
-
-  designConcept: [
-    "The design concept was inspired by the idea of creating a warm and reassuring healthcare environment that balances professionalism with comfort.",
-
-    "Minimal aesthetics, soft lighting, wooden textures, and subtle wall patterns were integrated to reduce visual stress and create a calming atmosphere.",
-
-    "Each space was planned to ensure functionality, accessibility, and privacy while maintaining a refined and modern clinical identity.",
-  ],
-
-  materials: [
-    {
-      category: "Flooring",
-      details:
-        "Durable matte-finish vitrified flooring was used throughout the facility to ensure hygiene, easy maintenance, and a seamless visual appearance.",
-    },
-
-    {
-      category: "Wall Treatment",
-      details:
-        "Combination of soft neutral paint finishes, textured wallpaper patterns, and wooden wall paneling to create a balanced and welcoming environment.",
-    },
-
-    {
-      category: "Ceiling & Lighting",
-      details:
-        "Minimal false ceiling integrated with recessed LED spotlights and ambient lighting for visual comfort and uniform illumination.",
-    },
-
-    {
-      category: "Furniture & Fixtures",
-      details:
-        "Custom-designed consultation tables, ergonomic chairs, patient seating, and clinical furniture designed for comfort, durability, and efficient healthcare operations.",
-    },
-  ],
-
-  highlights: [
-    {
-      title: "Minimal Consultation Rooms",
-      text:
-        "Modern doctor consultation spaces designed with ergonomic planning, soft finishes, and calming interiors to enhance patient interaction.",
-    },
-
-    {
-      title: "Warm Clinical Environment",
-      text:
-        "Use of wooden textures, neutral shades, and soft lighting creates a welcoming and stress-free healthcare atmosphere.",
-    },
-
-    {
-      title: "Integrated Lighting Design",
-      text:
-        "Carefully positioned recessed lighting enhances comfort, brightness, and visual clarity within clinical spaces.",
-    },
-
-    {
-      title: "Functional Spatial Planning",
-      text:
-        "Optimized layouts ensure smooth movement, accessibility, and operational efficiency across all diagnostic and consultation areas.",
-    },
-
-    {
-      title: "Contemporary Healthcare Identity",
-      text:
-        "Clean lines, subtle textures, and modern detailing establish a refined and professional diagnostic center experience.",
-    },
-  ],
-
-  designIntent:
-    "To create a modern diagnostic healthcare environment that promotes comfort, efficiency, and trust through thoughtful interior planning and contemporary design aesthetics.",
-
-  conclusion:
-    "The Medanta Diagnostics Ranchi project reflects a refined healthcare interior approach where functionality, patient comfort, and minimal contemporary aesthetics come together to deliver a seamless clinical experience.",
-},
-{
-  id: 17,
-  slug: "medanta-medicity-auditorium-interior-design",
-
-  tag: "HOSPITALS",
-
-  title: "Medanta Medicity – Auditorium Design",
-  subtitle: "Healthcare Conference & Seminar Space",
-
-  mainImage: "/Interiors/MedantaAuditorium/main-auditorium.webp",
-
-  sideImages: [
-    "/Interiors/MedantaAuditorium/seating-view.webp",
-    "/Interiors/MedantaAuditorium/stage-view.webp",
-    "/Interiors/MedantaAuditorium/presentation-area.webp",
-  ],
-
-  galleryImages: [
-    "/Interiors/MedantaAuditorium/auditorium-view-1.webp",
-    "/Interiors/MedantaAuditorium/auditorium-view-2.webp",
-    "/Interiors/MedantaAuditorium/stage-area.webp",
-    "/Interiors/MedantaAuditorium/conference-space.webp",
- 
-  ],
-
-  info: {
-    project: "Auditorium Interior Design",
-    location: "Gurugram, Haryana",
-    scope: "Interior Design + Execution",
-    category: "Healthcare / Auditorium",
-    area: "Approx. 12000+ sq. ft.",
-    client: "Medanta Medicity",
-    designStyle: "Modern Contemporary",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
-  },
-
-  overview: [
-    "The Medanta Medicity Auditorium project was designed as a contemporary healthcare seminar and conference facility focused on functionality, comfort, and advanced presentation experiences.",
-
-    "The space was planned to accommodate medical conferences, seminars, training sessions, and institutional events within a refined and professional environment.",
-
-    "Modern finishes, acoustic considerations, integrated lighting, and ergonomic seating were combined to create an immersive and efficient auditorium experience.",
-  ],
-
-  designConcept: [
-    "The design concept focused on creating a sophisticated and technically efficient auditorium environment with clean architectural lines and balanced material tones.",
-
-    "Dark ceiling grids, textured wall panels, and subtle lighting were integrated to enhance acoustic performance and visual comfort while maintaining a modern institutional identity.",
-
-    "The spatial layout ensures clear visibility, comfortable circulation, and seamless audience engagement during presentations and events.",
-  ],
-
-  materials: [
-    {
-      category: "Flooring",
-      details:
-        "Premium acoustic carpet flooring was used throughout the auditorium to enhance sound absorption, comfort, and durability.",
-    },
-
-    {
-      category: "Wall Treatment",
-      details:
-        "Combination of acoustic wall panels, textured finishes, and vertical grooves designed to improve sound quality and create visual depth.",
-    },
-
-    {
-      category: "Ceiling & Lighting",
-      details:
-        "Black open-grid ceiling integrated with recessed spot lighting and presentation-focused illumination for a sophisticated auditorium atmosphere.",
-    },
-
-    {
-      category: "Furniture & Fixtures",
-      details:
-        "Ergonomic auditorium seating with integrated writing pads, presentation podium, and custom stage setup designed for conferences and seminars.",
-    },
-  ],
-
-  highlights: [
-    {
-      title: "Modern Auditorium Layout",
-      text:
-        "Carefully planned seating arrangement ensuring clear visibility, accessibility, and audience comfort during presentations and events.",
-    },
-
-    {
-      title: "Integrated Presentation System",
-      text:
-        "Large-format digital display and presentation setup designed for medical seminars, conferences, and institutional training sessions.",
-    },
-
-    {
-      title: "Acoustic Interior Design",
-      text:
-        "Use of acoustic flooring, textured wall panels, and ceiling treatments enhances sound clarity and minimizes echo.",
-    },
-
-    {
-      title: "Contemporary Material Palette",
-      text:
-        "Neutral wall tones, textured finishes, and dark ceiling contrasts create a refined and professional healthcare auditorium environment.",
-    },
-
-    {
-      title: "Focused Lighting Strategy",
-      text:
-        "Subtle recessed lighting integrated within the ceiling enhances visibility while maintaining a comfortable presentation atmosphere.",
-    },
-  ],
-
-  designIntent:
-    "To create a modern healthcare auditorium that supports conferences, learning, and institutional interaction through functional planning, acoustic comfort, and contemporary interior aesthetics.",
-
-  conclusion:
-    "The Medanta Medicity Auditorium project reflects a sophisticated healthcare conference environment where modern design, acoustic performance, and user comfort come together to deliver an efficient and visually refined institutional space.",
-},
-{
-  id: 18,
-  slug: "medanta-medicity-radiology-interior-design",
-
-  tag: "Healthcare ",
-
-  title: "Medanta Medicity – Radiology Department",
-  subtitle: "Healthcare Diagnostic & Reporting Workspace",
-
-  mainImage: "/Interiors/MedantaRadiology/main-workstation.webp",
-
-  sideImages: [
-    "/Interiors/MedantaRadiology/workstation-view.webp",
-    "/Interiors/MedantaRadiology/reporting-zone.webp",
-    "/Interiors/MedantaRadiology/interior-view.webp",
-  ],
-
-  galleryImages: [ "/Interiors/MedantaRadiology/lighting-view.webp",
-    "/Interiors/MedantaRadiology/interior-detail.webp",
-    "/Interiors/MedantaRadiology/work-area.webp",
-    "/Interiors/MedantaRadiology/computer-zone.webp",
-   
-  ],
-
-  info: {
-    project: "Radiology Department Interior Design",
-    location: "Gurugram, Haryana",
-    scope: "Interior Design + Execution",
-    category: "Hospital / Radiology",
-    area: "Approx. 8500+ sq. ft.",
-    client: "Medanta Medicity",
-    contractor: "BS Engineering",
-    designStyle: "Modern Functional",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
-  },
-
-  overview: [
-    "The Medanta Medicity Radiology Department project was designed as a modern healthcare reporting and diagnostic workspace focused on efficiency, ergonomics, and user comfort.",
-
-    "The interior layout was carefully planned to support high-performance medical reporting environments while maintaining visual openness and organized workstation zoning.",
-
-    "Minimal contemporary aesthetics, integrated lighting, acoustic considerations, and ergonomic furniture were combined to create a productive and technologically advanced healthcare workspace.",
-  ],
-
-  designConcept: [
-    "The design concept focused on creating a clean, organized, and technology-driven radiology workspace that enhances concentration and workflow efficiency.",
-
-    "Perforated partition panels, neutral color palettes, and warm wooden textures were integrated to maintain visual balance and provide subtle spatial separation.",
-
-    "The workstation arrangement ensures privacy, comfort, and uninterrupted functionality while promoting a contemporary institutional identity.",
-  ],
-
-  materials: [
-    {
-      category: "Flooring",
-      details:
-        "Durable matte-finish flooring designed for high footfall healthcare environments while ensuring easy maintenance and longevity.",
-    },
-
-    {
-      category: "Wall Treatment",
-      details:
-        "Combination of soft neutral finishes, laminated wooden textures, and perforated partition panels for visual depth and acoustic comfort.",
-    },
-
-    {
-      category: "Ceiling & Lighting",
-      details:
-        "Minimal false ceiling integrated with recessed LED panel lighting to provide glare-free and uniform illumination suitable for workstation environments.",
-    },
-
-    {
-      category: "Furniture & Fixtures",
-      details:
-        "Ergonomic modular workstations, customized desk systems, and comfortable task seating designed for long-duration reporting and operational efficiency.",
-    },
-  ],
-
-  highlights: [
-    {
-      title: "Modular Reporting Workstations",
-      text:
-        "Efficiently planned workstation layout designed to enhance workflow, concentration, and collaborative healthcare operations.",
-    },
-
-    {
-      title: "Perforated Partition Design",
-      text:
-        "Custom perforated divider panels provide visual separation while maintaining openness and spatial connectivity.",
-    },
-
-    {
-      title: "Contemporary Clinical Aesthetic",
-      text:
-        "Neutral shades, wooden textures, and clean detailing create a calm and professional diagnostic environment.",
-    },
-
-    {
-      title: "Integrated Lighting Strategy",
-      text:
-        "Uniform recessed lighting ensures visual clarity, reduced glare, and comfortable workstation illumination.",
-    },
-
-    {
-      title: "Functional Healthcare Planning",
-      text:
-        "Thoughtfully designed circulation and workstation zoning support operational efficiency and user comfort.",
-    },
-  ],
-
-  designIntent:
-    "To create a technologically efficient and ergonomically designed radiology workspace that supports healthcare operations through functional planning and contemporary interior aesthetics.",
-
-  conclusion:
-    "The Medanta Medicity Radiology Department reflects a refined healthcare workspace design where functionality, comfort, and modern institutional aesthetics come together to create an efficient and visually balanced reporting environment.",
-},
-{
-  id: 19,
-  slug: "cinepolish-conference-room-interior-design",
-
-  tag: "Corporate Office",
-
-  title: "Cinepolish - Conference Room Interior Design",
-  subtitle: "Modern Conference & Meeting Room Design",
-
-  mainImage: "/Interiors/cinepolish/image-1.webp",
-
-  sideImages: [
-    "/Interiors/cinepolish/image-2.webp",
-    "/Interiors/cinepolish/image-3.webp",
-  ],
-
-  galleryImages: [],
-
-  info: {
-    project: "Conference Room Interior Design",
-    location: "India",
-    scope: "Interior Design",
-    category: "Corporate Office / Meeting Room",
-    client: "CINEPOLISH",
-    designStyle: "Modern Corporate",
-    status: "Completed",
-    firm: "URBAN iNFiLL",
-  },
-
-  overview: [
-    "The CINEPOLISH conference room interior was designed as a modern corporate meeting environment that supports presentations, discussions, and collaborative decision-making.",
-
-    "The space uses a refined palette of warm wood, neutral wall finishes, blue seating accents, and integrated lighting to create a professional yet comfortable boardroom experience.",
-
-    "Large digital display walls, linear pendant lights, concealed ceiling illumination, and organized seating layouts come together to create a focused and technology-ready meeting space.",
-  ],
-
-  designConcept: [
-    "The design concept focuses on clarity, symmetry, and executive functionality for a high-performance conference room.",
-
-    "A U-shaped meeting table layout supports direct interaction between participants while maintaining clear visibility toward the presentation screens.",
-
-    "Soft wall panels, vertical grooves, ambient ceiling lighting, and warm wooden surfaces add visual depth without distracting from the room's business purpose.",
-  ],
-
-  materials: [
-    {
-      category: "Flooring",
-      details:
-        "Textured carpet flooring was used to improve acoustic comfort, reduce footstep noise, and provide a polished corporate finish.",
-    },
-
-    {
-      category: "Wall Treatment",
-      details:
-        "Neutral wall panels with vertical grooves and clean black trims create a structured, modern backdrop for digital display systems.",
-    },
-
-    {
-      category: "Ceiling & Lighting",
-      details:
-        "Recessed cove lighting, spotlights, and suspended linear lights provide balanced illumination for meetings and presentations.",
-    },
-
-    {
-      category: "Furniture & Fixtures",
-      details:
-        "Custom wooden conference tables and ergonomic task chairs are arranged for comfort, visibility, and efficient group discussion.",
-    },
-  ],
-
-  highlights: [
-    {
-      title: "Executive Conference Layout",
-      text:
-        "The U-shaped table arrangement supports collaborative discussion while keeping all participants connected to the presentation wall.",
-    },
-
-    {
-      title: "Integrated Digital Display",
-      text:
-        "Large-format screens are positioned for meetings, presentations, video calls, and visual communication.",
-    },
-
-    {
-      title: "Layered Lighting Design",
-      text:
-        "Linear pendant lighting, recessed spotlights, and warm cove lighting create a bright yet comfortable meeting atmosphere.",
-    },
-
-    {
-      title: "Modern Corporate Palette",
-      text:
-        "Wooden table finishes, neutral panels, grey flooring, and blue seating accents create a balanced corporate identity.",
-    },
-  ],
-
-  designIntent:
-    "To create a sophisticated and functional conference room that supports collaboration, presentations, and professional communication through thoughtful planning, lighting, and material selection.",
-
-  conclusion:
-    "The CINEPOLISH conference room interior delivers a contemporary corporate meeting environment where technology, comfort, and clean detailing come together to support focused workplace interaction.",
-},
 ];
 
 export default interiorProjects;

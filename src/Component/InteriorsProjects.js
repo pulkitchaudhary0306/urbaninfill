@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import "../HeaderFooter/Header.css";
-import "./InteriorsProjects.css";
+import "./ArchitectureProjects.css";
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 import useImageModal from "./useImageModal";

@@ -12,6 +12,7 @@ import "../HeaderFooter/Header.css";
 
 import "./Home.css";
 import LazyImage from "./LazyImage";
+import TESTIMONIALS from "./testimonialsData";
 
 
 
@@ -81,75 +82,75 @@ const cities = [
 
 const clients = [
 
-  { name: "Reliance", src: "/logo/reliance.webp" },
+  { name: "Reliance", src: "/logo/reliance.avif" },
 
-  { name: "Airtel", src: "/logo/airtel.webp" },
+  { name: "Airtel", src: "/logo/airtel.avif" },
 
-  { name: "Medanta", src: "/logo/medanta.webp" },
+  { name: "Medanta", src: "/logo/medanta.avif" },
 
-  { name: "United", src: "/logo/united.webp" },
+  { name: "United", src: "/logo/united.avif" },
 
-  { name: "UrbanClap", src: "/logo/urbanclap.webp" },
+  { name: "UrbanClap", src: "/logo/urbanclap.avif" },
 
-  { name: "Google", src: "/logo/google.webp" },
+  { name: "Google", src: "/logo/google.avif" },
 
-  { name: "Samsung", src: "/logo/samsung.webp" },
+  { name: "Samsung", src: "/logo/samsung.avif" },
 
-  { name: "Lenskart", src: "/logo/lenskart.webp" },
+  { name: "Lenskart", src: "/logo/lenskart.avif" },
 
-  { name: "DLF", src: "/logo/dlf.webp" },
+  { name: "DLF", src: "/logo/dlf.avif" },
 
-  { name: "Honda", src: "/logo/honda.webp" },
+  { name: "Honda", src: "/logo/honda.avif" },
 
-  { name: "GAAR", src: "/logo/gaar.webp" },
+  { name: "GAAR", src: "/logo/gaar.avif" },
 
-  { name: "Cine", src: "/logo/cine.webp" },
+  { name: "Cine", src: "/logo/cine.avif" },
 
-  { name: "FICCI", src: "/logo/ficci.webp" },
+  { name: "FICCI", src: "/logo/ficci.avif" },
 
-  { name: "PB", src: "/logo/pblogo.webp" },
+  { name: "PB", src: "/logo/pblogo.avif" },
 
-  { name: "Startek", src: "/logo/startek.webp" },
+  { name: "Startek", src: "/logo/startek.avif" },
 
-  { name: "Foundever", src: "/logo/foundever.webp" },
+  { name: "Foundever", src: "/logo/foundever.avif" },
 
-  { name: "Axis Bank", src: "/logo/axis.webp" },
+  { name: "Axis Bank", src: "/logo/axis.avif" },
 
-  { name: "NIC", src: "/logo/nic.webp" },
+  { name: "NIC", src: "/logo/nic.avif" },
 
-  { name: "Cars24", src: "/logo/cars24.webp" },
+  { name: "Cars24", src: "/logo/cars24.avif" },
 
-  { name: "Personiv", src: "/logo/personiv.webp" },
+  { name: "Personiv", src: "/logo/personiv.avif" },
 
-  { name: "Popular", src: "/logo/popular.webp" },
+  { name: "Popular", src: "/logo/popular.avif" },
 
-  { name: "Royal", src: "/logo/royal.webp" },
+  { name: "Royal", src: "/logo/royal.avif" },
 
-  { name: "Sitel", src: "/logo/sitel.webp" },
+  { name: "Sitel", src: "/logo/sitel.avif" },
 
-  { name: "Kyndryl", src: "/logo/kyndryl.webp" },
+  { name: "Kyndryl", src: "/logo/kyndryl.avif" },
 
-  { name: "Ashoka", src: "/logo/ashoka.webp" },
+  { name: "Ashoka", src: "/logo/ashoka.avif" },
 
-  { name: "IBM", src: "/logo/ibm.webp" },
+  { name: "IBM", src: "/logo/ibm.avif" },
 
-  { name: "NTT", src: "/logo/ntt.webp" },
+  { name: "NTT", src: "/logo/ntt.avif" },
 
-  { name: "Myntra", src: "/logo/myntra.webp" },
+  { name: "Myntra", src: "/logo/myntra.avif" },
 
-  { name: "Cog", src: "/logo/cog.webp" },
+  { name: "Cog", src: "/logo/cog.avif" },
 
-  { name: "Konika", src: "/logo/konika.webp" },
+  { name: "Konika", src: "/logo/konika.avif" },
 
-  { name: "Allied", src: "/logo/allied.webp" },
+  { name: "Allied", src: "/logo/allied.avif" },
 
-  { name: "Convergys", src: "/logo/convergys.webp" },
+  { name: "Convergys", src: "/logo/convergys.avif" },
 
-  { name: "HSBC", src: "/logo/hsbc.webp" },
+  { name: "HSBC", src: "/logo/hsbc.avif" },
 
-  { name: "Bhatra", src: "/logo/bhatra.webp" },
+  { name: "Bhatra", src: "/logo/bhatra.avif" },
 
-  { name: "YKK", src: "/logo/ykk.webp" },
+  { name: "YKK", src: "/logo/ykk.avif" },
 
 ];
 
@@ -246,141 +247,141 @@ const services = [
 const featuredProjectItems = [
   {
     title: "The Aravali Resort",
-    src: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
+    src: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.avif",
     alt: "The Aravali Resort architecture",
-    link: "/ArchitectureProjects/aravali-resort-hospitality-design-india",
+    link: "/architecture-projects/aravali-resort-hospitality-design-india",
   },
   {
     title: "Sargam Theatre",
-    src: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
+    src: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
     alt: "Sargam Theatre exterior",
-    link: "/ArchitectureProjects/ssargam-cinema-multiplex-design-india",
+    link: "/architecture-projects/ssargam-cinema-multiplex-design-india",
   },
   {
     title: "Monsoon Mall",
-    src: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
+    src: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif",
     alt: "Monsoon Mall commercial architecture",
-    link: "/ArchitectureProjects/moonson-mall-hospitality-retail-design-sirsa",
+    link: "/architecture-projects/moonson-mall-hospitality-retail-design-sirsa",
   },
   {
     title: "Ananta Hospital",
-    src: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.webp",
+    src: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.avif",
     alt: "Ananta Hospital healthcare architecture",
-    link: "/ArchitectureProjects/annanta-hospital-healthcare-design-india",
+    link: "/architecture-projects/annanta-hospital-healthcare-design-india",
   },
   {
     title: "Movie Lounge Expansion",
-    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
     alt: "Movie Lounge cinema expansion",
-    link: "/ArchitectureProjects/movie-lounge-crossroad-mall-dehradun-expansion",
+    link: "/architecture-projects/movie-lounge-crossroad-mall-dehradun-expansion",
   },
   {
     title: "Darbaripur Residence",
-    src: "/Architecture/DarbaripurHouse/main-view.webp",
+    src: "/Architecture/DarbaripurHouse/main-view.avif",
     alt: "Darbaripur luxury bungalow architecture",
-    link: "/ArchitectureProjects/darbaripur-modern-facade-design",
+    link: "/architecture-projects/darbaripur-modern-facade-design",
   },
   {
     title: "Club House Sirsa",
-    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
     alt: "Club House Sirsa recreational architecture",
-    link: "/ArchitectureProjects/club-house-sirsa-recreational-space",
+    link: "/architecture-projects/club-house-sirsa-recreational-space",
   },
   {
     title: "AKSHORA PADAMPURI",
-    src: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
+    src: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.avif",
     alt: "AKSHORA PADAMPURI resort architecture",
-    link: "/ArchitectureProjects/hill-view-resort-hospitality-design",
+    link: "/architecture-projects/hill-view-resort-hospitality-design",
   },
   {
     title: "Jindal Stone",
-    src: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
+    src: "/Architecture/JindalStone/jindal-stone-main-facade.avif",
     alt: "Jindal Stone showroom facade",
-    link: "/ArchitectureProjects/jindal-stone-showroom-exterior-design",
+    link: "/architecture-projects/jindal-stone-showroom-exterior-design",
   },
   {
     title: "Mrs. Jyoti Yadav Hotel",
-    src: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
+    src: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.avif",
     alt: "Mrs. Jyoti Yadav Hotel facade",
-    link: "/ArchitectureProjects/mrs-jyoti-yadav-hotel-hospitality-design",
+    link: "/architecture-projects/mrs-jyoti-yadav-hotel-hospitality-design",
   },
   {
     title: "United Airlines Office",
-    src: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
+    src: "/Interiors/United/united-airlines-premium-office-main-delhi.avif",
     alt: "United Airlines premium office interior",
-    link: "/InteriorsProjects/united-airlines-office-interior-t3-delhi",
+    link: "/interiors/united-airlines-office-interior-t3-delhi",
   },
   {
     title: "Urban Canteen",
-    src: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
+    src: "/projects/08-urban-canteen.avif",
     alt: "Urban Canteen restaurant interior",
-    link: "/InteriorsProjects/urban-canteen-cafe-interior-bhubaneswar",
+    link: "/interiors/urban-canteen-cafe-interior-bhubaneswar",
   },
   {
     title: "BBI Booze Buzz",
-    src: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.webp",
+    src: "/projects/07-bbi.avif",
     alt: "BBI restaurant and bar interior",
-    link: "/InteriorsProjects/restaurant-club-design-bbi-bhubaneswar",
+    link: "/interiors/restaurant-club-design-bbi-bhubaneswar",
   },
   {
     title: "Cineport Multiplex",
-    src: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.webp",
+    src: "/projects/05-cineport.avif",
     alt: "Cineport multiplex interior",
-    link: "/InteriorsProjects/cineport-svh-5-screen-multiplex-gurgaon",
+    link: "/interiors/cineport-svh-5-screen-multiplex-gurgaon",
   },
   {
     title: "Samsung Corporate Office",
-    src: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.webp",
+    src: "/projects/02-samsung.avif",
     alt: "Samsung corporate office interior",
-    link: "/InteriorsProjects/samsung-office-interior-design-dehradun",
+    link: "/interiors/samsung-office-interior-design-dehradun",
   },
   {
     title: "Urban Company Office",
-    src: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.webp",
+    src: "/projects/03-uc.avif",
     alt: "Urban Company corporate office interior",
-    link: "/InteriorsProjects/urban-company-it-head-office-interior-bangalore",
+    link: "/interiors/urban-company-it-head-office-interior-bangalore",
   },
   {
     title: "Movie Lounge Interior",
-    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
     alt: "Movie Lounge cinema interior",
-    link: "/InteriorsProjects/movie-lounge-crossroad-mall-dehradun-expansion",
+    link: "/interiors/movie-lounge-crossroad-mall-dehradun-expansion",
   },
   {
     title: "Batra Hospital Cathlab",
-    src: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
+    src: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.avif",
     alt: "Batra Hospital cathlab interior",
-    link: "/InteriorsProjects/batra-hospital-medical-research-centre-cathlab-renovation",
+    link: "/interiors/batra-hospital-medical-research-centre-cathlab-renovation",
   },
   {
     title: "Lenskart Store",
-    src: "/Interiors/Lenskart/lenskart-store-main.webp",
+    src: "/Interiors/Lenskart/lenskart-store-main.avif",
     alt: "Lenskart store interior",
-    link: "/InteriorsProjects/lenskart-Office-interior-design",
+    link: "/interiors/lenskart-Office-interior-design",
   },
   {
     title: "Mayom Hospital",
-    src: "/Interiors/MayomHospital/gita-gyan-main.webp",
+    src: "/Interiors/MayomHospital/gita-gyan-main.avif",
     alt: "Mayom Hospital interior",
-    link: "/InteriorsProjects/mayom-hospital-interior-design",
+    link: "/interiors/mayom-hospital-interior-design",
   },
   {
     title: "Club House Sirsa Interior",
-    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
     alt: "Club House Sirsa interior project",
-    link: "/InteriorsProjects/club-house-sirsa-recreational-space",
+    link: "/interiors/club-house-sirsa-recreational-space",
   },
   {
     title: "MET Reliance",
-    src: "/Interiors/METReliance/main-hall.webp",
+    src: "/Interiors/METReliance/main-hall.avif",
     alt: "MET Reliance interior design",
-    link: "/InteriorsProjects/met-reliance-interior-design",
+    link: "/interiors/met-reliance-interior-design",
   },
   {
     title: "Anand Group",
-    src: "/Interiors/AnandGroup/anand-group-main-hall.webp",
+    src: "/Interiors/AnandGroup/anand-group-main-hall.avif",
     alt: "Anand Group Hauz Khas interior",
-    link: "/InteriorsProjects/anand-group-hauz-khas-interior-design",
+    link: "/interiors/anand-group-hauz-khas-interior-design",
   },
 ];
 
@@ -500,13 +501,14 @@ const Counter = memo(function Counter({ end, duration = 2000, suffix = " +" }) {
 
 function HomeComponent() {
 
+  const galleryRef = useRef(null);
   const [brandVisible, setBrandVisible] = useState(false);
 
   const brandRef = useRef(null);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const totalSlides = 4; // Number of testimonials
+  const totalSlides = TESTIMONIALS.length; // Number of testimonials
 
   const [featuredSetIndex, setFeaturedSetIndex] = useState(0);
 
@@ -714,19 +716,18 @@ function HomeComponent() {
 
   // Gallery scroll functionality with 360-degree rotation
   const scrollGallery = (direction) => {
-    const gallery = document.querySelector('.work-gallery');
-    if (!gallery) {
+    if (!galleryRef.current) {
       console.log('Gallery not found');
       return;
     }
     
     const scrollAmount = 384; // Card width (360px) + gap (24px)
-    const currentScroll = gallery.scrollLeft;
+    const currentScroll = galleryRef.current.scrollLeft;
     
     if (direction === 'left') {
-      gallery.scrollTo({ left: Math.max(0, currentScroll - scrollAmount), behavior: 'smooth' });
+      galleryRef.current.scrollTo({ left: Math.max(0, currentScroll - scrollAmount), behavior: 'smooth' });
     } else {
-      gallery.scrollTo({ left: currentScroll + scrollAmount, behavior: 'smooth' });
+      galleryRef.current.scrollTo({ left: currentScroll + scrollAmount, behavior: 'smooth' });
     }
   };
 
@@ -780,7 +781,7 @@ function HomeComponent() {
 
               className="bar__logo"
 
-              src="/logo.webp"
+              src="/logo.avif"
 
               alt="URBAN iNFiLL Logo"
 
@@ -802,7 +803,7 @@ function HomeComponent() {
 
             <span className="bar__sep">|</span>
 
-            <Link to="/projectmanagement" className="bar__item">
+            <Link to="/project-management" className="bar__item">
 
               PROJECT MANAGEMENT
 
@@ -949,7 +950,7 @@ function HomeComponent() {
 
               <div className="map-stage">
 
-                <LazyImage src="/map.webp" alt="Cities covered map" decoding="async" />
+                <LazyImage src="/map.avif" alt="Cities covered map" decoding="async" />
 
 
 
@@ -1252,13 +1253,13 @@ function HomeComponent() {
         </div>
 
         {/* Horizontal Scrolling Gallery */}
-        <div className="work-gallery">
+        <div className="work-gallery" ref={galleryRef}>
           <div className="work-track">
             {/* Project 1 */}
-            <Link to="/ArchitectureProjects/moonson-mall-hospitality-retail-design-sirsa" className="work-item">
+            <Link to="/architecture-projects/moonson-mall-hospitality-retail-design-sirsa" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp" alt="Monsoon Mall" loading="lazy" decoding="async" />
+                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif" alt="Monsoon Mall" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">01</div>
@@ -1286,10 +1287,10 @@ function HomeComponent() {
             </Link>
 
             {/* Project 2 */}
-            <Link to="/InteriorsProjects/cineport-svh-5-screen-multiplex-gurgaon" className="work-item">
+            <Link to="/interiors/cineport-svh-5-screen-multiplex-gurgaon" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/05-cineport.webp" alt="Cineport Cinema" loading="lazy" decoding="async" />
+                  <img src="/projects/05-cineport.avif" alt="Cineport Cinema" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">02</div>
@@ -1317,10 +1318,10 @@ function HomeComponent() {
             </Link>
 
             {/* Project 3 */}
-            <Link to="/InteriorsProjects/samsung-office-interior-design-dehradun" className="work-item">
+            <Link to="/interiors/samsung-office-interior-design-dehradun" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/02-samsung.webp" alt="Samsung Office" loading="lazy" decoding="async" />
+                  <img src="/projects/02-samsung.avif" alt="Samsung Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">03</div>
@@ -1348,10 +1349,10 @@ function HomeComponent() {
             </Link>
 
             {/* Project 4 */}
-            <Link to="/InteriorsProjects/urban-company-it-head-office-interior-bangalore" className="work-item">
+            <Link to="/interiors/urban-company-it-head-office-interior-bangalore" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/03-uc.webp" alt="Urban Company" loading="lazy" decoding="async" />
+                  <img src="/projects/03-uc.avif" alt="Urban Company" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">04</div>
@@ -1379,10 +1380,10 @@ function HomeComponent() {
             </Link>
 
             {/* Project 5 */}
-            <Link to="/InteriorsProjects/restaurant-club-design-bbi-bhubaneswar" className="work-item">
+            <Link to="/interiors/restaurant-club-design-bbi-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/07-bbi.webp" alt="BBI Restaurant" loading="lazy" decoding="async" />
+                  <img src="/projects/07-bbi.avif" alt="BBI Restaurant" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">05</div>
@@ -1410,10 +1411,10 @@ function HomeComponent() {
             </Link>
 
             {/* Project 6 */}
-            <Link to="/InteriorsProjects/urban-canteen-cafe-interior-bhubaneswar" className="work-item">
+            <Link to="/interiors/urban-canteen-cafe-interior-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/08-urban-canteen.webp" alt="Urban Canteen" loading="lazy" decoding="async" />
+                  <img src="/projects/08-urban-canteen.avif" alt="Urban Canteen" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">06</div>
@@ -1444,7 +1445,7 @@ function HomeComponent() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/04-flipkart.webp" alt="Flipkart Office" loading="lazy" decoding="async" />
+                  <img src="/projects/04-flipkart.avif" alt="Flipkart Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">07</div>
@@ -1475,7 +1476,7 @@ function HomeComponent() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/06-home-theater.webp" alt="Home Theater" loading="lazy" decoding="async" />
+                  <img src="/projects/06-home-theater.avif" alt="Home Theater" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">08</div>
@@ -1503,10 +1504,10 @@ function HomeComponent() {
             </div>
 
             {/* Project 9 */}
-            <Link to="/uihomes" className="work-item">
+            <Link to="/luxury-homes" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/09-interior.webp" alt="Luxury Interior" loading="lazy" decoding="async" />
+                  <img src="/projects/09-interior.avif" alt="Luxury Interior" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">09</div>
@@ -1574,205 +1575,27 @@ function HomeComponent() {
             <div className="testimonial-viewport">
 
               <div className="testimonial-track" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-
-          <div className="testimonial-card">
-
-            <div className="testimonial-head">
-
-              <span className="testimonial-badge">Google Review</span>
-
-              <div className="testimonial-stars" aria-label="5 out of 5 stars">
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-              </div>
-
-            </div>
-
-            <div className="testimonial-content">
-
-              <p className="testimonial-text">
-
-                I have worked closely with Urban Infill on multiple office design and fit-out projects in Gurugram over the years. From design development to detailed working drawings and execution support, their team brings strong clarity and technical understanding to every stage.
-
-              </p>
-
-              <p className="testimonial-text">
-
-                What really helps on-site is their responsiveness and ability to resolve design and coordination issues quickly, especially during fast-track office interior projects. Their drawings are practical, well-detailed, and aligned with execution realities, which makes a big difference in timely delivery.
-
-              </p>
-
-              <p className="testimonial-text">
-
-                For anyone looking for reliable office design services in Gurugram, Urban Infill is a highly dependable team with solid experience in commercial workspace projects.
-
-              </p>
-
-            </div>
-
-            <div className="testimonial-author">
-
-              <h4 className="author-name">Neeraj Pal</h4>
-
-              <p className="author-time"> 5 weeks ago</p>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="testimonial-card">
-
-            <div className="testimonial-head">
-
-              <span className="testimonial-badge">Google Review</span>
-
-              <div className="testimonial-stars" aria-label="5 out of 5 stars">
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-              </div>
-
-            </div>
-
-            <div className="testimonial-content">
-
-              <p className="testimonial-text">
-
-                We engaged Urban Infill for our office design and execution support across multiple locations including Dhanbad, Kolkata, and Patna. The team demonstrated strong planning skills and a clear understanding of commercial workspace requirements.
-
-              </p>
-
-              <p className="testimonial-text">
-
-                Their coordination with different stakeholders was smooth throughout, and the projects were delivered on time without unnecessary delays. The design approach was practical, efficient, and aligned well with our operational needs.
-
-              </p>
-
-              <p className="testimonial-text">
-
-                Highly recommended for office interior design and multi-city commercial projects. A professional team that ensures timely delivery and hassle-free execution.
-
-              </p>
-
-            </div>
-
-            <div className="testimonial-author">
-
-              <h4 className="author-name">Gaurav Goyal</h4>
-
-              <p className="author-time"> 5 weeks ago</p>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="testimonial-card">
-
-            <div className="testimonial-head">
-
-              <span className="testimonial-badge">Google Review</span>
-
-              <div className="testimonial-stars" aria-label="5 out of 5 stars">
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-              </div>
-
-            </div>
-
-            <div className="testimonial-content">
-
-              <p className="testimonial-text">
-
-                We the team of TRAVWIKI are grateful for all the help and effort that we have received for getting our startup venture set up done. We contacted numerous architecture but the service and budgeting that we received was commendable. Thanks Subhankar and the entire team of Urbaninfill.
-
-              </p>
-
-            </div>
-
-            <div className="testimonial-author">
-
-              <h4 className="author-name">TRAVWIKI </h4>
-
-              <p className="author-time"> 5 weeks ago</p>
-
-            </div>
-
-          </div>
-
-
-
-          <div className="testimonial-card">
-
-            <div className="testimonial-head">
-
-              <span className="testimonial-badge">Google Review</span>
-
-              <div className="testimonial-stars" aria-label="5 out of 5 stars">
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-                <span className="star">&#9733;</span>
-
-              </div>
-
-            </div>
-
-            <div className="testimonial-content">
-
-              <p className="testimonial-text">
-
-                I head Corporate Communications at EROS Group, New Delhi. We are truly delighted with the spectacular design concepts & on-site execution of URBAN iNFILL team. Subhankar is always on with his remarkable ideas & on-time delivery commitments.
-
-              </p>
-
-            </div>
-
-            <div className="testimonial-author">
-
-              <h4 className="author-name">Alakshendra Singh</h4>
-
-              <p className="author-time">6 Mar 2020</p>
-
-            </div>
-
-          </div>
-
+                {TESTIMONIALS.map((testimonial) => (
+                  <div className="testimonial-card" key={testimonial.id}>
+                    <div className="testimonial-head">
+                      <span className="testimonial-badge">{testimonial.badge}</span>
+                      <div className="testimonial-stars" aria-label={`${testimonial.rating} out of 5 stars`}>
+                        {Array.from({ length: testimonial.rating }).map((_, i) => (
+                          <span key={i} className="star">&#9733;</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="testimonial-content">
+                      {testimonial.content.map((p, i) => (
+                        <p key={i} className="testimonial-text">{p}</p>
+                      ))}
+                    </div>
+                    <div className="testimonial-author">
+                      <h4 className="author-name">{testimonial.author}</h4>
+                      <p className="author-time">{testimonial.time}</p>
+                    </div>
+                  </div>
+                ))}
             </div>
 
           </div>
@@ -1827,8 +1650,3 @@ function HomeComponent() {
 
 
 export default memo(HomeComponent);
-
-
-
-
-

@@ -1,14 +1,17 @@
 import { useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
+
 import "../HeaderFooter/Header.css";
 import "./ArchitectureProjects.css";
+
 import usePageReveal from "./usePageReveal";
 import useScrollVisibility from "./useScrollVisibility";
 import useImageModal from "./useImageModal";
+
 import projectsData from "./ArchitectureProjectsData";
 
 function ArchitectureProjects() {
-  // ... hooks remain the same ...
+  // Page animations
   usePageReveal([
     ".project-page .project-hero .container > *",
     ".project-page .project-gallery > *",
@@ -17,11 +20,9 @@ function ArchitectureProjects() {
     ".project-page .project-content > *",
     ".project-page .highlight-card",
     ".project-page .back-link-btn",
-    ".project-page .footer__col",
-    ".project-page .footer__line",
-    ".project-page .footer__copy",
   ]);
 
+  // Scroll visibility
   useScrollVisibility([
     ".project-page .project-hero .container",
     ".project-page .gallery-main",
@@ -33,20 +34,35 @@ function ArchitectureProjects() {
     ".project-page .back-link-btn",
   ]);
 
+  // Get route param
   const { id } = useParams();
 
+  // Projects data
   const architectureProjects = useMemo(() => projectsData, []);
- 
-  // FIXED: Improved project lookup logic
+
+  // Find project
   const project = useMemo(() => {
-    return architectureProjects.find((item) => item.slug === id || String(item.id) === id);
+    if (!id) return null;
+
+    return architectureProjects.find(
+      (item) =>
+        item.slug?.toLowerCase() === id.toLowerCase() ||
+        String(item.id) === String(id)
+    );
   }, [id, architectureProjects]);
 
+  // All images
   const allImages = useMemo(() => {
     if (!project) return [];
-    return [project.mainImage, ...project.sideImages, ...project.galleryImages];
+
+    return [
+      project.mainImage,
+      ...(project.sideImages || []),
+      ...(project.galleryImages || []),
+    ];
   }, [project]);
 
+  // Image modal hook
   const {
     selectedImageIndex,
     activeImage,
@@ -56,111 +72,168 @@ function ArchitectureProjects() {
     showNextImage,
   } = useImageModal(allImages);
 
+  // Redirect if not found
   if (!project) {
-    return (
-      <div className="not-found-page">
-        <h2>Project Not Found</h2>
-        <p>The page you are looking for does not exist.</p>
-        <Link to="/architecture" className="back-link-btn">Back to Architecture</Link>
-      </div>
-    );
+    return <Navigate to="/architecture" replace />;
   }
 
   return (
     <div className="project-page">
-            {/* Hero Section */}
+      {/* HERO SECTION */}
       <section className="project-hero">
         <div className="container">
           <p className="project-tag">{project.tag}</p>
+
           <h1>{project.title}</h1>
-          <p className="project-subtitle">{project.subtitle}</p>
+
+          <p className="project-subtitle">
+            {project.subtitle}
+          </p>
         </div>
       </section>
 
-            {/* Gallery Section */}
+      {/* GALLERY SECTION */}
       <section className="project-gallery-section">
         <div className="container">
           <div className="project-gallery">
+
+            {/* MAIN IMAGE */}
             <div className="gallery-main">
               <img
                 src={project.mainImage}
-                alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
-                onClick={() => openImageModal(project.mainImage)}
+                alt={project.title}
                 className="clickable-image"
                 loading="lazy"
                 decoding="async"
+                onClick={() =>
+                  openImageModal(project.mainImage)
+                }
               />
             </div>
+
+            {/* SIDE IMAGES */}
             <div className="gallery-side">
-              {project.sideImages.map((img, idx) => (
+              {(project.sideImages || []).map((img, idx) => (
                 <img
                   key={`side-${idx}`}
                   src={img}
-                  alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
-                  onClick={() => openImageModal(img)}
+                  alt={project.title}
                   className="clickable-image"
                   loading="lazy"
                   decoding="async"
+                  onClick={() => openImageModal(img)}
                 />
               ))}
             </div>
           </div>
+
+          {/* BOTTOM GALLERY */}
           <div className="project-gallery-bottom">
-            {project.galleryImages.map((img, idx) => (
+            {(project.galleryImages || []).map((img, idx) => (
               <img
                 key={`gallery-${idx}`}
                 src={img}
-                alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
-                onClick={() => openImageModal(img)}
+                alt={project.title}
                 className="clickable-image"
                 loading="lazy"
                 decoding="async"
+                onClick={() => openImageModal(img)}
               />
             ))}
           </div>
         </div>
       </section>
 
-            {/* Content Section */}
+      {/* CONTENT SECTION */}
       <section className="project-content-section">
         <div className="container project-content-grid">
+
+          {/* PROJECT INFO */}
           <div className="project-info-card">
             <h3>Project Info</h3>
+
             <ul>
-              {Object.entries(project.info).map(([key, value]) => (
-                <li key={key}><strong style={{textTransform: 'capitalize'}}>{key}:</strong> {value}</li>
-              ))}
+              {Object.entries(project.info || {}).map(
+                ([key, value]) => (
+                  <li key={key}>
+                    <strong
+                      style={{
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      {key}:
+                    </strong>{" "}
+                    {value}
+                  </li>
+                )
+              )}
             </ul>
-            <Link to="/architecture" className="back-link-btn">← Back to Architecture</Link>
+
+            <Link
+              to="/architecture"
+              className="back-link-btn"
+            >
+              ← Back to Architecture
+            </Link>
           </div>
 
+          {/* MAIN CONTENT */}
           <div className="project-content">
+
+            {/* OVERVIEW */}
             <h2>Project Overview</h2>
-            {project.overview.map((text, idx) => <p key={idx}>{text}</p>)}
-            
+
+            {(project.overview || []).map((text, idx) => (
+              <p key={idx}>{text}</p>
+            ))}
+
+            {/* LOCATION */}
             <h2>Location</h2>
-            <p><strong>Project Location:</strong> {project.info.location}</p>
+
+            <p>
+              <strong>Project Location:</strong>{" "}
+              {project.info?.location}
+            </p>
+
             <p>{project.locationText}</p>
 
+            {/* DESIGN CONCEPT */}
             <h2>Design Concept</h2>
-            {project.designConcept.map((text, idx) => <p key={idx}>{text}</p>)}
 
+            {(project.designConcept || []).map(
+              (text, idx) => (
+                <p key={idx}>{text}</p>
+              )
+            )}
+
+            {/* HIGHLIGHTS */}
             <h2>Architectural Highlights</h2>
+
             <div className="highlights-grid">
-              {project.highlights.map((item, idx) => (
-                <div className="highlight-card" key={idx}>
-                  <h4>{item.title}</h4>
-                  <p>{item.text}</p>
-                </div>
-              ))}
+              {(project.highlights || []).map(
+                (item, idx) => (
+                  <div
+                    className="highlight-card"
+                    key={idx}
+                  >
+                    <h4>{item.title}</h4>
+                    <p>{item.text}</p>
+                  </div>
+                )
+              )}
             </div>
 
+            {/* MATERIALS */}
             {project.materials?.length > 0 && (
               <>
                 <h2>Materials</h2>
+
                 <div className="materials-grid">
                   {project.materials.map((item, idx) => (
-                    <div className="material-card" key={idx}>
+                    <div
+                      className="material-card"
+                      key={idx}
+                    >
                       <h4>{item.category}</h4>
                       <p>{item.details}</p>
                     </div>
@@ -169,28 +242,58 @@ function ArchitectureProjects() {
               </>
             )}
 
+            {/* DESIGN INTENT */}
             <h2>Design Intent</h2>
+
             <p>{project.designIntent}</p>
 
+            {/* CONCLUSION */}
             <h2>Conclusion</h2>
+
             <p>{project.conclusion}</p>
           </div>
         </div>
       </section>
 
+      {/* IMAGE MODAL */}
       {selectedImageIndex !== null && (
-        <div className="image-modal" onClick={closeImageModal}>
-          <button className="image-slide-btn image-slide-btn--left" onClick={showPrevImage}>‹</button>
-          <div className="image-modal-inner" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="image-modal"
+          onClick={closeImageModal}
+        >
+          {/* PREV BUTTON */}
+          <button
+            className="image-slide-btn image-slide-btn--left"
+            onClick={(e) => {
+              e.stopPropagation();
+              showPrevImage();
+            }}
+          >
+            ‹
+          </button>
+
+          {/* MODAL IMAGE */}
+          <div
+            className="image-modal-inner"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={activeImage}
-              alt={`Modern ${project.title} Design in Gurugram by URBAN iNFiLL`}
+              alt={project.title}
               className="image-modal-content"
-              loading="lazy"
-              decoding="async"
             />
           </div>
-          <button className="image-slide-btn image-slide-btn--right" onClick={showNextImage}>›</button>
+
+          {/* NEXT BUTTON */}
+          <button
+            className="image-slide-btn image-slide-btn--right"
+            onClick={(e) => {
+              e.stopPropagation();
+              showNextImage();
+            }}
+          >
+            ›
+          </button>
         </div>
       )}
     </div>

@@ -48,7 +48,7 @@ function usePageReveal(selectors = []) {
     });
 
     return () => observer.disconnect();
-  }, [location.pathname, selectors]);
+  }, [location, selectors]);
 }
 
 export default usePageReveal;

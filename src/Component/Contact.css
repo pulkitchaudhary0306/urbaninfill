@@ -13,7 +13,7 @@
 .contact-hero {
   width: 100%;
   height: 525px;
-  background: url("/public/Contact/cover.webp") center center / cover no-repeat;
+  background: url("../../public/Contact/cover.avif") center center / cover no-repeat;
   position: relative;
 }
 

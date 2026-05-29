@@ -10,7 +10,7 @@ const blogs = [
       "Why Many Hospitals in India Are Built Well but Planned Poorly",
 
     image:
-      "/Blogs/batra-hospital-cathlab-main-delhi.webp",
+      "/Blogs/batra-hospital-cathlab-main-delhi.avif",
 
     author: "Subhankar Sengupta",
 
@@ -141,7 +141,7 @@ const blogs = [
     slug: "critical-mistakes-office-planning-india",
     category: "WORKPLACE PLANNING",
     title: "5 Critical Mistakes in Office Planning in India",
-    image: "/Blogs/critical-mistakes-office-planning-cover.webp",
+    image: "/Blogs/critical-mistakes-office-planning-cover.avif",
     author: "Subhankar Sengupta",
     role: "Principal Architect, Urban Infill",
     excerpt:
@@ -227,7 +227,7 @@ const blogs = [
     slug: "designing-multiplexes-india-cinema-architecture",
     category: "CINEMA ARCHITECTURE",
     title: "Designing Multiplexes in India: Why Cinema Architecture Is More Complex Than It Looks",
-    image: "/projects/05-cineport.webp",
+    image: "/projects/05-cineport.avif",
     author: "Subhankar Sengupta",
     role: "Principal Architect, Urban Infill",
     excerpt:
@@ -310,7 +310,7 @@ const blogs = [
     slug: "urban-infill-architecture-8th-anniversary-founders-journey",
     category: "8 YEARS OF URBAN iNFiLL",
     title: "Still Building, Still Raising the Bar",
-    image: "/Blogs/8th-anniversary-cover.webp",
+    image: "/Blogs/8th-anniversary-cover.avif",
     author: "Subhankar Sengupta",
     excerpt: "Reflecting on eight years of evolution—from a solo after-hours pursuit to a national practice built on clarity, intent, and performance.",
     meta: ["By Subhankar Sengupta", "14 Apr 2026"], // Updated to Poila Boishakh / Anniversary timing
@@ -341,7 +341,7 @@ const blogs = [
     slug: "designing-100-offices-workplace-architecture-india",
     category: "WORKPLACE ARCHITECTURE",
     title: "Designing 100+ Offices: Why Workplace Architecture in India Needs More Discipline, Not Decoration",
-    image: "/Blogs/workplace-architecture-india-cover.webp",
+    image: "/Blogs/workplace-architecture-india-cover.avif",
     author: "Ar. Subhankar Sengupta",
     excerpt:
       "After delivering more than 100 office environments across India",
@@ -421,7 +421,7 @@ const blogs = [
     slug: "urban-infill-architecture-founders-journey",
     category: "Founder Story",
     title: "Building URBAN iNFiLL ",
-    image: "/Blogs/cover.webp",
+    image: "/Blogs/cover.avif",
     author: "Subhankar Sengupta",
     role: "Founder & Principal Architect",
     excerpt: "Founder & Principal Architect.",
@@ -466,7 +466,7 @@ const blogs = [
     slug: "aravali-resort-hospitality-architecture",
     category: "Architecture",
     title: "Building your Dream Resort",
-    image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
+    image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.avif",
     author: "URBAN iNFiLL",
     role: "Architectural & Interior Design Studio",
     excerpt: "The Aravali Resort.",
@@ -498,7 +498,7 @@ const blogs = [
     slug: "urban-canteen-cafe-interior-design-bhubaneswar",
     category: "Commercial Interior Design",
     title: "Modern Aesthetics Canteen",
-    image: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
+    image: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.avif",
     author: "URBAN iNFiLL",
     role: "Architecture & Interior Design Studio",
     excerpt: "Commercial Restaurant Design.",

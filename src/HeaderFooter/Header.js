@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const projectLinks = [
   { to: "/architecture", label: "Architecture" },
   { to: "/interior", label: "Interior" },
-  { to: "/projectmanagement", label: "Project Management" },
+  { to: "/project-management", label: "Project Management" },
  
 ];
 
@@ -103,17 +103,15 @@ function Header() {
               </li>
 
               <li className={`nav-item site-dropdown${isDropdownOpen ? " show" : ""}`}>
-                <NavLink
-                  to="#"
-                  className={({ isActive }) =>
-                    `nav-link site-nav-link${isActive ? " is-active" : ""}`
-                  }
+                <button
+                  type="button"
+                  className="nav-link site-nav-link site-dropdown-toggle"
                   onClick={toggleDropdown}
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                 >
                   Projects
-                </NavLink>
+                </button>
 
                 <ul className={`site-dropdown-menu${isDropdownOpen ? " show" : ""}`}>
                   {projectLinks.map((link) => (
@@ -134,6 +132,18 @@ function Header() {
 
               <li className="nav-item">
                 <NavLink
+                  to="/luxury-homes"
+                  className={({ isActive }) =>
+                    `nav-link site-nav-link${isActive ? " is-active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
+                  UI Home
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
                   to="/blogs"
                   className={({ isActive }) =>
                     `nav-link site-nav-link${isActive ? " is-active" : ""}`
@@ -143,6 +153,7 @@ function Header() {
                   Blogs
                 </NavLink>
               </li>
+
               <li className="nav-item">
                 <NavLink
                   to="/career"
@@ -163,7 +174,7 @@ function Header() {
                   }
                   onClick={closeMenu}
                 >
-                  Contact
+                  Contact Us
                 </NavLink>
               </li>
 

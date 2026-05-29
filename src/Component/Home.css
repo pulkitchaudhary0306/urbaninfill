@@ -120,7 +120,7 @@ img {
 
   inset: 0;
 
-  background: url("/public/Untitled Project.jpg") no-repeat center center;
+  background: url("../../public/Untitled Project.avif") no-repeat center center;
 
   background-size: cover;
 
@@ -4507,7 +4507,7 @@ img {
   margin: -24px auto 58px;
   padding: 0 clamp(18px, 5vw, 64px);
   display: grid;
-  grid-template-columns: minmax(0, 1.9fr) minmax(300px, 0.9fr);
+  grid-template-columns: minmax(0,) minmax(300px, 0.9fr);
   grid-template-rows: clamp(420px, 34vw, 500px);
   gap: 16px;
   align-items: stretch;
@@ -4685,6 +4685,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .featured-collage-next,
   .featured-collage-divider {
     animation: none;
@@ -6132,6 +6133,7 @@ img {
 }
 
 @media (hover: none) and (max-width: 768px) {
+
   .work-item:hover,
   .work-view-more:hover {
     transform: translateY(0) scale(1);

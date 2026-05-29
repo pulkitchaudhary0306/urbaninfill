@@ -79,8 +79,8 @@ function Footer() {
           <ul className="site-footer__list">
             <li><Link to="/architecture">Architecture</Link></li>
             <li><Link to="/interior">Interior</Link></li>
-            <li><Link to="/uihomes">UI Homes</Link></li>
-            <li><Link to="/projectmanagement">Project Management</Link></li>
+            <li><Link to="/luxury-homes">Luxury Homes</Link></li>
+            <li><Link to="/project-management">Project Management</Link></li>
             <li><Link to="/archives">Archives</Link></li>
           </ul>
         </div>
@@ -93,8 +93,10 @@ function Footer() {
               <a href="mailto:info@urbaninfill.in">info@urbaninfill.in</a>
             </li>
             <li className="site-footer__contact-item">
-              <FaPhone className="site-footer__contact-icon" />
-              <span>+91 124 4241186</span>
+              <a href="tel:+911244241186" className="site-footer__contact-link">
+                <FaPhone className="site-footer__contact-icon site-footer__phone-icon" />
+                <span>+91 124 4241186</span>
+              </a>
             </li>
             <li className="site-footer__contact-item">
               <FaMapMarkerAlt className="site-footer__contact-icon" />
