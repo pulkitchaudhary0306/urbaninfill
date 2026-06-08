@@ -38,7 +38,10 @@ function InteriorsProjects() {
   const interiorsProjects = useMemo(() => interiorProjects, []);
 
   const project = useMemo(() => {
-    return interiorsProjects.find((item) => item.slug === id || String(item.id) === id);
+    if (!id) return null;
+    return interiorsProjects.find(
+      (item) => item.slug?.toLowerCase() === id.toLowerCase() || String(item.id) === id
+    );
   }, [id, interiorsProjects]);
 
   const allImages = useMemo(() => {
@@ -135,43 +138,14 @@ function InteriorsProjects() {
             <div className="project-info-card">
               <h3>Project Info</h3>
               <ul>
-                <li>
-                  <strong>Project:</strong> {project.info?.project}
-                </li>
-                <li>
-                  <strong>Location:</strong> {project.info?.location}
-                </li>
-                <li>
-                  <strong>Scope:</strong> {project.info?.scope}
-                </li>
-
-                {project.info?.area && (
-                  <li>
-                    <strong>Area:</strong> {project.info.area}
+                {project.info && Object.entries(project.info).map(([key, value]) => (
+                  <li key={key}>
+                    <strong style={{ textTransform: "capitalize" }}>
+                      {key.replace(/([A-Z])/g, ' $1').trim()}:
+                    </strong>{" "}
+                    {value}
                   </li>
-                )}
-
-                {project.info?.client && (
-                  <li>
-                    <strong>Client:</strong> {project.info.client}
-                  </li>
-                )}
-
-                {project.info?.status && (
-                  <li>
-                    <strong>Status:</strong> {project.info.status}
-                  </li>
-                )}
-
-                {project.info?.completionDate && (
-                  <li>
-                    <strong>Completion Date:</strong> {project.info.completionDate}
-                  </li>
-                )}
-
-                <li>
-                  <strong>Firm:</strong> {project.info?.firm}
-                </li>
+                ))}
               </ul>
 
               <Link to="/interior" className="back-link-btn">

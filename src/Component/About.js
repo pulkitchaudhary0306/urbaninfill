@@ -197,7 +197,7 @@ function About() {
                 <div className="ui-container ui-founder-grid">
                     <div className="ui-founder-card">
                         <img
-                            src="/founder.avif"
+                            src="/founder.webp"
                             alt="Ar. Subhankar Sengupta"
                             loading="lazy"
                             decoding="async"

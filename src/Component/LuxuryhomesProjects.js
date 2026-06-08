@@ -210,7 +210,13 @@ function LuxuryhomesProjects() {
           </button>
 
           <div className="image-modal-inner" onClick={(e) => e.stopPropagation()}>
-            <img src={activeImage} alt={project.title} className="image-modal-content" />
+            <img
+              src={activeImage}
+              alt={project.title}
+              className="image-modal-content"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <button

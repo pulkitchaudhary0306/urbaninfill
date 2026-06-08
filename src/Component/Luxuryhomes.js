@@ -32,7 +32,7 @@ function Luxuryhomes() {
   slug: "adani-oyster-sector-102-dwarka-expressway",
 
   image:
-    "/luxuryhomes/adani-oyster-sector-102/luxury-living-room-interior-design.avif",
+    "/luxuryhomes/adani-oyster-sector-102/luxury-living-room-interior-design.webp",
 
   title: "Adani Oyster Sector 102",
 
@@ -45,7 +45,7 @@ function Luxuryhomes() {
   slug: "parx-laureate-sector-108-noida-luxury-residence",
 
   image:
-    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-living-dining-interior-design.avif",
+    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-living-dining-interior-design.webp",
 
   title: "Parx Laureate Sector 108",
 
@@ -57,7 +57,7 @@ function Luxuryhomes() {
     {
   id: 13,
   slug: "godrej-apartment-delhi-luxury-residence",
-  image: "/luxuryhomes/godrej-apartment-delhi/designer-modular-kitchen-design.avif",
+  image: "/luxuryhomes/godrej-apartment-delhi/designer-modular-kitchen-design.webp",
 
   title: "Godrej Summit Apartment",
 
@@ -68,7 +68,7 @@ function Luxuryhomes() {
     {
   id: 12,
   slug: "ireo-uptown-premium-residence",
-  image: "/luxuryhomes/ireo-uptown/luxury-bedroom-interior-design.avif",
+  image: "/luxuryhomes/ireo-uptown/luxury-bedroom-interior-design.webp",
 
   title: "Ireo Uptown Premium Residence",
 
@@ -79,7 +79,7 @@ function Luxuryhomes() {
     {
   id: 11,
   slug: "dlf-sky-court-premium-residence",
-  image: "/luxuryhomes/dlf-sky-court/luxury-bedroom-interior-design.avif",
+  image: "/luxuryhomes/dlf-sky-court/luxury-bedroom-interior-design.webp",
 
   title: "DLF Sky Court Luxury Residence",
 
@@ -89,7 +89,7 @@ function Luxuryhomes() {
 },{
   id: 10,
   slug: "magnolia-apartment-luxury-residence",
-  image: "/luxuryhomes/magnolia-apartment-gurgaon/luxury-master-bedroom-interior-design.avif",
+  image: "/luxuryhomes/magnolia-apartment-gurgaon/luxury-master-bedroom-interior-design.webp",
 
   title: "Magnolia Apartment ",
 
@@ -100,7 +100,7 @@ function Luxuryhomes() {
 {
   id: 9,
   slug: "DLF-Apartment-modern-bedroom-luxury-residence",
-  image: "/luxuryhomes/DLF Apartment - Gurgaon/wooden-bedroom-interior-design.avif",
+  image: "/luxuryhomes/DLF Apartment - Gurgaon/wooden-bedroom-interior-design.webp",
 
   title: "DLF Apartment - Gurgaon",
 
@@ -112,7 +112,7 @@ function Luxuryhomes() {
    {
   id: 2,
   slug: "nirman-vihar-d321-luxury-residence",
-  image: "/luxuryhomes/nirman-vihar-d321/modern-luxury-home-exterior-design-delhi.avif",
+  image: "/luxuryhomes/nirman-vihar-d321/modern-luxury-home-exterior-design-delhi.webp",
   title: "Luxury Residence Nirman Vihar ",
   location: "Delhi, India",
   category: "Luxury Residence",
@@ -120,7 +120,7 @@ function Luxuryhomes() {
    {
   id: 3,
   slug: "dr-arpit-jain-luxury-residence",
-  image: "/luxuryhomes/dr-arpit-jain/master-bedroom-modern-interior-design.avif",
+  image: "/luxuryhomes/dr-arpit-jain/master-bedroom-modern-interior-design.webp",
   title: "Dr. Arpit Jain Residence",
   location: "Delhi, India",
   category: "Luxury Residence",
@@ -128,7 +128,7 @@ function Luxuryhomes() {
 {
   id: 4,
   slug: "mr-h-s-bhatiya-luxury-residence",
-  image:"/luxuryhomes/mr-h-s-bhatiya/contemporary-living-dining-interior.avif",
+  image:"/luxuryhomes/mr-h-s-bhatiya/contemporary-living-dining-interior.webp",
   title: "Luxury Residence ",
   location: "Gurgaon, India",
   category: "Luxury Residence",
@@ -136,7 +136,7 @@ function Luxuryhomes() {
 {
   id: 5,
   slug: "mr-dinesh-modern-residence",
-  image: "/luxuryhomes/mr-dinesh/modern-residence-front-elevation.avif",
+  image: "/luxuryhomes/mr-dinesh/modern-residence-front-elevation.webp",
   title: "Luxury Residence ",
   location: "Gurgaon, India",
   category: "Modern Residence",
@@ -144,7 +144,7 @@ function Luxuryhomes() {
 {
   id: 6,
   slug: "mr-kaul-luxury-residence",
-  image: "/luxuryhomes/mr-kaul/luxury-living-room-interior-design.avif",
+  image: "/luxuryhomes/mr-kaul/luxury-living-room-interior-design.webp",
 
   title: "Luxury Apartment- Gurgaon",
 
@@ -155,7 +155,7 @@ function Luxuryhomes() {
 ,{
   id: 7,
   slug: "villa-no-22-23-luxury-residence",
-  image:  "/luxuryhomes/villa-no-22-23/luxury-bedroom-interior-design.avif",
+  image:  "/luxuryhomes/villa-no-22-23/luxury-bedroom-interior-design.webp",
   title: " Luxury Villa- Gurgaon",
   location: "Gurgaon, India",
   category: "Luxury Villa",
@@ -166,7 +166,7 @@ function Luxuryhomes() {
   slug: "mr-baljeet-singh-dlf-luxury-residence",
 
   image:
-    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.avif",
+    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.webp",
 
   title: " DLF Residence",
 
@@ -182,7 +182,7 @@ function Luxuryhomes() {
     <div className="project-page luxury-homes-page">
       <section className="luxury-hero">
         <img
-          src="/luxuryhomes/cover.avif"
+          src="/luxuryhomes/cover.webp"
           alt="Luxury home interior"
           className="luxury-hero-image"
           loading="lazy"
@@ -201,7 +201,7 @@ function Luxuryhomes() {
 
       <section className="luxury-most-viewed">
         <p className="mini-title">Signature Residences</p>
-        <h2> Luxury Projects</h2>
+        <h2> Our Projects</h2>
         <p className="section-text">
           Discover exceptional luxury homes crafted with elegant finishes,
           expansive lifestyles, and world-class amenities.

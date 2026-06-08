@@ -51,64 +51,67 @@ function Architecture() {
     {
       id: 1,
       slug: "aravali-resort-hospitality-design-india",
-      image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.avif",
+      image: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
       title: "The Aravali Resort",
       location: "Rishikesh",
       category: "Hospitality",
     },
     {
       id: 2,
-      slug: "ssargam-cinema-multiplex-design-india",
-      image: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
+      slug: "sargam-cinema-multiplex-design-india",
+      image: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
       title: "Sargam Theatre",
       location: "Chandpur, Bijnor, Uttar Pradesh",
       category: "Cinema",
     },
+   
     {
+      id: 4,
+      slug: "ananta-hospital-healthcare-design-india",
+      image: "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.webp",
+      title: "Ananta Hospital",
+      location: "Gurgaon, Haryana",
+      category: "Hospitals",
+    },
+     {
       id: 3,
-      slug: "moonson-mall-hospitality-retail-design-sirsa",
-      image: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif",
+      slug: "monsoon-mall-hospitality-retail-design-sirsa",
+      image: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
       title: "Monsoon Mall",
       location: "Sirsa, Haryana",
       category: "Commercial",
     },
     {
-      id: 4,
-      slug: "annanta-hospital-healthcare-design-india",
-      image: "/Architecture/Ananta/ananta-hospital-medical-facilities-gurugram.avif",
-      title: "Ananta Hospital",
-      location: "Gurgaon, Haryana",
-      category: "Hospitals",
-    },
-    {
       id: 5,
       slug: "movie-lounge-crossroad-mall-dehradun-expansion",
-      image: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
+      image: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
       title: "Movie Lounge Cinema Expansion ",
       location: "Dehradun, Uttarakhand",
       category: "Cinema",
     },
 
-    {
-      id: 7,
-      slug: "darbaripur-modern-facade-design",
-      image: "/Architecture/DarbaripurHouse/front-angle.avif",
-      title: "Modern Facade Design – Darbaripur Residence",
-      location: "Gurugram, Haryana",
-      category: "Residential",
-    },
+  
     {
       id: 8,
       slug: "club-house-sirsa-recreational-space",
-      image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
+      image: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
       title: "Club House Sirsa",
       location: "Sirsa",
       category: "Hospitality",
     },
+      {
+      id: 7,
+      slug: "darbaripur-modern-facade-design",
+      image: "/Architecture/DarbaripurHouse/front-angle.webp",
+      title: "Modern Facade Design – Darbaripur Residence",
+      location: "Gurugram, Haryana",
+      category: "Residential",
+    },
+    
     {
       id: 9,
       slug: "hill-view-resort-hospitality-design",
-      image: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.avif",
+      image: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
       title: "AKSHORA PADAMPURI - Uttarakhand",
       location: "Himalayan Region",
       category: "Hospitality",
@@ -116,7 +119,7 @@ function Architecture() {
     {
       id: 10,
       slug: "jindal-stone-showroom-exterior-design",
-      image: "/Architecture/JindalStone/jindal-stone-main-facade.avif",
+      image: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
       title: "Jindal Stone",
       location: "India",
       category: "Commercial",
@@ -124,7 +127,7 @@ function Architecture() {
     {
       id: 11,
       slug: "mrs-jyoti-yadav-hotel-hospitality-design",
-      image: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.avif",
+      image: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
       title: "Mrs. Jyoti Yadav Hotel",
       location: "India",
       category: "Hospitality",
@@ -132,7 +135,7 @@ function Architecture() {
     {
       id: 12,
       slug: "medanta-hospital-ranchi-healthcare-architecture",
-      image: "/Architecture/MedantaRanchi/front-elevation.avif",
+      image: "/Architecture/MedantaRanchi/front-elevation.webp",
       title: "Medanta Hospital Ranchi",
       location: "Ranchi, Jharkhand",
       category: "Hospitals",
@@ -149,7 +152,7 @@ function Architecture() {
       {/* Hero Section */}
       <section className="arch-hero">
         <img
-          src="/Architecture/cover.avif"
+          src="/Architecture/cover.webp"
           alt="Modern architecture house"
           className="arch-hero-image"
           loading="lazy"
@@ -218,4 +221,3 @@ function Architecture() {
 }
 
 export default Architecture;
-

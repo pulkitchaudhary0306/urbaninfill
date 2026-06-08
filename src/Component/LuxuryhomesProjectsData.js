@@ -10,24 +10,24 @@ const luxuryHomesProjectsData = [
   subtitle: "Modern Luxury Interior Design by URBAN iNFiLL",
 
 mainImage:
-  "/luxuryhomes/nirman-vihar-d321/modern-luxury-home-exterior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/modern-luxury-home-exterior-design-delhi.webp",
 
 sideImages: [
-  "/luxuryhomes/nirman-vihar-d321/luxury-master-bedroom-interior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/luxury-master-bedroom-interior-design-delhi.webp",
 
-  "/luxuryhomes/nirman-vihar-d321/modern-luxury-bathroom-interior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/modern-luxury-bathroom-interior-design-delhi.webp",
 
-  "/luxuryhomes/nirman-vihar-d321/wooden-panel-bedroom-interior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/wooden-panel-bedroom-interior-design-delhi.webp",
 ],
 
 galleryImages: [
-  "/luxuryhomes/nirman-vihar-d321/modern-modular-kitchen-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/modern-modular-kitchen-design-delhi.webp",
 
-  "/luxuryhomes/nirman-vihar-d321/designer-powder-toilet-interior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/designer-powder-toilet-interior-design-delhi.webp",
 
-  "/luxuryhomes/nirman-vihar-d321/living-room-interior-design-delhi.avif",
+  "/luxuryhomes/nirman-vihar-d321/living-room-interior-design-delhi.webp",
 
-  "/luxuryhomes/nirman-vihar-d321/modern-tv-wall-living-room-design-delhi.avif",
+ 
 ],
   info: {
     project: "Nirman Vihar D-321",
@@ -130,24 +130,24 @@ galleryImages: [
   subtitle: "Modern Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/dr-arpit-jain/master-bedroom-modern-interior-design.avif",
+    "/luxuryhomes/dr-arpit-jain/master-bedroom-modern-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/dr-arpit-jain/bedroom-1-luxury-interior-design.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-1-luxury-interior-design.webp",
 
-    "/luxuryhomes/dr-arpit-jain/bedroom-2-modern-pink-bedroom.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-2-modern-pink-bedroom.webp",
 
-    "/luxuryhomes/dr-arpit-jain/luxury-living-room-interior-design.avif",
+    "/luxuryhomes/dr-arpit-jain/luxury-living-room-interior-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/dr-arpit-jain/bedroom-1-tv-unit-design.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-1-tv-unit-design.webp",
 
-    "/luxuryhomes/dr-arpit-jain/bedroom-2-tv-wall-design.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-2-tv-wall-design.webp",
 
-    "/luxuryhomes/dr-arpit-jain/bedroom-3-study-bedroom-design.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-3-study-bedroom-design.webp",
 
-    "/luxuryhomes/dr-arpit-jain/bedroom-3-wardrobe-design.avif",
+    "/luxuryhomes/dr-arpit-jain/bedroom-3-wardrobe-design.webp",
 
    
   ],
@@ -252,21 +252,21 @@ galleryImages: [
   subtitle: "Modern Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-  "/luxuryhomes/mr-h-s-bhatiya/contemporary-living-dining-interior.avif",
+  "/luxuryhomes/mr-h-s-bhatiya/contemporary-living-dining-interior.webp",
     
 
   sideImages: [
-    "/luxuryhomes/mr-h-s-bhatiya/master-bedroom-blue-theme-design.avif",
+    "/luxuryhomes/mr-h-s-bhatiya/master-bedroom-blue-theme-design.webp",
 
-    "/luxuryhomes/mr-h-s-bhatiya/kids-bedroom-pink-theme-design.avif",
+    "/luxuryhomes/mr-h-s-bhatiya/kids-bedroom-pink-theme-design.webp",
 
-    "/luxuryhomes/mr-h-s-bhatiya/luxury-modern-living-room-design.avif",
+    "/luxuryhomes/mr-h-s-bhatiya/luxury-modern-living-room-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/mr-h-s-bhatiya/modern-living-room-sofa-design.avif",
+    "/luxuryhomes/mr-h-s-bhatiya/modern-living-room-sofa-design.webp",
 
-    "/luxuryhomes/mr-h-s-bhatiya/luxury-dining-space-design.avif",
+    "/luxuryhomes/mr-h-s-bhatiya/luxury-dining-space-design.webp",
 
 
     
@@ -376,7 +376,7 @@ galleryImages: [
   subtitle: "Contemporary Elevation Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/mr-dinesh/modern-residence-front-elevation.avif",
+    "/luxuryhomes/mr-dinesh/modern-residence-front-elevation.webp",
 
  
   
@@ -482,10 +482,10 @@ galleryImages: [
   subtitle: "Modern Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/mr-kaul/luxury-living-room-interior-design.avif",
+    "/luxuryhomes/mr-kaul/luxury-living-room-interior-design.webp",
   sideImages: [
-    "/luxuryhomes/mr-kaul/designer-ceiling-lighting-design.avif",
-    "/luxuryhomes/mr-kaul/modern-tv-unit-wall-design.avif",
+    "/luxuryhomes/mr-kaul/designer-ceiling-lighting-design.webp",
+    "/luxuryhomes/mr-kaul/modern-tv-unit-wall-design.webp",
     
   ],
 
@@ -579,18 +579,18 @@ galleryImages: [
   subtitle: "Contemporary Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/villa-no-22-23/luxury-bedroom-interior-design.avif",
+    "/luxuryhomes/villa-no-22-23/luxury-bedroom-interior-design.webp",
   sideImages: [
-    "/luxuryhomes/villa-no-22-23/modern-bedroom-wall-design.avif",
-    "/luxuryhomes/villa-no-22-23/designer-bedroom-lighting.avif",
-    "/luxuryhomes/villa-no-22-23/contemporary-bedroom-interior.avif",
+    "/luxuryhomes/villa-no-22-23/modern-bedroom-wall-design.webp",
+    "/luxuryhomes/villa-no-22-23/designer-bedroom-lighting.webp",
+    "/luxuryhomes/villa-no-22-23/contemporary-bedroom-interior.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/villa-no-22-23/contemporary-luxury-bedroom 2.avif",
-    "/luxuryhomes/villa-no-22-23/premium-bedroom-lighting-design.avif",
-    "/luxuryhomes/villa-no-22-23/modern-marble-flooring-bedroom.avif",
-    "/luxuryhomes/villa-no-22-23/contemporary-luxury-bedroom.avif",
+    "/luxuryhomes/villa-no-22-23/contemporary-luxury-bedroom 2.webp",
+    "/luxuryhomes/villa-no-22-23/premium-bedroom-lighting-design.webp",
+    "/luxuryhomes/villa-no-22-23/modern-marble-flooring-bedroom.webp",
+    "/luxuryhomes/villa-no-22-23/contemporary-luxury-bedroom.webp",
 
   ],
 
@@ -679,20 +679,20 @@ galleryImages: [
   subtitle: "Modern Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.avif",
+    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/mr-baljeet-singh-dlf/luxury-bedroom-interior-design.avif",
-    "/luxuryhomes/mr-baljeet-singh-dlf/bedroom-study-unit-design.avif",
-    "/luxuryhomes/mr-baljeet-singh-dlf/modern-wardrobe-bedroom-design.avif",
+    "/luxuryhomes/mr-baljeet-singh-dlf/luxury-bedroom-interior-design.webp",
+    "/luxuryhomes/mr-baljeet-singh-dlf/bedroom-study-unit-design.webp",
+    "/luxuryhomes/mr-baljeet-singh-dlf/modern-wardrobe-bedroom-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.avif",
+    "/luxuryhomes/mr-baljeet-singh-dlf/modern-bedroom-study-interior-design.webp",
    
-    "/luxuryhomes/mr-baljeet-singh-dlf/custom-study-table-design.avif",
-    "/luxuryhomes/mr-baljeet-singh-dlf/modern-wall-shelf-design.avif",
-    "/luxuryhomes/mr-baljeet-singh-dlf/white-storage-cabinet-design.avif",
+    "/luxuryhomes/mr-baljeet-singh-dlf/custom-study-table-design.webp",
+    "/luxuryhomes/mr-baljeet-singh-dlf/modern-wall-shelf-design.webp",
+    "/luxuryhomes/mr-baljeet-singh-dlf/white-storage-cabinet-design.webp",
     
   ],
 
@@ -780,12 +780,12 @@ galleryImages: [
   subtitle: "Contemporary Bedroom Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/DLF Apartment - Gurgaon/wooden-bedroom-interior-design.avif",
+    "/luxuryhomes/DLF Apartment - Gurgaon/wooden-bedroom-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/DLF Apartment - Gurgaon/modern-bedroom-study-interior-design.avif",
-    "/luxuryhomes/DLF Apartment - Gurgaon/bedroom-wardrobe-study-unit-design.avif",
-    "/luxuryhomes/DLF Apartment - Gurgaon/luxury-bedroom-window-wall-design.avif",
+    "/luxuryhomes/DLF Apartment - Gurgaon/modern-bedroom-study-interior-design.webp",
+    "/luxuryhomes/DLF Apartment - Gurgaon/bedroom-wardrobe-study-unit-design.webp",
+    "/luxuryhomes/DLF Apartment - Gurgaon/luxury-bedroom-window-wall-design.webp",
   ],
 
   galleryImages: [
@@ -877,18 +877,18 @@ galleryImages: [
   subtitle: "Contemporary Luxury Apartment Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/magnolia-apartment-gurgaon/luxury-master-bedroom-interior-design.avif",
+    "/luxuryhomes/magnolia-apartment-gurgaon/luxury-master-bedroom-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/magnolia-apartment-gurgaon/modern-bedroom-wardrobe-design.avif",
+    "/luxuryhomes/magnolia-apartment-gurgaon/modern-bedroom-wardrobe-design.webp",
 
-    "/luxuryhomes/magnolia-apartment-gurgaon/luxury-bedroom-headboard-design.avif",
+    "/luxuryhomes/magnolia-apartment-gurgaon/luxury-bedroom-headboard-design.webp",
 
-    "/luxuryhomes/magnolia-apartment-gurgaon/custom-wardrobe-interior-design.avif",
+    "/luxuryhomes/magnolia-apartment-gurgaon/custom-wardrobe-interior-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/magnolia-apartment-gurgaon/modern-bedroom-storage-design.avif",
+    "/luxuryhomes/magnolia-apartment-gurgaon/modern-bedroom-storage-design.webp",
 
    
   ],
@@ -994,18 +994,18 @@ galleryImages: [
   subtitle: "Luxury Bedroom Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/dlf-sky-court/luxury-bedroom-interior-design.avif",
+    "/luxuryhomes/dlf-sky-court/luxury-bedroom-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/dlf-sky-court/modern-bedroom-headboard-design.avif",
-    "/luxuryhomes/dlf-sky-court/luxury-bedroom-lighting-design.avif",
-    "/luxuryhomes/dlf-sky-court/premium-bedroom-wall-panel-design.avif",
+    "/luxuryhomes/dlf-sky-court/modern-bedroom-headboard-design.webp",
+    "/luxuryhomes/dlf-sky-court/luxury-bedroom-lighting-design.webp",
+    "/luxuryhomes/dlf-sky-court/premium-bedroom-wall-panel-design.webp",
   ],
 
   galleryImages: [
     
-    "/luxuryhomes/dlf-sky-court/wooden-fluted-wall-panel-design.avif",
-    "/luxuryhomes/dlf-sky-court/luxuryhomesdlf-sky-courtdesigner-bedroom-pendant-lights.avif",
+    "/luxuryhomes/dlf-sky-court/wooden-fluted-wall-panel-design.webp",
+    "/luxuryhomes/dlf-sky-court/designer-bedroom-pendant-lights.webp",
   ],
 
   info: {
@@ -1092,17 +1092,17 @@ galleryImages: [
   subtitle: "Luxury Bedroom Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/ireo-uptown/luxury-bedroom-interior-design.avif",
+    "/luxuryhomes/ireo-uptown/luxury-bedroom-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/ireo-uptown/modern-bedroom-headboard-design.avif",
-    "/luxuryhomes/ireo-uptown/premium-bedroom-wardrobe-design.avif",
-    "/luxuryhomes/ireo-uptown/designer-bedroom-lighting-design.avif",
+    "/luxuryhomes/ireo-uptown/modern-bedroom-headboard-design.webp",
+    "/luxuryhomes/ireo-uptown/premium-bedroom-wardrobe-design.webp",
+    "/luxuryhomes/ireo-uptown/designer-bedroom-lighting-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/ireo-uptown/luxury-washroom-interior-design.avif",
-    "/luxuryhomes/ireo-uptown/fluted-wall-panel-bedroom-design.avif",
+    "/luxuryhomes/ireo-uptown/luxury-washroom-interior-design.webp",
+    "/luxuryhomes/ireo-uptown/fluted-wall-panel-bedroom-design.webp",
    
   ],
 
@@ -1206,18 +1206,18 @@ galleryImages: [
   subtitle: "Contemporary Luxury Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/godrej-apartment-delhi/luxury-master-bedroom-design.avif",
+    "/luxuryhomes/godrej-apartment-delhi/luxury-master-bedroom-design.webp",
 
   sideImages: [
-    "/luxuryhomes/godrej-apartment-delhi/modern-bathroom-interior-design.avif",
+    "/luxuryhomes/godrej-apartment-delhi/modern-bathroom-interior-design.webp",
 
-    "/luxuryhomes/godrej-apartment-delhi/designer-modular-kitchen-design.avif",
+    "/luxuryhomes/godrej-apartment-delhi/designer-modular-kitchen-design.webp",
 
-    "/luxuryhomes/godrej-apartment-delhi/luxury-bedroom-interior-design.avif",
+    "/luxuryhomes/godrej-apartment-delhi/luxury-bedroom-interior-design.webp",
   ],
 
   galleryImages: [
-    "/luxuryhomes/godrej-apartment-delhi/modern-bedroom-wall-panel-design.avif",
+    "/luxuryhomes/godrej-apartment-delhi/modern-bedroom-wall-panel-design.webp",
 
    
   ],
@@ -1325,20 +1325,20 @@ galleryImages: [
   subtitle: "Luxury Home Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-living-dining-interior-design.avif",
+    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-living-dining-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-bedroom-interior-design.avif",
-    "/luxuryhomes/parx-laureate-sector-108-noida/modern-bathroom-interior-design.avif",
-    "/luxuryhomes/parx-laureate-sector-108-noida/modular-kitchen-interior-design.avif",
+    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-bedroom-interior-design.webp",
+    "/luxuryhomes/parx-laureate-sector-108-noida/modern-bathroom-interior-design.webp",
+    "/luxuryhomes/parx-laureate-sector-108-noida/modular-kitchen-interior-design.webp",
   ],
 
   galleryImages: [
     
-    "/luxuryhomes/parx-laureate-sector-108-noida/premium-living-room-interior-design.avif",
-    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-dining-area-design.avif",
-    "/luxuryhomes/parx-laureate-sector-108-noida/designer-partition-wall-design.avif",
-    "/luxuryhomes/parx-laureate-sector-108-noida/kids-bedroom-interior-design.avif",
+    "/luxuryhomes/parx-laureate-sector-108-noida/premium-living-room-interior-design.webp",
+    "/luxuryhomes/parx-laureate-sector-108-noida/luxury-dining-area-design.webp",
+    "/luxuryhomes/parx-laureate-sector-108-noida/designer-partition-wall-design.webp",
+    "/luxuryhomes/parx-laureate-sector-108-noida/kids-bedroom-interior-design.webp",
   
   ],
 
@@ -1427,18 +1427,18 @@ galleryImages: [
   subtitle: "Luxury Apartment Interior Design by URBAN iNFiLL",
 
   mainImage:
-    "/luxuryhomes/adani-oyster-sector-102/luxury-living-room-interior-design.avif",
+    "/luxuryhomes/adani-oyster-sector-102/luxury-living-room-interior-design.webp",
 
   sideImages: [
-    "/luxuryhomes/adani-oyster-sector-102/luxury-master-bedroom-design.avif",
-    "/luxuryhomes/adani-oyster-sector-102/modern-bathroom-interior-design.avif",
-    "/luxuryhomes/adani-oyster-sector-102/designer-study-room-interior-design.avif",
+    "/luxuryhomes/adani-oyster-sector-102/luxury-master-bedroom-design.webp",
+    "/luxuryhomes/adani-oyster-sector-102/modern-bathroom-interior-design.webp",
+    "/luxuryhomes/adani-oyster-sector-102/designer-study-room-interior-design.webp",
   ],
 
   galleryImages: [
     
-    "/luxuryhomes/adani-oyster-sector-102/premium-living-dining-design.avif",
-    "/luxuryhomes/adani-oyster-sector-102/designer-partition-display-unit.avif",
+    "/luxuryhomes/adani-oyster-sector-102/premium-living-dining-design.webp",
+    "/luxuryhomes/adani-oyster-sector-102/designer-partition-display-unit.webp",
     
   ],
 

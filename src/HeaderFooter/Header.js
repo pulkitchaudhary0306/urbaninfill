@@ -138,7 +138,7 @@ function Header() {
                   }
                   onClick={closeMenu}
                 >
-                  UI Home
+                  Ui Homes
                 </NavLink>
               </li>
 

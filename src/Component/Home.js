@@ -82,75 +82,75 @@ const cities = [
 
 const clients = [
 
-  { name: "Reliance", src: "/logo/reliance.avif" },
+  { name: "Reliance", src: "/logo/reliance.webp" },
 
-  { name: "Airtel", src: "/logo/airtel.avif" },
+  { name: "Airtel", src: "/logo/airtel.webp" },
 
-  { name: "Medanta", src: "/logo/medanta.avif" },
+  { name: "Medanta", src: "/logo/medanta.webp" },
 
-  { name: "United", src: "/logo/united.avif" },
+  { name: "United", src: "/logo/united.webp" },
 
-  { name: "UrbanClap", src: "/logo/urbanclap.avif" },
+  { name: "UrbanClap", src: "/logo/urbanclap.webp" },
 
-  { name: "Google", src: "/logo/google.avif" },
+  { name: "Google", src: "/logo/google.webp" },
 
-  { name: "Samsung", src: "/logo/samsung.avif" },
+  { name: "Samsung", src: "/logo/samsung.webp" },
 
-  { name: "Lenskart", src: "/logo/lenskart.avif" },
+  { name: "Lenskart", src: "/logo/lenskart.webp" },
 
-  { name: "DLF", src: "/logo/dlf.avif" },
+  { name: "DLF", src: "/logo/dlf.webp" },
 
-  { name: "Honda", src: "/logo/honda.avif" },
+  { name: "Honda", src: "/logo/honda.webp" },
 
-  { name: "GAAR", src: "/logo/gaar.avif" },
+  { name: "GAAR", src: "/logo/gaar.webp" },
 
-  { name: "Cine", src: "/logo/cine.avif" },
+  { name: "Cine", src: "/logo/cine.webp" },
 
-  { name: "FICCI", src: "/logo/ficci.avif" },
+  { name: "FICCI", src: "/logo/ficci.webp" },
 
-  { name: "PB", src: "/logo/pblogo.avif" },
+  { name: "PB", src: "/logo/pblogo.webp" },
 
-  { name: "Startek", src: "/logo/startek.avif" },
+  { name: "Startek", src: "/logo/startek.webp" },
 
-  { name: "Foundever", src: "/logo/foundever.avif" },
+  { name: "Foundever", src: "/logo/foundever.webp" },
 
-  { name: "Axis Bank", src: "/logo/axis.avif" },
+  { name: "Axis Bank", src: "/logo/axis.webp" },
 
-  { name: "NIC", src: "/logo/nic.avif" },
+  { name: "NIC", src: "/logo/nic.webp" },
 
-  { name: "Cars24", src: "/logo/cars24.avif" },
+  { name: "Cars24", src: "/logo/cars24.webp" },
 
-  { name: "Personiv", src: "/logo/personiv.avif" },
+  { name: "Personiv", src: "/logo/personiv.webp" },
 
-  { name: "Popular", src: "/logo/popular.avif" },
+  { name: "Popular", src: "/logo/popular.webp" },
 
-  { name: "Royal", src: "/logo/royal.avif" },
+  { name: "Royal", src: "/logo/royal.webp" },
 
-  { name: "Sitel", src: "/logo/sitel.avif" },
+  { name: "Sitel", src: "/logo/sitel.webp" },
 
-  { name: "Kyndryl", src: "/logo/kyndryl.avif" },
+  { name: "Kyndryl", src: "/logo/kyndryl.webp" },
 
-  { name: "Ashoka", src: "/logo/ashoka.avif" },
+  { name: "Ashoka", src: "/logo/ashoka.webp" },
 
-  { name: "IBM", src: "/logo/ibm.avif" },
+  { name: "IBM", src: "/logo/ibm.webp" },
 
-  { name: "NTT", src: "/logo/ntt.avif" },
+  { name: "NTT", src: "/logo/ntt.webp" },
 
-  { name: "Myntra", src: "/logo/myntra.avif" },
+  { name: "Myntra", src: "/logo/myntra.webp" },
 
-  { name: "Cog", src: "/logo/cog.avif" },
+  { name: "Cog", src: "/logo/cog.webp" },
 
-  { name: "Konika", src: "/logo/konika.avif" },
+  { name: "Konika", src: "/logo/konika.webp" },
 
-  { name: "Allied", src: "/logo/allied.avif" },
+  { name: "Allied", src: "/logo/allied.webp" },
 
-  { name: "Convergys", src: "/logo/convergys.avif" },
+  { name: "Convergys", src: "/logo/convergys.webp" },
 
-  { name: "HSBC", src: "/logo/hsbc.avif" },
+  { name: "HSBC", src: "/logo/hsbc.webp" },
 
-  { name: "Bhatra", src: "/logo/bhatra.avif" },
+  { name: "Bhatra", src: "/logo/bhatra.webp" },
 
-  { name: "YKK", src: "/logo/ykk.avif" },
+  { name: "YKK", src: "/logo/ykk.webp" },
 
 ];
 
@@ -247,139 +247,139 @@ const services = [
 const featuredProjectItems = [
   {
     title: "The Aravali Resort",
-    src: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.avif",
+    src: "/Architecture/Aravali/aravali-resort-main-exterior-rishikesh.webp",
     alt: "The Aravali Resort architecture",
     link: "/architecture-projects/aravali-resort-hospitality-design-india",
   },
   {
     title: "Sargam Theatre",
-    src: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
+    src: "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
     alt: "Sargam Theatre exterior",
-    link: "/architecture-projects/ssargam-cinema-multiplex-design-india",
+    link: "/interiors/sargam-theatre-interior-design",
   },
   {
     title: "Monsoon Mall",
-    src: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif",
+    src: "/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp",
     alt: "Monsoon Mall commercial architecture",
-    link: "/architecture-projects/moonson-mall-hospitality-retail-design-sirsa",
+    link: "/architecture-projects/monsoon-mall-hospitality-retail-design-sirsa",
   },
   {
     title: "Ananta Hospital",
-    src: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.avif",
+    src: "/Architecture/Ananta/ananta-hospital-healthcare-exterior-gurugram.webp",
     alt: "Ananta Hospital healthcare architecture",
-    link: "/architecture-projects/annanta-hospital-healthcare-design-india",
+    link: "/architecture-projects/ananta-hospital-healthcare-design-india",
   },
   {
     title: "Movie Lounge Expansion",
-    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
     alt: "Movie Lounge cinema expansion",
     link: "/architecture-projects/movie-lounge-crossroad-mall-dehradun-expansion",
   },
   {
     title: "Darbaripur Residence",
-    src: "/Architecture/DarbaripurHouse/main-view.avif",
+    src: "/Architecture/DarbaripurHouse/main-view.webp",
     alt: "Darbaripur luxury bungalow architecture",
     link: "/architecture-projects/darbaripur-modern-facade-design",
   },
   {
     title: "Club House Sirsa",
-    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
     alt: "Club House Sirsa recreational architecture",
     link: "/architecture-projects/club-house-sirsa-recreational-space",
   },
   {
     title: "AKSHORA PADAMPURI",
-    src: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.avif",
+    src: "/Architecture/AKSHORA PADAMPURI Uttarakhand/hill-view-resort-main.webp",
     alt: "AKSHORA PADAMPURI resort architecture",
     link: "/architecture-projects/hill-view-resort-hospitality-design",
   },
   {
     title: "Jindal Stone",
-    src: "/Architecture/JindalStone/jindal-stone-main-facade.avif",
+    src: "/Architecture/JindalStone/jindal-stone-main-facade.webp",
     alt: "Jindal Stone showroom facade",
     link: "/architecture-projects/jindal-stone-showroom-exterior-design",
   },
   {
     title: "Mrs. Jyoti Yadav Hotel",
-    src: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.avif",
+    src: "/Architecture/JyotiYadavHotel/jyoti-yadav-hotel-main.webp",
     alt: "Mrs. Jyoti Yadav Hotel facade",
     link: "/architecture-projects/mrs-jyoti-yadav-hotel-hospitality-design",
   },
   {
     title: "United Airlines Office",
-    src: "/Interiors/United/united-airlines-premium-office-main-delhi.avif",
+    src: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
     alt: "United Airlines premium office interior",
     link: "/interiors/united-airlines-office-interior-t3-delhi",
   },
   {
     title: "Urban Canteen",
-    src: "/projects/08-urban-canteen.avif",
+    src: "/projects/08-urban-canteen.webp",
     alt: "Urban Canteen restaurant interior",
     link: "/interiors/urban-canteen-cafe-interior-bhubaneswar",
   },
   {
     title: "BBI Booze Buzz",
-    src: "/projects/07-bbi.avif",
+    src: "/projects/07-bbi.webp",
     alt: "BBI restaurant and bar interior",
     link: "/interiors/restaurant-club-design-bbi-bhubaneswar",
   },
   {
     title: "Cineport Multiplex",
-    src: "/projects/05-cineport.avif",
+    src: "/projects/05-cineport.webp",
     alt: "Cineport multiplex interior",
     link: "/interiors/cineport-svh-5-screen-multiplex-gurgaon",
   },
   {
     title: "Samsung Corporate Office",
-    src: "/projects/02-samsung.avif",
+    src: "/projects/02-samsung.webp",
     alt: "Samsung corporate office interior",
     link: "/interiors/samsung-office-interior-design-dehradun",
   },
   {
     title: "Urban Company Office",
-    src: "/projects/03-uc.avif",
+    src: "/projects/03-uc.webp",
     alt: "Urban Company corporate office interior",
     link: "/interiors/urban-company-it-head-office-interior-bangalore",
   },
   {
     title: "Movie Lounge Interior",
-    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
+    src: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
     alt: "Movie Lounge cinema interior",
     link: "/interiors/movie-lounge-crossroad-mall-dehradun-expansion",
   },
   {
     title: "Batra Hospital Cathlab",
-    src: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.avif",
+    src: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
     alt: "Batra Hospital cathlab interior",
     link: "/interiors/batra-hospital-medical-research-centre-cathlab-renovation",
   },
   {
     title: "Lenskart Store",
-    src: "/Interiors/Lenskart/lenskart-store-main.avif",
+    src: "/Interiors/Lenskart/lenskart-store-main.webp",
     alt: "Lenskart store interior",
     link: "/interiors/lenskart-Office-interior-design",
   },
   {
     title: "Mayom Hospital",
-    src: "/Interiors/MayomHospital/gita-gyan-main.avif",
+    src: "/Interiors/MayomHospital/gita-gyan-main.webp",
     alt: "Mayom Hospital interior",
     link: "/interiors/mayom-hospital-interior-design",
   },
   {
     title: "Club House Sirsa Interior",
-    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
+    src: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
     alt: "Club House Sirsa interior project",
     link: "/interiors/club-house-sirsa-recreational-space",
   },
   {
     title: "MET Reliance",
-    src: "/Interiors/METReliance/main-hall.avif",
+    src: "/Interiors/METReliance/main-hall.webp",
     alt: "MET Reliance interior design",
     link: "/interiors/met-reliance-interior-design",
   },
   {
     title: "Anand Group",
-    src: "/Interiors/AnandGroup/anand-group-main-hall.avif",
+    src: "/Interiors/AnandGroup/anand-group-main-hall.webp",
     alt: "Anand Group Hauz Khas interior",
     link: "/interiors/anand-group-hauz-khas-interior-design",
   },
@@ -781,7 +781,7 @@ function HomeComponent() {
 
               className="bar__logo"
 
-              src="/logo.avif"
+              src="/logo.webp"
 
               alt="URBAN iNFiLL Logo"
 
@@ -950,7 +950,7 @@ function HomeComponent() {
 
               <div className="map-stage">
 
-                <LazyImage src="/map.avif" alt="Cities covered map" decoding="async" />
+                <LazyImage src="/map.webp" alt="Cities covered map" decoding="async" />
 
 
 
@@ -1256,10 +1256,10 @@ function HomeComponent() {
         <div className="work-gallery" ref={galleryRef}>
           <div className="work-track">
             {/* Project 1 */}
-            <Link to="/architecture-projects/moonson-mall-hospitality-retail-design-sirsa" className="work-item">
+            <Link to="architecture-projects/monsoon-mall-hospitality-retail-design-sirsa" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.avif" alt="Monsoon Mall" loading="lazy" decoding="async" />
+                  <img src="/Architecture/Sirsa/monsoon-mall-commercial-exterior-sirsa.webp" alt="Monsoon Mall" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">01</div>
@@ -1290,7 +1290,7 @@ function HomeComponent() {
             <Link to="/interiors/cineport-svh-5-screen-multiplex-gurgaon" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/05-cineport.avif" alt="Cineport Cinema" loading="lazy" decoding="async" />
+                  <img src="/projects/05-cineport.webp" alt="Cineport Cinema" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">02</div>
@@ -1321,7 +1321,7 @@ function HomeComponent() {
             <Link to="/interiors/samsung-office-interior-design-dehradun" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/02-samsung.avif" alt="Samsung Office" loading="lazy" decoding="async" />
+                  <img src="/projects/02-samsung.webp" alt="Samsung Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">03</div>
@@ -1352,7 +1352,7 @@ function HomeComponent() {
             <Link to="/interiors/urban-company-it-head-office-interior-bangalore" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/03-uc.avif" alt="Urban Company" loading="lazy" decoding="async" />
+                  <img src="/projects/03-uc.webp" alt="Urban Company" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">04</div>
@@ -1383,7 +1383,7 @@ function HomeComponent() {
             <Link to="/interiors/restaurant-club-design-bbi-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/07-bbi.avif" alt="BBI Restaurant" loading="lazy" decoding="async" />
+                  <img src="/projects/07-bbi.webp" alt="BBI Restaurant" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">05</div>
@@ -1414,7 +1414,7 @@ function HomeComponent() {
             <Link to="/interiors/urban-canteen-cafe-interior-bhubaneswar" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/08-urban-canteen.avif" alt="Urban Canteen" loading="lazy" decoding="async" />
+                  <img src="/projects/08-urban-canteen.webp" alt="Urban Canteen" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">06</div>
@@ -1445,7 +1445,7 @@ function HomeComponent() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/04-flipkart.avif" alt="Flipkart Office" loading="lazy" decoding="async" />
+                  <img src="/projects/04-flipkart.webp" alt="Flipkart Office" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">07</div>
@@ -1476,7 +1476,7 @@ function HomeComponent() {
             <div className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/06-home-theater.avif" alt="Home Theater" loading="lazy" decoding="async" />
+                  <img src="/projects/06-home-theater.webp" alt="Home Theater" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">08</div>
@@ -1507,7 +1507,7 @@ function HomeComponent() {
             <Link to="/luxury-homes" className="work-item">
               <div className="work-image-container">
                 <div className="work-image">
-                  <img src="/projects/09-interior.avif" alt="Luxury Interior" loading="lazy" decoding="async" />
+                  <img src="/projects/09-interior.webp" alt="Luxury Interior" loading="lazy" decoding="async" />
                   <div className="image-overlay"></div>
                 </div>
                 <div className="project-number">09</div>

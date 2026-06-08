@@ -8,17 +8,17 @@ const interiorProjects = [
     tag: "United Airlines Office",
     title: "United Airlines Premium Office",
     subtitle: "Commercial Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/United/united-airlines-premium-office-main-delhi.avif",
+    mainImage: "/Interiors/United/united-airlines-premium-office-main-delhi.webp",
     sideImages: [
-      "/Interiors/United/united-airlines-reception-area-delhi.avif",
-      "/Interiors/United/united-airlines-conference-room-delhi.avif",
-      "/Interiors/United/united-airlines-workspace-delhi.avif",
+      "/Interiors/United/united-airlines-reception-area-delhi.webp",
+      "/Interiors/United/united-airlines-conference-room-delhi.webp",
+      "/Interiors/United/united-airlines-workspace-delhi.webp",
     ],
     galleryImages: [
-      "/Interiors/United/united-airlines-cabin-interior-delhi.avif",
-      "/Interiors/United/united-airlines-meeting-area-delhi.avif",
-      "/Interiors/United/united-airlines-office-lobby-delhi.avif",
-      "/Interiors/United/united-airlines-branding-elements-delhi.avif",
+      "/Interiors/United/united-airlines-cabin-interior-delhi.webp",
+      "/Interiors/United/united-airlines-meeting-area-delhi.webp",
+      "/Interiors/United/united-airlines-office-lobby-delhi.webp",
+      "/Interiors/United/united-airlines-branding-elements-delhi.webp",
     ],
     info: {
       project: "United Airlines Premium Office",
@@ -62,17 +62,17 @@ const interiorProjects = [
     tag: "Commercial Restaurant Design",
     title: "URBAN CANTEEN",
     subtitle: "Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.avif",
+    mainImage: "/Interiors/Urban/urban-canteen-restaurant-main-bhubaneswar.webp",
     sideImages: [
-      "/Interiors/Urban/urban-canteen-dining-area-bhubaneswar.avif",
-      "/Interiors/Urban/urban-canteen-seating-design-bhubaneswar.avif",
-      "/Interiors/Urban/urban-canteen-interior-details-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-dining-area-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-seating-design-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-interior-details-bhubaneswar.webp",
     ],
     galleryImages: [
-      "/Interiors/Urban/urban-canteen-ambience-lighting-bhubaneswar.avif",
-      "/Interiors/Urban/urban-canteen-bar-area-bhubaneswar.avif",
-      "/Interiors/Urban/urban-canteen-open-kitchen-bhubaneswar.avif",
-      "/Interiors/Urban/urban-canteen-decorative-elements-bhubaneswar.avif",
+      "/Interiors/Urban/urban-canteen-ambience-lighting-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-bar-area-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-open-kitchen-bhubaneswar.webp",
+      "/Interiors/Urban/urban-canteen-decorative-elements-bhubaneswar.webp",
     ],
     info: {
       project: "Commercial Restaurant Design",
@@ -118,22 +118,22 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "BBi Booze Buzz Inhouse – Bhubaneswar",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.avif",
+    mainImage: "/Interiors/BBI/bbi-booze-buzz-inhouse-main-bhubaneswar.webp",
     sideImages: [
-      "/Interiors/BBI/bbi-bar-counter-design-bhubaneswar.avif",
-      "/Interiors/BBI/bbi-lounge-seating-area-bhubaneswar.avif",
-      "/Interiors/BBI/bbi-nightlife-ambience-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-bar-counter-design-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-lounge-seating-area-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-nightlife-ambience-bhubaneswar.webp",
     ],
     galleryImages: [
-      "/Interiors/BBI/bbi-interior-lighting-design-bhubaneswar.avif",
-      "/Interiors/BBI/bbi-restaurant-dining-space-bhubaneswar.avif",
-      "/Interiors/BBI/bbi-cocktail-bar-interior-bhubaneswar.avif",
-      "/Interiors/BBI/bbi-club-atmosphere-design-bhubaneswar.avif",
+      "/Interiors/BBI/bbi-interior-lighting-design-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-restaurant-dining-space-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-cocktail-bar-interior-bhubaneswar.webp",
+      "/Interiors/BBI/bbi-club-atmosphere-design-bhubaneswar.webp",
     ],
     info: {
       project: "BBi Booze Buzz Inhouse",
       location: "Chandrasekharpur, Bhubaneswar, Odisha",
-      scope: "Architecture & Interior Design",
+      scope: "Interior Design",
       area: "8,000 sq ft",
       client: "Booze Buzz Inhouse",
       status: "Completed – November 2025",
@@ -187,22 +187,22 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Cineport 5-Screen Multiplex – Gurgaon",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.avif",
+    mainImage: "/Interiors/Cineport/cineport-multiplex-main-entrance-gurgaon.webp",
     sideImages: [
-      "/Interiors/Cineport/cineport-foyer-concession-area-gurgaon.avif",
-      "/Interiors/Cineport/cineport-auditorium-interior-design-gurgaon.avif",
-      "/Interiors/Cineport/cineport-cinema-seating-arrangement-gurgaon.avif",
+      "/Interiors/Cineport/cineport-foyer-concession-area-gurgaon.webp",
+      "/Interiors/Cineport/cineport-auditorium-interior-design-gurgaon.webp",
+      "/Interiors/Cineport/cineport-cinema-seating-arrangement-gurgaon.webp",
     ],
     galleryImages: [
-      "/Interiors/Cineport/cineport-theater-lighting-design-gurgaon.avif",
-      "/Interiors/Cineport/cineport-luxury-cinema-hall-gurgaon.avif",
-      "/Interiors/Cineport/cineport-corridor-circulation-space-gurgaon.avif",
-      "/Interiors/Cineport/cineport-digital-media-integration-gurgaon.avif",
+      "/Interiors/Cineport/cineport-theater-lighting-design-gurgaon.webp",
+      "/Interiors/Cineport/cineport-luxury-cinema-hall-gurgaon.webp",
+      "/Interiors/Cineport/cineport-corridor-circulation-space-gurgaon.webp",
+      "/Interiors/Cineport/cineport-digital-media-integration-gurgaon.webp",
     ],
     info: {
       project: "Cineport 5-Screen Multiplex",
       location: "Gurgaon, Haryana",
-      scope: "Architecture & Interior Design",
+      scope: "Interior Design",
       category: "Commercial / Cinema",
       area: "50,000+ sq ft",
       client: "Cineport | SVH",
@@ -280,17 +280,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Samsung Corporate Office – Dehradun",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.avif",
+    mainImage: "/Interiors/Samsung/samsung-corporate-office-main-dehradun.webp",
     sideImages: [
-      "/Interiors/Samsung/samsung-office-reception-dehradun.avif",
-      "/Interiors/Samsung/samsung-workspace-interior-dehradun.avif",
-      "/Interiors/Samsung/samsung-meeting-room-design-dehradun.avif",
+      "/Interiors/Samsung/samsung-office-reception-dehradun.webp",
+      "/Interiors/Samsung/samsung-workspace-interior-dehradun.webp",
+      "/Interiors/Samsung/samsung-meeting-room-design-dehradun.webp",
     ],
     galleryImages: [
-      "/Interiors/Samsung/samsung-conference-area-dehradun.avif",
-      "/Interiors/Samsung/samsung-biophilic-office-design-dehradun.avif",
-      "/Interiors/Samsung/samsung-collaboration-space-dehradun.avif",
-      "/Interiors/Samsung/samsung-technology-integration-dehradun.avif",
+      "/Interiors/Samsung/samsung-conference-area-dehradun.webp",
+      "/Interiors/Samsung/samsung-biophilic-office-design-dehradun.webp",
+      "/Interiors/Samsung/samsung-collaboration-space-dehradun.webp",
+      "/Interiors/Samsung/samsung-technology-integration-dehradun.webp",
     ],
     info: {
       project: "Samsung Corporate Office",
@@ -349,17 +349,17 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Urban Company Corporate Office – Bengaluru",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.avif",
+    mainImage: "/Interiors/Ucompany/urban-company-corporate-office-main-bengaluru.webp",
     sideImages: [
-      "/Interiors/Ucompany/urban-company-open-workspace-bengaluru.avif",
-      "/Interiors/Ucompany/urban-company-breakout-zone-bengaluru.avif",
-      "/Interiors/Ucompany/urban-company-minimalist-interior-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-open-workspace-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-breakout-zone-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-minimalist-interior-bengaluru.webp",
     ],
     galleryImages: [
-      "/Interiors/Ucompany/urban-company-collaboration-area-bengaluru.avif",
-      "/Interiors/Ucompany/urban-company-natural-light-design-bengaluru.avif",
-      "/Interiors/Ucompany/urban-company-tech-workspace-bengaluru.avif",
-      "/Interiors/Ucompany/urban-company-flexible-office-design-bengaluru.avif",
+      "/Interiors/Ucompany/urban-company-collaboration-area-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-natural-light-design-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-tech-workspace-bengaluru.webp",
+      "/Interiors/Ucompany/urban-company-flexible-office-design-bengaluru.webp",
     ],
     info: {
       project: "Urban Company Corporate Office",
@@ -418,22 +418,22 @@ const interiorProjects = [
     tag: "Architecture + Interior Design",
     title: "Movie Lounge Cinema Expansion",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.avif",
+    mainImage: "/Interiors/MovieLounge/movie-lounge-cinema-expansion-main-dehradun.webp",
     sideImages: [
-      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.avif",
-      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.avif",
-      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-terrace-expansion-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-boutique-auditorium-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-circulation-design-dehradun.webp",
     ],
     galleryImages: [
-      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.avif",
-      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.avif",
-      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.avif",
-      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.avif",
+      "/Interiors/MovieLounge/movie-lounge-lightweight-construction-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-waiting-lounge-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-puf-panel-design-dehradun.webp",
+      "/Interiors/MovieLounge/movie-lounge-acoustic-treatment-dehradun.webp",
     ],
     info: {
       project: "Movie Lounge Cinema Expansion (2 Screens)",
       location: "Crossroad Mall, Dehradun",
-      scope: "Architecture + Interior Design",
+      scope: "Interior Design",
       category: "Cinema",
       area: "Terrace Expansion",
       client: "Movie Lounge",
@@ -502,17 +502,17 @@ const interiorProjects = [
     tag: "Healthcare Renovation",
     title: "Batra Hospital & Medical Research Centre – Cathlab",
     subtitle: "Architecture & Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.avif",
+    mainImage: "/Architecture/BatraHospital/batra-hospital-cathlab-main-delhi.webp",
     sideImages: [
-      "/Architecture/BatraHospital/batra-hospital-glass-partition-design-delhi.avif",
-      "/Architecture/BatraHospital/batra-hospital-medical-equipment-integration-delhi.avif",
-      "/Architecture/BatraHospital/batra-hospital-clinical-workflow-delhi.avif",
+      "/Architecture/BatraHospital/batra-hospital-glass-partition-design-delhi.webp",
+      "/Architecture/BatraHospital/batra-hospital-medical-equipment-integration-delhi.webp",
+      "/Architecture/BatraHospital/batra-hospital-clinical-workflow-delhi.webp",
     ],
     galleryImages: [],
     info: {
       project: "Cathlab Ecosystem Renovation",
       location: "New Delhi",
-      scope: "Architecture + Interior Design",
+      scope: " Interior Design",
       category: "Healthcare",
       area: "Specialized Medical Wing",
       client: "Ch. Aishi Ram Batra Public Charitable Trust",
@@ -581,17 +581,17 @@ const interiorProjects = [
     tag: "Corporate Office",
     title: "Lenskart Store – Interior Experience Design",
     subtitle: "Corporate Office & Interior Design",
-    mainImage: "/Interiors/Lenskart/lenskart-store-main.avif",
+    mainImage: "/Interiors/Lenskart/lenskart-store-main.webp",
     sideImages: [
-      "/Interiors/Lenskart/lenskart-display-wall.avif",
-      "/Interiors/Lenskart/lenskart-customer-zone.avif",
-      "/Interiors/Lenskart/lenskart-lighting-detail.avif",
+      "/Interiors/Lenskart/lenskart-display-wall.webp",
+      "/Interiors/Lenskart/lenskart-customer-zone.webp",
+      "/Interiors/Lenskart/lenskart-lighting-detail.webp",
     ],
     galleryImages: [
-      "/Interiors/Lenskart/lenskart-storefront.avif",
-      "/Interiors/Lenskart/lenskart-cash-counter.avif",
-      "/Interiors/Lenskart/lenskart-cash-area.avif",
-      "/Interiors/Lenskart/enskart-vision-test-area.avif",
+      "/Interiors/Lenskart/lenskart-storefront.webp",
+      "/Interiors/Lenskart/lenskart-cash-counter.webp",
+      "/Interiors/Lenskart/lenskart-cash-area.webp",
+      "/Interiors/Lenskart/lenskart-vision-test-area.webp",
     ],
     info: {
       project: "Retail Store Interior Design",
@@ -665,9 +665,9 @@ const interiorProjects = [
     tag: "Healthcare Interior",
     title: "Mayom Hospital – Interior Design",
     subtitle: "Healthcare & Medical Space Design",
-    mainImage: "/Interiors/MayomHospital/gita-gyan-main.avif",
+    mainImage: "/Interiors/MayomHospital/gita-gyan-main.webp",
     sideImages: [
-      "/Interiors/MayomHospital/gita-hall.avif",
+      "/Interiors/MayomHospital/gita-hall.webp",
 
 
     ],
@@ -742,22 +742,22 @@ const interiorProjects = [
     tag: "Completed Project",
     title: "Club House – Sirsa",
     subtitle: "Recreational & Community Space Design",
-    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.avif",
+    mainImage: "/Architecture/ClubHouseSirsa/club-house-sirsa-main.webp",
     sideImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.avif",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.avif",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-badminton-court.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-banquet.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-pool.webp",
     ],
     galleryImages: [
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.avif",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.avif",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.avif",
-      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.avif",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-gymnasium.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-indoor-games.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-restaurant.webp",
+      "/Architecture/ClubHouseSirsa/club-house-sirsa-washroom.webp",
     ],
     info: {
       project: "Club House Sirsa",
       location: "Sirsa, Haryana",
-      scope: "Architecture & Interior Design",
+      scope: " Interior Design",
       area: "2684.2 sq. m",
       firm: "URBAN iNFiLL ",
     },
@@ -796,17 +796,17 @@ const interiorProjects = [
     tag: "Commercial Interior",
     title: "MET Reliance – Interior Design",
     subtitle: "Corporate & Institutional Space Design",
-    mainImage: "/Interiors/METReliance/main-hall.avif",
+    mainImage: "/Interiors/METReliance/main-hall.webp",
     sideImages: [
-      "/Interiors/METReliance/lobby.avif",
-      "/Interiors/METReliance/entrance.avif",
-      "/Interiors/METReliance/reception.avif"
+      "/Interiors/METReliance/lobby.webp",
+      "/Interiors/METReliance/entrance.webp",
+      "/Interiors/METReliance/reception.webp"
     ],
     galleryImages: [
-      "/Interiors/METReliance/gym-1.avif",
-      "/Interiors/METReliance/gym-2.avif",
-      "/Interiors/METReliance/hall-view-2.avif",
-      "/Interiors/METReliance/hall-view-1.avif",
+      "/Interiors/METReliance/gym-1.webp",
+      "/Interiors/METReliance/gym-2.webp",
+      "/Interiors/METReliance/hall-view-2.webp",
+      "/Interiors/METReliance/hall-view-1.webp",
     ],
 
     info: {
@@ -883,10 +883,10 @@ const interiorProjects = [
     title: "Anand Group – Hauz Khas",
     subtitle: "Luxury Interior Design",
 
-    mainImage: "/Interiors/AnandGroup/anand-group-main-hall.avif",
+    mainImage: "/Interiors/AnandGroup/anand-group-main-hall.webp",
 
     sideImages: [
-      "/Interiors/AnandGroup/group-arch-detail.avif",
+      "/Interiors/AnandGroup/group-arch-detail.webp",
 
     ],
 
@@ -959,25 +959,25 @@ const interiorProjects = [
     title: "Gita Gyan Sansthanam - Medanta Foundation  Interior Design",
     subtitle: "Healthcare & Institutional Space Design",
 
-    mainImage: "/Interiors/MedantaFoundation/reception-main.avif",
+    mainImage: "/Interiors/MedantaFoundation/reception-main.webp",
 
     sideImages: [
-      "/Interiors/MedantaFoundation/reception-side.avif",
-      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-1.avif",
-      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-2.avif"
+      "/Interiors/MedantaFoundation/reception-side.webp",
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-1.webp",
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-2.webp"
     ],
 
     galleryImages: [
-      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-3.avif",
-      "/Interiors/MedantaFoundation/waiting-area.avif",
-      "/Interiors/MedantaFoundation/lobby-1.avif",
-      "/Interiors/MedantaFoundation/lobby-2.avif",
+      "/Interiors/MedantaFoundation/Gita-Hall-Interior-View-3.webp",
+      "/Interiors/MedantaFoundation/waiting-area.webp",
+      "/Interiors/MedantaFoundation/lobby-1.webp",
+      "/Interiors/MedantaFoundation/lobby-2.webp",
 
     ],
 
     info: {
       project: "Healthcare Interior Design",
-      location: " KDB Road Kurukshetra, Haryana",
+      location: "KDB Road, Kurukshetra, Haryana",
       scope: "Interior Design + Execution",
       category: "Healthcare / Institutional",
       area: "Approx. 9000+ sq. ft.",
@@ -1074,16 +1074,16 @@ const interiorProjects = [
     tag: "Cinema",
     title: "Sargam Theatre - Interior Design",
     subtitle: "Cinema & Multiplex Interior Design by URBAN iNFiLL",
-    mainImage: "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.avif",
+    mainImage: "/Architecture/Sargam/sargam-theatre-interior-auditorium-chandpur.webp",
     sideImages: [
-      "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.avif",
-      "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.avif",
-      "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-seating-arrangement-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-stage-design-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-circulation-spaces-chandpur.webp",
     ],
     galleryImages: [
-      "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.avif",
-      "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.avif",
-      "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.avif",
+      "/Architecture/Sargam/sargam-theatre-main-exterior-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-facade-design-chandpur.webp",
+      "/Architecture/Sargam/sargam-theatre-entrance-canopy-chandpur.webp",
     ],
     info: {
       project: "Sargam Theatre",
@@ -1129,17 +1129,17 @@ const interiorProjects = [
     title: "Medanta Diagnostics – Interior Design",
     subtitle: "Diagnostic & Clinical Space Design",
 
-    mainImage: "/Interiors/MedantaDiagnosticsRanchi/reception-area.avif",
+    mainImage: "/Interiors/MedantaDiagnosticsRanchi/reception-area.webp",
 
     sideImages: [
-      "/Interiors/MedantaDiagnosticsRanchi/consultation-room-main.avif",
-      "/Interiors/MedantaDiagnosticsRanchi/waiting-lounge.avif",
-      "/Interiors/MedantaDiagnosticsRanchi/corridor-view.avif",
+      "/Interiors/MedantaDiagnosticsRanchi/consultation-room-main.webp",
+      "/Interiors/MedantaDiagnosticsRanchi/waiting-lounge.webp",
+      "/Interiors/MedantaDiagnosticsRanchi/corridor-view.webp",
     ],
 
     galleryImages: [
 
-      "/Interiors/MedantaDiagnosticsRanchi/lobby-view.avif",
+      "/Interiors/MedantaDiagnosticsRanchi/lobby-view.webp",
 
     ],
 
@@ -1245,19 +1245,19 @@ const interiorProjects = [
     title: "Medanta Medicity – Auditorium Design",
     subtitle: "Healthcare Conference & Seminar Space",
 
-    mainImage: "/Interiors/MedantaAuditorium/main-auditorium.avif",
+    mainImage: "/Interiors/MedantaAuditorium/main-auditorium.webp",
 
     sideImages: [
-      "/Interiors/MedantaAuditorium/seating-view.avif",
-      "/Interiors/MedantaAuditorium/stage-view.avif",
-      "/Interiors/MedantaAuditorium/presentation-area.avif",
+      "/Interiors/MedantaAuditorium/seating-view.webp",
+      "/Interiors/MedantaAuditorium/stage-view.webp",
+      "/Interiors/MedantaAuditorium/presentation-area.webp",
     ],
 
     galleryImages: [
-      "/Interiors/MedantaAuditorium/auditorium-view-1.avif",
-      "/Interiors/MedantaAuditorium/auditorium-view-2.avif",
-      "/Interiors/MedantaAuditorium/stage-area.avif",
-      "/Interiors/MedantaAuditorium/conference-space.avif",
+      "/Interiors/MedantaAuditorium/auditorium-view-1.webp",
+      "/Interiors/MedantaAuditorium/auditorium-view-2.webp",
+      "/Interiors/MedantaAuditorium/stage-area.webp",
+      "/Interiors/MedantaAuditorium/conference-space.webp",
 
     ],
 
@@ -1362,18 +1362,18 @@ const interiorProjects = [
     title: "Medanta Medicity – Radiology Department",
     subtitle: "Healthcare Diagnostic & Reporting Workspace",
 
-    mainImage: "/Interiors/MedantaRadiology/main-workstation.avif",
+    mainImage: "/Interiors/MedantaRadiology/main-workstation.webp",
 
     sideImages: [
-      "/Interiors/MedantaRadiology/workstation-view.avif",
-      "/Interiors/MedantaRadiology/reporting-zone.avif",
-      "/Interiors/MedantaRadiology/interior-view.avif",
+      "/Interiors/MedantaRadiology/workstation-view.webp",
+      "/Interiors/MedantaRadiology/reporting-zone.webp",
+      "/Interiors/MedantaRadiology/interior-view.webp",
     ],
 
-    galleryImages: ["/Interiors/MedantaRadiology/lighting-view.avif",
-      "/Interiors/MedantaRadiology/interior-detail.avif",
-      "/Interiors/MedantaRadiology/work-area.avif",
-      "/Interiors/MedantaRadiology/computer-zone.avif",
+    galleryImages: ["/Interiors/MedantaRadiology/lighting-view.webp",
+      "/Interiors/MedantaRadiology/interior-detail.webp",
+      "/Interiors/MedantaRadiology/work-area.webp",
+      "/Interiors/MedantaRadiology/computer-zone.webp",
 
     ],
 
@@ -1479,11 +1479,11 @@ const interiorProjects = [
     title: "Cinepolish - Conference Room Interior Design",
     subtitle: "Modern Conference & Meeting Room Design",
 
-    mainImage: "/Interiors/cinepolish/image-1.avif",
+    mainImage: "/Interiors/cinepolish/image-1.webp",
 
     sideImages: [
-      "/Interiors/cinepolish/image-2.avif",
-      "/Interiors/cinepolish/image-3.avif",
+      "/Interiors/cinepolish/image-2.webp",
+      "/Interiors/cinepolish/image-3.webp",
     ],
 
     galleryImages: [],
@@ -1584,19 +1584,19 @@ const interiorProjects = [
 
     subtitle: "Modern Corporate Workspace Renovation",
 
-    mainImage: "/Interiors/StartekBhopal/glass-partition-office.avif",
+    mainImage: "/Interiors/StartekBhopal/glass-partition-office.webp",
 
     sideImages: [
-      "/Interiors/StartekBhopal/workstation-view.avif",
-      "/Interiors/StartekBhopal/open-workspace-main.avif",
-      "/Interiors/StartekBhopal/corporate-workspace.avif"
+      "/Interiors/StartekBhopal/workstation-view.webp",
+      "/Interiors/StartekBhopal/open-workspace-main.webp",
+      "/Interiors/StartekBhopal/corporate-workspace.webp"
     ],
 
     galleryImages: [
-      "/Interiors/StartekBhopal/open-office.avif",
-      "/Interiors/StartekBhopal/workstation-row.avif",
-      "/Interiors/StartekBhopal/office-lighting.avif",
-      "/Interiors/StartekBhopal/glass-cabin.avif",
+      "/Interiors/StartekBhopal/open-office.webp",
+      "/Interiors/StartekBhopal/workstation-row.webp",
+      "/Interiors/StartekBhopal/office-lighting.webp",
+      "/Interiors/StartekBhopal/glass-cabin.webp",
 
     ],
 
@@ -1709,11 +1709,11 @@ const interiorProjects = [
     title: "Medanta Blood Lab – Diagnostic Center",
     subtitle: "Blood Collection & Diagnostic Healthcare Facility",
 
-    mainImage: "/Interiors/MedantaLabs/main-exterior.avif",
+    mainImage: "/Interiors/MedantaLabs/main-exterior.webp",
 
     sideImages: [
-      "/Interiors/MedantaLabs/front-facade.avif",
-      "/Interiors/MedantaLabs/entry-view.avif",
+      "/Interiors/MedantaLabs/front-facade.webp",
+      "/Interiors/MedantaLabs/entry-view.webp",
 
     ],
 
@@ -1724,7 +1724,7 @@ const interiorProjects = [
     info: {
       project: "Diagnostic Center Exterior & Interior Design",
       location: "Ranchi, Jharkhand",
-      scope: "Architecture + Interior Design ",
+      scope: "Interior Design ",
       category: "Hospitals",
       area: "Approx. 3000+ sq. ft.",
       client: "Medanta Blood Lab",
